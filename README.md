@@ -251,9 +251,13 @@ This repository is associated with an unpublished manuscript. Until a final jour
 
 ---
 
-## Data and licensing
+License and Attribution
 
-Data provenance, upstream-data constraints, and reuse notes are described in [`DATA_AND_LICENSE.md`](DATA_AND_LICENSE.md). The repository contains harmonized or derived inputs used by the model; upstream datasets remain subject to the terms of their original providers.
+Source code in this repository is licensed under the Apache License 2.0. Repository-owned non-software research materials are made available under CC BY 4.0, unless otherwise stated.
+
+Third-party and upstream data remain subject to the terms of their original providers.
+
+See LICENSE and DATA_AND_LICENSE.md for details.
 
 ---
 
