@@ -16,7 +16,7 @@ The repository contains the shared-state simulator, SC0–SC11 scenario definiti
 
 ## Reproduce the computational results
 
-Tested environment: Python 3.13.5 on Linux x86_64. Exact package versions are pinned in `requirements.txt` and `environment.yml`.
+Tested environment: Exact package versions are pinned in `requirements.txt` and `environment.yml`.
 
 ```bash
 python -m venv .venv
