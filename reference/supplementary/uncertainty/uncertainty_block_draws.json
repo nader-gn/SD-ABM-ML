@@ -1,0 +1,138 @@
+[
+  {
+    "label": "empirical_2019",
+    "shifts": {
+      "modal_share_bus_ml": -0.5199210453992573,
+      "modal_share_bus_r12_ml": -0.5840825504167726,
+      "modal_share_car_ml": 0.24348024654528944,
+      "modal_share_car_r12_ml": 0.20213412604184988,
+      "modal_share_met_r12_ml": -0.004855890489115167,
+      "modal_share_metro_ml": 0.030560567748087575,
+      "modal_share_mot_r12_ml": 0.13324281803825366,
+      "modal_share_motorcycle_ml": 0.13361241608258512,
+      "modal_share_oth_r12_ml": 0.10941245181661774,
+      "modal_share_other_ml": -0.016798011220541476,
+      "modal_share_tax_r12_ml": 0.14279517943729725,
+      "modal_share_taxi_ml": -0.21138023755777424
+    }
+  },
+  {
+    "label": "sign_reversed_2019",
+    "shifts": {
+      "modal_share_bus_ml": 0.5199210453992573,
+      "modal_share_bus_r12_ml": 0.5840825504167726,
+      "modal_share_car_ml": -0.24348024654528944,
+      "modal_share_car_r12_ml": -0.20213412604184988,
+      "modal_share_met_r12_ml": 0.004855890489115167,
+      "modal_share_metro_ml": -0.030560567748087575,
+      "modal_share_mot_r12_ml": -0.13324281803825366,
+      "modal_share_motorcycle_ml": -0.13361241608258512,
+      "modal_share_oth_r12_ml": -0.10941245181661774,
+      "modal_share_other_ml": 0.016798011220541476,
+      "modal_share_tax_r12_ml": -0.14279517943729725,
+      "modal_share_taxi_ml": 0.21138023755777424
+    }
+  },
+  {
+    "label": "empirical_2021",
+    "shifts": {
+      "modal_share_bus_ml": -0.6368181123874583,
+      "modal_share_bus_r12_ml": -0.3499551454422041,
+      "modal_share_car_ml": 0.29528565009302754,
+      "modal_share_car_r12_ml": 0.0960430302374764,
+      "modal_share_met_r12_ml": 0.07349795266243686,
+      "modal_share_metro_ml": 0.017130355543456766,
+      "modal_share_mot_r12_ml": 0.07784838852915699,
+      "modal_share_motorcycle_ml": -0.043315000292342365,
+      "modal_share_oth_r12_ml": -0.055639394625980554,
+      "modal_share_other_ml": -0.09762103548713297,
+      "modal_share_tax_r12_ml": 0.010101574644966638,
+      "modal_share_taxi_ml": 0.018263250309091816
+    }
+  },
+  {
+    "label": "sign_reversed_2021",
+    "shifts": {
+      "modal_share_bus_ml": 0.6368181123874583,
+      "modal_share_bus_r12_ml": 0.3499551454422041,
+      "modal_share_car_ml": -0.29528565009302754,
+      "modal_share_car_r12_ml": -0.0960430302374764,
+      "modal_share_met_r12_ml": -0.07349795266243686,
+      "modal_share_metro_ml": -0.017130355543456766,
+      "modal_share_mot_r12_ml": -0.07784838852915699,
+      "modal_share_motorcycle_ml": 0.043315000292342365,
+      "modal_share_oth_r12_ml": 0.055639394625980554,
+      "modal_share_other_ml": 0.09762103548713297,
+      "modal_share_tax_r12_ml": -0.010101574644966638,
+      "modal_share_taxi_ml": -0.018263250309091816
+    }
+  },
+  {
+    "label": "empirical_2022",
+    "shifts": {
+      "modal_share_bus_ml": 0.04125407031760897,
+      "modal_share_bus_r12_ml": 0.010919595778748903,
+      "modal_share_car_ml": -0.19967348500761506,
+      "modal_share_car_r12_ml": -0.13587537826802276,
+      "modal_share_met_r12_ml": 0.5046462303278838,
+      "modal_share_metro_ml": 0.36965398551804585,
+      "modal_share_mot_r12_ml": -0.10370516715374056,
+      "modal_share_motorcycle_ml": 0.04228369980861135,
+      "modal_share_oth_r12_ml": -0.0316952683272782,
+      "modal_share_other_ml": 0.047741032240525616,
+      "modal_share_tax_r12_ml": -0.12522392747989075,
+      "modal_share_taxi_ml": 0.12102927181936107
+    }
+  },
+  {
+    "label": "sign_reversed_2022",
+    "shifts": {
+      "modal_share_bus_ml": -0.04125407031760897,
+      "modal_share_bus_r12_ml": -0.010919595778748903,
+      "modal_share_car_ml": 0.19967348500761506,
+      "modal_share_car_r12_ml": 0.13587537826802276,
+      "modal_share_met_r12_ml": -0.5046462303278838,
+      "modal_share_metro_ml": -0.36965398551804585,
+      "modal_share_mot_r12_ml": 0.10370516715374056,
+      "modal_share_motorcycle_ml": -0.04228369980861135,
+      "modal_share_oth_r12_ml": 0.0316952683272782,
+      "modal_share_other_ml": -0.047741032240525616,
+      "modal_share_tax_r12_ml": 0.12522392747989075,
+      "modal_share_taxi_ml": -0.12102927181936107
+    }
+  },
+  {
+    "label": "empirical_2023",
+    "shifts": {
+      "modal_share_bus_ml": -0.004432671006944666,
+      "modal_share_bus_r12_ml": 0.14799695795525913,
+      "modal_share_car_ml": -0.10459900118408832,
+      "modal_share_car_r12_ml": -0.36664913118424036,
+      "modal_share_met_r12_ml": 0.2243504043494463,
+      "modal_share_metro_ml": 0.1303980697032041,
+      "modal_share_mot_r12_ml": -0.0447666853348645,
+      "modal_share_motorcycle_ml": 0.009930764118874169,
+      "modal_share_oth_r12_ml": 0.1625270229137752,
+      "modal_share_other_ml": 0.011716582095199435,
+      "modal_share_tax_r12_ml": -0.030476397622613005,
+      "modal_share_taxi_ml": 0.07245173866591315
+    }
+  },
+  {
+    "label": "sign_reversed_2023",
+    "shifts": {
+      "modal_share_bus_ml": 0.004432671006944666,
+      "modal_share_bus_r12_ml": -0.14799695795525913,
+      "modal_share_car_ml": 0.10459900118408832,
+      "modal_share_car_r12_ml": 0.36664913118424036,
+      "modal_share_met_r12_ml": -0.2243504043494463,
+      "modal_share_metro_ml": -0.1303980697032041,
+      "modal_share_mot_r12_ml": 0.0447666853348645,
+      "modal_share_motorcycle_ml": -0.009930764118874169,
+      "modal_share_oth_r12_ml": -0.1625270229137752,
+      "modal_share_other_ml": -0.011716582095199435,
+      "modal_share_tax_r12_ml": 0.030476397622613005,
+      "modal_share_taxi_ml": -0.07245173866591315
+    }
+  }
+]

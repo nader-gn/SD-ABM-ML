@@ -1,0 +1,5 @@
+group,group_label,output_series,historical_median_nrmse_percent,historical_max_nrmse_percent,holdout_median_nrmse_percent,holdout_max_nrmse_percent,holdout_series_nrmse_le_10_percent,holdout_series_nrmse_le_15_percent,holdout_series_nrmse_le_20_percent
+energy_air_quality,Energy and air quality,4,5.551345103808032,9.03003358480916,9.723614432277238,18.46975331383483,2,3,4
+mobility_activity,Mobility and activity,3,1.1682656350053473,20.61722647946835,7.362964930237394,27.305511924583772,2,2,2
+service_time,Service speed and travel time,8,12.091305222673714,17.167609016535575,6.940755968741437,12.064730237952226,6,8,8
+system_feedback,System feedback,2,1.5663828683139331,1.9450818985586935,1.7101540666310184,1.7130594523152483,2,2,2

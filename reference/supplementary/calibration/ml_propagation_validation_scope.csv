@@ -1,0 +1,5 @@
+scope,count,treatment
+observed graph descendants of ML priors,31,complete graph/truth audit
+final modal-share outputs,12,primary modal validation (Table 5; pooled summary repeated here for linkage)
+additional endogenous downstream consequences,17,historical + conditional terminal validation in Table S11
+same-concept conditional anchors,2,identified but excluded from independent propagation accuracy claims

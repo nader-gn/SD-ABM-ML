@@ -1,0 +1,9 @@
+classification,role,count
+structural,expression,441
+structural,input,237
+structural,ml,12
+structural,stock,16
+functional,ABM behavioral mediation / competition / exposure,57
+functional,Input/exogenous or initialized state,237
+functional,ML modal-prior surrogate,12
+functional,SD stock-flow / aggregate consequence / feedback,400

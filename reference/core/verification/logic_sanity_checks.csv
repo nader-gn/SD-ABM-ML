@@ -1,0 +1,541 @@
+scenario,check,status,detail
+SC0,year_span,ok,min=2012.0 max=2030.0 rows=19
+SC0,nonnegative::trips_per_year,ok,min=6370889222.319366
+SC0,nonnegative::fuel_gasoline_litre_year,ok,min=3654620000.0
+SC0,nonnegative::fuel_CNG_kg_year,ok,min=551841790.6294749
+SC0,nonnegative::concentration_PM25_ugm3,ok,min=27.341801373870204
+SC0,nonnegative::concentration_NO2_ugm3,ok,min=45.571924614603326
+SC0,nonnegative::private_cars_total,ok,min=3504556.0
+SC0,nonnegative::taxis_total,ok,min=77949.0
+SC0,nonnegative::buses_total,ok,min=2047.0
+SC0,nonnegative::brts_total,ok,min=942.0
+SC0,nonnegative::metro_cars_total,ok,min=805.0
+SC0,city_modal_sum,ok,max_abs_dev=3.3306690738754696e-16
+SC0,r12_modal_sum,ok,max_abs_dev=3.3306690738754696e-16
+SC0,taxi_fuel_sum,ok,max_abs_dev=1.1102230246251565e-16
+SC0,bounded01::share_taxi_CNG,ok,min=0.9 max=0.9
+SC0,bounded01::share_taxi_EV,ok,min=0.0 max=0.0
+SC0,bounded01::share_taxi_gasoline,ok,min=0.0999999999999999 max=0.0999999999999999
+SC0,bounded01::modal_share_car,ok,min=0.3675330289154041 max=0.6223295177807698
+SC0,bounded01::modal_share_taxi,ok,min=0.1766651975940266 max=0.229930822
+SC0,bounded01::modal_share_bus,ok,min=0.035682879821833 max=0.2061320912326127
+SC0,bounded01::modal_share_metro,ok,min=0.0619129095226186 max=0.1133328141240865
+SC0,bounded01::modal_share_motorcycle,ok,min=0.04589568366527 max=0.0832053387487339
+SC0,bounded01::modal_share_other,ok,min=0.0319507038770566 max=0.0474294529999999
+SC0,bounded01::modal_share_car_r12,ok,min=0.1571107415094187 max=0.2517150518192176
+SC0,bounded01::modal_share_tax_r12,ok,min=0.1360005675012111 max=0.1881518045801198
+SC0,bounded01::modal_share_bus_r12,ok,min=0.1000330329421634 max=0.3077962111469864
+SC0,bounded01::modal_share_met_r12,ok,min=0.152 max=0.2517063498665917
+SC0,bounded01::modal_share_mot_r12,ok,min=0.1592172390383228 max=0.2150089586063975
+SC0,bounded01::modal_share_oth_r12,ok,min=0.054843717940288 max=0.064160049113083
+SC0,bounded01::brt_share_of_bus,ok,min=0.4 max=0.55
+SC0,plausible::occ_car,ok,min=1.0 threshold=1.0
+SC0,plausible::occ_mot,ok,min=1.28 threshold=1.0
+SC0,plausible::occ_tax,ok,min=4.07 threshold=1.0
+SC0,plausible::occ_bus,ok,min=45.93 threshold=5.0
+SC0,plausible::occ_met,ok,min=876.0 threshold=10.0
+SC0,positive::spd_mot,ok,min=26.299171784160222
+SC0,positive::spd_car,ok,min=22.781811548464315
+SC0,positive::spd_tax,ok,min=21.06650975857901
+SC0,positive::spd_bus,ok,min=17.967188901592607
+SC0,positive::spd_met,ok,min=21.8812
+SC0,positive::travel_time_motorcycle_hours,ok,min=0.380712723709643
+SC0,positive::travel_time_car_hours,ok,min=0.4148938035718598
+SC0,positive::travel_time_taxi_hours,ok,min=0.4486757680279946
+SC0,positive::travel_time_bus_hours,ok,min=0.4996572273811515
+SC0,positive::travel_time_metro_hours,ok,min=0.4430689251147877
+SC1,year_span,ok,min=2012.0 max=2030.0 rows=19
+SC1,nonnegative::trips_per_year,ok,min=6370889222.319366
+SC1,nonnegative::fuel_gasoline_litre_year,ok,min=3654620000.0
+SC1,nonnegative::fuel_CNG_kg_year,ok,min=551841790.6294749
+SC1,nonnegative::concentration_PM25_ugm3,ok,min=27.341801373870204
+SC1,nonnegative::concentration_NO2_ugm3,ok,min=45.571924614603326
+SC1,nonnegative::private_cars_total,ok,min=3504556.0
+SC1,nonnegative::taxis_total,ok,min=77949.0
+SC1,nonnegative::buses_total,ok,min=2047.0
+SC1,nonnegative::brts_total,ok,min=942.0
+SC1,nonnegative::metro_cars_total,ok,min=805.0
+SC1,city_modal_sum,ok,max_abs_dev=3.3306690738754696e-16
+SC1,r12_modal_sum,ok,max_abs_dev=3.3306690738754696e-16
+SC1,taxi_fuel_sum,ok,max_abs_dev=1.1102230246251565e-16
+SC1,bounded01::share_taxi_CNG,ok,min=0.9 max=0.9
+SC1,bounded01::share_taxi_EV,ok,min=0.0 max=0.0
+SC1,bounded01::share_taxi_gasoline,ok,min=0.0999999999999999 max=0.0999999999999999
+SC1,bounded01::modal_share_car,ok,min=0.3675330289154041 max=0.6223295177807698
+SC1,bounded01::modal_share_taxi,ok,min=0.1766651975940266 max=0.229930822
+SC1,bounded01::modal_share_bus,ok,min=0.035682879821833 max=0.2061320912326127
+SC1,bounded01::modal_share_metro,ok,min=0.0619129095226186 max=0.1133328141240865
+SC1,bounded01::modal_share_motorcycle,ok,min=0.04589568366527 max=0.0832053387487339
+SC1,bounded01::modal_share_other,ok,min=0.0320544678691583 max=0.0474294529999999
+SC1,bounded01::modal_share_car_r12,ok,min=0.1571107415094187 max=0.2517150518192176
+SC1,bounded01::modal_share_tax_r12,ok,min=0.1360005675012111 max=0.1881518045801198
+SC1,bounded01::modal_share_bus_r12,ok,min=0.1000330329421634 max=0.3077962111469864
+SC1,bounded01::modal_share_met_r12,ok,min=0.152 max=0.2517063498665917
+SC1,bounded01::modal_share_mot_r12,ok,min=0.1592172390383228 max=0.2150089586063975
+SC1,bounded01::modal_share_oth_r12,ok,min=0.054843717940288 max=0.064160049113083
+SC1,bounded01::brt_share_of_bus,ok,min=0.4 max=0.55
+SC1,plausible::occ_car,ok,min=1.0 threshold=1.0
+SC1,plausible::occ_mot,ok,min=1.28 threshold=1.0
+SC1,plausible::occ_tax,ok,min=4.07 threshold=1.0
+SC1,plausible::occ_bus,ok,min=45.93 threshold=5.0
+SC1,plausible::occ_met,ok,min=876.0 threshold=10.0
+SC1,positive::spd_mot,ok,min=26.299171784160222
+SC1,positive::spd_car,ok,min=22.781811548464315
+SC1,positive::spd_tax,ok,min=21.06650975857901
+SC1,positive::spd_bus,ok,min=17.967188901592607
+SC1,positive::spd_met,ok,min=21.8812
+SC1,positive::travel_time_motorcycle_hours,ok,min=0.380712723709643
+SC1,positive::travel_time_car_hours,ok,min=0.4148938035718598
+SC1,positive::travel_time_taxi_hours,ok,min=0.4486757680279946
+SC1,positive::travel_time_bus_hours,ok,min=0.4996572273811515
+SC1,positive::travel_time_metro_hours,ok,min=0.4430689251147877
+SC2,year_span,ok,min=2012.0 max=2030.0 rows=19
+SC2,nonnegative::trips_per_year,ok,min=6370889222.319366
+SC2,nonnegative::fuel_gasoline_litre_year,ok,min=3654620000.0
+SC2,nonnegative::fuel_CNG_kg_year,ok,min=551841790.6294749
+SC2,nonnegative::concentration_PM25_ugm3,ok,min=27.341801373870204
+SC2,nonnegative::concentration_NO2_ugm3,ok,min=45.571924614603326
+SC2,nonnegative::private_cars_total,ok,min=3504556.0
+SC2,nonnegative::taxis_total,ok,min=77949.0
+SC2,nonnegative::buses_total,ok,min=2047.0
+SC2,nonnegative::brts_total,ok,min=942.0
+SC2,nonnegative::metro_cars_total,ok,min=805.0
+SC2,city_modal_sum,ok,max_abs_dev=4.440892098500626e-16
+SC2,r12_modal_sum,ok,max_abs_dev=4.440892098500626e-16
+SC2,taxi_fuel_sum,ok,max_abs_dev=1.1102230246251565e-16
+SC2,bounded01::share_taxi_CNG,ok,min=0.9 max=0.9
+SC2,bounded01::share_taxi_EV,ok,min=0.0 max=0.0
+SC2,bounded01::share_taxi_gasoline,ok,min=0.0999999999999999 max=0.0999999999999999
+SC2,bounded01::modal_share_car,ok,min=0.3675330289154041 max=0.6223295177807698
+SC2,bounded01::modal_share_taxi,ok,min=0.1766651975940266 max=0.229930822
+SC2,bounded01::modal_share_bus,ok,min=0.035682879821833 max=0.2061320912326127
+SC2,bounded01::modal_share_metro,ok,min=0.0619129095226186 max=0.1133328141240865
+SC2,bounded01::modal_share_motorcycle,ok,min=0.04589568366527 max=0.0852002096185581
+SC2,bounded01::modal_share_other,ok,min=0.0320544678691583 max=0.0474294529999999
+SC2,bounded01::modal_share_car_r12,ok,min=0.1571107415094187 max=0.2517150518192176
+SC2,bounded01::modal_share_tax_r12,ok,min=0.1360005675012111 max=0.1881518045801198
+SC2,bounded01::modal_share_bus_r12,ok,min=0.1000330329421634 max=0.3077962111469864
+SC2,bounded01::modal_share_met_r12,ok,min=0.152 max=0.2517063498665917
+SC2,bounded01::modal_share_mot_r12,ok,min=0.1592172390383228 max=0.2150089586063975
+SC2,bounded01::modal_share_oth_r12,ok,min=0.054843717940288 max=0.064160049113083
+SC2,bounded01::brt_share_of_bus,ok,min=0.4 max=0.55
+SC2,plausible::occ_car,ok,min=1.0 threshold=1.0
+SC2,plausible::occ_mot,ok,min=1.28 threshold=1.0
+SC2,plausible::occ_tax,ok,min=4.07 threshold=1.0
+SC2,plausible::occ_bus,ok,min=45.93 threshold=5.0
+SC2,plausible::occ_met,ok,min=876.0 threshold=10.0
+SC2,positive::spd_mot,ok,min=26.299171784160222
+SC2,positive::spd_car,ok,min=22.781811548464315
+SC2,positive::spd_tax,ok,min=21.06650975857901
+SC2,positive::spd_bus,ok,min=17.967188901592607
+SC2,positive::spd_met,ok,min=21.8812
+SC2,positive::travel_time_motorcycle_hours,ok,min=0.380712723709643
+SC2,positive::travel_time_car_hours,ok,min=0.4148938035718598
+SC2,positive::travel_time_taxi_hours,ok,min=0.4486757680279946
+SC2,positive::travel_time_bus_hours,ok,min=0.4996572273811515
+SC2,positive::travel_time_metro_hours,ok,min=0.4430689251147877
+SC3,year_span,ok,min=2012.0 max=2030.0 rows=19
+SC3,nonnegative::trips_per_year,ok,min=6370889222.319366
+SC3,nonnegative::fuel_gasoline_litre_year,ok,min=3654620000.0
+SC3,nonnegative::fuel_CNG_kg_year,ok,min=551841790.6294749
+SC3,nonnegative::concentration_PM25_ugm3,ok,min=27.341801373870204
+SC3,nonnegative::concentration_NO2_ugm3,ok,min=45.571924614603326
+SC3,nonnegative::private_cars_total,ok,min=3504556.0
+SC3,nonnegative::taxis_total,ok,min=77949.0
+SC3,nonnegative::buses_total,ok,min=2047.0
+SC3,nonnegative::brts_total,ok,min=942.0
+SC3,nonnegative::metro_cars_total,ok,min=805.0
+SC3,city_modal_sum,ok,max_abs_dev=3.3306690738754696e-16
+SC3,r12_modal_sum,ok,max_abs_dev=4.440892098500626e-16
+SC3,taxi_fuel_sum,ok,max_abs_dev=1.1102230246251565e-16
+SC3,bounded01::share_taxi_CNG,ok,min=0.9 max=0.9
+SC3,bounded01::share_taxi_EV,ok,min=0.0 max=0.0
+SC3,bounded01::share_taxi_gasoline,ok,min=0.0999999999999999 max=0.0999999999999999
+SC3,bounded01::modal_share_car,ok,min=0.3675330289154041 max=0.6223295177807698
+SC3,bounded01::modal_share_taxi,ok,min=0.1766651975940266 max=0.229930822
+SC3,bounded01::modal_share_bus,ok,min=0.035682879821833 max=0.2061320912326127
+SC3,bounded01::modal_share_metro,ok,min=0.0619129095226186 max=0.1133328141240865
+SC3,bounded01::modal_share_motorcycle,ok,min=0.04589568366527 max=0.0832053387487339
+SC3,bounded01::modal_share_other,ok,min=0.0320544678691583 max=0.0474294529999999
+SC3,bounded01::modal_share_car_r12,ok,min=0.1571107415094187 max=0.2517150518192176
+SC3,bounded01::modal_share_tax_r12,ok,min=0.1360005675012111 max=0.1881518045801198
+SC3,bounded01::modal_share_bus_r12,ok,min=0.1000330329421634 max=0.3077962111469864
+SC3,bounded01::modal_share_met_r12,ok,min=0.152 max=0.2517063498665917
+SC3,bounded01::modal_share_mot_r12,ok,min=0.1592172390383228 max=0.2150089586063975
+SC3,bounded01::modal_share_oth_r12,ok,min=0.054843717940288 max=0.064160049113083
+SC3,bounded01::brt_share_of_bus,ok,min=0.4 max=0.55
+SC3,plausible::occ_car,ok,min=1.0 threshold=1.0
+SC3,plausible::occ_mot,ok,min=1.28 threshold=1.0
+SC3,plausible::occ_tax,ok,min=4.07 threshold=1.0
+SC3,plausible::occ_bus,ok,min=45.93 threshold=5.0
+SC3,plausible::occ_met,ok,min=876.0 threshold=10.0
+SC3,positive::spd_mot,ok,min=26.299171784160222
+SC3,positive::spd_car,ok,min=22.781811548464315
+SC3,positive::spd_tax,ok,min=21.06650975857901
+SC3,positive::spd_bus,ok,min=17.967188901592607
+SC3,positive::spd_met,ok,min=21.8812
+SC3,positive::travel_time_motorcycle_hours,ok,min=0.380712723709643
+SC3,positive::travel_time_car_hours,ok,min=0.4148938035718598
+SC3,positive::travel_time_taxi_hours,ok,min=0.4486757680279946
+SC3,positive::travel_time_bus_hours,ok,min=0.4996572273811515
+SC3,positive::travel_time_metro_hours,ok,min=0.4430689251147877
+SC4,year_span,ok,min=2012.0 max=2030.0 rows=19
+SC4,nonnegative::trips_per_year,ok,min=6370889222.319366
+SC4,nonnegative::fuel_gasoline_litre_year,ok,min=3654620000.0
+SC4,nonnegative::fuel_CNG_kg_year,ok,min=551841790.6294749
+SC4,nonnegative::concentration_PM25_ugm3,ok,min=27.341801373870204
+SC4,nonnegative::concentration_NO2_ugm3,ok,min=45.571924614603326
+SC4,nonnegative::private_cars_total,ok,min=3504556.0
+SC4,nonnegative::taxis_total,ok,min=77949.0
+SC4,nonnegative::buses_total,ok,min=2047.0
+SC4,nonnegative::brts_total,ok,min=942.0
+SC4,nonnegative::metro_cars_total,ok,min=805.0
+SC4,city_modal_sum,ok,max_abs_dev=4.440892098500626e-16
+SC4,r12_modal_sum,ok,max_abs_dev=3.3306690738754696e-16
+SC4,taxi_fuel_sum,ok,max_abs_dev=1.1102230246251565e-16
+SC4,bounded01::share_taxi_CNG,ok,min=0.9 max=0.9
+SC4,bounded01::share_taxi_EV,ok,min=0.0 max=0.0
+SC4,bounded01::share_taxi_gasoline,ok,min=0.0999999999999999 max=0.0999999999999999
+SC4,bounded01::modal_share_car,ok,min=0.3675330289154041 max=0.6223295177807698
+SC4,bounded01::modal_share_taxi,ok,min=0.1766651975940266 max=0.229930822
+SC4,bounded01::modal_share_bus,ok,min=0.035682879821833 max=0.2061320912326127
+SC4,bounded01::modal_share_metro,ok,min=0.0619129095226186 max=0.1133328141240865
+SC4,bounded01::modal_share_motorcycle,ok,min=0.04589568366527 max=0.0821511182253069
+SC4,bounded01::modal_share_other,ok,min=0.0315500430640454 max=0.0474294529999999
+SC4,bounded01::modal_share_car_r12,ok,min=0.1571107415094187 max=0.2517150518192176
+SC4,bounded01::modal_share_tax_r12,ok,min=0.1360005675012111 max=0.1881518045801198
+SC4,bounded01::modal_share_bus_r12,ok,min=0.1000330329421634 max=0.3077962111469864
+SC4,bounded01::modal_share_met_r12,ok,min=0.152 max=0.2603860238313163
+SC4,bounded01::modal_share_mot_r12,ok,min=0.1592172390383228 max=0.2150089586063975
+SC4,bounded01::modal_share_oth_r12,ok,min=0.054843717940288 max=0.064160049113083
+SC4,bounded01::brt_share_of_bus,ok,min=0.4 max=0.55
+SC4,plausible::occ_car,ok,min=1.0 threshold=1.0
+SC4,plausible::occ_mot,ok,min=1.28 threshold=1.0
+SC4,plausible::occ_tax,ok,min=4.07 threshold=1.0
+SC4,plausible::occ_bus,ok,min=45.93 threshold=5.0
+SC4,plausible::occ_met,ok,min=876.0 threshold=10.0
+SC4,positive::spd_mot,ok,min=26.299171784160222
+SC4,positive::spd_car,ok,min=22.781811548464315
+SC4,positive::spd_tax,ok,min=21.06650975857901
+SC4,positive::spd_bus,ok,min=17.967188901592607
+SC4,positive::spd_met,ok,min=21.8812
+SC4,positive::travel_time_motorcycle_hours,ok,min=0.3805794231988187
+SC4,positive::travel_time_car_hours,ok,min=0.4148938035718598
+SC4,positive::travel_time_taxi_hours,ok,min=0.4486757680279946
+SC4,positive::travel_time_bus_hours,ok,min=0.4996572273811515
+SC4,positive::travel_time_metro_hours,ok,min=0.4430689251147877
+SC5,year_span,ok,min=2012.0 max=2030.0 rows=19
+SC5,nonnegative::trips_per_year,ok,min=6370889222.319366
+SC5,nonnegative::fuel_gasoline_litre_year,ok,min=3654620000.0
+SC5,nonnegative::fuel_CNG_kg_year,ok,min=551841790.6294749
+SC5,nonnegative::concentration_PM25_ugm3,ok,min=27.341801373870204
+SC5,nonnegative::concentration_NO2_ugm3,ok,min=45.571924614603326
+SC5,nonnegative::private_cars_total,ok,min=3504556.0
+SC5,nonnegative::taxis_total,ok,min=77949.0
+SC5,nonnegative::buses_total,ok,min=2047.0
+SC5,nonnegative::brts_total,ok,min=942.0
+SC5,nonnegative::metro_cars_total,ok,min=805.0
+SC5,city_modal_sum,ok,max_abs_dev=4.440892098500626e-16
+SC5,r12_modal_sum,ok,max_abs_dev=4.440892098500626e-16
+SC5,taxi_fuel_sum,ok,max_abs_dev=1.1102230246251565e-16
+SC5,bounded01::share_taxi_CNG,ok,min=0.9 max=0.9
+SC5,bounded01::share_taxi_EV,ok,min=0.0 max=0.0
+SC5,bounded01::share_taxi_gasoline,ok,min=0.0999999999999999 max=0.0999999999999999
+SC5,bounded01::modal_share_car,ok,min=0.3675330289154041 max=0.6223295177807698
+SC5,bounded01::modal_share_taxi,ok,min=0.1766651975940266 max=0.229930822
+SC5,bounded01::modal_share_bus,ok,min=0.035682879821833 max=0.2061320912326127
+SC5,bounded01::modal_share_metro,ok,min=0.0619129095226186 max=0.1133328141240865
+SC5,bounded01::modal_share_motorcycle,ok,min=0.04589568366527 max=0.0821626438709446
+SC5,bounded01::modal_share_other,ok,min=0.0316605250380834 max=0.0474294529999999
+SC5,bounded01::modal_share_car_r12,ok,min=0.1571107415094187 max=0.2517150518192176
+SC5,bounded01::modal_share_tax_r12,ok,min=0.1360005675012111 max=0.1881518045801198
+SC5,bounded01::modal_share_bus_r12,ok,min=0.1000330329421634 max=0.3077962111469864
+SC5,bounded01::modal_share_met_r12,ok,min=0.152 max=0.2628861946248548
+SC5,bounded01::modal_share_mot_r12,ok,min=0.1592172390383228 max=0.2150089586063975
+SC5,bounded01::modal_share_oth_r12,ok,min=0.054843717940288 max=0.064160049113083
+SC5,bounded01::brt_share_of_bus,ok,min=0.4 max=0.55
+SC5,plausible::occ_car,ok,min=1.0 threshold=1.0
+SC5,plausible::occ_mot,ok,min=1.28 threshold=1.0
+SC5,plausible::occ_tax,ok,min=4.07 threshold=1.0
+SC5,plausible::occ_bus,ok,min=45.93 threshold=5.0
+SC5,plausible::occ_met,ok,min=876.0 threshold=10.0
+SC5,positive::spd_mot,ok,min=26.299171784160222
+SC5,positive::spd_car,ok,min=22.781811548464315
+SC5,positive::spd_tax,ok,min=21.06650975857901
+SC5,positive::spd_bus,ok,min=17.967188901592607
+SC5,positive::spd_met,ok,min=21.8812
+SC5,positive::travel_time_motorcycle_hours,ok,min=0.3796576340855827
+SC5,positive::travel_time_car_hours,ok,min=0.4148938035718598
+SC5,positive::travel_time_taxi_hours,ok,min=0.4486757680279946
+SC5,positive::travel_time_bus_hours,ok,min=0.4376064795446554
+SC5,positive::travel_time_metro_hours,ok,min=0.3
+SC6,year_span,ok,min=2012.0 max=2030.0 rows=19
+SC6,nonnegative::trips_per_year,ok,min=6370889222.319366
+SC6,nonnegative::fuel_gasoline_litre_year,ok,min=3654620000.0
+SC6,nonnegative::fuel_CNG_kg_year,ok,min=551841790.6294749
+SC6,nonnegative::concentration_PM25_ugm3,ok,min=27.341801373870204
+SC6,nonnegative::concentration_NO2_ugm3,ok,min=45.571924614603326
+SC6,nonnegative::private_cars_total,ok,min=3504556.0
+SC6,nonnegative::taxis_total,ok,min=77949.0
+SC6,nonnegative::buses_total,ok,min=2047.0
+SC6,nonnegative::brts_total,ok,min=942.0
+SC6,nonnegative::metro_cars_total,ok,min=805.0
+SC6,city_modal_sum,ok,max_abs_dev=3.3306690738754696e-16
+SC6,r12_modal_sum,ok,max_abs_dev=3.3306690738754696e-16
+SC6,taxi_fuel_sum,ok,max_abs_dev=1.1102230246251565e-16
+SC6,bounded01::share_taxi_CNG,ok,min=0.9 max=0.9
+SC6,bounded01::share_taxi_EV,ok,min=0.0 max=0.0
+SC6,bounded01::share_taxi_gasoline,ok,min=0.0999999999999999 max=0.0999999999999999
+SC6,bounded01::modal_share_car,ok,min=0.3675330289154041 max=0.6223295177807698
+SC6,bounded01::modal_share_taxi,ok,min=0.1766651975940266 max=0.229930822
+SC6,bounded01::modal_share_bus,ok,min=0.035682879821833 max=0.2061320912326127
+SC6,bounded01::modal_share_metro,ok,min=0.0619129095226186 max=0.1133328141240865
+SC6,bounded01::modal_share_motorcycle,ok,min=0.04589568366527 max=0.0829844038123567
+SC6,bounded01::modal_share_other,ok,min=0.031970995957889 max=0.0474294529999999
+SC6,bounded01::modal_share_car_r12,ok,min=0.1571107415094187 max=0.2517150518192176
+SC6,bounded01::modal_share_tax_r12,ok,min=0.1360005675012111 max=0.1881518045801198
+SC6,bounded01::modal_share_bus_r12,ok,min=0.1000330329421634 max=0.3077962111469864
+SC6,bounded01::modal_share_met_r12,ok,min=0.152 max=0.2517063498665917
+SC6,bounded01::modal_share_mot_r12,ok,min=0.1592172390383228 max=0.2150089586063975
+SC6,bounded01::modal_share_oth_r12,ok,min=0.054843717940288 max=0.064160049113083
+SC6,bounded01::brt_share_of_bus,ok,min=0.4 max=0.55
+SC6,plausible::occ_car,ok,min=1.0 threshold=1.0
+SC6,plausible::occ_mot,ok,min=1.28 threshold=1.0
+SC6,plausible::occ_tax,ok,min=4.07 threshold=1.0
+SC6,plausible::occ_bus,ok,min=45.93 threshold=5.0
+SC6,plausible::occ_met,ok,min=876.0 threshold=10.0
+SC6,positive::spd_mot,ok,min=26.299171784160222
+SC6,positive::spd_car,ok,min=22.781811548464315
+SC6,positive::spd_tax,ok,min=21.06650975857901
+SC6,positive::spd_bus,ok,min=17.967188901592607
+SC6,positive::spd_met,ok,min=21.8812
+SC6,positive::travel_time_motorcycle_hours,ok,min=0.3807084161123734
+SC6,positive::travel_time_car_hours,ok,min=0.4148938035718598
+SC6,positive::travel_time_taxi_hours,ok,min=0.4486757680279946
+SC6,positive::travel_time_bus_hours,ok,min=0.4788419562433176
+SC6,positive::travel_time_metro_hours,ok,min=0.4430689251147877
+SC7,year_span,ok,min=2012.0 max=2030.0 rows=19
+SC7,nonnegative::trips_per_year,ok,min=6370889222.319366
+SC7,nonnegative::fuel_gasoline_litre_year,ok,min=3654620000.0
+SC7,nonnegative::fuel_CNG_kg_year,ok,min=473041274.407002
+SC7,nonnegative::concentration_PM25_ugm3,ok,min=27.341801373870204
+SC7,nonnegative::concentration_NO2_ugm3,ok,min=45.571924614603326
+SC7,nonnegative::private_cars_total,ok,min=3504556.0
+SC7,nonnegative::taxis_total,ok,min=77949.0
+SC7,nonnegative::buses_total,ok,min=2047.0
+SC7,nonnegative::brts_total,ok,min=942.0
+SC7,nonnegative::metro_cars_total,ok,min=805.0
+SC7,city_modal_sum,ok,max_abs_dev=3.3306690738754696e-16
+SC7,r12_modal_sum,ok,max_abs_dev=3.3306690738754696e-16
+SC7,taxi_fuel_sum,ok,max_abs_dev=2.220446049250313e-16
+SC7,bounded01::share_taxi_CNG,ok,min=0.5040000000000001 max=0.9
+SC7,bounded01::share_taxi_EV,ok,min=0.0 max=0.44
+SC7,bounded01::share_taxi_gasoline,ok,min=0.0559999999999999 max=0.0999999999999999
+SC7,bounded01::modal_share_car,ok,min=0.3675330289154041 max=0.6223295177807698
+SC7,bounded01::modal_share_taxi,ok,min=0.1766651975940266 max=0.229930822
+SC7,bounded01::modal_share_bus,ok,min=0.035682879821833 max=0.2061320912326127
+SC7,bounded01::modal_share_metro,ok,min=0.0619129095226186 max=0.1133328141240865
+SC7,bounded01::modal_share_motorcycle,ok,min=0.04589568366527 max=0.0832053387487339
+SC7,bounded01::modal_share_other,ok,min=0.0319507038770566 max=0.0474294529999999
+SC7,bounded01::modal_share_car_r12,ok,min=0.1571107415094187 max=0.2517150518192176
+SC7,bounded01::modal_share_tax_r12,ok,min=0.1360005675012111 max=0.1881518045801198
+SC7,bounded01::modal_share_bus_r12,ok,min=0.1000330329421634 max=0.3077962111469864
+SC7,bounded01::modal_share_met_r12,ok,min=0.152 max=0.2517063498665917
+SC7,bounded01::modal_share_mot_r12,ok,min=0.1592172390383228 max=0.2150089586063975
+SC7,bounded01::modal_share_oth_r12,ok,min=0.054843717940288 max=0.064160049113083
+SC7,bounded01::brt_share_of_bus,ok,min=0.4 max=0.55
+SC7,plausible::occ_car,ok,min=1.0 threshold=1.0
+SC7,plausible::occ_mot,ok,min=1.28 threshold=1.0
+SC7,plausible::occ_tax,ok,min=4.07 threshold=1.0
+SC7,plausible::occ_bus,ok,min=45.93 threshold=5.0
+SC7,plausible::occ_met,ok,min=876.0 threshold=10.0
+SC7,positive::spd_mot,ok,min=26.299171784160222
+SC7,positive::spd_car,ok,min=22.781811548464315
+SC7,positive::spd_tax,ok,min=21.06650975857901
+SC7,positive::spd_bus,ok,min=17.967188901592607
+SC7,positive::spd_met,ok,min=21.8812
+SC7,positive::travel_time_motorcycle_hours,ok,min=0.3807130367780276
+SC7,positive::travel_time_car_hours,ok,min=0.4148938035718598
+SC7,positive::travel_time_taxi_hours,ok,min=0.4486757680279946
+SC7,positive::travel_time_bus_hours,ok,min=0.4996572273811515
+SC7,positive::travel_time_metro_hours,ok,min=0.4430689251147877
+SC8,year_span,ok,min=2012.0 max=2030.0 rows=19
+SC8,nonnegative::trips_per_year,ok,min=6370889222.319366
+SC8,nonnegative::fuel_gasoline_litre_year,ok,min=3654620000.0
+SC8,nonnegative::fuel_CNG_kg_year,ok,min=551841790.6294749
+SC8,nonnegative::concentration_PM25_ugm3,ok,min=27.341801373870204
+SC8,nonnegative::concentration_NO2_ugm3,ok,min=45.571924614603326
+SC8,nonnegative::private_cars_total,ok,min=3504556.0
+SC8,nonnegative::taxis_total,ok,min=77949.0
+SC8,nonnegative::buses_total,ok,min=2047.0
+SC8,nonnegative::brts_total,ok,min=942.0
+SC8,nonnegative::metro_cars_total,ok,min=805.0
+SC8,city_modal_sum,ok,max_abs_dev=3.3306690738754696e-16
+SC8,r12_modal_sum,ok,max_abs_dev=4.440892098500626e-16
+SC8,taxi_fuel_sum,ok,max_abs_dev=1.1102230246251565e-16
+SC8,bounded01::share_taxi_CNG,ok,min=0.9 max=0.9
+SC8,bounded01::share_taxi_EV,ok,min=0.0 max=0.0
+SC8,bounded01::share_taxi_gasoline,ok,min=0.0999999999999999 max=0.0999999999999999
+SC8,bounded01::modal_share_car,ok,min=0.3675330289154041 max=0.6223295177807698
+SC8,bounded01::modal_share_taxi,ok,min=0.1766651975940266 max=0.229930822
+SC8,bounded01::modal_share_bus,ok,min=0.035682879821833 max=0.2061320912326127
+SC8,bounded01::modal_share_metro,ok,min=0.0619129095226186 max=0.1133328141240865
+SC8,bounded01::modal_share_motorcycle,ok,min=0.04589568366527 max=0.0819110614623857
+SC8,bounded01::modal_share_other,ok,min=0.0315654741383548 max=0.0474294529999999
+SC8,bounded01::modal_share_car_r12,ok,min=0.1571107415094187 max=0.2517150518192176
+SC8,bounded01::modal_share_tax_r12,ok,min=0.1360005675012111 max=0.1881518045801198
+SC8,bounded01::modal_share_bus_r12,ok,min=0.1000330329421634 max=0.3077962111469864
+SC8,bounded01::modal_share_met_r12,ok,min=0.152 max=0.2588918460105912
+SC8,bounded01::modal_share_mot_r12,ok,min=0.1592172390383228 max=0.2150089586063975
+SC8,bounded01::modal_share_oth_r12,ok,min=0.054843717940288 max=0.064160049113083
+SC8,bounded01::brt_share_of_bus,ok,min=0.4 max=0.55
+SC8,plausible::occ_car,ok,min=1.0 threshold=1.0
+SC8,plausible::occ_mot,ok,min=1.28 threshold=1.0
+SC8,plausible::occ_tax,ok,min=4.07 threshold=1.0
+SC8,plausible::occ_bus,ok,min=45.93 threshold=5.0
+SC8,plausible::occ_met,ok,min=876.0 threshold=10.0
+SC8,positive::spd_mot,ok,min=26.299171784160222
+SC8,positive::spd_car,ok,min=22.781811548464315
+SC8,positive::spd_tax,ok,min=21.06650975857901
+SC8,positive::spd_bus,ok,min=17.967188901592607
+SC8,positive::spd_met,ok,min=21.8812
+SC8,positive::travel_time_motorcycle_hours,ok,min=0.3780060332974799
+SC8,positive::travel_time_car_hours,ok,min=0.4148938035718598
+SC8,positive::travel_time_taxi_hours,ok,min=0.4486757680279946
+SC8,positive::travel_time_bus_hours,ok,min=0.4758959962169117
+SC8,positive::travel_time_metro_hours,ok,min=0.4430689251147877
+SC9,year_span,ok,min=2012.0 max=2030.0 rows=19
+SC9,nonnegative::trips_per_year,ok,min=6370889222.319366
+SC9,nonnegative::fuel_gasoline_litre_year,ok,min=3654620000.0
+SC9,nonnegative::fuel_CNG_kg_year,ok,min=551841790.6294749
+SC9,nonnegative::concentration_PM25_ugm3,ok,min=27.341801373870204
+SC9,nonnegative::concentration_NO2_ugm3,ok,min=45.571924614603326
+SC9,nonnegative::private_cars_total,ok,min=3504556.0
+SC9,nonnegative::taxis_total,ok,min=77949.0
+SC9,nonnegative::buses_total,ok,min=2047.0
+SC9,nonnegative::brts_total,ok,min=942.0
+SC9,nonnegative::metro_cars_total,ok,min=805.0
+SC9,city_modal_sum,ok,max_abs_dev=4.440892098500626e-16
+SC9,r12_modal_sum,ok,max_abs_dev=4.440892098500626e-16
+SC9,taxi_fuel_sum,ok,max_abs_dev=1.1102230246251565e-16
+SC9,bounded01::share_taxi_CNG,ok,min=0.9 max=0.9
+SC9,bounded01::share_taxi_EV,ok,min=0.0 max=0.0
+SC9,bounded01::share_taxi_gasoline,ok,min=0.0999999999999999 max=0.0999999999999999
+SC9,bounded01::modal_share_car,ok,min=0.3675330289154041 max=0.6223295177807698
+SC9,bounded01::modal_share_taxi,ok,min=0.1766651975940266 max=0.229930822
+SC9,bounded01::modal_share_bus,ok,min=0.035682879821833 max=0.2061320912326127
+SC9,bounded01::modal_share_metro,ok,min=0.0619129095226186 max=0.1165357456321566
+SC9,bounded01::modal_share_motorcycle,ok,min=0.04589568366527 max=0.0816123929830698
+SC9,bounded01::modal_share_other,ok,min=0.0314526335473048 max=0.0474294529999999
+SC9,bounded01::modal_share_car_r12,ok,min=0.1571107415094187 max=0.2517150518192176
+SC9,bounded01::modal_share_tax_r12,ok,min=0.1360005675012111 max=0.1881518045801198
+SC9,bounded01::modal_share_bus_r12,ok,min=0.1000330329421634 max=0.3077962111469864
+SC9,bounded01::modal_share_met_r12,ok,min=0.152 max=0.2684637005489846
+SC9,bounded01::modal_share_mot_r12,ok,min=0.1592172390383228 max=0.2150089586063975
+SC9,bounded01::modal_share_oth_r12,ok,min=0.054843717940288 max=0.064160049113083
+SC9,bounded01::brt_share_of_bus,ok,min=0.4 max=0.55
+SC9,plausible::occ_car,ok,min=1.0 threshold=1.0
+SC9,plausible::occ_mot,ok,min=1.28 threshold=1.0
+SC9,plausible::occ_tax,ok,min=4.07 threshold=1.0
+SC9,plausible::occ_bus,ok,min=45.93 threshold=5.0
+SC9,plausible::occ_met,ok,min=876.0 threshold=10.0
+SC9,positive::spd_mot,ok,min=26.299171784160222
+SC9,positive::spd_car,ok,min=22.781811548464315
+SC9,positive::spd_tax,ok,min=21.06650975857901
+SC9,positive::spd_bus,ok,min=17.967188901592607
+SC9,positive::spd_met,ok,min=21.8812
+SC9,positive::travel_time_motorcycle_hours,ok,min=0.3791317867165925
+SC9,positive::travel_time_car_hours,ok,min=0.4148938035718598
+SC9,positive::travel_time_taxi_hours,ok,min=0.4486757680279946
+SC9,positive::travel_time_bus_hours,ok,min=0.4623969671406649
+SC9,positive::travel_time_metro_hours,ok,min=0.313953488372093
+SC10,year_span,ok,min=2012.0 max=2030.0 rows=19
+SC10,nonnegative::trips_per_year,ok,min=6370889222.319366
+SC10,nonnegative::fuel_gasoline_litre_year,ok,min=3654620000.0
+SC10,nonnegative::fuel_CNG_kg_year,ok,min=548198923.5604299
+SC10,nonnegative::concentration_PM25_ugm3,ok,min=27.341801373870204
+SC10,nonnegative::concentration_NO2_ugm3,ok,min=45.571924614603326
+SC10,nonnegative::private_cars_total,ok,min=3504556.0
+SC10,nonnegative::taxis_total,ok,min=77949.0
+SC10,nonnegative::buses_total,ok,min=2047.0
+SC10,nonnegative::brts_total,ok,min=942.0
+SC10,nonnegative::metro_cars_total,ok,min=805.0
+SC10,city_modal_sum,ok,max_abs_dev=3.3306690738754696e-16
+SC10,r12_modal_sum,ok,max_abs_dev=3.3306690738754696e-16
+SC10,taxi_fuel_sum,ok,max_abs_dev=2.220446049250313e-16
+SC10,bounded01::share_taxi_CNG,ok,min=0.774 max=0.9
+SC10,bounded01::share_taxi_EV,ok,min=0.0 max=0.1399999999999999
+SC10,bounded01::share_taxi_gasoline,ok,min=0.0859999999999999 max=0.0999999999999999
+SC10,bounded01::modal_share_car,ok,min=0.3675330289154041 max=0.6223295177807698
+SC10,bounded01::modal_share_taxi,ok,min=0.1766651975940266 max=0.229930822
+SC10,bounded01::modal_share_bus,ok,min=0.035682879821833 max=0.2061320912326127
+SC10,bounded01::modal_share_metro,ok,min=0.0619129095226186 max=0.115815212786501
+SC10,bounded01::modal_share_motorcycle,ok,min=0.04589568366527 max=0.081027302290614
+SC10,bounded01::modal_share_other,ok,min=0.0312315791537987 max=0.0474294529999999
+SC10,bounded01::modal_share_car_r12,ok,min=0.1571107415094187 max=0.2517150518192176
+SC10,bounded01::modal_share_tax_r12,ok,min=0.1360005675012111 max=0.1881518045801198
+SC10,bounded01::modal_share_bus_r12,ok,min=0.1000330329421634 max=0.3077962111469864
+SC10,bounded01::modal_share_met_r12,ok,min=0.152 max=0.2743834465649618
+SC10,bounded01::modal_share_mot_r12,ok,min=0.1592172390383228 max=0.2150089586063975
+SC10,bounded01::modal_share_oth_r12,ok,min=0.054843717940288 max=0.064160049113083
+SC10,bounded01::brt_share_of_bus,ok,min=0.4 max=0.55
+SC10,plausible::occ_car,ok,min=1.0 threshold=1.0
+SC10,plausible::occ_mot,ok,min=1.28 threshold=1.0
+SC10,plausible::occ_tax,ok,min=4.07 threshold=1.0
+SC10,plausible::occ_bus,ok,min=45.93 threshold=5.0
+SC10,plausible::occ_met,ok,min=876.0 threshold=10.0
+SC10,positive::spd_mot,ok,min=26.299171784160222
+SC10,positive::spd_car,ok,min=22.781811548464315
+SC10,positive::spd_tax,ok,min=21.06650975857901
+SC10,positive::spd_bus,ok,min=17.967188901592607
+SC10,positive::spd_met,ok,min=21.8812
+SC10,positive::travel_time_motorcycle_hours,ok,min=0.3783666534248739
+SC10,positive::travel_time_car_hours,ok,min=0.4148938035718598
+SC10,positive::travel_time_taxi_hours,ok,min=0.4486757680279946
+SC10,positive::travel_time_bus_hours,ok,min=0.4353836023647808
+SC10,positive::travel_time_metro_hours,ok,min=0.3
+SC11,year_span,ok,min=2012.0 max=2030.0 rows=19
+SC11,nonnegative::trips_per_year,ok,min=6370889222.319366
+SC11,nonnegative::fuel_gasoline_litre_year,ok,min=3654620000.0
+SC11,nonnegative::fuel_CNG_kg_year,ok,min=537687500.6719115
+SC11,nonnegative::concentration_PM25_ugm3,ok,min=27.341801373870204
+SC11,nonnegative::concentration_NO2_ugm3,ok,min=45.571924614603326
+SC11,nonnegative::private_cars_total,ok,min=3504556.0
+SC11,nonnegative::taxis_total,ok,min=77949.0
+SC11,nonnegative::buses_total,ok,min=2047.0
+SC11,nonnegative::brts_total,ok,min=942.0
+SC11,nonnegative::metro_cars_total,ok,min=805.0
+SC11,city_modal_sum,ok,max_abs_dev=3.3306690738754696e-16
+SC11,r12_modal_sum,ok,max_abs_dev=4.440892098500626e-16
+SC11,taxi_fuel_sum,ok,max_abs_dev=2.220446049250313e-16
+SC11,bounded01::share_taxi_CNG,ok,min=0.774 max=0.9
+SC11,bounded01::share_taxi_EV,ok,min=0.0 max=0.1399999999999999
+SC11,bounded01::share_taxi_gasoline,ok,min=0.0859999999999999 max=0.0999999999999999
+SC11,bounded01::modal_share_car,ok,min=0.3675330289154041 max=0.6223295177807698
+SC11,bounded01::modal_share_taxi,ok,min=0.1766651975940266 max=0.229930822
+SC11,bounded01::modal_share_bus,ok,min=0.035682879821833 max=0.2061320912326127
+SC11,bounded01::modal_share_metro,ok,min=0.0619129095226186 max=0.1134323060652823
+SC11,bounded01::modal_share_motorcycle,ok,min=0.04589568366527 max=0.0820378602124363
+SC11,bounded01::modal_share_other,ok,min=0.0316133802512893 max=0.0474294529999999
+SC11,bounded01::modal_share_car_r12,ok,min=0.1571107415094187 max=0.2517150518192176
+SC11,bounded01::modal_share_tax_r12,ok,min=0.1360005675012111 max=0.1881518045801198
+SC11,bounded01::modal_share_bus_r12,ok,min=0.1000330329421634 max=0.3077962111469864
+SC11,bounded01::modal_share_met_r12,ok,min=0.152 max=0.2620969253967977
+SC11,bounded01::modal_share_mot_r12,ok,min=0.1592172390383228 max=0.2150089586063975
+SC11,bounded01::modal_share_oth_r12,ok,min=0.054843717940288 max=0.064160049113083
+SC11,bounded01::brt_share_of_bus,ok,min=0.4 max=0.55
+SC11,plausible::occ_car,ok,min=1.0 threshold=1.0
+SC11,plausible::occ_mot,ok,min=1.28 threshold=1.0
+SC11,plausible::occ_tax,ok,min=4.07 threshold=1.0
+SC11,plausible::occ_bus,ok,min=45.93 threshold=5.0
+SC11,plausible::occ_met,ok,min=876.0 threshold=10.0
+SC11,positive::spd_mot,ok,min=26.299171784160222
+SC11,positive::spd_car,ok,min=22.781811548464315
+SC11,positive::spd_tax,ok,min=21.06650975857901
+SC11,positive::spd_bus,ok,min=17.967188901592607
+SC11,positive::spd_met,ok,min=21.8812
+SC11,positive::travel_time_motorcycle_hours,ok,min=0.3782594930763207
+SC11,positive::travel_time_car_hours,ok,min=0.4148938035718598
+SC11,positive::travel_time_taxi_hours,ok,min=0.4486757680279946
+SC11,positive::travel_time_bus_hours,ok,min=0.4324043722336404
+SC11,positive::travel_time_metro_hours,ok,min=0.3

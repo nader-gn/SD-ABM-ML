@@ -1,0 +1,481 @@
+scenario,geo,group,kpi,unit,mean_2024_2030
+SC0,Region12,main,CO₂ emissions,t/year,229418.01787762457
+SC0,Region12,main,Climate cost,IRR/year,3441270268164.368
+SC0,Region12,main,Congestion index,–,1.2190639211084127
+SC0,Region12,main,Electricity use,kWh/year,72170611.47236809
+SC0,Region12,main,Final energy,MJ/year,3156849604.6597047
+SC0,Region12,main,Health indicator,IRR/year,386949292159077.9
+SC0,Region12,main,Modal share: car,–,0.2125879114120119
+SC0,Region12,main,Modal share: public transport,–,0.3469776162014552
+SC0,Region12,main,NOₓ emissions,t/year,889.5946006566675
+SC0,Region12,main,PM₂.₅ emissions,t/year,29.054050331345394
+SC0,Region12,main,Time loss (car),hours/year,63340245.04057304
+SC0,Region12,main,PCE-weighted VKT,PCE-km/year,999325997.7726593
+SC0,Region12,secondary,Energy: CNG,MJ/year,486418161.47849685
+SC0,Region12,secondary,Energy: diesel,MJ/year,78883814.6890737
+SC0,Region12,secondary,Energy: gasoline,MJ/year,2331733427.1916084
+SC0,Region12,secondary,Municipal budget,IRR/year,25492972518753.945
+SC0,Region12,secondary,Non-public transport trips,trips/year,202109598.22228366
+SC0,Region12,secondary,Population,persons,247791.92857142843
+SC0,Region12,secondary,Public transport trips,trips/year,107359550.66549264
+SC0,Region12,secondary,Trips total (effective),trips/year,309469148.8877763
+SC0,Tehran,main,CO₂ emissions,t/year,16947088.562174026
+SC0,Tehran,main,Climate cost,IRR/year,254206328432610.4
+SC0,Tehran,main,Congestion index,–,0.3998476201608777
+SC0,Tehran,main,Electricity use,kWh/year,1218611645.4225569
+SC0,Tehran,main,Final energy,MJ/year,250904559607.26587
+SC0,Tehran,main,Health indicator,IRR/year,1.2068947218656562e+16
+SC0,Tehran,main,Modal share: car,–,0.5718422086130328
+SC0,Tehran,main,Modal share: public transport,–,0.12224080237775069
+SC0,Tehran,main,NOₓ emissions,t/year,64233.33722408333
+SC0,Tehran,main,PM₂.₅ emissions,t/year,1152.854905384204
+SC0,Tehran,main,Time loss (car),hours/year,911363560.0586444
+SC0,Tehran,main,PCE-weighted VKT,PCE-km/year,71508803483.07695
+SC0,Tehran,secondary,Energy: CNG,MJ/year,29972944175.722897
+SC0,Tehran,secondary,Energy: diesel,MJ/year,1103410886.141622
+SC0,Tehran,secondary,Energy: gasoline,MJ/year,215441202621.88016
+SC0,Tehran,secondary,Municipal budget,IRR/year,3226958546677714.5
+SC0,Tehran,secondary,Non-public transport trips,trips/year,6718216939.975172
+SC0,Tehran,secondary,Population,persons,10228725.477084637
+SC0,Tehran,secondary,Public transport trips,trips/year,935426898.2534068
+SC0,Tehran,secondary,Trips total (effective),trips/year,7653643838.228578
+SC1,Region12,main,CO₂ emissions,t/year,228931.05493768284
+SC1,Region12,main,Climate cost,IRR/year,3433965824065.2427
+SC1,Region12,main,Congestion index,–,1.1913949530825616
+SC1,Region12,main,Electricity use,kWh/year,72604382.64113002
+SC1,Region12,main,Final energy,MJ/year,3147526284.6621084
+SC1,Region12,main,Health indicator,IRR/year,383438620241768.0
+SC1,Region12,main,Modal share: car,–,0.21103038463588472
+SC1,Region12,main,Modal share: public transport,–,0.34878096667595865
+SC1,Region12,main,NOₓ emissions,t/year,887.090050255207
+SC1,Region12,main,PM₂.₅ emissions,t/year,29.012744979603404
+SC1,Region12,main,Time loss (car),hours/year,60651221.82367389
+SC1,Region12,main,PCE-weighted VKT,PCE-km/year,977060628.6397057
+SC1,Region12,secondary,Energy: CNG,MJ/year,485715250.7261651
+SC1,Region12,secondary,Energy: diesel,MJ/year,79336369.31602721
+SC1,Region12,secondary,Energy: gasoline,MJ/year,2321098887.111848
+SC1,Region12,secondary,Municipal budget,IRR/year,25492972518753.945
+SC1,Region12,secondary,Non-public transport trips,trips/year,197530898.0328707
+SC1,Region12,secondary,Population,persons,247791.92857142843
+SC1,Region12,secondary,Public transport trips,trips/year,105789910.70692948
+SC1,Region12,secondary,Trips total (effective),trips/year,303320808.73980016
+SC1,Tehran,main,CO₂ emissions,t/year,16546008.179237543
+SC1,Tehran,main,Climate cost,IRR/year,248190122688563.16
+SC1,Tehran,main,Congestion index,–,0.39077231998516193
+SC1,Tehran,main,Electricity use,kWh/year,1206322909.7433693
+SC1,Tehran,main,Final energy,MJ/year,244912168239.73062
+SC1,Tehran,main,Health indicator,IRR/year,1.1927535993772126e+16
+SC1,Tehran,main,Modal share: car,–,0.5678690804753312
+SC1,Tehran,main,Modal share: public transport,–,0.12452871409315178
+SC1,Tehran,main,NOₓ emissions,t/year,62710.23252785656
+SC1,Tehran,main,PM₂.₅ emissions,t/year,1127.6372423963644
+SC1,Tehran,main,Time loss (car),hours/year,861753863.9681795
+SC1,Tehran,main,PCE-weighted VKT,PCE-km/year,69877862309.31262
+SC1,Tehran,secondary,Energy: CNG,MJ/year,29381668096.760525
+SC1,Tehran,secondary,Energy: diesel,MJ/year,1115432955.684197
+SC1,Tehran,secondary,Energy: gasoline,MJ/year,210072304712.20972
+SC1,Tehran,secondary,Municipal budget,IRR/year,3226958546677714.5
+SC1,Tehran,secondary,Non-public transport trips,trips/year,6567382900.7360735
+SC1,Tehran,secondary,Population,persons,10229648.22873717
+SC1,Tehran,secondary,Public transport trips,trips/year,934218101.8972381
+SC1,Tehran,secondary,Trips total (effective),trips/year,7501601002.633311
+SC10,Region12,main,CO₂ emissions,t/year,223873.40558814988
+SC10,Region12,main,Climate cost,IRR/year,3358101083822.2476
+SC10,Region12,main,Congestion index,–,1.1493689971360708
+SC10,Region12,main,Electricity use,kWh/year,83957009.91290312
+SC10,Region12,main,Final energy,MJ/year,3010079309.726433
+SC10,Region12,main,Health indicator,IRR/year,365725891704200.9
+SC10,Region12,main,Modal share: car,–,0.20073693559459654
+SC10,Region12,main,Modal share: public transport,–,0.389415613998641
+SC10,Region12,main,NOₓ emissions,t/year,790.8247207795426
+SC10,Region12,main,PM₂.₅ emissions,t/year,23.364261351228805
+SC10,Region12,main,Time loss (car),hours/year,54601855.752704866
+SC10,Region12,main,PCE-weighted VKT,PCE-km/year,950194708.6590668
+SC10,Region12,secondary,Energy: CNG,MJ/year,426781891.1868237
+SC10,Region12,secondary,Energy: diesel,MJ/year,81103947.25966498
+SC10,Region12,secondary,Energy: gasoline,MJ/year,2199948235.593493
+SC10,Region12,secondary,Municipal budget,IRR/year,25492972518753.945
+SC10,Region12,secondary,Non-public transport trips,trips/year,188957239.21514907
+SC10,Region12,secondary,Population,persons,247791.92857142843
+SC10,Region12,secondary,Public transport trips,trips/year,120511909.67262724
+SC10,Region12,secondary,Trips total (effective),trips/year,309469148.8877763
+SC10,Tehran,main,CO₂ emissions,t/year,15995133.736098286
+SC10,Tehran,main,Climate cost,IRR/year,239927006041474.28
+SC10,Tehran,main,Congestion index,–,0.3769879907311951
+SC10,Tehran,main,Electricity use,kWh/year,1627900987.0920346
+SC10,Tehran,main,Final energy,MJ/year,234523132128.7437
+SC10,Tehran,main,Health indicator,IRR/year,1.1578596924920028e+16
+SC10,Tehran,main,Modal share: car,–,0.519799423987172
+SC10,Tehran,main,Modal share: public transport,–,0.17667368516181714
+SC10,Tehran,main,NOₓ emissions,t/year,59164.87654864846
+SC10,Tehran,main,PM₂.₅ emissions,t/year,1043.1829791035955
+SC10,Tehran,main,Time loss (car),hours/year,779961706.3698405
+SC10,Tehran,main,PCE-weighted VKT,PCE-km/year,67410649870.29737
+SC10,Tehran,secondary,Energy: CNG,MJ/year,27767030672.26169
+SC10,Tehran,secondary,Energy: diesel,MJ/year,1767256152.9981549
+SC10,Tehran,secondary,Energy: gasoline,MJ/year,199128401749.95255
+SC10,Tehran,secondary,Municipal budget,IRR/year,3226958546677714.5
+SC10,Tehran,secondary,Non-public transport trips,trips/year,6302110252.91458
+SC10,Tehran,secondary,Population,persons,10232360.853982698
+SC10,Tehran,secondary,Public transport trips,trips/year,1354253756.077973
+SC10,Tehran,secondary,Trips total (effective),trips/year,7656364008.992554
+SC11,Region12,main,CO₂ emissions,t/year,223841.06690116492
+SC11,Region12,main,Climate cost,IRR/year,3357616003517.4736
+SC11,Region12,main,Congestion index,–,1.1407446735034728
+SC11,Region12,main,Electricity use,kWh/year,80017987.29405081
+SC11,Region12,main,Final energy,MJ/year,3029396546.431554
+SC11,Region12,main,Health indicator,IRR/year,367223685013005.0
+SC11,Region12,main,Modal share: car,–,0.2002277418213064
+SC11,Region12,main,Modal share: public transport,–,0.3751959305272363
+SC11,Region12,main,NOₓ emissions,t/year,811.4599336054869
+SC11,Region12,main,PM₂.₅ emissions,t/year,24.796775777697142
+SC11,Region12,main,Time loss (car),hours/year,53853801.03455782
+SC11,Region12,main,PCE-weighted VKT,PCE-km/year,955212975.1473103
+SC11,Region12,secondary,Energy: CNG,MJ/year,436845996.71838045
+SC11,Region12,secondary,Energy: diesel,MJ/year,79938269.9143742
+SC11,Region12,secondary,Energy: gasoline,MJ/year,2224547525.540216
+SC11,Region12,secondary,Municipal budget,IRR/year,25492972518753.945
+SC11,Region12,secondary,Non-public transport trips,trips/year,190851634.91930225
+SC11,Region12,secondary,Population,persons,247791.92857142843
+SC11,Region12,secondary,Public transport trips,trips/year,114621092.87228954
+SC11,Region12,secondary,Trips total (effective),trips/year,305472727.7915918
+SC11,Tehran,main,CO₂ emissions,t/year,15791762.61766079
+SC11,Tehran,main,Climate cost,IRR/year,236876439264911.84
+SC11,Tehran,main,Congestion index,–,0.3741592503999612
+SC11,Tehran,main,Electricity use,kWh/year,1536186049.048481
+SC11,Tehran,main,Final energy,MJ/year,231916641360.16553
+SC11,Tehran,main,Health indicator,IRR/year,1.1548638315801222e+16
+SC11,Tehran,main,Modal share: car,–,0.5187820618838418
+SC11,Tehran,main,Modal share: public transport,–,0.17031731871056813
+SC11,Tehran,main,NOₓ emissions,t/year,58780.197143088255
+SC11,Tehran,main,PM₂.₅ emissions,t/year,1048.5729502004829
+SC11,Tehran,main,Time loss (car),hours/year,763683973.0738305
+SC11,Tehran,main,PCE-weighted VKT,PCE-km/year,66906636293.75871
+SC11,Tehran,secondary,Energy: CNG,MJ/year,27695122503.19277
+SC11,Tehran,secondary,Energy: diesel,MJ/year,1725546142.4991603
+SC11,Tehran,secondary,Energy: gasoline,MJ/year,196965702937.8991
+SC11,Tehran,secondary,Municipal budget,IRR/year,3226958546677714.5
+SC11,Tehran,secondary,Non-public transport trips,trips/year,6268483434.716902
+SC11,Tehran,secondary,Population,persons,10232370.492197737
+SC11,Tehran,secondary,Public transport trips,trips/year,1288570756.9101508
+SC11,Tehran,secondary,Trips total (effective),trips/year,7557054191.627052
+SC2,Region12,main,CO₂ emissions,t/year,227845.53510724925
+SC2,Region12,main,Climate cost,IRR/year,3417683026608.739
+SC2,Region12,main,Congestion index,–,1.2126321917054657
+SC2,Region12,main,Electricity use,kWh/year,73073229.31585011
+SC2,Region12,main,Final energy,MJ/year,3128158390.8880816
+SC2,Region12,main,Health indicator,IRR/year,385549526605103.4
+SC2,Region12,main,Modal share: car,–,0.20735832123255138
+SC2,Region12,main,Modal share: public transport,–,0.35113034355079736
+SC2,Region12,main,NOₓ emissions,t/year,884.0323470064692
+SC2,Region12,main,PM₂.₅ emissions,t/year,29.18735774665011
+SC2,Region12,main,Time loss (car),hours/year,61214659.381796904
+SC2,Region12,main,PCE-weighted VKT,PCE-km/year,992447203.6243538
+SC2,Region12,secondary,Energy: CNG,MJ/year,479558505.44168395
+SC2,Region12,secondary,Energy: diesel,MJ/year,80169380.3460746
+SC2,Region12,secondary,Energy: gasoline,MJ/year,2305366879.5632625
+SC2,Region12,secondary,Municipal budget,IRR/year,25492972518753.945
+SC2,Region12,secondary,Non-public transport trips,trips/year,200806910.24437645
+SC2,Region12,secondary,Population,persons,247791.92857142843
+SC2,Region12,secondary,Public transport trips,trips/year,108662238.64339985
+SC2,Region12,secondary,Trips total (effective),trips/year,309469148.8877763
+SC2,Tehran,main,CO₂ emissions,t/year,16838699.394640505
+SC2,Tehran,main,Climate cost,IRR/year,252580490919607.56
+SC2,Tehran,main,Congestion index,–,0.39773804112178296
+SC2,Tehran,main,Electricity use,kWh/year,1246334972.7300224
+SC2,Tehran,main,Final energy,MJ/year,249168317753.36087
+SC2,Tehran,main,Health indicator,IRR/year,1.2036345932710286e+16
+SC2,Tehran,main,Modal share: car,–,0.5637949662306758
+SC2,Tehran,main,Modal share: public transport,–,0.12580878349488356
+SC2,Tehran,main,NOₓ emissions,t/year,63831.212148497296
+SC2,Tehran,main,PM₂.₅ emissions,t/year,1153.3913049113023
+SC2,Tehran,main,Time loss (car),hours/year,895952242.6553905
+SC2,Tehran,main,PCE-weighted VKT,PCE-km/year,71143575897.55966
+SC2,Tehran,secondary,Energy: CNG,MJ/year,29948473119.22811
+SC2,Tehran,secondary,Energy: diesel,MJ/year,1140343999.758967
+SC2,Tehran,secondary,Energy: gasoline,MJ/year,213592694732.54572
+SC2,Tehran,secondary,Municipal budget,IRR/year,3226958546677714.5
+SC2,Tehran,secondary,Non-public transport trips,trips/year,6690565096.697545
+SC2,Tehran,secondary,Population,persons,10228889.044856738
+SC2,Tehran,secondary,Public transport trips,trips/year,963201131.1165074
+SC2,Tehran,secondary,Trips total (effective),trips/year,7653766227.814052
+SC3,Region12,main,CO₂ emissions,t/year,228231.559639161
+SC3,Region12,main,Climate cost,IRR/year,3423473394587.415
+SC3,Region12,main,Congestion index,–,1.2179194247703118
+SC3,Region12,main,Electricity use,kWh/year,72711485.80054884
+SC3,Region12,main,Final energy,MJ/year,3136645205.1965437
+SC3,Region12,main,Health indicator,IRR/year,386339202932613.06
+SC3,Region12,main,Modal share: car,–,0.20809400998383218
+SC3,Region12,main,Modal share: public transport,–,0.34934449587109284
+SC3,Region12,main,NOₓ emissions,t/year,885.3305163095711
+SC3,Region12,main,PM₂.₅ emissions,t/year,29.124864268816275
+SC3,Region12,main,Time loss (car),hours/year,61853305.19313333
+SC3,Region12,main,PCE-weighted VKT,PCE-km/year,994971663.9720148
+SC3,Region12,secondary,Energy: CNG,MJ/year,485541427.1861156
+SC3,Region12,secondary,Energy: diesel,MJ/year,79554071.8027954
+SC3,Region12,secondary,Energy: gasoline,MJ/year,2309788357.3256564
+SC3,Region12,secondary,Municipal budget,IRR/year,25492972518753.945
+SC3,Region12,secondary,Non-public transport trips,trips/year,201366526.60669622
+SC3,Region12,secondary,Population,persons,247791.92857142843
+SC3,Region12,secondary,Public transport trips,trips/year,108102622.28108004
+SC3,Region12,secondary,Trips total (effective),trips/year,309469148.8877763
+SC3,Tehran,main,CO₂ emissions,t/year,16925824.976942077
+SC3,Tehran,main,Climate cost,IRR/year,253887374654131.16
+SC3,Tehran,main,Congestion index,–,0.39947223038094204
+SC3,Tehran,main,Electricity use,kWh/year,1223422955.5089152
+SC3,Tehran,main,Final energy,MJ/year,250572087331.11063
+SC3,Tehran,main,Health indicator,IRR/year,1.2062429714743808e+16
+SC3,Tehran,main,Modal share: car,–,0.5701249363933243
+SC3,Tehran,main,Modal share: public transport,–,0.12283603266489965
+SC3,Tehran,main,NOₓ emissions,t/year,64153.996002825086
+SC3,Tehran,main,PM₂.₅ emissions,t/year,1152.8207471791554
+SC3,Tehran,main,Time loss (car),hours/year,908366973.9780703
+SC3,Tehran,main,PCE-weighted VKT,PCE-km/year,71441105590.53209
+SC3,Tehran,secondary,Energy: CNG,MJ/year,29996371480.14848
+SC3,Tehran,secondary,Energy: diesel,MJ/year,1108941514.8878598
+SC3,Tehran,secondary,Energy: gasoline,MJ/year,215062451696.2422
+SC3,Tehran,secondary,Municipal budget,IRR/year,3226958546677714.5
+SC3,Tehran,secondary,Non-public transport trips,trips/year,6713594371.833707
+SC3,Tehran,secondary,Population,persons,10228757.883063113
+SC3,Tehran,secondary,Public transport trips,trips/year,940073714.1682674
+SC3,Tehran,secondary,Trips total (effective),trips/year,7653668086.001974
+SC4,Region12,main,CO₂ emissions,t/year,226764.17998121466
+SC4,Region12,main,Climate cost,IRR/year,3401462699718.2197
+SC4,Region12,main,Congestion index,–,1.206570215220962
+SC4,Region12,main,Electricity use,kWh/year,76421458.31037506
+SC4,Region12,main,Final energy,MJ/year,3095126215.8378177
+SC4,Region12,main,Health indicator,IRR/year,383804658304824.4
+SC4,Region12,main,Modal share: car,–,0.2058959957644786
+SC4,Region12,main,Modal share: public transport,–,0.36733680184835665
+SC4,Region12,main,NOₓ emissions,t/year,872.2993838816589
+SC4,Region12,main,PM₂.₅ emissions,t/year,28.600791752082834
+SC4,Region12,main,Time loss (car),hours/year,60371270.92122792
+SC4,Region12,main,PCE-weighted VKT,PCE-km/year,972174993.1829046
+SC4,Region12,secondary,Energy: CNG,MJ/year,470458187.176696
+SC4,Region12,secondary,Energy: diesel,MJ/year,84535171.36132728
+SC4,Region12,secondary,Energy: gasoline,MJ/year,2265015607.382444
+SC4,Region12,secondary,Municipal budget,IRR/year,25492972518753.945
+SC4,Region12,secondary,Non-public transport trips,trips/year,195806346.62779453
+SC4,Region12,secondary,Population,persons,247791.92857142843
+SC4,Region12,secondary,Public transport trips,trips/year,113662802.25998177
+SC4,Region12,secondary,Trips total (effective),trips/year,309469148.8877763
+SC4,Tehran,main,CO₂ emissions,t/year,16828772.915754024
+SC4,Tehran,main,Climate cost,IRR/year,252431593736310.34
+SC4,Tehran,main,Congestion index,–,0.39574973941845953
+SC4,Tehran,main,Electricity use,kWh/year,1305714396.1004825
+SC4,Tehran,main,Final energy,MJ/year,248690607406.8213
+SC4,Tehran,main,Health indicator,IRR/year,1.2020994639854486e+16
+SC4,Tehran,main,Modal share: car,–,0.5648987902840376
+SC4,Tehran,main,Modal share: public transport,–,0.13287051856197465
+SC4,Tehran,main,NOₓ emissions,t/year,63683.17868271206
+SC4,Tehran,main,PM₂.₅ emissions,t/year,1147.4192184755
+SC4,Tehran,main,Time loss (car),hours/year,889677361.4581816
+SC4,Tehran,main,PCE-weighted VKT,PCE-km/year,70775821141.05008
+SC4,Tehran,secondary,Energy: CNG,MJ/year,29630408417.18096
+SC4,Tehran,secondary,Energy: diesel,MJ/year,1209295327.9734035
+SC4,Tehran,secondary,Energy: gasoline,MJ/year,213150331835.70517
+SC4,Tehran,secondary,Municipal budget,IRR/year,3226958546677714.5
+SC4,Tehran,secondary,Non-public transport trips,trips/year,6637272990.337306
+SC4,Tehran,secondary,Population,persons,10229154.096295686
+SC4,Tehran,secondary,Public transport trips,trips/year,1016691562.2159398
+SC4,Tehran,secondary,Trips total (effective),trips/year,7653964552.5532465
+SC5,Region12,main,CO₂ emissions,t/year,227492.5359928021
+SC5,Region12,main,Climate cost,IRR/year,3412388039892.0317
+SC5,Region12,main,Congestion index,–,1.1650705929999
+SC5,Region12,main,Electricity use,kWh/year,77063224.49816868
+SC5,Region12,main,Final energy,MJ/year,3102839894.3428206
+SC5,Region12,main,Health indicator,IRR/year,378506351256683.1
+SC5,Region12,main,Modal share: car,–,0.20808310389242615
+SC5,Region12,main,Modal share: public transport,–,0.36676605247288435
+SC5,Region12,main,NOₓ emissions,t/year,871.7559087988454
+SC5,Region12,main,PM₂.₅ emissions,t/year,28.355332660961214
+SC5,Region12,main,Time loss (car),hours/year,57793485.677405514
+SC5,Region12,main,PCE-weighted VKT,PCE-km/year,979455683.43617
+SC5,Region12,secondary,Energy: CNG,MJ/year,469353652.3340702
+SC5,Region12,secondary,Energy: diesel,MJ/year,82715831.32240057
+SC5,Region12,secondary,Energy: gasoline,MJ/year,2273342802.492943
+SC5,Region12,secondary,Municipal budget,IRR/year,25492972518753.945
+SC5,Region12,secondary,Non-public transport trips,trips/year,195973509.11938396
+SC5,Region12,secondary,Population,persons,247791.92857142843
+SC5,Region12,secondary,Public transport trips,trips/year,113495639.76839234
+SC5,Region12,secondary,Trips total (effective),trips/year,309469148.8877763
+SC5,Tehran,main,CO₂ emissions,t/year,16184884.33111101
+SC5,Tehran,main,Climate cost,IRR/year,242773264966665.16
+SC5,Tehran,main,Congestion index,–,0.38213804531830126
+SC5,Tehran,main,Electricity use,kWh/year,1439959843.7152805
+SC5,Tehran,main,Final energy,MJ/year,238488325296.04764
+SC5,Tehran,main,Health indicator,IRR/year,1.179877312669632e+16
+SC5,Tehran,main,Modal share: car,–,0.5287772643418888
+SC5,Tehran,main,Modal share: public transport,–,0.16294229507291783
+SC5,Tehran,main,NOₓ emissions,t/year,61209.01930931342
+SC5,Tehran,main,PM₂.₅ emissions,t/year,1119.0500599232748
+SC5,Tehran,main,Time loss (car),hours/year,805046828.6879815
+SC5,Tehran,main,PCE-weighted VKT,PCE-km/year,68332218552.91417
+SC5,Tehran,secondary,Energy: CNG,MJ/year,29395477847.78233
+SC5,Tehran,secondary,Energy: diesel,MJ/year,1778608736.326544
+SC5,Tehran,secondary,Energy: gasoline,MJ/year,202130383274.56372
+SC5,Tehran,secondary,Municipal budget,IRR/year,3226958546677714.5
+SC5,Tehran,secondary,Non-public transport trips,trips/year,6406195759.4026165
+SC5,Tehran,secondary,Population,persons,10230695.16410507
+SC5,Tehran,secondary,Public transport trips,trips/year,1248921897.1390023
+SC5,Tehran,secondary,Trips total (effective),trips/year,7655117656.541618
+SC6,Region12,main,CO₂ emissions,t/year,228108.4879842012
+SC6,Region12,main,Climate cost,IRR/year,3421627319763.0186
+SC6,Region12,main,Congestion index,–,1.180349033652583
+SC6,Region12,main,Electricity use,kWh/year,71532955.33001646
+SC6,Region12,main,Final energy,MJ/year,3139412945.446294
+SC6,Region12,main,Health indicator,IRR/year,371226107376698.6
+SC6,Region12,main,Modal share: car,–,0.21088751170269313
+SC6,Region12,main,Modal share: public transport,–,0.3521795075008072
+SC6,Region12,main,NOₓ emissions,t/year,812.650292750922
+SC6,Region12,main,PM₂.₅ emissions,t/year,22.959023408339785
+SC6,Region12,main,Time loss (car),hours/year,59759154.07953114
+SC6,Region12,main,PCE-weighted VKT,PCE-km/year,994129431.1925433
+SC6,Region12,secondary,Energy: CNG,MJ/year,482188491.03931874
+SC6,Region12,secondary,Energy: diesel,MJ/year,84616385.44367158
+SC6,Region12,secondary,Energy: gasoline,MJ/year,2315089429.775244
+SC6,Region12,secondary,Municipal budget,IRR/year,25492972518753.945
+SC6,Region12,secondary,Non-public transport trips,trips/year,200495352.51841417
+SC6,Region12,secondary,Population,persons,247791.92857142843
+SC6,Region12,secondary,Public transport trips,trips/year,108973796.36936213
+SC6,Region12,secondary,Trips total (effective),trips/year,309469148.8877763
+SC6,Tehran,main,CO₂ emissions,t/year,16263197.921101434
+SC6,Tehran,main,Climate cost,IRR/year,243947968816521.5
+SC6,Tehran,main,Congestion index,–,0.38714930685181465
+SC6,Tehran,main,Electricity use,kWh/year,1251390351.6660364
+SC6,Tehran,main,Final energy,MJ/year,240607401668.09164
+SC6,Tehran,main,Health indicator,IRR/year,1.1677549164003246e+16
+SC6,Tehran,main,Modal share: car,–,0.5354612683009092
+SC6,Tehran,main,Modal share: public transport,–,0.14977342044494216
+SC6,Tehran,main,NOₓ emissions,t/year,60406.25656718926
+SC6,Tehran,main,PM₂.₅ emissions,t/year,1037.750132966525
+SC6,Tehran,main,Time loss (car),hours/year,827343620.6032234
+SC6,Tehran,main,PCE-weighted VKT,PCE-km/year,69229802959.5312
+SC6,Tehran,secondary,Energy: CNG,MJ/year,29959631240.792194
+SC6,Tehran,secondary,Energy: diesel,MJ/year,1842607434.2728941
+SC6,Tehran,secondary,Energy: gasoline,MJ/year,204300157727.02884
+SC6,Tehran,secondary,Municipal budget,IRR/year,3226958546677714.5
+SC6,Tehran,secondary,Non-public transport trips,trips/year,6507868492.797813
+SC6,Tehran,secondary,Population,persons,10231496.63847767
+SC6,Tehran,secondary,Public transport trips,trips/year,1147848866.943103
+SC6,Tehran,secondary,Trips total (effective),trips/year,7655717359.740916
+SC7,Region12,main,CO₂ emissions,t/year,226826.01915545444
+SC7,Region12,main,Climate cost,IRR/year,3402390287331.817
+SC7,Region12,main,Congestion index,–,1.2191220750370746
+SC7,Region12,main,Electricity use,kWh/year,78373142.35573228
+SC7,Region12,main,Final energy,MJ/year,3076341024.821566
+SC7,Region12,main,Health indicator,IRR/year,383081931906729.44
+SC7,Region12,main,Modal share: car,–,0.2125879114120119
+SC7,Region12,main,Modal share: public transport,–,0.3469776162014552
+SC7,Region12,main,NOₓ emissions,t/year,864.8869185443257
+SC7,Region12,main,PM₂.₅ emissions,t/year,28.6870205493993
+SC7,Region12,main,Time loss (car),hours/year,63345016.533733524
+SC7,Region12,main,PCE-weighted VKT,PCE-km/year,999325997.7726593
+SC7,Region12,secondary,Energy: CNG,MJ/year,408577464.2261346
+SC7,Region12,secondary,Energy: diesel,MJ/year,60985892.51260175
+SC7,Region12,secondary,Energy: gasoline,MJ/year,2324634355.602193
+SC7,Region12,secondary,Municipal budget,IRR/year,25492972518753.945
+SC7,Region12,secondary,Non-public transport trips,trips/year,202109598.22228366
+SC7,Region12,secondary,Population,persons,247791.92857142843
+SC7,Region12,secondary,Public transport trips,trips/year,107359550.66549264
+SC7,Region12,secondary,Trips total (effective),trips/year,309469148.8877763
+SC7,Tehran,main,CO₂ emissions,t/year,16842784.42865214
+SC7,Tehran,main,Climate cost,IRR/year,252641766429782.1
+SC7,Tehran,main,Congestion index,–,0.3998666943944564
+SC7,Tehran,main,Electricity use,kWh/year,1448125242.468493
+SC7,Tehran,main,Final energy,MJ/year,247674533746.7385
+SC7,Tehran,main,Health indicator,IRR/year,1.1997004954511948e+16
+SC7,Tehran,main,Modal share: car,–,0.5718422086130328
+SC7,Tehran,main,Modal share: public transport,–,0.12224080237775069
+SC7,Tehran,main,NOₓ emissions,t/year,63420.69256296374
+SC7,Tehran,main,PM₂.₅ emissions,t/year,1144.2474348903036
+SC7,Tehran,main,Time loss (car),hours/year,911466081.6227878
+SC7,Tehran,main,PCE-weighted VKT,PCE-km/year,71512238416.91296
+SC7,Tehran,secondary,Energy: CNG,MJ/year,26472759259.241047
+SC7,Tehran,secondary,Energy: diesel,MJ/year,856360884.2298005
+SC7,Tehran,secondary,Energy: gasoline,MJ/year,215132162730.38107
+SC7,Tehran,secondary,Municipal budget,IRR/year,3226958546677714.5
+SC7,Tehran,secondary,Non-public transport trips,trips/year,6718538338.361971
+SC7,Tehran,secondary,Population,persons,10229214.503195588
+SC7,Tehran,secondary,Public transport trips,trips/year,935471413.6541282
+SC7,Tehran,secondary,Trips total (effective),trips/year,7654009752.016099
+SC8,Region12,main,CO₂ emissions,t/year,224525.28911826343
+SC8,Region12,main,Climate cost,IRR/year,3367879336773.952
+SC8,Region12,main,Congestion index,–,1.1398462810830463
+SC8,Region12,main,Electricity use,kWh/year,76382782.26206844
+SC8,Region12,main,Final energy,MJ/year,3060858499.0893784
+SC8,Region12,main,Health indicator,IRR/year,368114899284052.8
+SC8,Region12,main,Modal share: car,–,0.2010756420996779
+SC8,Region12,main,Modal share: public transport,–,0.37559616638331955
+SC8,Region12,main,NOₓ emissions,t/year,818.3304946455958
+SC8,Region12,main,PM₂.₅ emissions,t/year,24.686738634652777
+SC8,Region12,main,Time loss (car),hours/year,54013698.181401595
+SC8,Region12,main,PCE-weighted VKT,PCE-km/year,943530577.4452173
+SC8,Region12,secondary,Energy: CNG,MJ/year,464502122.9105752
+SC8,Region12,secondary,Energy: diesel,MJ/year,91341685.41340962
+SC8,Region12,secondary,Energy: gasoline,MJ/year,2230036674.621947
+SC8,Region12,secondary,Municipal budget,IRR/year,25492972518753.945
+SC8,Region12,secondary,Non-public transport trips,trips/year,189395590.96853337
+SC8,Region12,secondary,Population,persons,247791.92857142843
+SC8,Region12,secondary,Public transport trips,trips/year,113925217.77126677
+SC8,Region12,secondary,Trips total (effective),trips/year,303320808.73980016
+SC8,Tehran,main,CO₂ emissions,t/year,15752279.980984287
+SC8,Tehran,main,Climate cost,IRR/year,236284199714764.28
+SC8,Tehran,main,Congestion index,–,0.37386458162578284
+SC8,Tehran,main,Electricity use,kWh/year,1327021073.5127637
+SC8,Tehran,main,Final energy,MJ/year,232512108089.05698
+SC8,Tehran,main,Health indicator,IRR/year,1.1551278090299164e+16
+SC8,Tehran,main,Modal share: car,–,0.5235286193809362
+SC8,Tehran,main,Modal share: public transport,–,0.16476764340729194
+SC8,Tehran,main,NOₓ emissions,t/year,58884.36160138679
+SC8,Tehran,main,PM₂.₅ emissions,t/year,1039.128388645578
+SC8,Tehran,main,Time loss (car),hours/year,762293515.1203785
+SC8,Tehran,main,PCE-weighted VKT,PCE-km/year,66845968661.0118
+SC8,Tehran,secondary,Energy: CNG,MJ/year,28973098811.865826
+SC8,Tehran,secondary,Energy: diesel,MJ/year,1995200031.8208408
+SC8,Tehran,secondary,Energy: gasoline,MJ/year,196766533380.7244
+SC8,Tehran,secondary,Municipal budget,IRR/year,3226958546677714.5
+SC8,Tehran,secondary,Non-public transport trips,trips/year,6266592352.725207
+SC8,Tehran,secondary,Population,persons,10232397.256718302
+SC8,Tehran,secondary,Public transport trips,trips/year,1237002851.8162808
+SC8,Tehran,secondary,Trips total (effective),trips/year,7503595204.541489
+SC9,Region12,main,CO₂ emissions,t/year,224420.185260393
+SC9,Region12,main,Climate cost,IRR/year,3366302778905.895
+SC9,Region12,main,Congestion index,–,1.150855322364439
+SC9,Region12,main,Electricity use,kWh/year,80113127.3135701
+SC9,Region12,main,Final energy,MJ/year,3040696880.653749
+SC9,Region12,main,Health indicator,IRR/year,372271427055095.0
+SC9,Region12,main,Modal share: car,–,0.1986560571763263
+SC9,Region12,main,Modal share: public transport,–,0.380946761510035
+SC9,Region12,main,NOₓ emissions,t/year,835.8132358014291
+SC9,Region12,main,PM₂.₅ emissions,t/year,26.581121426824584
+SC9,Region12,main,Time loss (car),hours/year,54136156.161136664
+SC9,Region12,main,PCE-weighted VKT,PCE-km/year,958839396.4811363
+SC9,Region12,secondary,Energy: CNG,MJ/year,454860030.47440463
+SC9,Region12,secondary,Energy: diesel,MJ/year,86630439.48254073
+SC9,Region12,secondary,Energy: gasoline,MJ/year,2210799152.3679514
+SC9,Region12,secondary,Municipal budget,IRR/year,25492972518753.945
+SC9,Region12,secondary,Non-public transport trips,trips/year,191567936.92250142
+SC9,Region12,secondary,Population,persons,247791.92857142843
+SC9,Region12,secondary,Public transport trips,trips/year,117901211.96527486
+SC9,Region12,secondary,Trips total (effective),trips/year,309469148.8877763
+SC9,Tehran,main,CO₂ emissions,t/year,15998327.110736238
+SC9,Tehran,main,Climate cost,IRR/year,239974906661043.6
+SC9,Tehran,main,Congestion index,–,0.3774754988881158
+SC9,Tehran,main,Electricity use,kWh/year,1517873393.5940742
+SC9,Tehran,main,Final energy,MJ/year,235321485816.66144
+SC9,Tehran,main,Health indicator,IRR/year,1.1682137471245724e+16
+SC9,Tehran,main,Modal share: car,–,0.5161336446020711
+SC9,Tehran,main,Modal share: public transport,–,0.1735988326790827
+SC9,Tehran,main,NOₓ emissions,t/year,60038.224675224235
+SC9,Tehran,main,PM₂.₅ emissions,t/year,1090.102053027479
+SC9,Tehran,main,Time loss (car),hours/year,778630144.1701653
+SC9,Tehran,main,PCE-weighted VKT,PCE-km/year,67509112956.154015
+SC9,Tehran,secondary,Energy: CNG,MJ/year,29140766073.89667
+SC9,Tehran,secondary,Energy: diesel,MJ/year,1906440110.4632194
+SC9,Tehran,secondary,Energy: gasoline,MJ/year,198809935415.36285
+SC9,Tehran,secondary,Municipal budget,IRR/year,3226958546677714.5
+SC9,Tehran,secondary,Non-public transport trips,trips/year,6324602932.755366
+SC9,Tehran,secondary,Population,persons,10231493.648881452
+SC9,Tehran,secondary,Public transport trips,trips/year,1331112190.02018
+SC9,Tehran,secondary,Trips total (effective),trips/year,7655715122.775546

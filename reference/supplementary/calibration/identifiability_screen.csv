@@ -1,0 +1,8 @@
+parameter,identified_in_historical_objective,reference_loss,max_abs_loss_change_over_plusminus10_percent,best_one_at_a_time_shift_percent,best_one_at_a_time_loss,recovery_treatment
+alpha_delay_congestion,False,0.0827564009579615,0.0,-10.0,0.0827564009579615,fixed at deployed value
+alpha_delay_congestion_r12,True,0.0827564009579615,0.000555159785092893,10.0,0.0822012411728686,searched
+car_energy_closure_factor,False,0.0827564009579615,0.0,-10.0,0.0827564009579615,fixed at deployed value
+congestion_multiplier_r12,True,0.0827564009579615,0.0009213825627863992,10.0,0.0818350183951751,searched
+spd_bus_history_calibration_factor,True,0.0827564009579615,0.0038017794162714946,10.0,0.07895462154169,searched
+spd_car_history_calibration_factor,True,0.0827564009579615,0.0019828103928194035,5.0,0.0823607728859375,searched
+spd_mot_history_calibration_factor,False,0.0827564009579615,0.0,-10.0,0.0827564009579615,fixed at deployed value

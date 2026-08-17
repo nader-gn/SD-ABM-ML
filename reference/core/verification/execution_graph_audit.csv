@@ -1,0 +1,12 @@
+metric,value,evidence
+total_agents,706,BASE_CONFIG.yaml
+input_agents,237,BASE_CONFIG.yaml
+expression_agents,441,BASE_CONFIG.yaml
+stock_agents,16,BASE_CONFIG.yaml
+ml_agents,12,BASE_CONFIG.yaml
+functional_ABM_roles,57,functional_role_registry.csv
+functional_SD_roles,400,functional_role_registry.csv + structural rule
+execution_group_count,706,engine execution graph
+multi_node_execution_groups,0,engine execution graph
+self_loops,0,engine execution graph
+delayed_nodes,44,delayed_evaluation selector

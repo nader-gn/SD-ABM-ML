@@ -1,0 +1,39 @@
+check,status,detail,value
+timeseries_row_count,ok,"expected 3360, found 3360",3360.0
+timeseries_unique_keys,ok,duplicate keyed rows: 0,0.0
+timeseries_scenarios_complete,ok,"scenarios=['SC0', 'SC1', 'SC10', 'SC11', 'SC2', 'SC3', 'SC4', 'SC5', 'SC6', 'SC7', 'SC8', 'SC9']",
+timeseries_years_complete,ok,"years=[2024, 2025, 2026, 2027, 2028, 2029, 2030]",
+timeseries_geos_complete,ok,"geos=['Region 12', 'Tehran']",
+timeseries_kpis_complete,ok,kpi_count=20,
+modal_share_partition_sum,ok,max abs(sum-1)=4.441e-16,4.440892098500626e-16
+modal_share_bounds,ok,"min=0.031232, max=0.622330",
+kpi_public_share_identity,ok,max diff=9.714e-17,9.71445146547012e-17
+kpi_car_share_identity,ok,max diff=0.000e+00,0.0
+kpi_total_trips_identity,ok,max diff=0.000e+00,0.0
+kpi_public_trips_identity,ok,max diff=2.384e-07,2.384185791015625e-07
+kpi_nonpublic_trips_identity,ok,max diff=2.980e-08,2.9802322387695312e-08
+kpi_energy_components_identity,ok,max diff=3.052e-05,3.0517578125e-05
+kpi_nox_identity,ok,max diff=7.276e-12,7.275957614183426e-12
+kpi_pm25_identity,ok,max diff=2.274e-13,2.2737367544323206e-13
+kpi_health_cost_city_identity,ok,max diff=8.000e+00,8.0
+kpi_health_cost_region12_identity,ok,max diff=6.250e-02,0.0625
+kpi_region12_budget_empirical_proxy_share,ok,max diff to configured 0.79% Tehran-budget share=3.906e-03,0.00390625
+energy_balance_city,ok,max residual=1.221e-04,0.0001220703125
+energy_balance_region12,ok,max residual=9.537e-07,9.5367431640625e-07
+kpi_nonpublic_trips_nonnegative,ok,minimum=185012533.552,185012533.552206
+selected_long_matches_timeseries,ok,"selected_long_rows=3360, base_rows=3360",
+selected_long_values_match,ok,max diff=0.0,0.0
+selected_mean_matches_long,ok,"max diff=0.03125, max rel diff=2.5892896400849908e-18",0.03125
+selected_2030_matches_long,ok,max diff=0.0,0.0
+auc_row_count,ok,"expected 576, found 576",576.0
+auc_no_misleading_display_labels,ok,forbidden labels=[],
+auc_no_missing_values,ok,missing auc values=0,0.0
+config_core_metric_labels_materialized,ok,missing=[],0.0
+config_implementation_metric_labels_materialized,ok,missing=[],0.0
+config_implementation_metric_labels_materialized,ok,missing=[],0.0
+config_auc_metric_labels_materialized,ok,missing=[],0.0
+config_opex_canonical_labels_present,ok,"pt_opex=PT OPEX, net_recurrent=Net recurrent public burden",
+modal_share_plot_input_sim_sync,ok,max diff=0.000e+00,0.0
+modal_share_plot_input_obs_sync,ok,max diff=0.000e+00,0.0
+nonnegative_kpis_nonnegative,ok,minimum across nonnegative KPIs=0.119969,0.1199689036509356
+no_active_misleading_labels,ok,found=[],

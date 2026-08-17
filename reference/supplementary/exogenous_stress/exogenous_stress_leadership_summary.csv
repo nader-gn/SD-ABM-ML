@@ -1,0 +1,9 @@
+stress_variant,geo,equal_weight_leader,equal_weight_score,weight_robust_leader,win_probability
+demand_high,Region12,SC8,52.30045777050893,SC8,0.601315
+demand_high,Tehran,SC8,55.55046559174369,SC8,0.933985
+demand_low,Region12,SC8,52.41993731059854,SC8,0.600625
+demand_low,Tehran,SC8,55.99533033880517,SC8,0.933355
+fiscal_adverse,Region12,SC8,52.12279441389258,SC8,0.5964
+fiscal_adverse,Tehran,SC8,55.360687465296444,SC8,0.93155
+fiscal_favorable,Region12,SC8,52.641863215363855,SC8,0.60839
+fiscal_favorable,Tehran,SC8,55.70364276729358,SC8,0.93658

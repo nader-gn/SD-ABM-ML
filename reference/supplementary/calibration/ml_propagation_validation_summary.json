@@ -1,0 +1,22 @@
+{
+  "observed_ml_descendants": 31,
+  "modal_outputs": 12,
+  "additional_downstream_outputs": 17,
+  "conditional_anchors_not_counted_as_independent_validation": 2,
+  "historical_window": [
+    2013,
+    2021
+  ],
+  "terminal_holdout_window": [
+    2022,
+    2023
+  ],
+  "downstream_historical_median_nrmse_percent": 8.706294059033862,
+  "downstream_holdout_median_nrmse_percent": 6.903555650912256,
+  "downstream_holdout_nrmse_le_10_percent": 12,
+  "downstream_holdout_nrmse_le_15_percent": 15,
+  "downstream_holdout_nrmse_le_20_percent": 16,
+  "largest_downstream_holdout_nrmse_percent": 27.305511924583772,
+  "largest_downstream_holdout_nrmse_agent": "trips_metro",
+  "interpretation": "Validation of observed closed-loop consequences that are graph descendants of fitted ML modal priors. These outcomes are hybrid outputs and also depend on ABM, SD, exogenous, anchored, and calibrated quantities; the diagnostic evaluates propagated reconstruction, not causal attribution to ML alone. The 2022-2023 test is conditional on known non-target terminal-year inputs."
+}

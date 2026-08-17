@@ -1,0 +1,13 @@
+scenario,rows,common_columns,max_absolute_difference,max_relative_difference,max_abs_column,max_abs_year,passes_relative_1e-10
+SC0,19,799,4.0,6.030884508995465e-16,system_cost_transport_IRR_year,2027.0,True
+SC1,19,799,4.0,6.030884508995465e-16,external_cost_IRR_year,2029.0,True
+SC2,19,799,4.0,6.030884508995465e-16,system_cost_transport_IRR_year,2027.0,True
+SC3,19,799,4.0,6.030884508995465e-16,cost_congestion_IRR_year,2030.0,True
+SC4,19,799,1.0,6.030884508995465e-16,economic_value_deaths_IRR,2014.0,True
+SC5,19,799,4.0,6.030884508995465e-16,system_cost_transport_IRR_year,2027.0,True
+SC6,19,799,4.0,6.030884508995465e-16,system_cost_transport_IRR_year,2028.0,True
+SC7,19,799,4.0,6.030884508995465e-16,system_cost_transport_IRR_year,2027.0,True
+SC8,19,799,4.0,7.020158976874674e-16,external_cost_IRR_year,2027.0,True
+SC9,19,799,4.0,6.030884508995465e-16,external_cost_IRR_year,2030.0,True
+SC10,19,799,4.0,6.030884508995465e-16,system_cost_transport_IRR_year,2029.0,True
+SC11,19,799,1.0,6.030884508995465e-16,economic_value_deaths_IRR,2014.0,True

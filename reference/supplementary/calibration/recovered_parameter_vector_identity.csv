@@ -1,0 +1,8 @@
+parameter,deployed_value,recovered_value,absolute_difference,relative_difference_percent,status
+spd_car_history_calibration_factor,1.0,1.0,0.0,0.0,IDENTICAL
+spd_bus_history_calibration_factor,1.0,1.0,0.0,0.0,IDENTICAL
+congestion_multiplier_r12,3.04882125,3.04882125,0.0,0.0,IDENTICAL
+alpha_delay_congestion_r12,1.0,1.0,0.0,0.0,IDENTICAL
+spd_mot_history_calibration_factor,1.2342167770719277,1.2342167770719277,0.0,0.0,FIXED_AFTER_IDENTIFIABILITY_SCREEN
+alpha_delay_congestion,1.0,1.0,0.0,0.0,FIXED_AFTER_IDENTIFIABILITY_SCREEN
+car_energy_closure_factor,1.3808737260621238,1.3808737260621238,0.0,0.0,FIXED_AFTER_IDENTIFIABILITY_SCREEN

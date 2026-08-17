@@ -1,0 +1,707 @@
+agent_id,structural_type,functional_role,category,subcategory,region,dependencies_count,dependencies,target_column,expression
+YEAR_GRG,input,Input/exogenous or initialized state,time,calendar,city,0,,,
+days_per_year,input,Input/exogenous or initialized state,time,time_indexing,city,0,,,
+GDP_city_IRR_year,expression,SD stock-flow / aggregate consequence / feedback,economic,macro,city,1,GDP_city_obs,,GDP_city_obs if YEAR_GRG<=2023 else (4.91e+16 * ((1+0.284355340399971) ** (YEAR_GRG-2023)))
+GDP_per_capita_IRR_year,expression,SD stock-flow / aggregate consequence / feedback,economic,macro,city,0,,,"GDP_city_IRR_year / max(population_city, 1)"
+inflation_index_effective,stock,SD stock-flow / aggregate consequence / feedback,economic,prices_inflation_fx,city,0,,,
+inflation_index_effective_growth,expression,SD stock-flow / aggregate consequence / feedback,economic,prices_inflation_fx,city,0,,,0 if time == start_year else (inflation_index_effective * inflation_rate_effective)
+inflation_rate,input,Input/exogenous or initialized state,economic,prices_inflation_fx,city,0,,,
+inflation_rate_effective,expression,SD stock-flow / aggregate consequence / feedback,economic,prices_inflation_fx,city,0,,,inflation_rate * (1 + (inflation_shock_factor - 1) * is_inflation_shock_active)
+inflation_shock_factor,input,Input/exogenous or initialized state,economic,prices_inflation_fx,city,0,,,
+inflation_shock_start_year,input,Input/exogenous or initialized state,economic,prices_inflation_fx,city,0,,,
+is_inflation_shock_active,expression,SD stock-flow / aggregate consequence / feedback,economic,prices_inflation_fx,city,0,,,1 if time >= inflation_shock_start_year else 0
+cost_index_rhc_fare,stock,SD stock-flow / aggregate consequence / feedback,economic,prices_inflation_fx,city,0,,,
+cost_index_rhc_fare_growth,expression,SD stock-flow / aggregate consequence / feedback,economic,prices_inflation_fx,city,0,,,0 if online_taxi_active == 0 else (cost_index_rhc_fare * rhc_fare_rate)
+rhc_fare_rate,input,Input/exogenous or initialized state,economic,prices_inflation_fx,city,0,,,
+cost_index_bus_fare,stock,SD stock-flow / aggregate consequence / feedback,economic,prices_inflation_fx,city,0,,,
+cost_index_bus_fare_growth,expression,SD stock-flow / aggregate consequence / feedback,economic,prices_inflation_fx,city,0,,,0 if time == start_year else (cost_index_bus_fare * bus_fare_rate)
+bus_fare_rate,input,Input/exogenous or initialized state,economic,prices_inflation_fx,city,0,,,
+cost_index_metro_fare,stock,SD stock-flow / aggregate consequence / feedback,economic,prices_inflation_fx,city,0,,,
+cost_index_metro_fare_growth,expression,SD stock-flow / aggregate consequence / feedback,economic,prices_inflation_fx,city,0,,,0 if time == start_year else (cost_index_metro_fare * metro_fare_rate)
+metro_fare_rate,input,Input/exogenous or initialized state,economic,prices_inflation_fx,city,0,,,
+municipal_budget_IRR_year,input,Input/exogenous or initialized state,economic,budget,city,0,,,
+transport_budget_share,input,Input/exogenous or initialized state,economic,macro,city,0,,,
+transport_budget_IRR_year,expression,SD stock-flow / aggregate consequence / feedback,economic,macro,city,0,,,municipal_budget_IRR_year * transport_budget_share
+public_investment_rate_transport,input,Input/exogenous or initialized state,economic,macro,city,0,,,
+CAPEX_transport_affordable_IRR_year,expression,SD stock-flow / aggregate consequence / feedback,economic,macro,city,5,transport_budget_IRR_year | public_investment_rate_transport | traffic_plan_revenue_earmark_share_transport | traffic_plan_revenue_collection_factor | traffic_plan_revenue_IRR_year,,transport_budget_IRR_year * public_investment_rate_transport + traffic_plan_revenue_earmark_share_transport * traffic_plan_revenue_collection_factor * traffic_plan_revenue_IRR_year
+share_CAPEX_bike_infra,input,Input/exogenous or initialized state,economic,capex,city,0,,,
+share_CAPEX_road,input,Input/exogenous or initialized state,economic,capex,city,0,,,
+share_CAPEX_brt_infra,input,Input/exogenous or initialized state,economic,capex,city,0,,,
+share_CAPEX_metro_infra,input,Input/exogenous or initialized state,economic,capex,city,0,,,
+share_CAPEX_infra_total,expression,SD stock-flow / aggregate consequence / feedback,economic,capex,city,0,,,share_CAPEX_road + share_CAPEX_metro_infra + share_CAPEX_brt_infra + share_CAPEX_bike_infra
+discount_rate_transport,input,Input/exogenous or initialized state,economic,capex,city,0,,,
+lifetime_car_years,input,Input/exogenous or initialized state,economic,capex,city,0,,,
+lifetime_bus_years,input,Input/exogenous or initialized state,economic,capex,city,0,,,
+lifetime_metro_train_years,input,Input/exogenous or initialized state,economic,capex,city,0,,,
+lifetime_infrastructure_years,input,Input/exogenous or initialized state,economic,capex,city,0,,,
+CRF_bus,expression,SD stock-flow / aggregate consequence / feedback,economic,capex,city,0,,,discount_rate_transport * (1 + discount_rate_transport) ** lifetime_bus_years / ((1 + discount_rate_transport) ** lifetime_bus_years - 1)
+CRF_car,expression,SD stock-flow / aggregate consequence / feedback,economic,capex,city,0,,,discount_rate_transport * (1 + discount_rate_transport) ** lifetime_car_years / ((1 + discount_rate_transport) ** lifetime_car_years - 1)
+CRF_infrastructure,expression,SD stock-flow / aggregate consequence / feedback,economic,capex,city,0,,,discount_rate_transport * (1 + discount_rate_transport) ** lifetime_infrastructure_years / ((1 + discount_rate_transport) ** lifetime_infrastructure_years - 1)
+CRF_metro_rolling,expression,SD stock-flow / aggregate consequence / feedback,economic,capex,city,0,,,discount_rate_transport * (1 + discount_rate_transport) ** lifetime_metro_train_years / ((1 + discount_rate_transport) ** lifetime_metro_train_years - 1)
+len_bik,stock,SD stock-flow / aggregate consequence / feedback,transport,infrastructure,city,0,,,
+len_bus,input,Input/exogenous or initialized state,transport,network_supply,city,0,,,
+len_brt,stock,SD stock-flow / aggregate consequence / feedback,transport,infrastructure,city,0,,,
+len_hwy,stock,SD stock-flow / aggregate consequence / feedback,transport,infrastructure,city,0,,,
+len_met,stock,SD stock-flow / aggregate consequence / feedback,transport,infrastructure,city,0,,,
+len_bik_obs_city,input,Input/exogenous or initialized state,transport,infrastructure,city,0,,,
+len_brt_obs_city,input,Input/exogenous or initialized state,transport,infrastructure,city,0,,,
+len_hwy_obs_city,input,Input/exogenous or initialized state,transport,infrastructure,city,0,,,
+len_met_obs_city,input,Input/exogenous or initialized state,transport,infrastructure,city,0,,,
+len_bik_hist_target,expression,SD stock-flow / aggregate consequence / feedback,transport,infrastructure,city,3,YEAR_GRG | len_bik_obs_city | len_bik,,len_bik_obs_city if (YEAR_GRG<=2023 and len_bik_obs_city>0) else len_bik
+len_brt_hist_target,expression,SD stock-flow / aggregate consequence / feedback,transport,infrastructure,city,3,YEAR_GRG | len_brt_obs_city | len_brt,,len_brt_obs_city if (YEAR_GRG<=2023 and len_brt_obs_city>0) else len_brt
+len_hwy_hist_target,expression,SD stock-flow / aggregate consequence / feedback,transport,infrastructure,city,3,YEAR_GRG | len_hwy_obs_city | len_hwy,,len_hwy_obs_city if (YEAR_GRG<=2023 and len_hwy_obs_city>0) else len_hwy
+len_met_hist_target,expression,SD stock-flow / aggregate consequence / feedback,transport,infrastructure,city,3,YEAR_GRG | len_met_obs_city | len_met,,len_met_obs_city if (YEAR_GRG<=2023 and len_met_obs_city>0) else len_met
+hist_add_bike_km_year,expression,SD stock-flow / aggregate consequence / feedback,transport,network_supply,city,3,YEAR_GRG | len_bik_hist_target | len_bik,,"0 if YEAR_GRG>2023 else max(0, len_bik_hist_target - len_bik)"
+hist_remove_bike_km_year,expression,SD stock-flow / aggregate consequence / feedback,transport,network_supply,city,3,YEAR_GRG | len_bik_hist_target | len_bik,,"0 if YEAR_GRG>2023 else max(0, len_bik - len_bik_hist_target)"
+hist_add_BRT_km_year,expression,SD stock-flow / aggregate consequence / feedback,transport,network_supply,city,3,YEAR_GRG | len_brt_hist_target | len_brt,,"0 if YEAR_GRG>2023 else max(0, len_brt_hist_target - len_brt)"
+hist_remove_BRT_km_year,expression,SD stock-flow / aggregate consequence / feedback,transport,network_supply,city,3,YEAR_GRG | len_brt_hist_target | len_brt,,"0 if YEAR_GRG>2023 else max(0, len_brt - len_brt_hist_target)"
+hist_add_road_km_year,expression,SD stock-flow / aggregate consequence / feedback,transport,network_supply,city,3,YEAR_GRG | len_hwy_hist_target | len_hwy,,"0 if YEAR_GRG>2023 else max(0, len_hwy_hist_target - len_hwy)"
+hist_remove_road_km_year,expression,SD stock-flow / aggregate consequence / feedback,transport,network_supply,city,3,YEAR_GRG | len_hwy_hist_target | len_hwy,,"0 if YEAR_GRG>2023 else max(0, len_hwy - len_hwy_hist_target)"
+hist_add_metro_km_year,expression,SD stock-flow / aggregate consequence / feedback,transport,network_supply,city,3,YEAR_GRG | len_met_hist_target | len_met,,"0 if YEAR_GRG>2023 else max(0, len_met_hist_target - len_met)"
+hist_remove_metro_km_year,expression,SD stock-flow / aggregate consequence / feedback,transport,network_supply,city,3,YEAR_GRG | len_met_hist_target | len_met,,"0 if YEAR_GRG>2023 else max(0, len_met - len_met_hist_target)"
+len_hwy_r12,expression,SD stock-flow / aggregate consequence / feedback,transport,infrastructure,region 12,2,len_hwy_r12_obs | len_hwy,,len_hwy_r12_obs if YEAR_GRG<=2023 else (len_hwy*0.12376024148339802)
+len_bus_r12,expression,SD stock-flow / aggregate consequence / feedback,transport,infrastructure,region 12,2,len_bus_r12_obs | len_bus,,len_bus_r12_obs if YEAR_GRG<=2023 else (len_bus*0.01595051261829653)
+len_brt_r12,expression,SD stock-flow / aggregate consequence / feedback,transport,infrastructure,region 12,2,len_brt_r12_obs | len_brt,,len_brt_r12_obs if YEAR_GRG<=2023 else (len_brt*0.028048780487804875)
+len_met_r12,expression,SD stock-flow / aggregate consequence / feedback,transport,infrastructure,region 12,2,len_met_r12_obs | len_met,,len_met_r12_obs if YEAR_GRG<=2023 else (len_met*0.07394366197183098)
+expansion_bike_km_year,expression,SD stock-flow / aggregate consequence / feedback,transport,network_supply,city,5,YEAR_GRG | CAPEX_transport_affordable_IRR_year | share_CAPEX_bike_infra | capex_bike_infrastructure_IRR_per_km_indexed | CRF_infrastructure,,"0 if YEAR_GRG<=2023 else (CAPEX_transport_affordable_IRR_year * share_CAPEX_bike_infra / max(capex_bike_infrastructure_IRR_per_km_indexed * CRF_infrastructure, 1.0))"
+expansion_road_km_year,expression,SD stock-flow / aggregate consequence / feedback,transport,network_supply,city,5,YEAR_GRG | CAPEX_transport_affordable_IRR_year | share_CAPEX_road | capex_road_upgrade_IRR_per_km_indexed | CRF_infrastructure,,"0 if YEAR_GRG<=2023 else (CAPEX_transport_affordable_IRR_year * share_CAPEX_road / max(capex_road_upgrade_IRR_per_km_indexed * CRF_infrastructure, 1.0))"
+expansion_BRT_km_year,expression,SD stock-flow / aggregate consequence / feedback,transport,network_supply,city,5,YEAR_GRG | CAPEX_transport_affordable_IRR_year | share_CAPEX_brt_infra | capex_brt_infrastructure_IRR_per_km_indexed | CRF_infrastructure,,"0 if YEAR_GRG<=2023 else (CAPEX_transport_affordable_IRR_year * share_CAPEX_brt_infra / max(capex_brt_infrastructure_IRR_per_km_indexed * CRF_infrastructure, 1.0))"
+expansion_metro_km_year,expression,SD stock-flow / aggregate consequence / feedback,transport,network_supply,city,5,YEAR_GRG | CAPEX_transport_affordable_IRR_year | share_CAPEX_metro_infra | capex_metro_infrastructure_IRR_per_km_indexed | CRF_infrastructure,,"0 if YEAR_GRG<=2023 else (CAPEX_transport_affordable_IRR_year * share_CAPEX_metro_infra / max(capex_metro_infrastructure_IRR_per_km_indexed * CRF_infrastructure, 1.0))"
+capex_bike_infrastructure_IRR_per_km_base,input,Input/exogenous or initialized state,economic,capex,city,0,,,
+capex_bike_infrastructure_IRR_per_km_indexed,expression,SD stock-flow / aggregate consequence / feedback,economic,capex,city,0,,,capex_bike_infrastructure_IRR_per_km_base * cost_index_0
+CAPEX_bike_infrastructure_IRR_year,expression,SD stock-flow / aggregate consequence / feedback,economic,capex,city,0,,,expansion_bike_km_year * capex_bike_infrastructure_IRR_per_km_indexed * CRF_infrastructure
+capex_road_upgrade_IRR_per_km_base,input,Input/exogenous or initialized state,economic,capex,city,0,,,
+capex_road_upgrade_IRR_per_km_indexed,expression,SD stock-flow / aggregate consequence / feedback,economic,capex,city,0,,,capex_road_upgrade_IRR_per_km_base * cost_index_0
+CAPEX_road_IRR_year,expression,SD stock-flow / aggregate consequence / feedback,economic,capex,city,0,,,expansion_road_km_year * capex_road_upgrade_IRR_per_km_indexed * CRF_infrastructure
+capex_brt_infrastructure_IRR_per_km_base,input,Input/exogenous or initialized state,economic,capex,city,0,,,
+capex_brt_infrastructure_IRR_per_km_indexed,expression,SD stock-flow / aggregate consequence / feedback,economic,capex,city,0,,,capex_brt_infrastructure_IRR_per_km_base * cost_index_20
+CAPEX_brt_infrastructure_IRR_year,expression,SD stock-flow / aggregate consequence / feedback,economic,capex,city,3,expansion_BRT_km_year | capex_brt_infrastructure_IRR_per_km_indexed | CRF_infrastructure,,expansion_BRT_km_year * capex_brt_infrastructure_IRR_per_km_indexed * CRF_infrastructure
+capex_metro_infrastructure_IRR_per_km_base,input,Input/exogenous or initialized state,economic,capex,city,0,,,
+capex_metro_infrastructure_IRR_per_km_indexed,expression,SD stock-flow / aggregate consequence / feedback,economic,capex,city,0,,,capex_metro_infrastructure_IRR_per_km_base * cost_index_50
+CAPEX_metro_infrastructure_IRR_year,expression,SD stock-flow / aggregate consequence / feedback,economic,capex,city,3,expansion_metro_km_year | capex_metro_infrastructure_IRR_per_km_indexed | CRF_infrastructure,,expansion_metro_km_year * capex_metro_infrastructure_IRR_per_km_indexed * CRF_infrastructure
+CAPEX_bus_IRR_year,expression,SD stock-flow / aggregate consequence / feedback,economic,capex,city,0,,,(bus_purchases_vehicles_year * CRF_bus * (share_bus_diesel * capex_bus_IRR_per_vehicle_indexed +   share_bus_EV * capex_bus_EV_IRR_per_vehicle_indexed))
+CAPEX_brt_IRR_year,expression,SD stock-flow / aggregate consequence / feedback,economic,capex,city,0,,,(brt_purchases_vehicles_year * CRF_bus * (share_brt_bus_diesel * capex_brt_bus_IRR_per_vehicle_indexed +   share_brt_bus_EV * capex_brt_bus_EV_IRR_per_vehicle_indexed))
+CAPEX_car_IRR_year,expression,SD stock-flow / aggregate consequence / feedback,economic,capex,city,0,,,car_purchases_vehicles_year * CRF_car * (  (1 - share_car_EV) * capex_car_IRR_per_vehicle_indexed +   share_car_EV * capex_car_EV_IRR_per_vehicle_indexed)
+CAPEX_metro_rolling_IRR_year,expression,SD stock-flow / aggregate consequence / feedback,economic,capex,city,0,,,(metro_car_purchases_vehicles_year * capex_metro_train_IRR_per_trainset_indexed * CRF_metro_rolling)
+CAPEX_taxi_IRR_year,expression,SD stock-flow / aggregate consequence / feedback,economic,capex,city,0,,,taxi_purchases_vehicles_year * CRF_car * (  (1 - share_taxi_EV) * capex_taxi_IRR_per_vehicle_indexed +   share_taxi_EV * capex_taxi_EV_IRR_per_vehicle_indexed)
+CAPEX_transport_IRR_year,expression,SD stock-flow / aggregate consequence / feedback,economic,capex,city,0,,,CAPEX_car_IRR_year + CAPEX_taxi_IRR_year + CAPEX_bus_IRR_year + CAPEX_brt_IRR_year + CAPEX_metro_rolling_IRR_year + CAPEX_metro_infrastructure_IRR_year + CAPEX_brt_infrastructure_IRR_year + CAPEX_road_IRR_year + CAPEX_bike_infrastructure_IRR_year
+capex_brt_bus_IRR_per_vehicle_base,input,Input/exogenous or initialized state,economic,capex,city,0,,,
+capex_brt_bus_IRR_per_vehicle_indexed,expression,SD stock-flow / aggregate consequence / feedback,economic,capex,city,0,,,capex_brt_bus_IRR_per_vehicle_base * cost_index_70
+capex_brt_bus_EV_IRR_per_vehicle_base,input,Input/exogenous or initialized state,economic,capex,city,0,,,
+capex_brt_bus_EV_IRR_per_vehicle_indexed,expression,SD stock-flow / aggregate consequence / feedback,economic,capex,city,0,,,capex_brt_bus_EV_IRR_per_vehicle_base * cost_index_100
+capex_bus_EV_IRR_per_vehicle_base,input,Input/exogenous or initialized state,economic,capex,city,0,,,
+capex_bus_EV_IRR_per_vehicle_indexed,expression,SD stock-flow / aggregate consequence / feedback,economic,capex,city,0,,,capex_bus_EV_IRR_per_vehicle_base * cost_index_100
+capex_bus_IRR_per_vehicle_base,input,Input/exogenous or initialized state,economic,capex,city,0,,,
+capex_bus_IRR_per_vehicle_indexed,expression,SD stock-flow / aggregate consequence / feedback,economic,capex,city,0,,,capex_bus_IRR_per_vehicle_base * cost_index_70
+capex_car_EV_IRR_per_vehicle_base,input,Input/exogenous or initialized state,economic,capex,city,0,,,
+capex_car_EV_IRR_per_vehicle_indexed,expression,SD stock-flow / aggregate consequence / feedback,economic,capex,city,0,,,capex_car_EV_IRR_per_vehicle_base * cost_index_100
+capex_car_IRR_per_vehicle_base,input,Input/exogenous or initialized state,economic,capex,city,0,,,
+capex_car_IRR_per_vehicle_indexed,expression,SD stock-flow / aggregate consequence / feedback,economic,capex,city,0,,,capex_car_IRR_per_vehicle_base * cost_index_50
+capex_metro_train_IRR_per_trainset_base,input,Input/exogenous or initialized state,economic,capex,city,0,,,
+capex_metro_train_IRR_per_trainset_indexed,expression,SD stock-flow / aggregate consequence / feedback,economic,capex,city,0,,,capex_metro_train_IRR_per_trainset_base * cost_index_80
+capex_parking_structure_IRR_per_space_base,input,Input/exogenous or initialized state,economic,capex,city,0,,,
+capex_parking_structure_IRR_per_space_indexed,expression,SD stock-flow / aggregate consequence / feedback,economic,capex,city,0,,,capex_parking_structure_IRR_per_space_base * cost_index_20
+opex_parking_structure_IRR_per_space_base,input,Input/exogenous or initialized state,economic,capex,city,0,,,
+opex_parking_structure_IRR_per_space_indexed,expression,SD stock-flow / aggregate consequence / feedback,economic,capex,city,0,,,opex_parking_structure_IRR_per_space_base * cost_index_0
+fee_parking_IRR_per_space_hour_base,input,Input/exogenous or initialized state,economic,capex,city,0,,,
+fee_parking_IRR_per_space_hour_indexed,expression,SD stock-flow / aggregate consequence / feedback,economic,capex,city,0,,,fee_parking_IRR_per_space_hour_base * cost_index_0
+capex_taxi_EV_IRR_per_vehicle_base,input,Input/exogenous or initialized state,economic,capex,city,0,,,
+capex_taxi_EV_IRR_per_vehicle_indexed,expression,SD stock-flow / aggregate consequence / feedback,economic,capex,city,0,,,capex_taxi_EV_IRR_per_vehicle_base * cost_index_70
+capex_taxi_IRR_per_vehicle_base,input,Input/exogenous or initialized state,economic,capex,city,0,,,
+capex_taxi_IRR_per_vehicle_indexed,expression,SD stock-flow / aggregate consequence / feedback,economic,capex,city,0,,,capex_taxi_IRR_per_vehicle_base * cost_index_50
+OPEX_BRT_IRR_year,expression,SD stock-flow / aggregate consequence / feedback,economic,opex,city,0,,,(vkm_BRT * opex_BRT_IRR_km_indexed)
+OPEX_bus_IRR_year,expression,SD stock-flow / aggregate consequence / feedback,economic,opex,city,0,,,(vkm_bus * opex_bus_IRR_km_indexed)
+OPEX_car_IRR_year,expression,SD stock-flow / aggregate consequence / feedback,economic,opex,city,0,,,vkm_car * opex_car_IRR_km_indexed
+OPEX_metro_IRR_year,expression,SD stock-flow / aggregate consequence / feedback,economic,opex,city,0,,,(vkm_metro * opex_metro_IRR_km_indexed)
+OPEX_taxi_IRR_year,expression,SD stock-flow / aggregate consequence / feedback,economic,opex,city,0,,,vkm_taxi * opex_taxi_IRR_km_indexed
+OPEX_transport_IRR_year,expression,SD stock-flow / aggregate consequence / feedback,economic,opex,city,0,,,OPEX_car_IRR_year + OPEX_taxi_IRR_year + OPEX_bus_IRR_year + OPEX_BRT_IRR_year + OPEX_metro_IRR_year
+AF_NO2,expression,SD stock-flow / aggregate consequence / feedback,social,health_impacts,city,0,,,"safe_div((RR_NO2 - 1), RR_NO2)"
+AF_PM25,expression,SD stock-flow / aggregate consequence / feedback,social,health_impacts,city,0,,,"safe_div((RR_PM25 - 1), RR_PM25)"
+AF_PM25_adult,expression,SD stock-flow / aggregate consequence / feedback,social,health_impacts,city,0,,,(RR_PM25_adult - 1) / RR_PM25_adult
+AF_PM25_child,expression,SD stock-flow / aggregate consequence / feedback,social,health_impacts,city,0,,,(RR_PM25_child - 1) / RR_PM25_child
+CO2_CNG_kg_year,expression,SD stock-flow / aggregate consequence / feedback,environment,climate_co2,city,0,,,fuel_CNG_kg_year * EF_CO2_CNG_kg_kg
+CO2_diesel_kg_year,expression,SD stock-flow / aggregate consequence / feedback,environment,climate_co2,city,0,,,fuel_diesel_bus_litre_year * EF_CO2_diesel_kg_litre
+CO2_gasoline_kg_year,expression,SD stock-flow / aggregate consequence / feedback,environment,climate_co2,city,0,,,fuel_gasoline_litre_year * EF_CO2_gasoline_kg_litre
+CO2_grid_kg_year,expression,SD stock-flow / aggregate consequence / feedback,environment,climate_co2,city,0,,,electricity_transport_kWh_year * EF_CO2_grid_kg_kWh
+CO2_intensity_g_pkm,expression,SD stock-flow / aggregate consequence / feedback,environment,climate_co2,city,0,,,"(CO2_kg_year * 1000) / max(pkm_total, 1)"
+CO2_kg_year,expression,SD stock-flow / aggregate consequence / feedback,environment,climate_co2,city,0,,,CO2_gasoline_kg_year + CO2_diesel_kg_year + CO2_CNG_kg_year + CO2_grid_kg_year
+CO2_t_year,expression,SD stock-flow / aggregate consequence / feedback,environment,climate_co2,city,0,,,CO2_kg_year / 1000
+CR_NO2_mortality,input,Input/exogenous or initialized state,social,health_impacts,city,0,,,
+CR_PM25_mortality_adult,input,Input/exogenous or initialized state,social,health_impacts,city,0,,,
+CR_PM25_mortality_child,input,Input/exogenous or initialized state,social,health_impacts,city,0,,,
+CR_PM25_respiratory_admission,input,Input/exogenous or initialized state,social,health_impacts,city,0,,,
+EF_CO2_CNG_kg_kg,input,Input/exogenous or initialized state,environment,climate_co2,city,0,,,
+EF_CO2_diesel_kg_litre,input,Input/exogenous or initialized state,environment,climate_co2,city,0,,,
+EF_CO2_gasoline_kg_litre,input,Input/exogenous or initialized state,environment,climate_co2,city,0,,,
+EF_CO2_grid_kg_kWh,input,Input/exogenous or initialized state,environment,climate_co2,city,0,,,
+EF_NOx_bus_g_km,input,Input/exogenous or initialized state,environment,emissions_city,city,0,,,
+EF_NOx_car_g_km,input,Input/exogenous or initialized state,environment,emissions_city,city,0,,,
+EF_NOx_motorcycle_g_km,input,Input/exogenous or initialized state,environment,emissions_city,city,0,,,
+EF_NOx_taxi_g_km,input,Input/exogenous or initialized state,environment,emissions_city,city,0,,,
+EF_PM25_bus_g_km,input,Input/exogenous or initialized state,environment,emissions_city,city,0,,,
+EF_PM25_car_g_km,input,Input/exogenous or initialized state,environment,emissions_city,city,0,,,
+EF_PM25_motorcycle_g_km,input,Input/exogenous or initialized state,environment,emissions_city,city,0,,,
+EF_PM25_taxi_g_km,input,Input/exogenous or initialized state,environment,emissions_city,city,0,,,
+EF_SO2_bus_g_km,input,Input/exogenous or initialized state,environment,emissions_city,city,0,,,
+EF_SO2_car_g_km,input,Input/exogenous or initialized state,environment,emissions_city,city,0,,,
+EF_SO2_motorcycle_g_km,input,Input/exogenous or initialized state,environment,emissions_city,city,0,,,
+EF_SO2_taxi_g_km,input,Input/exogenous or initialized state,environment,emissions_city,city,0,,,
+EF_grid_NOx_g_kWh,input,Input/exogenous or initialized state,environment,emissions_city,city,0,,,
+EF_grid_PM25_g_kWh,input,Input/exogenous or initialized state,environment,emissions_city,city,0,,,
+EF_grid_SO2_g_kWh,input,Input/exogenous or initialized state,environment,emissions_city,city,0,,,
+EV_share_vkm_weighted,expression,SD stock-flow / aggregate consequence / feedback,environment,energy_use,city,0,,,"(vkm_car_EV + vkm_taxi_EV + vkm_motorcycle_EV + vkm_bus_EV) / max(vkm_car + vkm_taxi + vkm_motorcycle + vkm_bus, 1)"
+LHV_CNG_MJ_kg,input,Input/exogenous or initialized state,environment,energy_use,city,0,,,
+LHV_diesel_MJ_litre,input,Input/exogenous or initialized state,environment,energy_use,city,0,,,
+LHV_electricity_MJ_kWh,input,Input/exogenous or initialized state,environment,energy_use,city,0,,,
+LHV_gasoline_MJ_litre,input,Input/exogenous or initialized state,environment,energy_use,city,0,,,
+NO2_background_ugm3,input,Input/exogenous or initialized state,environment,air_quality,city,0,,,
+NO2_threshold_ugm3,input,Input/exogenous or initialized state,environment,air_quality,city,0,,,
+NOx_g_year,expression,SD stock-flow / aggregate consequence / feedback,environment,emissions_city,city,0,,,NOx_tailpipe_g_year + NOx_grid_g_year
+NOx_grid_g_year,expression,SD stock-flow / aggregate consequence / feedback,environment,emissions_city,city,0,,,EF_grid_NOx_g_kWh * electricity_transport_kWh_year
+NOx_t_year,expression,SD stock-flow / aggregate consequence / feedback,environment,emissions_city,city,0,,,NOx_g_year / 1e6
+NOx_tailpipe_g_year,expression,SD stock-flow / aggregate consequence / feedback,environment,emissions_city,city,0,,,EF_NOx_car_g_km * vkm_car_tailpipe + EF_NOx_bus_g_km * vkm_bus_tailpipe + EF_NOx_taxi_g_km * vkm_taxi_tailpipe + EF_NOx_motorcycle_g_km * vkm_motorcycle_tailpipe
+PM25_background_ugm3,input,Input/exogenous or initialized state,environment,air_quality,city,0,,,
+PM25_g_year,expression,SD stock-flow / aggregate consequence / feedback,environment,emissions_city,city,0,,,PM25_tailpipe_g_year + PM25_grid_g_year
+PM25_grid_g_year,expression,SD stock-flow / aggregate consequence / feedback,environment,emissions_city,city,0,,,EF_grid_PM25_g_kWh * electricity_transport_kWh_year
+PM25_t_year,expression,SD stock-flow / aggregate consequence / feedback,environment,emissions_city,city,0,,,PM25_g_year / 1e6
+PM25_t_year_r12,expression,SD stock-flow / aggregate consequence / feedback,environment,emissions_region,region 12,0,,,(EF_PM25_car_g_km * vkm_car_r12 * car_energy_closure_factor * (1 - share_car_EV) + EF_PM25_bus_g_km * vkm_bus_r12 * (1 - share_bus_EV) + EF_PM25_taxi_g_km * vkm_taxi_r12 * (1 - share_taxi_EV) + EF_PM25_motorcycle_g_km * vkm_motorcycle_r12 * (1 - share_motorcycle_EV) + EF_grid_PM25_g_kWh * electricity_kWh_year_r12) / 1e6
+PM25_tailpipe_g_year,expression,SD stock-flow / aggregate consequence / feedback,environment,emissions_city,city,0,,,EF_PM25_car_g_km * vkm_car_tailpipe + EF_PM25_bus_g_km * vkm_bus_tailpipe + EF_PM25_taxi_g_km * vkm_taxi_tailpipe + EF_PM25_motorcycle_g_km * vkm_motorcycle_tailpipe
+PM25_threshold_ugm3,input,Input/exogenous or initialized state,environment,air_quality,city,0,,,
+PT_affordability_ratio,expression,SD stock-flow / aggregate consequence / feedback,economic,fares_revenue,city,0,,,"PT_expenditure_per_person_IRR_year / max(household_income_per_capita_IRR_year, 1)"
+PT_expenditure_per_person_IRR_year,expression,SD stock-flow / aggregate consequence / feedback,economic,fares_revenue,city,0,,,PT_trips_per_person_per_year * (modal_share_bus/modal_share_PT * fare_bus_IRR_trip_indexed + modal_share_metro/modal_share_PT * fare_metro_IRR_trip_indexed)
+OPEX_PT_IRR_year,expression,SD stock-flow / aggregate consequence / feedback,economic,fares_revenue,city,0,,,OPEX_bus_IRR_year + OPEX_BRT_IRR_year + OPEX_metro_IRR_year + cost_energy_PT_IRR_year
+OPEX_PT_deficit_IRR_year,expression,SD stock-flow / aggregate consequence / feedback,economic,public_transport_finance,city,2,OPEX_PT_IRR_year | revenue_transport_public_IRR_year,,"max(OPEX_PT_IRR_year - revenue_transport_public_IRR_year, 0)"
+PT_trips_per_person_per_year,expression,SD stock-flow / aggregate consequence / feedback,economic,fares_revenue,city,0,,,"PT_trips_total / max(population_city, 1)"
+PT_trips_total,expression,SD stock-flow / aggregate consequence / feedback,economic,fares_revenue,city,0,,,trips_bus_total + trips_metro
+RR_NO2,expression,SD stock-flow / aggregate consequence / feedback,social,health_impacts,city,0,,,exp(CR_NO2_mortality * concentration_NO2_excess_ugm3)
+RR_PM25,expression,SD stock-flow / aggregate consequence / feedback,social,health_impacts,city,0,,,exp(CR_PM25_mortality_adult * concentration_PM25_excess_ugm3)
+RR_PM25_adult,expression,SD stock-flow / aggregate consequence / feedback,social,health_impacts,city,0,,,exp(CR_PM25_mortality_adult * concentration_PM25_excess_ugm3)
+RR_PM25_child,expression,SD stock-flow / aggregate consequence / feedback,social,health_impacts,city,0,,,exp(CR_PM25_mortality_child * concentration_PM25_excess_ugm3)
+SO2_g_year,expression,SD stock-flow / aggregate consequence / feedback,environment,emissions_city,city,0,,,SO2_tailpipe_g_year + SO2_grid_g_year
+SO2_grid_g_year,expression,SD stock-flow / aggregate consequence / feedback,environment,emissions_city,city,0,,,EF_grid_SO2_g_kWh * electricity_transport_kWh_year
+SO2_tailpipe_g_year,expression,SD stock-flow / aggregate consequence / feedback,environment,emissions_city,city,0,,,EF_SO2_car_g_km * vkm_car_tailpipe + EF_SO2_bus_g_km * vkm_bus_tailpipe + EF_SO2_taxi_g_km * vkm_taxi_tailpipe + EF_SO2_motorcycle_g_km * vkm_motorcycle_tailpipe
+VOT_IRR_per_hour_base,input,Input/exogenous or initialized state,economic,external_costs,city,0,,,
+VOT_IRR_per_hour_effective,expression,SD stock-flow / aggregate consequence / feedback,economic,external_costs,city,0,,,VOT_IRR_per_hour_base * cost_index_0
+VSL_IRR,input,Input/exogenous or initialized state,social,health_impacts,city,0,,,
+acc_fatl,expression,SD stock-flow / aggregate consequence / feedback,social,safety,city,1,acc_fatl_obs,,acc_fatl_obs if YEAR_GRG<=2023 else (614.0 * ((1+-0.05515154031215952) ** (YEAR_GRG-2023)))
+acc_serious_injuries,input,Input/exogenous or initialized state,social,safety,city,0,,,
+alpha_green_NO2,input,Input/exogenous or initialized state,environment,air_quality,city,0,,,
+alpha_green_PM25,input,Input/exogenous or initialized state,environment,air_quality,city,0,,,
+are_r12,input,Input/exogenous or initialized state,urban,land_use_structure,region 12,0,,,
+baseline_deaths_adult_year,expression,SD stock-flow / aggregate consequence / feedback,social,health_impacts,city,0,,,(population_15_64 + population_65_plus) * mortality_adult_rate
+baseline_deaths_child_year,expression,SD stock-flow / aggregate consequence / feedback,social,health_impacts,city,0,,,population_0_14 * mortality_child_rate
+baseline_deaths_total_year,expression,SD stock-flow / aggregate consequence / feedback,social,health_impacts,city,0,,,baseline_deaths_adult_year + baseline_deaths_child_year
+respiratory_admission_rate_base,input,Input/exogenous or initialized state,social,health_impacts,city,0,,,
+capacity_PCE_per_km_hour,input,Input/exogenous or initialized state,transport,congestion_capacity,city,0,,,
+cars_per_trainset,input,Input/exogenous or initialized state,transport,metro,city,0,,,
+con_dst_r12,input,Input/exogenous or initialized state,transport,region12_performance,region 12,0,,,
+concentration_NO2_excess_ugm3,expression,SD stock-flow / aggregate consequence / feedback,environment,air_quality,city,0,,,"max(concentration_NO2_ugm3 - NO2_threshold_ugm3, 0)"
+concentration_NO2_ugm3,expression,SD stock-flow / aggregate consequence / feedback,environment,air_quality,city,0,,,NO2_background_ugm3 + k_NO2_concentration_effective_ugm3_per_t * NOx_t_year
+concentration_PM25_excess_ugm3,expression,SD stock-flow / aggregate consequence / feedback,environment,air_quality,city,0,,,"max(concentration_PM25_ugm3 - PM25_threshold_ugm3, 0)"
+concentration_PM25_ugm3,expression,SD stock-flow / aggregate consequence / feedback,environment,air_quality,city,0,,,PM25_background_ugm3 + k_PM25_concentration_effective_ugm3_per_t * PM25_t_year
+cost_climate_IRR_year,expression,SD stock-flow / aggregate consequence / feedback,impact,external_costs,city,0,,,CO2_t_year * cost_of_carbon_IRR_t
+cost_congestion_IRR_year,expression,SD stock-flow / aggregate consequence / feedback,economic,external_costs,city,0,,,time_loss_car_hours_year * VOT_IRR_per_hour_effective
+cost_congestion_IRR_year_r12,expression,SD stock-flow / aggregate consequence / feedback,economic,external_costs,region 12,0,,,time_loss_car_hours_year_r12 * VOT_IRR_per_hour_effective
+cost_energy_IRR_year,expression,SD stock-flow / aggregate consequence / feedback,economic,opex,city,0,,,cost_fuel_gasoline_IRR_year + cost_fuel_diesel_IRR_year + cost_fuel_CNG_IRR_year + electricity_cost_transport_IRR_year
+cost_health_IRR_year,expression,SD stock-flow / aggregate consequence / feedback,impact,external_costs,city,0,,,economic_value_deaths_IRR + economic_value_admissions_IRR
+cost_health_IRR_year_r12,expression,SD stock-flow / aggregate consequence / feedback,impact,external_costs,region 12,0,,,cost_health_IRR_year * share_vkm_motorized_r12_city
+cost_hospital_day_IRR_base,input,Input/exogenous or initialized state,social,health_impacts,city,0,,,
+cost_hospital_day_IRR_indexed,expression,SD stock-flow / aggregate consequence / feedback,social,health_impacts,city,0,,,cost_hospital_day_IRR_base * cost_index_0
+cost_index_0,expression,SD stock-flow / aggregate consequence / feedback,economic,prices_inflation_fx,city,0,,,(inflation_index_effective ** (1 - import_share_0)) * (fx_index_effective ** import_share_0)
+cost_index_20,expression,SD stock-flow / aggregate consequence / feedback,economic,prices_inflation_fx,city,0,,,(inflation_index_effective ** (1 - import_share_20)) * (fx_index_effective ** import_share_20)
+cost_index_50,expression,SD stock-flow / aggregate consequence / feedback,economic,prices_inflation_fx,city,0,,,(inflation_index_effective ** (1 - import_share_50)) * (fx_index_effective ** import_share_50)
+cost_index_70,expression,SD stock-flow / aggregate consequence / feedback,economic,prices_inflation_fx,city,0,,,(inflation_index_effective ** (1 - import_share_70)) * (fx_index_effective ** import_share_70)
+cost_index_80,expression,SD stock-flow / aggregate consequence / feedback,economic,prices_inflation_fx,city,0,,,(inflation_index_effective ** (1 - import_share_80)) * (fx_index_effective ** import_share_80)
+cost_index_100,expression,SD stock-flow / aggregate consequence / feedback,economic,prices_inflation_fx,city,0,,,(inflation_index_effective ** (1 - import_share_100)) * (fx_index_effective ** import_share_100)
+cost_per_fatality_IRR,input,Input/exogenous or initialized state,social,safety,city,0,,,
+cost_per_serious_injury_IRR,input,Input/exogenous or initialized state,social,safety,city,0,,,
+external_cost_per_trip_IRR,expression,SD stock-flow / aggregate consequence / feedback,impact,system_costs,city,0,,,"external_cost_IRR_year / max(trips_per_year, 1)"
+cost_road_safety_IRR_year,expression,SD stock-flow / aggregate consequence / feedback,impact,external_costs,city,0,,,acc_fatl * cost_per_fatality_IRR + acc_serious_injuries * cost_per_serious_injury_IRR
+deaths_NO2,expression,SD stock-flow / aggregate consequence / feedback,social,health_impacts,city,0,,,population_city * mortality_adult_rate * AF_NO2
+deaths_PM25,expression,SD stock-flow / aggregate consequence / feedback,social,health_impacts,city,0,,,population_city * mortality_adult_rate * AF_PM25
+deaths_PM25_adult,expression,SD stock-flow / aggregate consequence / feedback,social,health_impacts,city,0,,,(population_15_64 + population_65_plus) * mortality_adult_rate * AF_PM25_adult
+deaths_PM25_child,expression,SD stock-flow / aggregate consequence / feedback,social,health_impacts,city,0,,,population_0_14 * mortality_child_rate * AF_PM25_child
+deaths_total,expression,SD stock-flow / aggregate consequence / feedback,social,health_impacts,city,0,,,deaths_PM25 + deaths_NO2
+dly_r12,expression,SD stock-flow / aggregate consequence / feedback,transport,congestion,region 12,0,,,"min(max(alpha_delay_congestion_r12 * congestion_index_r12, 0.0), 2.0)"
+dly_tot,expression,SD stock-flow / aggregate consequence / feedback,transport,congestion,city,0,,,"min(max(alpha_delay_congestion * congestion_index, 0.0), 2.0)"
+economic_value_admissions_IRR,expression,SD stock-flow / aggregate consequence / feedback,social,health_impacts,city,0,,,respiratory_admissions * cost_hospital_day_IRR_indexed * 5
+economic_value_deaths_IRR,expression,SD stock-flow / aggregate consequence / feedback,social,health_impacts,city,0,,,deaths_total * VSL_IRR
+electricity_bus_kWh_year,expression,SD stock-flow / aggregate consequence / feedback,environment,energy_use,city,0,,,vkm_bus_EV * energy_bus_EV_kWh_km
+electricity_car_kWh_year,expression,SD stock-flow / aggregate consequence / feedback,environment,energy_use,city,0,,,vkm_car_EV * energy_car_EV_kWh_km
+electricity_cost_transport_IRR_year,expression,SD stock-flow / aggregate consequence / feedback,economic,opex,city,0,,,electricity_price_transport_indexed_IRR_kWh * electricity_transport_kWh_year
+electricity_cost_PT_IRR_year,expression,SD stock-flow / aggregate consequence / feedback,economic,opex,city,0,,,electricity_price_transport_indexed_IRR_kWh * (electricity_metro_kWh_year + electricity_bus_kWh_year)
+electricity_metro_kWh_year,expression,SD stock-flow / aggregate consequence / feedback,environment,energy_use,city,0,,,vkm_metro * energy_metro_kWh_km
+electricity_motorcycle_kWh_year,expression,SD stock-flow / aggregate consequence / feedback,environment,energy_use,city,0,,,vkm_motorcycle_EV * energy_motorcycle_EV_kWh_km
+electricity_price_transport_IRR_kWh,input,Input/exogenous or initialized state,economic,prices_inflation_fx,city,0,,,
+electricity_price_transport_indexed_IRR_kWh,expression,SD stock-flow / aggregate consequence / feedback,economic,prices_inflation_fx,city,0,,,electricity_price_transport_IRR_kWh * cost_index_0
+electricity_roadEV_kWh_year,expression,SD stock-flow / aggregate consequence / feedback,environment,energy_use,city,0,,,electricity_car_kWh_year + electricity_taxi_kWh_year + electricity_motorcycle_kWh_year + electricity_bus_kWh_year
+electricity_taxi_kWh_year,expression,SD stock-flow / aggregate consequence / feedback,environment,energy_use,city,0,,,vkm_taxi_EV * energy_taxi_EV_kWh_km
+electricity_transport_kWh_year,expression,SD stock-flow / aggregate consequence / feedback,environment,energy_use,city,0,,,electricity_metro_kWh_year + electricity_roadEV_kWh_year
+energy_CNG_MJ_year,expression,SD stock-flow / aggregate consequence / feedback,environment,energy_use,city,0,,,fuel_CNG_kg_year * LHV_CNG_MJ_kg
+energy_bus_EV_kWh_km,input,Input/exogenous or initialized state,environment,energy_use,city,0,,,
+energy_car_EV_kWh_km,input,Input/exogenous or initialized state,environment,energy_use,city,0,,,
+cost_energy_PT_IRR_year,expression,SD stock-flow / aggregate consequence / feedback,economic,opex,city,0,,,cost_fuel_diesel_IRR_year + cost_fuel_CNG_IRR_year + electricity_cost_PT_IRR_year
+energy_diesel_MJ_year,expression,SD stock-flow / aggregate consequence / feedback,environment,energy_use,city,0,,,fuel_diesel_bus_litre_year * LHV_diesel_MJ_litre
+energy_electricity_MJ_year,expression,SD stock-flow / aggregate consequence / feedback,environment,energy_use,city,0,,,electricity_transport_kWh_year * LHV_electricity_MJ_kWh
+energy_gasoline_MJ_year,expression,SD stock-flow / aggregate consequence / feedback,environment,energy_use,city,0,,,fuel_gasoline_litre_year * LHV_gasoline_MJ_litre
+energy_metro_kWh_km,expression,SD stock-flow / aggregate consequence / feedback,environment,energy_use,city,2,energy_metro_kWh_per_train_km_source | cars_per_trainset,,energy_metro_kWh_per_train_km_source * cars_per_trainset
+energy_metro_kWh_per_train_km_source,input,Input/exogenous or initialized state,environment,energy_use,city,0,,,
+energy_motorcycle_EV_kWh_km,input,Input/exogenous or initialized state,environment,energy_use,city,0,,,
+energy_taxi_EV_kWh_km,input,Input/exogenous or initialized state,environment,energy_use,city,0,,,
+external_cost_IRR_year,expression,SD stock-flow / aggregate consequence / feedback,impact,external_costs,city,0,,,cost_energy_IRR_year + cost_health_IRR_year + cost_road_safety_IRR_year + cost_climate_IRR_year + cost_congestion_IRR_year + cost_noise_IRR_year
+external_cost_IRR_year_r12,expression,SD stock-flow / aggregate consequence / feedback,impact,external_costs,region 12,0,,,(external_cost_IRR_year - cost_congestion_IRR_year) * share_vkm_motorized_r12_city + cost_congestion_IRR_year_r12
+fare_bus_IRR_trip_indexed,expression,SD stock-flow / aggregate consequence / feedback,economic,fares_revenue,city,4,fare_bus_observed_IRR_trip | YEAR_GRG | fare_bus_projection_base_IRR_trip | cost_index_bus_fare,,fare_bus_observed_IRR_trip if YEAR_GRG <= 2023 else (fare_bus_projection_base_IRR_trip * cost_index_bus_fare)
+fare_metro_IRR_trip_indexed,expression,SD stock-flow / aggregate consequence / feedback,economic,fares_revenue,city,4,fare_metro_observed_IRR_trip | YEAR_GRG | fare_metro_projection_base_IRR_trip | cost_index_metro_fare,,fare_metro_observed_IRR_trip if YEAR_GRG <= 2023 else (fare_metro_projection_base_IRR_trip * cost_index_metro_fare)
+fare_rhc_IRR_trip_base,input,Input/exogenous or initialized state,economic,fares_revenue,city,0,,,
+fare_rhc_IRR_trip_indexed,expression,SD stock-flow / aggregate consequence / feedback,economic,fares_revenue,city,0,,,(fare_rhc_IRR_trip_base * cost_index_rhc_fare)
+revenue_transport_public_IRR_year,expression,SD stock-flow / aggregate consequence / feedback,economic,fares_revenue,city,0,,,fare_revenue_bus_IRR_year + fare_revenue_metro_IRR_year
+fare_revenue_bus_IRR_year,expression,SD stock-flow / aggregate consequence / feedback,economic,fares_revenue,city,0,,,trips_bus_total * fare_bus_IRR_trip_indexed
+fare_revenue_metro_IRR_year,expression,SD stock-flow / aggregate consequence / feedback,economic,fares_revenue,city,0,,,trips_metro * fare_metro_IRR_trip_indexed
+fare_revenue_rhc_IRR_year,expression,SD stock-flow / aggregate consequence / feedback,economic,fares_revenue,city,0,,,trp_rhc * fare_rhc_IRR_trip_indexed
+fc_bus_diesel_litre_km,input,Input/exogenous or initialized state,environment,energy_use,city,0,,,
+fc_car_CNG_kg_km,input,Input/exogenous or initialized state,environment,energy_use,city,0,,,
+fc_car_gasoline_litre_km,input,Input/exogenous or initialized state,environment,energy_use,city,0,,,
+fc_motorcycle_gasoline_litre_km,input,Input/exogenous or initialized state,environment,energy_use,city,0,,,
+fc_taxi_CNG_kg_km,input,Input/exogenous or initialized state,environment,energy_use,city,0,,,
+fc_taxi_gasoline_litre_km,input,Input/exogenous or initialized state,environment,energy_use,city,0,,,
+final_energy_MJ_year,expression,SD stock-flow / aggregate consequence / feedback,environment,energy_use,city,0,,,energy_gasoline_MJ_year + energy_diesel_MJ_year + energy_CNG_MJ_year + energy_electricity_MJ_year
+final_energy_intensity_MJ_pkm,expression,SD stock-flow / aggregate consequence / feedback,environment,energy_use,city,0,,,"final_energy_MJ_year / max(pkm_total, 1)"
+fuel_CNG_car_kg_year,expression,SD stock-flow / aggregate consequence / feedback,environment,energy_use,city,0,,,vkm_car_CNG * fc_car_CNG_kg_km
+fuel_CNG_kg_year,expression,SD stock-flow / aggregate consequence / feedback,environment,energy_use,city,0,,,fuel_CNG_car_kg_year + fuel_CNG_taxi_kg_year
+fuel_CNG_taxi_kg_year,expression,SD stock-flow / aggregate consequence / feedback,environment,energy_use,city,0,,,vkm_taxi_CNG * fc_taxi_CNG_kg_km
+cost_fuel_CNG_IRR_year,expression,SD stock-flow / aggregate consequence / feedback,economic,opex,city,0,,,fuel_price_CNG_IRR_kg * fuel_CNG_kg_year
+cost_fuel_diesel_IRR_year,expression,SD stock-flow / aggregate consequence / feedback,economic,opex,city,0,,,fuel_price_diesel_IRR_litre * fuel_diesel_bus_litre_year
+cost_fuel_gasoline_IRR_year,expression,SD stock-flow / aggregate consequence / feedback,economic,opex,city,0,,,fuel_price_gasoline_IRR_litre * fuel_gasoline_litre_year
+fuel_diesel_bus_litre_year,expression,SD stock-flow / aggregate consequence / feedback,environment,energy_use,city,0,,,vkm_bus_tailpipe * share_bus_diesel * fc_bus_diesel_litre_km
+fuel_gasoline_car_litre_year,expression,SD stock-flow / aggregate consequence / feedback,environment,energy_use,city,0,,,vkm_car_gasoline * fc_car_gasoline_litre_km
+fuel_gasoline_litre_year,expression,SD stock-flow / aggregate consequence / feedback,environment,energy_use,city,0,,,fuel_gasoline_car_litre_year + fuel_gasoline_taxi_litre_year + fuel_gasoline_motorcycle_litre_year
+fuel_gasoline_motorcycle_litre_year,expression,SD stock-flow / aggregate consequence / feedback,environment,energy_use,city,0,,,vkm_motorcycle_gasoline * fc_motorcycle_gasoline_litre_km
+fuel_gasoline_taxi_litre_year,expression,SD stock-flow / aggregate consequence / feedback,environment,energy_use,city,0,,,vkm_taxi_gasoline * fc_taxi_gasoline_litre_km
+fuel_price_CNG_IRR_kg,input,Input/exogenous or initialized state,economic,prices_inflation_fx,city,0,,,
+fuel_price_diesel_IRR_litre,input,Input/exogenous or initialized state,economic,prices_inflation_fx,city,0,,,
+fuel_price_gasoline_IRR_litre,input,Input/exogenous or initialized state,economic,prices_inflation_fx,city,0,,,
+green_mitigation_floor,input,Input/exogenous or initialized state,environment,air_quality,city,0,,,
+green_parks_area_m2,input,Input/exogenous or initialized state,urban,green_public_space,city,0,,,
+green_space_area_m2,expression,SD stock-flow / aggregate consequence / feedback,urban,green_public_space,city,0,,,green_parks_area_m2 + green_streets_area_m2
+green_space_area_r12_m2,expression,SD stock-flow / aggregate consequence / feedback,urban,green_public_space,region 12,0,,,green_parks_area_r12 + green_streets_area_r12
+green_space_mitigation_factor_NO2,expression,SD stock-flow / aggregate consequence / feedback,environment,air_quality,city,0,,,"max(green_mitigation_floor, 1 - alpha_green_NO2 * min(green_space_share_of_urban_area, green_space_share_cap))"
+green_space_mitigation_factor_PM25,expression,SD stock-flow / aggregate consequence / feedback,environment,air_quality,city,0,,,"max(0.5, 1 - alpha_green_PM25 * min(green_space_share_of_urban_area, 0.4))"
+green_space_per_capita_m2,expression,SD stock-flow / aggregate consequence / feedback,urban,green_public_space,city,0,,,"green_space_area_m2 / max(population_city, 1)"
+green_space_per_capita_r12_m2,expression,SD stock-flow / aggregate consequence / feedback,urban,green_public_space,region 12,0,,,"green_space_area_r12_m2 / max(pop_r12, 1.0)"
+green_space_share_cap,input,Input/exogenous or initialized state,environment,air_quality,city,0,,,
+green_space_share_of_area_r12,expression,SD stock-flow / aggregate consequence / feedback,urban,green_public_space,region 12,0,,,"(green_space_area_r12_m2 / 1e6) / max(are_r12, 1.0)"
+green_space_share_of_urban_area,expression,SD stock-flow / aggregate consequence / feedback,urban,green_public_space,city,0,,,"(green_space_area_m2 / 1e6) / max(urban_area_km2, 1e-3)"
+green_streets_area_m2,input,Input/exogenous or initialized state,urban,green_public_space,city,0,,,
+green_parks_area_r12,input,Input/exogenous or initialized state,urban,green_public_space,region 12,0,,,
+green_streets_area_r12,input,Input/exogenous or initialized state,urban,green_public_space,region 12,0,,,
+health_cost_per_capita_IRR,expression,SD stock-flow / aggregate consequence / feedback,impact,external_costs,city,0,,,"cost_health_IRR_year / max(population_city, 1)"
+household_income_per_capita_IRR_year,input,Input/exogenous or initialized state,economic,macro,city,0,,,
+import_share_0,input,Input/exogenous or initialized state,economic,prices_inflation_fx,city,0,,,
+import_share_20,input,Input/exogenous or initialized state,economic,prices_inflation_fx,city,0,,,
+import_share_50,input,Input/exogenous or initialized state,economic,prices_inflation_fx,city,0,,,
+import_share_70,input,Input/exogenous or initialized state,economic,prices_inflation_fx,city,0,,,
+import_share_80,input,Input/exogenous or initialized state,economic,prices_inflation_fx,city,0,,,
+import_share_100,input,Input/exogenous or initialized state,economic,prices_inflation_fx,city,0,,,
+ecn_usd,expression,SD stock-flow / aggregate consequence / feedback,economic,prices_inflation_fx,city,1,ecn_usd_obs,,ecn_usd_obs if YEAR_GRG<=2023 else (550000.0 * ((1+0.3399403191028385) ** (YEAR_GRG-2023)))
+ecn_usd_base,input,Input/exogenous or initialized state,economic,prices_inflation_fx,city,0,,,
+fx_index_effective,expression,SD stock-flow / aggregate consequence / feedback,economic,prices_inflation_fx,city,0,,,ecn_usd / ecn_usd_base
+job_r12,input,Input/exogenous or initialized state,economic,macro,region 12,0,,,
+k_NO2_concentration_effective_ugm3_per_t,expression,SD stock-flow / aggregate consequence / feedback,environment,air_quality,city,0,,,k_NO2_concentration_ugm3_per_t * green_space_mitigation_factor_NO2
+k_NO2_concentration_ugm3_per_t,input,Input/exogenous or initialized state,environment,air_quality,city,0,,,
+k_PM25_concentration_effective_ugm3_per_t,expression,SD stock-flow / aggregate consequence / feedback,environment,air_quality,city,0,,,k_PM25_concentration_ugm3_per_t * green_space_mitigation_factor_PM25
+k_PM25_concentration_ugm3_per_t,input,Input/exogenous or initialized state,environment,air_quality,city,0,,,
+brt_share_of_bus,input,Input/exogenous or initialized state,transport,travel_demand,city,0,,,
+mortality_adult_rate,expression,SD stock-flow / aggregate consequence / feedback,social,health_impacts,city,0,,,0.0065
+mortality_child_rate,expression,SD stock-flow / aggregate consequence / feedback,social,health_impacts,city,0,,,0.00045
+beta_noise_EV,input,Input/exogenous or initialized state,environment,noise_parameters,city,0,,,
+beta_noise_congestion,input,Input/exogenous or initialized state,environment,noise_parameters,city,0,,,
+beta_noise_green,input,Input/exogenous or initialized state,environment,noise_parameters,city,0,,,
+noise_exposure_index,expression,SD stock-flow / aggregate consequence / feedback,environment,noise_parameters,city,0,,,"max(0.2,   1   + beta_noise_congestion * congestion_index   - beta_noise_EV * EV_share_vkm_weighted   - beta_noise_green * green_space_share_of_urban_area)"
+noise_base_cost_IRR_year,input,Input/exogenous or initialized state,impact,external_costs,city,0,,,
+cost_noise_IRR_year,expression,SD stock-flow / aggregate consequence / feedback,impact,external_costs,city,0,,,noise_base_cost_IRR_year * noise_exposure_index
+occ_mot,input,Input/exogenous or initialized state,transport,vehicle_occupancy,city,0,,,
+occ_car,input,Input/exogenous or initialized state,transport,vehicle_occupancy,city,0,,,
+occ_tax,input,Input/exogenous or initialized state,transport,vehicle_occupancy,city,0,,,
+occ_bus,input,Input/exogenous or initialized state,transport,vehicle_occupancy,city,0,,,
+occ_met,input,Input/exogenous or initialized state,transport,vehicle_occupancy,city,0,,,
+occ_oth,input,Input/exogenous or initialized state,transport,vehicle_occupancy,city,0,,,
+opex_BRT_IRR_km_base,input,Input/exogenous or initialized state,economic,opex,city,0,,,
+opex_BRT_EV_IRR_km_base,input,Input/exogenous or initialized state,economic,opex,city,0,,,
+opex_BRT_IRR_km_indexed,expression,SD stock-flow / aggregate consequence / feedback,economic,opex,city,0,,,( share_brt_bus_diesel * opex_BRT_IRR_km_base + share_brt_bus_EV * opex_BRT_EV_IRR_km_base) * cost_index_50
+opex_bus_EV_IRR_km_base,input,Input/exogenous or initialized state,economic,opex,city,0,,,
+opex_bus_IRR_km_base,input,Input/exogenous or initialized state,economic,opex,city,0,,,
+opex_bus_IRR_km_indexed,expression,SD stock-flow / aggregate consequence / feedback,economic,opex,city,0,,,( share_bus_diesel * opex_bus_IRR_km_base + share_bus_EV * opex_bus_EV_IRR_km_base) * cost_index_50
+opex_car_EV_IRR_km_base,input,Input/exogenous or initialized state,economic,opex,city,0,,,
+opex_car_IRR_km_indexed,expression,SD stock-flow / aggregate consequence / feedback,economic,opex,city,0,,,(  (1 - share_car_EV) * opex_car_IRR_km_base +   share_car_EV * opex_car_EV_IRR_km_base) * (cost_index_50)
+opex_car_IRR_km_base,input,Input/exogenous or initialized state,economic,opex,city,0,,,
+opex_metro_IRR_km_indexed,expression,SD stock-flow / aggregate consequence / feedback,economic,opex,city,0,,,opex_metro_IRR_km_base * cost_index_50
+opex_metro_IRR_km_base,input,Input/exogenous or initialized state,economic,opex,city,0,,,
+opex_taxi_EV_IRR_km_base,input,Input/exogenous or initialized state,economic,opex,city,0,,,
+opex_taxi_IRR_km_indexed,expression,SD stock-flow / aggregate consequence / feedback,economic,opex,city,0,,,(  (1 - share_taxi_EV) * opex_taxi_IRR_km_base +   share_taxi_EV * opex_taxi_EV_IRR_km_base) * cost_index_50
+opex_taxi_IRR_km_base,input,Input/exogenous or initialized state,economic,opex,city,0,,,
+pce_mot,input,Input/exogenous or initialized state,transport,traffic_activity_pce,city,0,,,
+pce_car,input,Input/exogenous or initialized state,transport,traffic_activity_pce,city,0,,,
+pce_tax,input,Input/exogenous or initialized state,transport,traffic_activity_pce,city,0,,,
+pce_bus,input,Input/exogenous or initialized state,transport,traffic_activity_pce,city,0,,,
+pce_oth,input,Input/exogenous or initialized state,transport,traffic_activity_pce,city,0,,,
+vkm_mot_pce,expression,SD stock-flow / aggregate consequence / feedback,transport,traffic_activity_pce,city,0,,,vkm_motorcycle * pce_mot
+vkm_car_pce,expression,SD stock-flow / aggregate consequence / feedback,transport,traffic_activity_pce,city,0,,,vkm_car * pce_car
+vkm_tax_pce,expression,SD stock-flow / aggregate consequence / feedback,transport,traffic_activity_pce,city,0,,,vkm_taxi * pce_tax
+vkm_bus_pce,expression,SD stock-flow / aggregate consequence / feedback,transport,traffic_activity_pce,city,0,,,vkm_bus * pce_bus
+vkm_oth_pce,expression,SD stock-flow / aggregate consequence / feedback,transport,traffic_activity_pce,city,0,,,vkm_other * pce_oth
+vkm_pce_total,expression,ABM behavioral mediation / competition / exposure,transport,traffic,city,0,,,vkm_mot_pce + vkm_car_pce + vkm_tax_pce + vkm_bus_pce + vkm_oth_pce
+vkm_pce_total_hour,expression,SD stock-flow / aggregate consequence / feedback,transport,congestion_capacity,city,0,,,vkm_pce_total / 8760.0
+vkm_mot_pce_r12,expression,SD stock-flow / aggregate consequence / feedback,transport,region12_performance,region 12,0,,,vkm_motorcycle_r12 * pce_mot
+vkm_car_pce_r12,expression,SD stock-flow / aggregate consequence / feedback,transport,region12_performance,region 12,0,,,vkm_car_r12 * pce_car
+vkm_tax_pce_r12,expression,SD stock-flow / aggregate consequence / feedback,transport,region12_performance,region 12,0,,,vkm_taxi_r12 * pce_tax
+vkm_bus_pce_r12,expression,SD stock-flow / aggregate consequence / feedback,transport,region12_performance,region 12,0,,,vkm_bus_r12 * pce_bus
+vkm_oth_pce_r12,expression,SD stock-flow / aggregate consequence / feedback,transport,region12_performance,region 12,0,,,vkm_oth_r12 * pce_oth
+vkm_pce_total_r12,expression,SD stock-flow / aggregate consequence / feedback,transport,region12_performance,region 12,0,,,(vkm_mot_pce_r12 + vkm_car_pce_r12 + vkm_tax_pce_r12 + vkm_bus_pce_r12 + vkm_oth_pce_r12) * telework_trip_multiplier
+vkm_pce_total_hour_r12,expression,SD stock-flow / aggregate consequence / feedback,transport,region12_performance,region 12,0,,,vkm_pce_total_r12 / 8760.0
+modal_share_mot_ptf,expression,SD stock-flow / aggregate consequence / feedback,transport,traffic_activity_pce,city,0,,,vkm_mot_pce / (vkm_mot_pce + vkm_car_pce + vkm_tax_pce + vkm_bus_pce + vkm_oth_pce)
+modal_share_car_ptf,expression,SD stock-flow / aggregate consequence / feedback,transport,traffic_activity_pce,city,0,,,vkm_car_pce / (vkm_mot_pce + vkm_car_pce + vkm_tax_pce + vkm_bus_pce + vkm_oth_pce)
+modal_share_tax_ptf,expression,SD stock-flow / aggregate consequence / feedback,transport,traffic_activity_pce,city,0,,,vkm_tax_pce / (vkm_mot_pce + vkm_car_pce + vkm_tax_pce + vkm_bus_pce + vkm_oth_pce)
+modal_share_bus_ptf,expression,SD stock-flow / aggregate consequence / feedback,transport,traffic_activity_pce,city,0,,,vkm_bus_pce / (vkm_mot_pce + vkm_car_pce + vkm_tax_pce + vkm_bus_pce + vkm_oth_pce)
+parking_tot,input,Input/exogenous or initialized state,urban,land_use_structure,city,0,,,
+parking_r12,expression,SD stock-flow / aggregate consequence / feedback,urban,land_use_structure,region 12,0,,,0.06 * parking_tot * parking_supply_multiplier_r12
+pkm_motorcycle,expression,SD stock-flow / aggregate consequence / feedback,transport,traffic_activity_city,city,0,,,trips_motorcycle * trip_length_km
+pkm_car,expression,SD stock-flow / aggregate consequence / feedback,transport,traffic_activity_city,city,0,,,trips_car * trip_length_km
+pkm_taxi,expression,SD stock-flow / aggregate consequence / feedback,transport,traffic_activity_city,city,0,,,trips_taxi * trip_length_km
+pkm_bus,expression,SD stock-flow / aggregate consequence / feedback,transport,traffic_activity_city,city,0,,,trips_bus_total * trip_length_km
+pkm_other,expression,SD stock-flow / aggregate consequence / feedback,transport,traffic_activity_city,city,0,,,trips_other * trip_length_km
+pkm_metro,expression,SD stock-flow / aggregate consequence / feedback,transport,traffic_activity_city,city,0,,,trips_metro * trip_length_km
+pkm_total,expression,SD stock-flow / aggregate consequence / feedback,transport,traffic_activity_city,city,0,,,trips_per_year * trip_length_km
+pkm_metro_r12,expression,SD stock-flow / aggregate consequence / feedback,transport,traffic_activity_region,region 12,0,,,trp_r12 * modal_share_met_r12 * trip_length_r12_km
+population_0_14,input,Input/exogenous or initialized state,social,demography,city,0,,,
+population_15_64,input,Input/exogenous or initialized state,social,demography,city,0,,,
+population_65_plus,input,Input/exogenous or initialized state,social,demography,city,0,,,
+population_city,stock,SD stock-flow / aggregate consequence / feedback,social,demography,city,0,,,
+birth_rate_per_person_year,expression,SD stock-flow / aggregate consequence / feedback,social,demography,city,0,,,0.015
+births_total_year,expression,SD stock-flow / aggregate consequence / feedback,social,demography,city,0,,,population_city * birth_rate_per_person_year
+household_size,input,Input/exogenous or initialized state,social,demography,city,0,,,
+households_total,expression,SD stock-flow / aggregate consequence / feedback,social,demography,city,0,,,"population_city / max(household_size, 0.1)"
+migration_rate_per_person_year,expression,SD stock-flow / aggregate consequence / feedback,social,demography,city,0,,,0.00556
+migrations_total_year,expression,SD stock-flow / aggregate consequence / feedback,social,demography,city,0,,,population_city * migration_rate_per_person_year
+pop_r12,expression,SD stock-flow / aggregate consequence / feedback,social,demography,region 12,2,pop_r12_obs | population_city,,pop_r12_obs if YEAR_GRG<=2023 else (population_city * 0.024763379288632256)
+private_cars_total,stock,SD stock-flow / aggregate consequence / feedback,transport,fleet_stock_private,city,0,,,
+car_purchases_vehicles_year,expression,SD stock-flow / aggregate consequence / feedback,transport,fleet_stock_private,city,0,,,0.015 * private_cars_total
+car_retirements_vehicles_year,expression,SD stock-flow / aggregate consequence / feedback,transport,fleet_stock_private,city,0,,,0.003 * private_cars_total
+private_car_ownership_rate,expression,SD stock-flow / aggregate consequence / feedback,social,demography,city,0,,,"private_cars_total / max(population_city, 1)"
+taxis_total,stock,SD stock-flow / aggregate consequence / feedback,transport,fleet_stock_public,city,0,,,
+taxi_purchases_vehicles_year,input,Input/exogenous or initialized state,transport,fleet_stock_private,city,0,,,
+taxi_retirements_vehicles_year,input,Input/exogenous or initialized state,transport,fleet_stock_private,city,0,,,
+metro_cars_total,stock,SD stock-flow / aggregate consequence / feedback,transport,fleet_stock_public,city,0,,,
+metro_car_purchases_vehicles_year,input,Input/exogenous or initialized state,transport,fleet_stock_private,city,0,,,
+metro_car_retirements_vehicles_year,input,Input/exogenous or initialized state,transport,fleet_stock_private,city,0,,,
+brts_total,stock,SD stock-flow / aggregate consequence / feedback,transport,fleet_stock_public,city,0,,,
+brt_purchases_vehicles_year,input,Input/exogenous or initialized state,transport,fleet_stock_private,city,0,,,
+brt_retirements_vehicles_year,input,Input/exogenous or initialized state,transport,fleet_stock_private,city,0,,,
+buses_total,stock,SD stock-flow / aggregate consequence / feedback,transport,fleet_stock_public,city,0,,,
+bus_purchases_vehicles_year,input,Input/exogenous or initialized state,transport,fleet_stock_private,city,0,,,
+bus_retirements_vehicles_year,input,Input/exogenous or initialized state,transport,fleet_stock_private,city,0,,,
+metro_trainsets,expression,SD stock-flow / aggregate consequence / feedback,transport,fleet_stock_public,city,0,,,metro_cars_total // cars_per_trainset
+motorcycles_total,stock,SD stock-flow / aggregate consequence / feedback,transport,fleet_stock_private,city,0,,,
+motorcycle_purchases_vehicles_year,expression,SD stock-flow / aggregate consequence / feedback,transport,fleet_stock_private,city,0,,,0.015 * motorcycles_total
+motorcycle_retirements_vehicles_year,expression,SD stock-flow / aggregate consequence / feedback,transport,fleet_stock_private,city,0,,,0.003 * motorcycles_total
+motorcycle_ownership_rate,expression,SD stock-flow / aggregate consequence / feedback,social,demography,city,0,,,"motorcycles_total / max(population_city, 1)"
+respiratory_admissions,expression,SD stock-flow / aggregate consequence / feedback,social,health_impacts,city,0,,,population_city * respiratory_admission_rate_base * (exp(CR_PM25_respiratory_admission  * concentration_PM25_excess_ugm3) - 1)
+rhc_affordability_ratio,expression,SD stock-flow / aggregate consequence / feedback,economic,fares_revenue,city,0,,,"rhc_expenditure_per_person_IRR_year / max(household_income_per_capita_IRR_year, 1)"
+rhc_driver_revenue_IRR_year,expression,SD stock-flow / aggregate consequence / feedback,economic,fares_revenue,city,0,,,fare_revenue_rhc_IRR_year * (1 - rhc_platform_commission_share)
+rhc_expenditure_per_person_IRR_year,expression,SD stock-flow / aggregate consequence / feedback,economic,fares_revenue,city,0,,,rhc_trips_per_person_year * fare_rhc_IRR_trip_indexed
+rhc_platform_commission_share,input,Input/exogenous or initialized state,economic,fares_revenue,city,0,,,
+rhc_trips_per_person_year,expression,SD stock-flow / aggregate consequence / feedback,economic,fares_revenue,city,0,,,"trp_rhc / max(population_city, 1)"
+road_capacity_PCE_km_hour,expression,SD stock-flow / aggregate consequence / feedback,transport,congestion_capacity,city,0,,,len_hwy * capacity_PCE_per_km_hour
+road_capacity_PCE_km_hour_r12,expression,SD stock-flow / aggregate consequence / feedback,transport,region12_performance,region 12,0,,,"road_capacity_PCE_km_hour * (len_hwy_r12 / max(len_hwy, 1e-6))"
+modal_share_PT,expression,ABM behavioral mediation / competition / exposure,transport,mode_choice_city,city,0,,,modal_share_bus + modal_share_metro
+modal_share_PT_r12,expression,ABM behavioral mediation / competition / exposure,transport,mode_choice_city,region 12,0,,,modal_share_bus_r12 + modal_share_met_r12
+share_motorcycle_EV,input,Input/exogenous or initialized state,environment,energy_use,city,0,,,
+share_motorcycle_gasoline,expression,SD stock-flow / aggregate consequence / feedback,environment,energy_use,city,0,,,"max(1 - share_motorcycle_EV, 0)"
+share_car_CNG,input,Input/exogenous or initialized state,environment,energy_use,city,0,,,
+share_car_EV,input,Input/exogenous or initialized state,environment,energy_use,city,0,,,
+share_car_gasoline,expression,SD stock-flow / aggregate consequence / feedback,environment,energy_use,city,0,,,"max(1 - share_car_EV - share_car_CNG, 0)"
+share_taxi_CNG_nonEV,input,Input/exogenous or initialized state,environment,energy_use,city,0,,,
+share_taxi_CNG,expression,SD stock-flow / aggregate consequence / feedback,environment,energy_use,city,0,,,"max(1 - share_taxi_EV, 0) * share_taxi_CNG_nonEV"
+share_taxi_EV,input,Input/exogenous or initialized state,environment,energy_use,city,0,,,
+share_taxi_gasoline,expression,SD stock-flow / aggregate consequence / feedback,environment,energy_use,city,0,,,"max(1 - share_taxi_EV, 0) * max(1 - share_taxi_CNG_nonEV, 0)"
+share_bus_EV,input,Input/exogenous or initialized state,environment,energy_use,city,0,,,
+share_bus_diesel,input,Input/exogenous or initialized state,environment,energy_use,city,0,,,
+share_brt_bus_EV,input,Input/exogenous or initialized state,environment,energy_use,city,0,,,
+share_brt_bus_diesel,input,Input/exogenous or initialized state,environment,energy_use,city,0,,,
+share_trips_city_tfp,input,Input/exogenous or initialized state,transport,traffic_regulation,city,0,,,
+share_vkm_car_r12_city,expression,SD stock-flow / aggregate consequence / feedback,transport,traffic_activity_region,region 12,0,,,"vkm_car_r12 / max(vkm_car, 1.0)"
+share_vkm_car_city_tfp,expression,ABM behavioral mediation / competition / exposure,transport,traffic_regulation,city,0,,,"vkm_car_city_tfp / max(vkm_car, 1.0)"
+share_vkm_motorized_r12_city,expression,SD stock-flow / aggregate consequence / feedback,transport,traffic_activity_region,region 12,0,,,"vkm_motorized_r12 / max(vkm_motorized_city, 1.0)"
+cost_of_carbon_IRR_t,input,Input/exogenous or initialized state,environment,climate_co2,city,0,,,
+alpha_congestion_speed,input,Input/exogenous or initialized state,transport,congestion_capacity,city,0,,,
+alpha_delay_congestion,input,Input/exogenous or initialized state,transport,congestion,city,0,,,
+congestion_index,expression,SD stock-flow / aggregate consequence / feedback,transport,congestion_capacity,city,0,,,"min(max(0.52924048 * pow(max(v_over_c, 0.0), 1.0), 0.0), 5.0)"
+alpha_delay_congestion_r12,input,Input/exogenous or initialized state,transport,congestion,region 12,0,,,
+congestion_index_r12,expression,SD stock-flow / aggregate consequence / feedback,transport,congestion,region 12,2,congestion_index | congestion_multiplier_r12,,"min(max(congestion_index * congestion_multiplier_r12, 0.0), 5.0)"
+spd_mot,expression,SD stock-flow / aggregate consequence / feedback,transport,service_speed,city,4,spd_mot_history_calibration_factor | spd_mot_freeflow | alpha_congestion_speed | congestion_index,,spd_mot_history_calibration_factor * spd_mot_freeflow / (1.0 + 0.7 * alpha_congestion_speed * congestion_index)
+spd_mot_freeflow,input,Input/exogenous or initialized state,transport,service_speed,city,0,,,
+spd_car,expression,SD stock-flow / aggregate consequence / feedback,transport,service_speed,city,0,,,(spd_car_history_calibration_factor * spd_car_city_calibration_factor * spd_car_freeflow) / (1.0 + alpha_congestion_speed * congestion_index)
+spd_car_freeflow,input,Input/exogenous or initialized state,transport,service_speed,city,0,,,
+spd_car_city_calibration_factor,input,Input/exogenous or initialized state,transport,calibration,city,0,,,
+spd_tax,expression,SD stock-flow / aggregate consequence / feedback,transport,service_speed,city,0,,,spd_tax_freeflow / (1.0 + alpha_congestion_speed * congestion_index)
+spd_tax_freeflow,input,Input/exogenous or initialized state,transport,service_speed,city,0,,,
+spd_bus,expression,SD stock-flow / aggregate consequence / feedback,transport,service_speed,city,0,,,(spd_bus_history_calibration_factor * spd_bus_freeflow) / (1.0 + 1.2 * alpha_congestion_speed * congestion_index)
+spd_bus_freeflow,input,Input/exogenous or initialized state,transport,service_speed,city,0,,,
+spd_met,input,Input/exogenous or initialized state,transport,service_speed,city,0,,,
+spd_oth,expression,SD stock-flow / aggregate consequence / feedback,transport,service_speed,city,0,,,spd_oth_freeflow / (1.0 + alpha_congestion_speed * congestion_index)
+spd_oth_freeflow,input,Input/exogenous or initialized state,transport,service_speed,city,0,,,
+time_loss_car_hours_year,expression,SD stock-flow / aggregate consequence / feedback,transport,congestion,city,0,,,trips_car * travel_time_car_hours * dly_tot
+time_loss_car_hours_year_r12,expression,SD stock-flow / aggregate consequence / feedback,transport,region12_performance,region 12,4,trp_r12 | modal_share_car_r12 | travel_time_car_r12_base_hours | dly_r12,,trp_r12 * modal_share_car_r12 * travel_time_car_r12_base_hours * dly_r12
+traffic_plan_fee_IRR_trip,expression,SD stock-flow / aggregate consequence / feedback,economic,policy_revenue,region 12,2,traffic_plan_fee_IRR_trip_base | traffic_plan_fee_multiplier,,traffic_plan_fee_IRR_trip_base * traffic_plan_fee_multiplier
+transport_financial_balance_IRR,stock,SD stock-flow / aggregate consequence / feedback,economic,macro,city,0,,,
+cost_transport_public_IRR_year,expression,SD stock-flow / aggregate consequence / feedback,economic,macro,city,0,,,OPEX_PT_IRR_year + CAPEX_transport_affordable_IRR_year
+system_cost_transport_IRR_year,expression,SD stock-flow / aggregate consequence / feedback,impact,system_costs,city,0,,,CAPEX_transport_IRR_year + OPEX_transport_IRR_year + cost_energy_IRR_year + cost_health_IRR_year + cost_road_safety_IRR_year + cost_climate_IRR_year
+system_cost_per_pkm_IRR,expression,SD stock-flow / aggregate consequence / feedback,impact,system_costs,city,0,,,"system_cost_transport_IRR_year / max(pkm_total, 1)"
+travel_time_bus_hours,expression,SD stock-flow / aggregate consequence / feedback,transport,travel_time,city,0,,,"trip_length_km / max(spd_bus, 1.0)"
+travel_time_car_congested_hours,expression,SD stock-flow / aggregate consequence / feedback,transport,travel_time,city,0,,,travel_time_car_hours * (1 + dly_tot)
+travel_time_car_hours,expression,SD stock-flow / aggregate consequence / feedback,transport,travel_time,city,0,,,"trip_length_km / max(spd_car, 1.0)"
+travel_time_car_r12_base_hours,expression,SD stock-flow / aggregate consequence / feedback,transport,performance,region 12,2,trip_length_r12_km | spd_car_r12,,"trip_length_r12_km / max(spd_car_r12, 1.0)"
+travel_time_car_r12_hours,expression,SD stock-flow / aggregate consequence / feedback,transport,travel_time,region 12,0,,,travel_time_car_r12_base_hours * (1 + dly_r12)
+travel_time_metro_hours,expression,SD stock-flow / aggregate consequence / feedback,transport,travel_time,city,0,,,"trip_length_metro_km / max(spd_met, 1.0)"
+travel_time_motorcycle_hours,expression,SD stock-flow / aggregate consequence / feedback,transport,travel_time,city,0,,,"trip_length_km / max(spd_mot, 1.0)"
+travel_time_other_hours,expression,SD stock-flow / aggregate consequence / feedback,transport,travel_time,city,0,,,"trip_length_km / max(spd_oth, 1.0)"
+travel_time_taxi_hours,expression,SD stock-flow / aggregate consequence / feedback,transport,travel_time,city,0,,,"trip_length_km / max(spd_tax, 1.0)"
+trip_length_km,input,Input/exogenous or initialized state,transport,travel_demand,city,0,,,
+trip_length_r12_km,input,Input/exogenous or initialized state,transport,travel_demand_region,region 12,0,,,
+trips_bus_BRT,expression,SD stock-flow / aggregate consequence / feedback,transport,travel_demand,city,0,,,trips_bus_total * brt_share_of_bus
+trips_bus_nonBRT,expression,SD stock-flow / aggregate consequence / feedback,transport,travel_demand,city,0,,,trips_bus_total * (1 - brt_share_of_bus)
+trips_bus_total,expression,SD stock-flow / aggregate consequence / feedback,transport,travel_demand,city,0,,,trips_per_year * modal_share_bus
+trips_car,expression,SD stock-flow / aggregate consequence / feedback,transport,travel_demand,city,0,,,trips_per_year * modal_share_car
+trips_metro,expression,SD stock-flow / aggregate consequence / feedback,transport,travel_demand,city,0,,,trips_per_year * modal_share_metro
+trips_motorcycle,expression,SD stock-flow / aggregate consequence / feedback,transport,travel_demand,city,0,,,trips_per_year * modal_share_motorcycle
+trips_other,expression,SD stock-flow / aggregate consequence / feedback,transport,travel_demand,city,0,,,trips_per_year * modal_share_other
+trips_per_person_per_day,input,Input/exogenous or initialized state,transport,travel_demand,city,0,,,
+trips_per_year,expression,SD stock-flow / aggregate consequence / feedback,transport,travel_demand,city,0,,,population_city * (trips_per_person_per_day*telework_trip_multiplier) * days_per_year
+trips_taxi,expression,SD stock-flow / aggregate consequence / feedback,transport,travel_demand,city,0,,,trips_per_year * modal_share_taxi
+trp_r12,input,Input/exogenous or initialized state,transport,travel_demand_region,region 12,0,,,
+trips_car_city_tfp,expression,ABM behavioral mediation / competition / exposure,transport,traffic_regulation,city,1,trips_car_city_tfp_obs,,"trips_car_city_tfp_obs if YEAR_GRG<=2023 else ({2024: 138422315.321, 2025: 120157821.56, 2026: 101893327.798, 2027: 83628834.0357, 2028: 65364340.2738, 2029: 47099846.5119, 2030: 28835352.75}.get(int(YEAR_GRG), 28835352.75))"
+trp_r12_tfp,expression,ABM behavioral mediation / competition / exposure,transport,traffic_regulation,region 12,2,trp_r12_tfp_obs | trp_tfp,,trp_r12_tfp_obs if YEAR_GRG<=2023 else (0.45661004704854624 * trp_tfp)
+share_rhc_of_taxi,input,Input/exogenous or initialized state,transport,ride_hailing,city,0,,,
+trp_rhc,expression,SD stock-flow / aggregate consequence / feedback,transport,travel_demand,city,0,,,online_taxi_active * trips_taxi * share_rhc_of_taxi
+urban_area_km2,input,Input/exogenous or initialized state,urban,land_use_structure,city,0,,,
+v_over_c,expression,SD stock-flow / aggregate consequence / feedback,transport,congestion_capacity,city,0,,,"vkm_pce_total_hour / max(road_capacity_PCE_km_hour, 1e-6)"
+v_over_c_r12,expression,SD stock-flow / aggregate consequence / feedback,transport,region12_performance,region 12,0,,,"vkm_pce_total_hour_r12 / max(road_capacity_PCE_km_hour_r12, 1e-6)"
+veh_rhc_ful,expression,SD stock-flow / aggregate consequence / feedback,transport,fleet_stock_public,city,0,,,0.4 * (trp_rhc / days_per_year / 14) + 0.6 * (trp_rhc / days_per_year / 7)
+veh_tax_cap,expression,SD stock-flow / aggregate consequence / feedback,transport,fleet_stock_public,city,0,,,(taxis_total) / population_city
+vkm_BRT,expression,SD stock-flow / aggregate consequence / feedback,transport,traffic_activity_city,city,0,,,vkm_bus * brt_share_of_bus
+vkm_bus_EV,expression,SD stock-flow / aggregate consequence / feedback,environment,energy_use,city,0,,,vkm_bus * share_bus_EV
+vkm_bus_tailpipe,expression,SD stock-flow / aggregate consequence / feedback,environment,emissions_city,city,0,,,vkm_bus * (1 - share_bus_EV)
+vkm_car_CNG,expression,SD stock-flow / aggregate consequence / feedback,environment,energy_use,city,0,,,vkm_car * car_energy_closure_factor * share_car_CNG
+vkm_car_EV,expression,SD stock-flow / aggregate consequence / feedback,environment,energy_use,city,0,,,vkm_car * car_energy_closure_factor * share_car_EV
+vkm_car_congested_r12,expression,SD stock-flow / aggregate consequence / feedback,transport,traffic_activity_region,region 12,0,,,vkm_car_r12 * con_dst_r12
+vkm_car_gasoline,expression,SD stock-flow / aggregate consequence / feedback,environment,energy_use,city,0,,,vkm_car * car_energy_closure_factor * share_car_gasoline
+vkm_car_tailpipe,expression,SD stock-flow / aggregate consequence / feedback,environment,emissions_city,city,0,,,vkm_car * car_energy_closure_factor * (1 - share_car_EV)
+vkm_car_city_tfp,expression,ABM behavioral mediation / competition / exposure,transport,traffic_regulation,city,0,,,(vkm_car * share_trips_city_tfp)
+vkm_motorcycle,expression,SD stock-flow / aggregate consequence / feedback,transport,traffic_activity_city,city,0,,,"pkm_motorcycle / max(occ_mot, 0.1)"
+vkm_car,expression,SD stock-flow / aggregate consequence / feedback,transport,traffic_activity_city,city,0,,,"pkm_car / max(occ_car, 0.1)"
+vkm_taxi,expression,SD stock-flow / aggregate consequence / feedback,transport,traffic_activity_city,city,0,,,"pkm_taxi / max(occ_tax, 0.1)"
+vkm_bus,expression,SD stock-flow / aggregate consequence / feedback,transport,traffic_activity_city,city,0,,,"pkm_bus / max(occ_bus, 1.0)"
+vkm_other,expression,SD stock-flow / aggregate consequence / feedback,transport,traffic_activity_city,city,0,,,"pkm_other / max(occ_oth, 1.0)"
+vkm_metro,expression,SD stock-flow / aggregate consequence / feedback,transport,traffic_activity_city,city,0,,,"pkm_metro / max(occ_met, 1.0)"
+vkm_motorized_city,expression,SD stock-flow / aggregate consequence / feedback,transport,traffic_activity_city,city,0,,,vkm_car + vkm_taxi + vkm_bus + vkm_motorcycle + vkm_other
+vkm_motorcycle_r12,expression,SD stock-flow / aggregate consequence / feedback,transport,traffic_activity_region,region 12,0,,,trp_r12 * modal_share_mot_r12 * trip_length_r12_km
+vkm_car_r12,expression,SD stock-flow / aggregate consequence / feedback,transport,traffic_activity_region,region 12,0,,,"(trp_r12 * modal_share_car_r12 * trip_length_r12_km) / max(occ_car, 0.1)"
+vkm_taxi_r12,expression,SD stock-flow / aggregate consequence / feedback,transport,traffic_activity_region,region 12,0,,,"(trp_r12 * modal_share_tax_r12 * trip_length_r12_km) / max(occ_tax, 0.1)"
+vkm_bus_r12,expression,SD stock-flow / aggregate consequence / feedback,transport,traffic_activity_region,region 12,0,,,"(trp_r12 * modal_share_bus_r12 * trip_length_r12_km) / max(occ_bus, 1.0)"
+vkm_metro_r12,expression,SD stock-flow / aggregate consequence / feedback,transport,traffic_activity_region,region 12,0,,,"pkm_metro_r12 / max(occ_met, 1.0)"
+vkm_oth_r12,expression,SD stock-flow / aggregate consequence / feedback,transport,traffic_activity_region,region 12,0,,,"(trp_r12 * modal_share_oth_r12 * trip_length_r12_km) / max(occ_oth, 1.0)"
+vkm_motorized_r12,expression,SD stock-flow / aggregate consequence / feedback,transport,traffic_activity_region,region 12,0,,,vkm_car_r12 + vkm_taxi_r12 + vkm_bus_r12 + vkm_motorcycle_r12 + vkm_oth_r12
+vkm_motorcycle_EV,expression,SD stock-flow / aggregate consequence / feedback,environment,energy_use,city,0,,,vkm_motorcycle * share_motorcycle_EV
+vkm_motorcycle_gasoline,expression,SD stock-flow / aggregate consequence / feedback,environment,energy_use,city,0,,,vkm_motorcycle * share_motorcycle_gasoline
+vkm_motorcycle_tailpipe,expression,SD stock-flow / aggregate consequence / feedback,environment,emissions_city,city,0,,,vkm_motorcycle * (1 - share_motorcycle_EV)
+vkm_taxi_CNG,expression,SD stock-flow / aggregate consequence / feedback,environment,energy_use,city,0,,,vkm_taxi * share_taxi_CNG
+vkm_taxi_EV,expression,SD stock-flow / aggregate consequence / feedback,environment,energy_use,city,0,,,vkm_taxi * share_taxi_EV
+vkm_taxi_gasoline,expression,SD stock-flow / aggregate consequence / feedback,environment,energy_use,city,0,,,vkm_taxi * share_taxi_gasoline
+vkm_taxi_tailpipe,expression,SD stock-flow / aggregate consequence / feedback,environment,emissions_city,city,0,,,vkm_taxi * (1 - share_taxi_EV)
+vkm_total_r12,expression,SD stock-flow / aggregate consequence / feedback,transport,traffic_activity_region,region 12,0,,,(vkm_car_r12 + vkm_taxi_r12 + vkm_bus_r12 + vkm_motorcycle_r12 + vkm_oth_r12) * telework_trip_multiplier
+online_taxi_active,input,Input/exogenous or initialized state,transport,ride_hailing,city,0,,,
+trp_tfp,expression,ABM behavioral mediation / competition / exposure,transport,traffic_regulation,city,1,trp_tfp_obs,,"trp_tfp_obs if YEAR_GRG<=2023 else ({2024: 138422315.321, 2025: 120157821.56, 2026: 101893327.798, 2027: 83628834.0357, 2028: 65364340.2738, 2029: 47099846.5119, 2030: 28835352.75}.get(int(YEAR_GRG), 28835352.75))"
+trp_tps_city,expression,SD stock-flow / aggregate consequence / feedback,transport,travel_demand_city,city,1,trp_tps_city_obs,,trp_tps_city_obs if YEAR_GRG<=2023 else (25600000.0 + (3137295.8041960164)*(YEAR_GRG-2023))
+trip_length_metro_km,expression,ABM behavioral mediation / competition / exposure,transport,behavior,city,1,trip_length_km,,"max(0.1, trip_length_km)"
+traffic_plan_fee_IRR_trip_base,input,Input/exogenous or initialized state,economic,policy_revenue,region 12,0,,,
+modal_share_motorcycle_ml,ml,ML modal-prior surrogate,transport,mode_choice_city,city,18,modal_share_motorcycle__lag1 | traffic_plan_fee_behavior_IRR_trip__lag1 | len_met__lag1 | len_bus__lag1 | fare_bus_behavior_IRR_trip__lag1 | fare_metro_behavior_IRR_trip__lag1 | pt_bus_service_index__lag1 | bus_vehicles_per_km__lag1 | brt_vehicles_per_km__lag1 | buses_total__lag1 | brts_total__lag1 | len_brt__lag1 | brt_share_of_bus__lag1 | delta_pt_bus_service_index__lag1 | delta_bus_vehicles_per_km__lag1 | delta_brt_vehicles_per_km__lag1 | travel_time_bus_hours__lag1 | travel_time_metro_hours__lag1,modal_share_motorcycle_truth,
+modal_share_car_ml,ml,ML modal-prior surrogate,transport,mode_choice_city,city,15,fuel_price_gasoline_IRR_litre__lag1 | traffic_plan_fee_behavior_IRR_trip__lag1 | fare_bus_behavior_IRR_trip__lag1 | fare_metro_behavior_IRR_trip__lag1 | pt_bus_service_index__lag1 | travel_time_bus_hours__lag1 | travel_time_metro_hours__lag1 | len_met__lag1 | len_bus__lag1 | len_brt__lag1 | brt_share_of_bus__lag1 | bus_vehicles_per_km__lag1 | brt_vehicles_per_km__lag1 | inflation_rate_truth__lag1 | YEAR_GRG,modal_share_car_truth,
+modal_share_taxi_ml,ml,ML modal-prior surrogate,transport,mode_choice_city,city,3,fuel_price_gasoline_IRR_litre__lag1 | traffic_plan_fee_behavior_IRR_trip__lag1 | inflation_rate_truth__lag1,modal_share_taxi_truth,
+modal_share_bus_ml,ml,ML modal-prior surrogate,transport,mode_choice_city,city,15,fuel_price_gasoline_IRR_litre__lag1 | traffic_plan_fee_behavior_IRR_trip__lag1 | fare_bus_behavior_IRR_trip__lag1 | fare_metro_behavior_IRR_trip__lag1 | pt_bus_service_index__lag1 | travel_time_bus_hours__lag1 | travel_time_metro_hours__lag1 | len_met__lag1 | len_bus__lag1 | len_brt__lag1 | brt_share_of_bus__lag1 | bus_vehicles_per_km__lag1 | brt_vehicles_per_km__lag1 | inflation_rate_truth__lag1 | YEAR_GRG,modal_share_bus_truth,
+modal_share_metro_ml,ml,ML modal-prior surrogate,transport,mode_choice_city,city,4,fare_metro_behavior_IRR_trip__lag1 | travel_time_metro_hours__lag1 | traffic_plan_fee_behavior_IRR_trip__lag1 | inflation_rate_truth__lag1,modal_share_metro_truth,
+modal_share_other_ml,ml,ML modal-prior surrogate,transport,mode_choice_city,city,15,fuel_price_gasoline_IRR_litre__lag1 | traffic_plan_fee_behavior_IRR_trip__lag1 | fare_bus_behavior_IRR_trip__lag1 | fare_metro_behavior_IRR_trip__lag1 | pt_bus_service_index__lag1 | travel_time_bus_hours__lag1 | travel_time_metro_hours__lag1 | len_met__lag1 | len_bus__lag1 | len_brt__lag1 | brt_share_of_bus__lag1 | bus_vehicles_per_km__lag1 | brt_vehicles_per_km__lag1 | inflation_rate_truth__lag1 | YEAR_GRG,modal_share_other_truth,
+modal_share_mot_r12_ml,ml,ML modal-prior surrogate,transport,mode_choice_region,region 12,19,modal_share_mot_r12__lag1 | travel_time_car_r12_hours__lag1 | fare_bus_behavior_IRR_trip__lag1 | fare_metro_behavior_IRR_trip__lag1 | len_bus_r12__lag1 | len_brt_r12__lag1 | travel_time_bus_r12_hours__lag1 | travel_time_metro_hours__lag1 | pt_bus_service_index__lag1 | delta_pt_bus_service_index__lag1 | fuel_price_gasoline_IRR_litre__lag1 | traffic_plan_fee_behavior_IRR_trip__lag1 | YEAR_GRG | congestion_index_r12__lag1 | parking_r12__lag1 | len_hwy_r12__lag1 | GDP_CAP__lag1 | pop_r12_truth__lag1 | job_r12_truth__lag1,modal_share_mot_r12_truth,
+modal_share_car_r12_ml,ml,ML modal-prior surrogate,transport,mode_choice_r12,region 12,19,modal_share_car_r12__lag1 | fuel_price_gasoline_IRR_litre__lag1 | traffic_plan_fee_behavior_IRR_trip__lag1 | fare_bus_behavior_IRR_trip__lag1 | fare_metro_behavior_IRR_trip__lag1 | pt_bus_service_index__lag1 | travel_time_bus_r12_hours__lag1 | travel_time_metro_hours__lag1 | len_bus_r12__lag1 | len_brt_r12__lag1 | inflation_rate_truth__lag1 | YEAR_GRG | congestion_index_r12__lag1 | parking_r12__lag1 | len_hwy_r12__lag1 | travel_time_car_r12_hours__lag1 | GDP_CAP__lag1 | pop_r12_truth__lag1 | job_r12_truth__lag1,modal_share_car_r12_truth,
+modal_share_tax_r12_ml,ml,ML modal-prior surrogate,transport,modal_share,region 12,20,modal_share_tax_r12__lag1 | fuel_price_gasoline_IRR_litre__lag1 | traffic_plan_fee_behavior_IRR_trip__lag1 | fare_bus_behavior_IRR_trip__lag1 | fare_metro_behavior_IRR_trip__lag1 | pt_bus_service_index__lag1 | travel_time_bus_r12_hours__lag1 | travel_time_metro_hours__lag1 | len_bus_r12__lag1 | len_brt_r12__lag1 | inflation_rate_truth__lag1 | YEAR_GRG | online_taxi_active__lag1 | congestion_index_r12__lag1 | parking_r12__lag1 | len_hwy_r12__lag1 | travel_time_car_r12_hours__lag1 | GDP_CAP__lag1 | pop_r12_truth__lag1 | job_r12_truth__lag1,modal_share_tax_r12_truth,
+modal_share_bus_r12_ml,ml,ML modal-prior surrogate,transport,mode_choice_r12,region 12,19,modal_share_bus_r12__lag1 | fuel_price_gasoline_IRR_litre__lag1 | traffic_plan_fee_behavior_IRR_trip__lag1 | fare_bus_behavior_IRR_trip__lag1 | fare_metro_behavior_IRR_trip__lag1 | pt_bus_service_index__lag1 | travel_time_bus_r12_hours__lag1 | travel_time_metro_hours__lag1 | len_bus_r12__lag1 | len_brt_r12__lag1 | inflation_rate_truth__lag1 | YEAR_GRG | congestion_index_r12__lag1 | parking_r12__lag1 | len_hwy_r12__lag1 | travel_time_car_r12_hours__lag1 | GDP_CAP__lag1 | pop_r12_truth__lag1 | job_r12_truth__lag1,modal_share_bus_r12_truth,
+modal_share_met_r12_ml,ml,ML modal-prior surrogate,transport,mode_choice_region,region 12,19,modal_share_met_r12__lag1 | fare_metro_behavior_IRR_trip__lag1 | travel_time_metro_hours__lag1 | traffic_plan_fee_behavior_IRR_trip__lag1 | inflation_rate_truth__lag1 | YEAR_GRG | len_met_r12__lag1 | len_bus_r12__lag1 | len_brt_r12__lag1 | fare_bus_behavior_IRR_trip__lag1 | travel_time_bus_r12_hours__lag1 | fuel_price_gasoline_IRR_litre__lag1 | GDP_CAP__lag1 | pop_r12_truth__lag1 | congestion_index_r12__lag1 | parking_r12__lag1 | len_hwy_r12__lag1 | travel_time_car_r12_hours__lag1 | job_r12_truth__lag1,modal_share_met_r12_truth,
+modal_share_oth_r12_ml,ml,ML modal-prior surrogate,transport,modal_share,region 12,16,modal_share_oth_r12__lag1 | inflation_rate_truth__lag1 | YEAR_GRG | congestion_index_r12__lag1 | parking_r12__lag1 | len_hwy_r12__lag1 | travel_time_car_r12_hours__lag1 | GDP_CAP__lag1 | pop_r12_truth__lag1 | job_r12_truth__lag1 | travel_time_bus_r12_hours__lag1 | travel_time_metro_hours__lag1 | fare_bus_behavior_IRR_trip__lag1 | fare_metro_behavior_IRR_trip__lag1 | traffic_plan_fee_behavior_IRR_trip__lag1 | fuel_price_gasoline_IRR_litre__lag1,modal_share_oth_r12_truth,
+modal_share_bik,expression,ABM behavioral mediation / competition / exposure,transport,mode_share,city,2,bike_percent_of_other | modal_share_other,,bike_percent_of_other * modal_share_other
+modal_share_motorcycle,expression,ABM behavioral mediation / competition / exposure,transport,mode_share,city,1,modal_share_motorcycle_adj,,modal_share_motorcycle_adj
+modal_share_car,expression,ABM behavioral mediation / competition / exposure,transport,mode_share,city,1,modal_share_car_adj,,modal_share_car_adj
+modal_share_taxi,expression,ABM behavioral mediation / competition / exposure,transport,mode_share,city,1,modal_share_taxi_adj,,modal_share_taxi_adj
+modal_share_bus,expression,ABM behavioral mediation / competition / exposure,transport,mode_share,city,1,modal_share_bus_adj,,modal_share_bus_adj
+modal_share_metro,expression,ABM behavioral mediation / competition / exposure,transport,mode_share,city,1,modal_share_metro_adj,,modal_share_metro_adj
+modal_share_other,expression,ABM behavioral mediation / competition / exposure,transport,mode_share,city,1,modal_share_other_adj,,modal_share_other_adj
+modal_share_mot_r12,expression,ABM behavioral mediation / competition / exposure,transport,mode_share,region 12,1,modal_share_mot_r12_adj,,modal_share_mot_r12_adj
+modal_share_car_r12,expression,ABM behavioral mediation / competition / exposure,transport,mode_share,region 12,1,modal_share_car_r12_adj,,modal_share_car_r12_adj
+modal_share_tax_r12,expression,ABM behavioral mediation / competition / exposure,transport,mode_share,region 12,1,modal_share_tax_r12_adj,,modal_share_tax_r12_adj
+modal_share_bus_r12,expression,ABM behavioral mediation / competition / exposure,transport,mode_share,region 12,1,modal_share_bus_r12_adj,,modal_share_bus_r12_adj
+modal_share_met_r12,expression,ABM behavioral mediation / competition / exposure,transport,mode_share,region 12,1,modal_share_met_r12_adj,,modal_share_met_r12_adj
+modal_share_oth_r12,expression,ABM behavioral mediation / competition / exposure,transport,mode_share,region 12,1,modal_share_oth_r12_adj,,modal_share_oth_r12_adj
+traffic_plan_revenue_IRR_year_obs,input,Input/exogenous or initialized state,economic,policy_revenue,region 12,0,,,
+traffic_plan_revenue_scale,expression,SD stock-flow / aggregate consequence / feedback,economic,regulatory_revenue,city,0,,,1.0
+traffic_plan_revenue_IRR_year,expression,SD stock-flow / aggregate consequence / feedback,economic,regulatory_revenue,city,4,traffic_plan_revenue_IRR_year_obs | traffic_plan_fee_IRR_trip | trips_car_city_tfp | traffic_plan_revenue_scale,,traffic_plan_revenue_IRR_year_obs if YEAR_GRG <= 2023 else (traffic_plan_fee_IRR_trip * trips_car_city_tfp * traffic_plan_revenue_scale)
+traffic_plan_fee_multiplier,input,Input/exogenous or initialized state,policy,pricing,city,0,,,
+fuel_price_multiplier,input,Input/exogenous or initialized state,policy,pricing,city,0,,,
+r12_voc_multiplier,input,Input/exogenous or initialized state,transport,congestion,region 12,0,,,
+v_over_c_r12_eff,expression,SD stock-flow / aggregate consequence / feedback,transport,congestion,region 12,2,v_over_c_r12 | r12_voc_multiplier,,v_over_c_r12 * r12_voc_multiplier
+spd_car_r12,expression,SD stock-flow / aggregate consequence / feedback,transport,performance,region 12,3,alpha_congestion_speed | congestion_index_r12 | spd_car_freeflow_r12,,spd_car_freeflow_r12 / (1.0 + 1.0 * alpha_congestion_speed * congestion_index_r12)
+spd_tax_r12,expression,SD stock-flow / aggregate consequence / feedback,transport,performance,region 12,3,alpha_congestion_speed | congestion_index_r12 | spd_tax_freeflow_r12,,spd_tax_freeflow_r12 / (1.0 + 1.0 * alpha_congestion_speed * congestion_index_r12)
+spd_oth_r12,expression,SD stock-flow / aggregate consequence / feedback,transport,performance,region 12,3,alpha_congestion_speed | congestion_index_r12 | spd_oth_freeflow_r12,,spd_oth_freeflow_r12 / (1.0 + 1.0 * alpha_congestion_speed * congestion_index_r12)
+spd_mot_r12,expression,SD stock-flow / aggregate consequence / feedback,transport,performance,region 12,4,spd_mot_history_calibration_factor | spd_mot_freeflow_r12 | alpha_congestion_speed | congestion_index_r12,,spd_mot_history_calibration_factor * spd_mot_freeflow_r12 / (1.0 + 0.7 * alpha_congestion_speed * congestion_index_r12)
+spd_bus_r12,expression,SD stock-flow / aggregate consequence / feedback,transport,performance,region 12,3,alpha_congestion_speed | congestion_index_r12 | spd_bus_freeflow_r12,,spd_bus_freeflow_r12 / (1.0 + 1.2 * alpha_congestion_speed * congestion_index_r12)
+travel_time_tax_r12_base_hours,expression,SD stock-flow / aggregate consequence / feedback,transport,performance,region 12,2,trip_length_r12_km | spd_tax_r12,,"trip_length_r12_km / max(spd_tax_r12, 1.0)"
+travel_time_oth_r12_base_hours,expression,SD stock-flow / aggregate consequence / feedback,transport,performance,region 12,2,trip_length_r12_km | spd_oth_r12,,"trip_length_r12_km / max(spd_oth_r12, 1.0)"
+travel_time_mot_r12_base_hours,expression,SD stock-flow / aggregate consequence / feedback,transport,performance,region 12,2,trip_length_r12_km | spd_mot_r12,,"trip_length_r12_km / max(spd_mot_r12, 1.0)"
+travel_time_bus_r12_hours,expression,SD stock-flow / aggregate consequence / feedback,transport,performance,region 12,2,trip_length_r12_km | spd_bus_r12,,"trip_length_r12_km / max(spd_bus_r12, 1.0)"
+gasoline_L_year_r12,expression,SD stock-flow / aggregate consequence / feedback,environment,energy_use,region 12,0,,,"vkm_car_r12 * car_energy_closure_factor * fc_car_gasoline_litre_km * max(1 - share_car_EV - share_car_CNG, 0) + vkm_taxi_r12 * fc_taxi_gasoline_litre_km * max(1 - share_taxi_EV - share_taxi_CNG, 0) + vkm_motorcycle_r12 * fc_motorcycle_gasoline_litre_km * max(1 - share_motorcycle_EV, 0)"
+diesel_L_year_r12,expression,SD stock-flow / aggregate consequence / feedback,environment,energy_use,region 12,0,,,"vkm_bus_r12 * fc_bus_diesel_litre_km * max(1 - share_bus_EV, 0)"
+cng_kg_year_r12,expression,SD stock-flow / aggregate consequence / feedback,environment,energy_use,region 12,0,,,vkm_car_r12 * car_energy_closure_factor * share_car_CNG * fc_car_CNG_kg_km + vkm_taxi_r12 * share_taxi_CNG * fc_taxi_CNG_kg_km
+electricity_kWh_year_r12,expression,SD stock-flow / aggregate consequence / feedback,environment,energy_use,region 12,0,,,vkm_car_r12 * car_energy_closure_factor * share_car_EV * energy_car_EV_kWh_km + vkm_taxi_r12 * share_taxi_EV * energy_taxi_EV_kWh_km + vkm_bus_r12 * share_bus_EV * energy_bus_EV_kWh_km + vkm_motorcycle_r12 * share_motorcycle_EV * energy_motorcycle_EV_kWh_km + vkm_metro_r12 * energy_metro_kWh_km
+CO2_t_year_r12,expression,SD stock-flow / aggregate consequence / feedback,environment,emissions,region 12,0,,,(gasoline_L_year_r12 * EF_CO2_gasoline_kg_litre + diesel_L_year_r12 * EF_CO2_diesel_kg_litre + cng_kg_year_r12 * EF_CO2_CNG_kg_kg + electricity_kWh_year_r12 * EF_CO2_grid_kg_kWh) / 1000
+NOx_t_year_r12,expression,SD stock-flow / aggregate consequence / feedback,environment,emissions,region 12,0,,,(EF_NOx_car_g_km * vkm_car_r12 * car_energy_closure_factor * (1 - share_car_EV) + EF_NOx_bus_g_km * vkm_bus_r12 * (1 - share_bus_EV) + EF_NOx_taxi_g_km * vkm_taxi_r12 * (1 - share_taxi_EV) + EF_NOx_motorcycle_g_km * vkm_motorcycle_r12 * (1 - share_motorcycle_EV) + EF_grid_NOx_g_kWh * electricity_kWh_year_r12) / 1e6
+final_energy_MJ_year_r12,expression,SD stock-flow / aggregate consequence / feedback,environment,energy_use,region 12,0,,,gasoline_L_year_r12 * LHV_gasoline_MJ_litre + diesel_L_year_r12 * LHV_diesel_MJ_litre + cng_kg_year_r12 * LHV_CNG_MJ_kg + electricity_kWh_year_r12 * LHV_electricity_MJ_kWh
+cost_energy_IRR_year_r12,expression,SD stock-flow / aggregate consequence / feedback,economic,opex,region 12,0,,,gasoline_L_year_r12 * fuel_price_gasoline_IRR_litre + diesel_L_year_r12 * fuel_price_diesel_IRR_litre + cng_kg_year_r12 * fuel_price_CNG_IRR_kg + electricity_kWh_year_r12 * electricity_price_transport_indexed_IRR_kWh
+cost_climate_IRR_year_r12,expression,SD stock-flow / aggregate consequence / feedback,impact,external_costs,region 12,0,,,CO2_t_year_r12 * cost_of_carbon_IRR_t
+GDP_city_obs,input,Input/exogenous or initialized state,economic,macro,city,0,,,
+pop_r12_obs,input,Input/exogenous or initialized state,social,demography,region 12,0,,,
+len_hwy_r12_obs,input,Input/exogenous or initialized state,transport,network_supply,region 12,0,,,
+len_brt_r12_obs,input,Input/exogenous or initialized state,transport,network_supply,region 12,0,,,
+len_met_r12_obs,input,Input/exogenous or initialized state,transport,network_supply,region 12,0,,,
+len_bus_r12_obs,input,Input/exogenous or initialized state,transport,network_supply,region 12,0,,,
+ecn_usd_obs,input,Input/exogenous or initialized state,economic,prices_inflation_fx,city,0,,,
+acc_fatl_obs,input,Input/exogenous or initialized state,social,safety,city,0,,,
+trips_car_city_tfp_obs,input,Input/exogenous or initialized state,transport,traffic_regulation,city,0,,,
+trp_r12_tfp_obs,input,Input/exogenous or initialized state,transport,traffic_regulation,region 12,0,,,
+trp_tfp_obs,input,Input/exogenous or initialized state,transport,traffic_regulation,city,0,,,
+trp_tps_city_obs,input,Input/exogenous or initialized state,transport,travel_demand_city,city,0,,,
+vkm_car_EV_r12,expression,SD stock-flow / aggregate consequence / feedback,transport,electrified_activity,region 12,0,,,vkm_car_r12 * share_car_EV
+vkm_taxi_EV_r12,expression,SD stock-flow / aggregate consequence / feedback,transport,electrified_activity,region 12,0,,,vkm_taxi_r12 * share_taxi_EV
+vkm_bus_EV_r12,expression,SD stock-flow / aggregate consequence / feedback,transport,electrified_activity,region 12,0,,,vkm_bus_r12 * share_bus_EV
+vkm_motorcycle_EV_r12,expression,SD stock-flow / aggregate consequence / feedback,transport,electrified_activity,region 12,0,,,vkm_motorcycle_r12 * share_motorcycle_EV
+PT_trips_total_r12,expression,ABM behavioral mediation / competition / exposure,transport,mode_specific_demand,region 12,0,,,trp_r12 * modal_share_PT_r12
+bus_vehicles_per_km,expression,ABM behavioral mediation / competition / exposure,transport,service_proxy,city,0,,,"buses_total / max(len_bus, 1e-6)"
+brt_vehicles_per_km,expression,ABM behavioral mediation / competition / exposure,transport,service_proxy,city,0,,,"brts_total / max(len_brt, 1e-6)"
+pt_bus_service_index,expression,ABM behavioral mediation / competition / exposure,transport,service_proxy,city,0,,,(1 - brt_share_of_bus) * bus_vehicles_per_km + brt_share_of_bus * brt_vehicles_per_km
+fare_bus_IRR_trip,expression,SD stock-flow / aggregate consequence / feedback,economic,aliases,city,0,,,fare_bus_IRR_trip_indexed
+fare_metro_IRR_trip,expression,SD stock-flow / aggregate consequence / feedback,economic,aliases,city,0,,,fare_metro_IRR_trip_indexed
+commute_share_of_trips,expression,ABM behavioral mediation / competition / exposure,transport,telework,city,0,,,0.25
+telework_rate_effective,input,Input/exogenous or initialized state,policy,telework,city,0,,,
+telework_trip_multiplier,expression,ABM behavioral mediation / competition / exposure,transport,telework,city,2,commute_share_of_trips | telework_rate_effective,,"max(1 - commute_share_of_trips*telework_rate_effective, 0.7)"
+bike_percent_of_other,input,Input/exogenous or initialized state,transport,mode_choice_city,city,0,,,
+r12_speed_factor,input,Input/exogenous or initialized state,transport,service_speed,region 12,0,,,
+spd_car_freeflow_r12,expression,SD stock-flow / aggregate consequence / feedback,transport,service_speed,region 12,0,,,spd_car_freeflow * r12_speed_factor
+spd_tax_freeflow_r12,expression,SD stock-flow / aggregate consequence / feedback,transport,service_speed,region 12,0,,,spd_tax_freeflow * r12_speed_factor
+spd_oth_freeflow_r12,expression,SD stock-flow / aggregate consequence / feedback,transport,service_speed,region 12,0,,,spd_oth_freeflow * r12_speed_factor
+spd_mot_freeflow_r12,expression,SD stock-flow / aggregate consequence / feedback,transport,service_speed,region 12,0,,,spd_mot_freeflow * r12_speed_factor
+spd_bus_freeflow_r12,expression,SD stock-flow / aggregate consequence / feedback,transport,service_speed,region 12,0,,,spd_bus_freeflow * r12_speed_factor
+congestion_factor_r12_vs_city,expression,SD stock-flow / aggregate consequence / feedback,transport,congestion,region 12,0,,,"min(max((1 + congestion_index_r12) / max((1 + congestion_index), 1e-6), 0.3), 5.0)"
+operating_condition_factor_r12_vs_city,expression,SD stock-flow / aggregate consequence / feedback,transport,performance,region 12,0,,,"min(max(spd_car / max(spd_car_r12, 1e-6), 0.5), 3.0)"
+traffic_condition_factor_r12_vs_city,expression,SD stock-flow / aggregate consequence / feedback,transport,performance,region 12,0,,,"min(max(congestion_factor_r12_vs_city * operating_condition_factor_r12_vs_city, 0.3), 5.0)"
+vkt_pce_per_capita_city,expression,ABM behavioral mediation / competition / exposure,transport,exposure,city,0,,,"vkm_pce_total / max(population_city, 1e-6)"
+vkt_pce_per_capita_r12,expression,ABM behavioral mediation / competition / exposure,transport,exposure,region 12,0,,,"vkm_pce_total_r12 / max(pop_r12, 1e-6)"
+vkt_pc_ratio_r12_vs_city,expression,ABM behavioral mediation / competition / exposure,transport,exposure,region 12,0,,,"min(max(vkt_pce_per_capita_r12 / max(vkt_pce_per_capita_city, 1e-9), 0.2), 5.0)"
+noise_exposure_index_r12_proxy,expression,SD stock-flow / aggregate consequence / feedback,environment,noise_parameters,region 12,0,,,"noise_exposure_index * pow(vkt_pc_ratio_r12_vs_city, 0.5) * pow(traffic_condition_factor_r12_vs_city, 0.5)"
+NO2_excess_city_ugm3,expression,SD stock-flow / aggregate consequence / feedback,environment,air_quality,city,0,,,"max(concentration_NO2_ugm3 - NO2_background_ugm3, 0.0)"
+NOx_per_capita_city_t_person_year,expression,SD stock-flow / aggregate consequence / feedback,environment,air_quality,city,0,,,"NOx_t_year / max(population_city, 1e-6)"
+NOx_per_capita_r12_t_person_year,expression,SD stock-flow / aggregate consequence / feedback,environment,air_quality,region 12,0,,,"NOx_t_year_r12 / max(pop_r12, 1e-6)"
+NOx_pc_ratio_r12_vs_city,expression,SD stock-flow / aggregate consequence / feedback,environment,air_quality,region 12,0,,,"min(max(NOx_per_capita_r12_t_person_year / max(NOx_per_capita_city_t_person_year, 1e-9), 0.2), 5.0)"
+NO2_multiplier_r12,expression,SD stock-flow / aggregate consequence / feedback,environment,air_quality,region 12,0,,,"min(max(1.35 * pow(NOx_pc_ratio_r12_vs_city, 0.5) * pow(traffic_condition_factor_r12_vs_city, 0.5), 0.8), 3.0)"
+concentration_NO2_ugm3_r12_proxy,expression,SD stock-flow / aggregate consequence / feedback,environment,air_quality,region 12,0,,,NO2_background_ugm3 + NO2_excess_city_ugm3 * NO2_multiplier_r12
+congestion_multiplier_r12,input,Input/exogenous or initialized state,transport,congestion,region 12,0,,,
+PT_expenditure_total_IRR_year,expression,SD stock-flow / aggregate consequence / feedback,economic,public_transport_finance,city,2,PT_expenditure_per_person_IRR_year | population_city,,PT_expenditure_per_person_IRR_year * population_city
+fare_revenue_PT_total_IRR_year,expression,SD stock-flow / aggregate consequence / feedback,economic,public_transport_finance,city,2,fare_revenue_bus_IRR_year | fare_revenue_metro_IRR_year,,fare_revenue_bus_IRR_year + fare_revenue_metro_IRR_year
+PT_subsidy_need_IRR_year,expression,SD stock-flow / aggregate consequence / feedback,economic,public_transport_finance,city,2,OPEX_PT_IRR_year | fare_revenue_PT_total_IRR_year,,"max(OPEX_PT_IRR_year - fare_revenue_PT_total_IRR_year, 0)"
+transport_budget_utilization,expression,SD stock-flow / aggregate consequence / feedback,economic,public_transport_finance,city,2,PT_subsidy_need_IRR_year | transport_budget_effective_IRR_year,,"PT_subsidy_need_IRR_year / max(transport_budget_effective_IRR_year, 1e-9)"
+transport_budget_gap_IRR_year,expression,SD stock-flow / aggregate consequence / feedback,economic,public_transport_finance,city,2,PT_subsidy_need_IRR_year | transport_budget_effective_IRR_year,,PT_subsidy_need_IRR_year - transport_budget_effective_IRR_year
+PT_expenditure_total_IRR_year_r12_alloc,expression,SD stock-flow / aggregate consequence / feedback,economic,public_transport_finance,region 12,3,PT_expenditure_total_IRR_year | PT_trips_total_r12 | PT_trips_total,,"PT_expenditure_total_IRR_year * (PT_trips_total_r12 / max(PT_trips_total,1e-9))"
+fare_revenue_PT_total_IRR_year_r12_alloc,expression,SD stock-flow / aggregate consequence / feedback,economic,public_transport_finance,region 12,3,fare_revenue_PT_total_IRR_year | PT_trips_total_r12 | PT_trips_total,,"fare_revenue_PT_total_IRR_year * (PT_trips_total_r12 / max(PT_trips_total,1e-9))"
+PT_subsidy_need_IRR_year_r12_alloc,expression,SD stock-flow / aggregate consequence / feedback,economic,public_transport_finance,region 12,2,OPEX_PT_IRR_year_r12_alloc | revenue_transport_public_IRR_year_r12_alloc,,"max(OPEX_PT_IRR_year_r12_alloc - revenue_transport_public_IRR_year_r12_alloc, 0)"
+transport_budget_utilization_r12_alloc,expression,SD stock-flow / aggregate consequence / feedback,economic,public_transport_finance,region 12,2,PT_subsidy_need_IRR_year_r12_alloc | transport_budget_effective_IRR_year_r12_alloc,,"PT_subsidy_need_IRR_year_r12_alloc / max(transport_budget_effective_IRR_year_r12_alloc, 1e-9)"
+transport_budget_gap_IRR_year_r12_alloc,expression,SD stock-flow / aggregate consequence / feedback,economic,public_transport_finance,region 12,2,PT_subsidy_need_IRR_year_r12_alloc | transport_budget_effective_IRR_year_r12_alloc,,PT_subsidy_need_IRR_year_r12_alloc - transport_budget_effective_IRR_year_r12_alloc
+bus_fare_rate_base,input,Input/exogenous or initialized state,policy_ref,baseline,city,0,,,
+metro_fare_rate_base,input,Input/exogenous or initialized state,policy_ref,baseline,city,0,,,
+spd_bus_freeflow_base,input,Input/exogenous or initialized state,policy_ref,baseline,city,0,,,
+spd_met_base,input,Input/exogenous or initialized state,policy_ref,baseline,city,0,,,
+fuel_price_multiplier_base,input,Input/exogenous or initialized state,policy_ref,baseline,city,0,,,
+traffic_plan_fee_multiplier_base,input,Input/exogenous or initialized state,policy_ref,baseline,city,0,,,
+coef_k_fuel,input,Input/exogenous or initialized state,policy_ref,coeff,city,0,,,
+coef_k_fee,input,Input/exogenous or initialized state,policy_ref,coeff,city,0,,,
+coef_k_fare,input,Input/exogenous or initialized state,policy_ref,coeff,city,0,,,
+coef_k_speed,input,Input/exogenous or initialized state,policy_ref,coeff,city,0,,,
+adj_factor_car_policy,expression,ABM behavioral mediation / competition / exposure,policy,adjustment,city,0,,,"(0.9751) * (exp(-coef_k_fee*(traffic_plan_fee_multiplier/traffic_plan_fee_multiplier_base - 1.0) - 0.20*coef_k_park*(parking_supply_multiplier_r12_base/max(parking_supply_multiplier_r12, 1e-6) - 1.0) - 0.45*coef_k_commute*(commute_management_multiplier/commute_management_multiplier_base - 1.0)) if YEAR_GRG>=2024 else 1.0)"
+adj_factor_bus_policy,expression,ABM behavioral mediation / competition / exposure,policy,adjustment,city,0,,,(0.9929) * (exp(-coef_k_fare*(bus_fare_rate/bus_fare_rate_base - 1.0) + coef_k_speed*(spd_bus_freeflow/spd_bus_freeflow_base - 1.0) + 0.20*coef_k_commute*(commute_management_multiplier/commute_management_multiplier_base - 1.0)) if YEAR_GRG>=2024 else 1.0)
+adj_factor_metro_policy,expression,ABM behavioral mediation / competition / exposure,policy,adjustment,city,0,,,(0.9787) * (exp(-coef_k_fare*(metro_fare_rate/metro_fare_rate_base - 1.0) + coef_k_speed*(spd_met/spd_met_base - 1.0) + 0.24*coef_k_commute*(commute_management_multiplier/commute_management_multiplier_base - 1.0)) if YEAR_GRG>=2024 else 1.0)
+adj_factor_taxi_policy,expression,ABM behavioral mediation / competition / exposure,policy,adjustment,city,0,,,"(0.9668) * (exp(-0.6*coef_k_fee*(traffic_plan_fee_multiplier/traffic_plan_fee_multiplier_base - 1.0) - 0.05*coef_k_park*(parking_supply_multiplier_r12_base/max(parking_supply_multiplier_r12, 1e-6) - 1.0) - 0.08*coef_k_commute*(commute_management_multiplier/commute_management_multiplier_base - 1.0)) if YEAR_GRG>=2024 else 1.0)"
+adj_factor_motorcycle_policy,expression,ABM behavioral mediation / competition / exposure,policy,adjustment,city,0,,,((1.1422) * exp(-0.8*coef_k_fuel*(fuel_price_multiplier/fuel_price_multiplier_base - 1.0) - 0.18*coef_k_commute*(commute_management_multiplier/commute_management_multiplier_base - 1.0))) if YEAR_GRG>=2024 else 1.0
+adj_factor_other_policy,expression,ABM behavioral mediation / competition / exposure,policy,adjustment,city,0,,,(0.9557) * (exp(0.10*coef_k_commute*(commute_management_multiplier/commute_management_multiplier_base - 1.0)) if YEAR_GRG>=2024 else 1.0)
+policy_norm_denom_city,expression,ABM behavioral mediation / competition / exposure,policy,adjustment,city,0,,,(modal_share_car_ml*adj_factor_car_policy + modal_share_bus_ml*adj_factor_bus_policy + modal_share_metro_ml*adj_factor_metro_policy + modal_share_taxi_ml*adj_factor_taxi_policy + modal_share_motorcycle_ml*adj_factor_motorcycle_policy + modal_share_other_ml*adj_factor_other_policy)
+modal_share_car_adj,expression,ABM behavioral mediation / competition / exposure,transport,mode_share,city,3,modal_share_car_ml | adj_factor_car_policy | policy_norm_denom_city,,"(modal_share_car_ml*adj_factor_car_policy)/max(policy_norm_denom_city, 1e-12)"
+modal_share_bus_adj,expression,ABM behavioral mediation / competition / exposure,transport,mode_share,city,3,modal_share_bus_ml | adj_factor_bus_policy | policy_norm_denom_city,,"(modal_share_bus_ml*adj_factor_bus_policy)/max(policy_norm_denom_city, 1e-12)"
+modal_share_metro_adj,expression,ABM behavioral mediation / competition / exposure,transport,mode_share,city,3,modal_share_metro_ml | adj_factor_metro_policy | policy_norm_denom_city,,"(modal_share_metro_ml*adj_factor_metro_policy)/max(policy_norm_denom_city, 1e-12)"
+modal_share_taxi_adj,expression,ABM behavioral mediation / competition / exposure,transport,mode_share,city,3,modal_share_taxi_ml | adj_factor_taxi_policy | policy_norm_denom_city,,"(modal_share_taxi_ml*adj_factor_taxi_policy)/max(policy_norm_denom_city, 1e-12)"
+modal_share_motorcycle_adj,expression,ABM behavioral mediation / competition / exposure,transport,mode_share,city,3,modal_share_motorcycle_ml | adj_factor_motorcycle_policy | policy_norm_denom_city,,"(modal_share_motorcycle_ml*adj_factor_motorcycle_policy)/max(policy_norm_denom_city, 1e-12)"
+modal_share_other_adj,expression,ABM behavioral mediation / competition / exposure,transport,mode_share,city,3,modal_share_other_ml | adj_factor_other_policy | policy_norm_denom_city,,"(modal_share_other_ml*adj_factor_other_policy)/max(policy_norm_denom_city, 1e-12)"
+adj_factor_car_policy_r12,expression,ABM behavioral mediation / competition / exposure,policy,adjustment,region 12,0,,,"(0.9618) * (exp(-coef_k_fee*(traffic_plan_fee_multiplier/traffic_plan_fee_multiplier_base - 1.0) - 0.85*coef_k_park*(parking_supply_multiplier_r12_base/max(parking_supply_multiplier_r12, 1e-6) - 1.0) - 0.35*coef_k_commute*(commute_management_multiplier/commute_management_multiplier_base - 1.0)) if YEAR_GRG>=2024 else 1.0)"
+adj_factor_bus_policy_r12,expression,ABM behavioral mediation / competition / exposure,policy,adjustment,region 12,0,,,(1.0197) * (exp(-coef_k_fare*(bus_fare_rate/bus_fare_rate_base - 1.0) + coef_k_speed*(spd_bus_freeflow/spd_bus_freeflow_base - 1.0) + 0.15*coef_k_commute*(commute_management_multiplier/commute_management_multiplier_base - 1.0)) if YEAR_GRG>=2024 else 1.0)
+adj_factor_metro_policy_r12,expression,ABM behavioral mediation / competition / exposure,policy,adjustment,region 12,0,,,(1.0608) * (exp(-coef_k_fare*(metro_fare_rate/metro_fare_rate_base - 1.0) + coef_k_speed*(spd_met/spd_met_base - 1.0) + 0.18*coef_k_commute*(commute_management_multiplier/commute_management_multiplier_base - 1.0)) if YEAR_GRG>=2024 else 1.0)
+adj_factor_tax_policy_r12,expression,ABM behavioral mediation / competition / exposure,policy,adjustment,region 12,0,,,"(0.976) * (exp(-0.6*coef_k_fee*(traffic_plan_fee_multiplier/traffic_plan_fee_multiplier_base - 1.0) - 0.15*coef_k_park*(parking_supply_multiplier_r12_base/max(parking_supply_multiplier_r12, 1e-6) - 1.0) - 0.05*coef_k_commute*(commute_management_multiplier/commute_management_multiplier_base - 1.0)) if YEAR_GRG>=2024 else 1.0)"
+adj_factor_mot_policy_r12,expression,ABM behavioral mediation / competition / exposure,policy,adjustment,region 12,0,,,(0.9617) * (exp(-0.8*coef_k_fuel*(fuel_price_multiplier/fuel_price_multiplier_base - 1.0) - 0.12*coef_k_commute*(commute_management_multiplier/commute_management_multiplier_base - 1.0)) if YEAR_GRG>=2024 else 1.0)
+adj_factor_oth_policy_r12,expression,ABM behavioral mediation / competition / exposure,policy,adjustment,region 12,0,,,(1.024) * (exp(0.08*coef_k_commute*(commute_management_multiplier/commute_management_multiplier_base - 1.0)) if YEAR_GRG>=2024 else 1.0)
+policy_norm_denom_r12,expression,ABM behavioral mediation / competition / exposure,policy,adjustment,region 12,0,,,(modal_share_car_r12_ml*adj_factor_car_policy_r12 + modal_share_bus_r12_ml*adj_factor_bus_policy_r12 + modal_share_met_r12_ml*adj_factor_metro_policy_r12 + modal_share_tax_r12_ml*adj_factor_tax_policy_r12 + modal_share_mot_r12_ml*adj_factor_mot_policy_r12 + modal_share_oth_r12_ml*adj_factor_oth_policy_r12)
+modal_share_car_r12_adj,expression,ABM behavioral mediation / competition / exposure,transport,mode_share,region 12,3,modal_share_car_r12_ml | adj_factor_car_policy_r12 | policy_norm_denom_r12,,"(modal_share_car_r12_ml*adj_factor_car_policy_r12)/max(policy_norm_denom_r12, 1e-12)"
+modal_share_bus_r12_adj,expression,ABM behavioral mediation / competition / exposure,transport,mode_share,region 12,3,modal_share_bus_r12_ml | adj_factor_bus_policy_r12 | policy_norm_denom_r12,,"(modal_share_bus_r12_ml*adj_factor_bus_policy_r12)/max(policy_norm_denom_r12, 1e-12)"
+modal_share_met_r12_adj,expression,ABM behavioral mediation / competition / exposure,transport,mode_share,region 12,3,modal_share_met_r12_ml | adj_factor_metro_policy_r12 | policy_norm_denom_r12,,"(modal_share_met_r12_ml*adj_factor_metro_policy_r12)/max(policy_norm_denom_r12, 1e-12)"
+modal_share_tax_r12_adj,expression,ABM behavioral mediation / competition / exposure,transport,mode_share,region 12,3,modal_share_tax_r12_ml | adj_factor_tax_policy_r12 | policy_norm_denom_r12,,"(modal_share_tax_r12_ml*adj_factor_tax_policy_r12)/max(policy_norm_denom_r12, 1e-12)"
+modal_share_mot_r12_adj,expression,ABM behavioral mediation / competition / exposure,transport,mode_share,region 12,3,modal_share_mot_r12_ml | adj_factor_mot_policy_r12 | policy_norm_denom_r12,,"(modal_share_mot_r12_ml*adj_factor_mot_policy_r12)/max(policy_norm_denom_r12, 1e-12)"
+modal_share_oth_r12_adj,expression,ABM behavioral mediation / competition / exposure,transport,mode_share,region 12,3,modal_share_oth_r12_ml | adj_factor_oth_policy_r12 | policy_norm_denom_r12,,"(modal_share_oth_r12_ml*adj_factor_oth_policy_r12)/max(policy_norm_denom_r12, 1e-12)"
+trp_tps_city_effective,expression,SD stock-flow / aggregate consequence / feedback,transport,travel_demand,city,2,trp_tps_city | telework_trip_multiplier,,trp_tps_city * telework_trip_multiplier
+trp_r12_effective,expression,SD stock-flow / aggregate consequence / feedback,transport,travel_demand,region 12,2,trp_r12 | telework_trip_multiplier,,trp_r12 * telework_trip_multiplier
+car_energy_closure_factor,input,Input/exogenous or initialized state,environment,energy_use,city,0,,,
+traffic_plan_revenue_earmark_share_transport,input,Input/exogenous or initialized state,economic,public_transport_finance,city,0,,,
+region12_municipal_budget_share_of_tehran,input,Input/exogenous or initialized state,economic,macro,region 12,0,,,
+municipal_budget_IRR_year_r12_proxy,expression,SD stock-flow / aggregate consequence / feedback,economic,macro,region 12,2,municipal_budget_IRR_year | region12_municipal_budget_share_of_tehran,,municipal_budget_IRR_year * region12_municipal_budget_share_of_tehran
+transport_budget_effective_IRR_year,expression,SD stock-flow / aggregate consequence / feedback,economic,public_transport_finance,city,4,transport_budget_IRR_year | traffic_plan_revenue_earmark_share_transport | traffic_plan_revenue_collection_factor | traffic_plan_revenue_IRR_year,,transport_budget_IRR_year + traffic_plan_revenue_earmark_share_transport * traffic_plan_revenue_collection_factor * traffic_plan_revenue_IRR_year
+transport_budget_IRR_year_r12_alloc,expression,SD stock-flow / aggregate consequence / feedback,economic,public_transport_finance,region 12,2,transport_budget_IRR_year | region12_municipal_budget_share_of_tehran,,transport_budget_IRR_year * region12_municipal_budget_share_of_tehran
+traffic_plan_revenue_IRR_year_r12_alloc,expression,SD stock-flow / aggregate consequence / feedback,economic,public_transport_finance,region 12,2,traffic_plan_revenue_IRR_year | region12_traffic_plan_revenue_attribution_share,,traffic_plan_revenue_IRR_year * region12_traffic_plan_revenue_attribution_share
+transport_budget_effective_IRR_year_r12_alloc,expression,SD stock-flow / aggregate consequence / feedback,economic,public_transport_finance,region 12,4,transport_budget_IRR_year_r12_alloc | traffic_plan_revenue_earmark_share_transport | traffic_plan_revenue_collection_factor | traffic_plan_revenue_IRR_year_r12_alloc,,transport_budget_IRR_year_r12_alloc + traffic_plan_revenue_earmark_share_transport * traffic_plan_revenue_collection_factor * traffic_plan_revenue_IRR_year_r12_alloc
+CAPEX_transport_affordable_IRR_year_r12_alloc,expression,SD stock-flow / aggregate consequence / feedback,economic,public_transport_finance,region 12,5,transport_budget_IRR_year_r12_alloc | public_investment_rate_transport | traffic_plan_revenue_earmark_share_transport | traffic_plan_revenue_collection_factor | traffic_plan_revenue_IRR_year_r12_alloc,,transport_budget_IRR_year_r12_alloc * public_investment_rate_transport + traffic_plan_revenue_earmark_share_transport * traffic_plan_revenue_collection_factor * traffic_plan_revenue_IRR_year_r12_alloc
+revenue_transport_public_IRR_year_r12_alloc,expression,SD stock-flow / aggregate consequence / feedback,economic,public_transport_finance,region 12,5,fare_bus_IRR_trip_indexed | fare_metro_IRR_trip_indexed | trp_r12_effective | modal_share_bus_r12 | modal_share_met_r12,,fare_bus_IRR_trip_indexed * trp_r12_effective * modal_share_bus_r12 + fare_metro_IRR_trip_indexed * trp_r12_effective * modal_share_met_r12
+OPEX_PT_IRR_year_r12_alloc,expression,SD stock-flow / aggregate consequence / feedback,economic,public_transport_finance,region 12,14,vkm_bus_r12 | opex_bus_IRR_km_indexed | vkm_BRT | len_brt_r12 | len_brt | opex_BRT_IRR_km_indexed | vkm_metro_r12 | opex_metro_IRR_km_indexed | cost_energy_PT_IRR_year | PT_trips_total_r12 | PT_trips_total | vkm_bus | vkm_metro | vkm_BRT,,"vkm_bus_r12 * opex_bus_IRR_km_indexed + (vkm_BRT * (len_brt_r12 / max(len_brt,1e-9))) * opex_BRT_IRR_km_indexed + vkm_metro_r12 * opex_metro_IRR_km_indexed + cost_energy_PT_IRR_year * min(max(0.5 * (PT_trips_total_r12 / max(PT_trips_total,1e-9)) + 0.5 * ((vkm_bus_r12 + vkm_metro_r12 + vkm_BRT * (len_brt_r12 / max(len_brt,1e-9))) / max(vkm_bus + vkm_metro + vkm_BRT,1e-9)), 0.05), 0.25)"
+OPEX_PT_deficit_IRR_year_r12_alloc,expression,SD stock-flow / aggregate consequence / feedback,economic,public_transport_finance,region 12,2,OPEX_PT_IRR_year_r12_alloc | revenue_transport_public_IRR_year_r12_alloc,,"max(OPEX_PT_IRR_year_r12_alloc - revenue_transport_public_IRR_year_r12_alloc, 0)"
+farebox_recovery_PT,expression,SD stock-flow / aggregate consequence / feedback,economic,public_transport_finance,city,2,revenue_transport_public_IRR_year | OPEX_PT_IRR_year,,"revenue_transport_public_IRR_year / max(OPEX_PT_IRR_year, 1e-9)"
+farebox_recovery_PT_r12_alloc,expression,SD stock-flow / aggregate consequence / feedback,economic,public_transport_finance,region 12,2,revenue_transport_public_IRR_year_r12_alloc | OPEX_PT_IRR_year_r12_alloc,,"revenue_transport_public_IRR_year_r12_alloc / max(OPEX_PT_IRR_year_r12_alloc, 1e-9)"
+transport_budget_revenue_share_effective,expression,SD stock-flow / aggregate consequence / feedback,economic,public_transport_finance,city,4,traffic_plan_revenue_earmark_share_transport | traffic_plan_revenue_collection_factor | traffic_plan_revenue_IRR_year | transport_budget_effective_IRR_year,,"traffic_plan_revenue_earmark_share_transport * traffic_plan_revenue_collection_factor * traffic_plan_revenue_IRR_year / max(transport_budget_effective_IRR_year, 1e-9)"
+transport_budget_revenue_share_effective_r12_alloc,expression,SD stock-flow / aggregate consequence / feedback,economic,public_transport_finance,region 12,4,traffic_plan_revenue_earmark_share_transport | traffic_plan_revenue_collection_factor | traffic_plan_revenue_IRR_year_r12_alloc | transport_budget_effective_IRR_year_r12_alloc,,"traffic_plan_revenue_earmark_share_transport * traffic_plan_revenue_collection_factor * traffic_plan_revenue_IRR_year_r12_alloc / max(transport_budget_effective_IRR_year_r12_alloc, 1e-9)"
+cost_transport_public_IRR_year_r12_alloc,expression,SD stock-flow / aggregate consequence / feedback,economic,public_transport_finance,region 12,2,OPEX_PT_IRR_year_r12_alloc | CAPEX_transport_affordable_IRR_year_r12_alloc,,OPEX_PT_IRR_year_r12_alloc + CAPEX_transport_affordable_IRR_year_r12_alloc
+pt_cost_to_effective_budget_ratio,expression,SD stock-flow / aggregate consequence / feedback,economic,public_transport_finance,city,2,cost_transport_public_IRR_year | transport_budget_effective_IRR_year,,"cost_transport_public_IRR_year / max(transport_budget_effective_IRR_year, 1e-9)"
+pt_cost_to_effective_budget_ratio_r12_alloc,expression,SD stock-flow / aggregate consequence / feedback,economic,public_transport_finance,region 12,2,cost_transport_public_IRR_year_r12_alloc | transport_budget_effective_IRR_year_r12_alloc,,"cost_transport_public_IRR_year_r12_alloc / max(transport_budget_effective_IRR_year_r12_alloc, 1e-9)"
+commute_management_multiplier,input,Input/exogenous or initialized state,policy,demand_management,city,0,,,
+commute_management_multiplier_base,input,Input/exogenous or initialized state,policy_ref,baseline,city,0,,,
+coef_k_commute,input,Input/exogenous or initialized state,policy_ref,coeff,city,0,,,
+parking_supply_multiplier_r12,input,Input/exogenous or initialized state,policy,parking,region 12,0,,,
+parking_supply_multiplier_r12_base,input,Input/exogenous or initialized state,policy_ref,baseline,region 12,0,,,
+coef_k_park,input,Input/exogenous or initialized state,policy_ref,coeff,region 12,0,,,
+spd_car_history_calibration_factor,input,Input/exogenous or initialized state,transport,calibration,city,0,,,
+spd_bus_history_calibration_factor,input,Input/exogenous or initialized state,transport,calibration,city,0,,,
+traffic_plan_revenue_collection_factor,input,Input/exogenous or initialized state,economic,public_transport_finance,city,0,,,
+region12_traffic_plan_revenue_attribution_share,input,Input/exogenous or initialized state,economic,public_transport_finance,region 12,0,,,
+fare_bus_observed_IRR_trip,input,Input/exogenous or initialized state,economic,fares_revenue,city,0,,,
+fare_metro_observed_IRR_trip,input,Input/exogenous or initialized state,economic,fares_revenue,city,0,,,
+fare_bus_projection_base_IRR_trip,input,Input/exogenous or initialized state,economic,fares_revenue,city,0,,,
+fare_metro_projection_base_IRR_trip,input,Input/exogenous or initialized state,economic,fares_revenue,city,0,,,
+spd_mot_history_calibration_factor,input,Input/exogenous or initialized state,transport,calibration,city,0,,,
+traffic_plan_fee_behavior_base_IRR_trip,input,Input/exogenous or initialized state,economic,behavioral_price_proxy,region 12,0,,,
+traffic_plan_fee_behavior_IRR_trip,expression,SD stock-flow / aggregate consequence / feedback,economic,behavioral_price_proxy,region 12,2,traffic_plan_fee_behavior_base_IRR_trip | traffic_plan_fee_multiplier,,traffic_plan_fee_behavior_base_IRR_trip * traffic_plan_fee_multiplier
+fare_bus_behavior_IRR_trip,input,Input/exogenous or initialized state,economic,behavioral_price_proxy,city,0,,,
+fare_metro_behavior_IRR_trip,input,Input/exogenous or initialized state,economic,behavioral_price_proxy,city,0,,,

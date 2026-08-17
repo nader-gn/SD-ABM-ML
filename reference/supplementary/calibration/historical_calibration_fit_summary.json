@@ -1,0 +1,20 @@
+{
+  "calibration_years": [
+    2013,
+    2021
+  ],
+  "number_of_target_series": 31,
+  "exact_replay_or_structural_anchor_series": [
+    "brt_share_of_bus",
+    "share_taxi_CNG",
+    "share_taxi_gasoline",
+    "spd_met"
+  ],
+  "number_of_nonexact_series": 27,
+  "nonexact_nrmse_le_15_percent": 22,
+  "nonexact_nrmse_le_20_percent": 26,
+  "maximum_nonexact_nrmse_percent": 20.61722647946835,
+  "maximum_nonexact_nrmse_metric": "trips_bus_total",
+  "weighted_fit_loss": 0.08275640095796155,
+  "interpretation": "In-sample historical calibration/reconstruction diagnostics; not terminal validation. Exact historical anchors are labeled and should not be interpreted as predictive accuracy."
+}

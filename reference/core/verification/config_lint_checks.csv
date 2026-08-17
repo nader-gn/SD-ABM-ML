@@ -1,0 +1,13 @@
+check,status,detail,value
+duplicate_input_columns,ok,none,0.0
+input_definition_purity,ok,none,0.0
+metadata_completeness,ok,none,0.0
+region_vocabulary,ok,none,0.0
+category_vocabulary,ok,none,0.0
+alias_targets_resolve_to_data,ok,none,0.0
+noncanonical_wrapper_aliases_absent,ok,none,0.0
+dependency_resolution,ok,none,0.0
+decision_labels_canonical_opex_terms,ok,none,0.0
+decision_label_pt_opex_short,ok,pt_opex=PT OPEX,
+decision_label_net_recurrent_short,ok,net_recurrent_public_burden=Net recurrent public burden,
+implementation_metrics_have_keys,ok,none,0.0

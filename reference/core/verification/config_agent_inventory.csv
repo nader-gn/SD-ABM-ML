@@ -1,0 +1,707 @@
+agent,type,column,category,subcategory,region,has_expression,has_inflows,has_outflows
+AF_NO2,expression,,social,health_impacts,city,True,False,False
+AF_PM25,expression,,social,health_impacts,city,True,False,False
+AF_PM25_adult,expression,,social,health_impacts,city,True,False,False
+AF_PM25_child,expression,,social,health_impacts,city,True,False,False
+CAPEX_bike_infrastructure_IRR_year,expression,,economic,capex,city,True,False,False
+CAPEX_brt_IRR_year,expression,,economic,capex,city,True,False,False
+CAPEX_brt_infrastructure_IRR_year,expression,,economic,capex,city,True,False,False
+CAPEX_bus_IRR_year,expression,,economic,capex,city,True,False,False
+CAPEX_car_IRR_year,expression,,economic,capex,city,True,False,False
+CAPEX_metro_infrastructure_IRR_year,expression,,economic,capex,city,True,False,False
+CAPEX_metro_rolling_IRR_year,expression,,economic,capex,city,True,False,False
+CAPEX_road_IRR_year,expression,,economic,capex,city,True,False,False
+CAPEX_taxi_IRR_year,expression,,economic,capex,city,True,False,False
+CAPEX_transport_IRR_year,expression,,economic,capex,city,True,False,False
+CAPEX_transport_affordable_IRR_year,expression,,economic,macro,city,True,False,False
+CAPEX_transport_affordable_IRR_year_r12_alloc,expression,,economic,public_transport_finance,region 12,True,False,False
+CO2_CNG_kg_year,expression,,environment,climate_co2,city,True,False,False
+CO2_diesel_kg_year,expression,,environment,climate_co2,city,True,False,False
+CO2_gasoline_kg_year,expression,,environment,climate_co2,city,True,False,False
+CO2_grid_kg_year,expression,,environment,climate_co2,city,True,False,False
+CO2_intensity_g_pkm,expression,,environment,climate_co2,city,True,False,False
+CO2_kg_year,expression,,environment,climate_co2,city,True,False,False
+CO2_t_year,expression,,environment,climate_co2,city,True,False,False
+CO2_t_year_r12,expression,,environment,emissions,region 12,True,False,False
+CRF_bus,expression,,economic,capex,city,True,False,False
+CRF_car,expression,,economic,capex,city,True,False,False
+CRF_infrastructure,expression,,economic,capex,city,True,False,False
+CRF_metro_rolling,expression,,economic,capex,city,True,False,False
+EV_share_vkm_weighted,expression,,environment,energy_use,city,True,False,False
+GDP_city_IRR_year,expression,,economic,macro,city,True,False,False
+GDP_per_capita_IRR_year,expression,,economic,macro,city,True,False,False
+NO2_excess_city_ugm3,expression,,environment,air_quality,city,True,False,False
+NO2_multiplier_r12,expression,,environment,air_quality,region 12,True,False,False
+NOx_g_year,expression,,environment,emissions_city,city,True,False,False
+NOx_grid_g_year,expression,,environment,emissions_city,city,True,False,False
+NOx_pc_ratio_r12_vs_city,expression,,environment,air_quality,region 12,True,False,False
+NOx_per_capita_city_t_person_year,expression,,environment,air_quality,city,True,False,False
+NOx_per_capita_r12_t_person_year,expression,,environment,air_quality,region 12,True,False,False
+NOx_t_year,expression,,environment,emissions_city,city,True,False,False
+NOx_t_year_r12,expression,,environment,emissions,region 12,True,False,False
+NOx_tailpipe_g_year,expression,,environment,emissions_city,city,True,False,False
+OPEX_BRT_IRR_year,expression,,economic,opex,city,True,False,False
+OPEX_PT_IRR_year,expression,,economic,fares_revenue,city,True,False,False
+OPEX_PT_IRR_year_r12_alloc,expression,,economic,public_transport_finance,region 12,True,False,False
+OPEX_PT_deficit_IRR_year,expression,,economic,public_transport_finance,city,True,False,False
+OPEX_PT_deficit_IRR_year_r12_alloc,expression,,economic,public_transport_finance,region 12,True,False,False
+OPEX_bus_IRR_year,expression,,economic,opex,city,True,False,False
+OPEX_car_IRR_year,expression,,economic,opex,city,True,False,False
+OPEX_metro_IRR_year,expression,,economic,opex,city,True,False,False
+OPEX_taxi_IRR_year,expression,,economic,opex,city,True,False,False
+OPEX_transport_IRR_year,expression,,economic,opex,city,True,False,False
+PM25_g_year,expression,,environment,emissions_city,city,True,False,False
+PM25_grid_g_year,expression,,environment,emissions_city,city,True,False,False
+PM25_t_year,expression,,environment,emissions_city,city,True,False,False
+PM25_t_year_r12,expression,,environment,emissions_region,region 12,True,False,False
+PM25_tailpipe_g_year,expression,,environment,emissions_city,city,True,False,False
+PT_affordability_ratio,expression,,economic,fares_revenue,city,True,False,False
+PT_expenditure_per_person_IRR_year,expression,,economic,fares_revenue,city,True,False,False
+PT_expenditure_total_IRR_year,expression,,economic,public_transport_finance,city,True,False,False
+PT_expenditure_total_IRR_year_r12_alloc,expression,,economic,public_transport_finance,region 12,True,False,False
+PT_subsidy_need_IRR_year,expression,,economic,public_transport_finance,city,True,False,False
+PT_subsidy_need_IRR_year_r12_alloc,expression,,economic,public_transport_finance,region 12,True,False,False
+PT_trips_per_person_per_year,expression,,economic,fares_revenue,city,True,False,False
+PT_trips_total,expression,,economic,fares_revenue,city,True,False,False
+PT_trips_total_r12,expression,,transport,mode_specific_demand,region 12,True,False,False
+RR_NO2,expression,,social,health_impacts,city,True,False,False
+RR_PM25,expression,,social,health_impacts,city,True,False,False
+RR_PM25_adult,expression,,social,health_impacts,city,True,False,False
+RR_PM25_child,expression,,social,health_impacts,city,True,False,False
+SO2_g_year,expression,,environment,emissions_city,city,True,False,False
+SO2_grid_g_year,expression,,environment,emissions_city,city,True,False,False
+SO2_tailpipe_g_year,expression,,environment,emissions_city,city,True,False,False
+VOT_IRR_per_hour_effective,expression,,economic,external_costs,city,True,False,False
+acc_fatl,expression,,social,safety,city,True,False,False
+adj_factor_bus_policy,expression,,policy,adjustment,city,True,False,False
+adj_factor_bus_policy_r12,expression,,policy,adjustment,region 12,True,False,False
+adj_factor_car_policy,expression,,policy,adjustment,city,True,False,False
+adj_factor_car_policy_r12,expression,,policy,adjustment,region 12,True,False,False
+adj_factor_metro_policy,expression,,policy,adjustment,city,True,False,False
+adj_factor_metro_policy_r12,expression,,policy,adjustment,region 12,True,False,False
+adj_factor_mot_policy_r12,expression,,policy,adjustment,region 12,True,False,False
+adj_factor_motorcycle_policy,expression,,policy,adjustment,city,True,False,False
+adj_factor_oth_policy_r12,expression,,policy,adjustment,region 12,True,False,False
+adj_factor_other_policy,expression,,policy,adjustment,city,True,False,False
+adj_factor_tax_policy_r12,expression,,policy,adjustment,region 12,True,False,False
+adj_factor_taxi_policy,expression,,policy,adjustment,city,True,False,False
+baseline_deaths_adult_year,expression,,social,health_impacts,city,True,False,False
+baseline_deaths_child_year,expression,,social,health_impacts,city,True,False,False
+baseline_deaths_total_year,expression,,social,health_impacts,city,True,False,False
+birth_rate_per_person_year,expression,,social,demography,city,True,False,False
+births_total_year,expression,,social,demography,city,True,False,False
+brt_vehicles_per_km,expression,,transport,service_proxy,city,True,False,False
+bus_vehicles_per_km,expression,,transport,service_proxy,city,True,False,False
+capex_bike_infrastructure_IRR_per_km_indexed,expression,,economic,capex,city,True,False,False
+capex_brt_bus_EV_IRR_per_vehicle_indexed,expression,,economic,capex,city,True,False,False
+capex_brt_bus_IRR_per_vehicle_indexed,expression,,economic,capex,city,True,False,False
+capex_brt_infrastructure_IRR_per_km_indexed,expression,,economic,capex,city,True,False,False
+capex_bus_EV_IRR_per_vehicle_indexed,expression,,economic,capex,city,True,False,False
+capex_bus_IRR_per_vehicle_indexed,expression,,economic,capex,city,True,False,False
+capex_car_EV_IRR_per_vehicle_indexed,expression,,economic,capex,city,True,False,False
+capex_car_IRR_per_vehicle_indexed,expression,,economic,capex,city,True,False,False
+capex_metro_infrastructure_IRR_per_km_indexed,expression,,economic,capex,city,True,False,False
+capex_metro_train_IRR_per_trainset_indexed,expression,,economic,capex,city,True,False,False
+capex_parking_structure_IRR_per_space_indexed,expression,,economic,capex,city,True,False,False
+capex_road_upgrade_IRR_per_km_indexed,expression,,economic,capex,city,True,False,False
+capex_taxi_EV_IRR_per_vehicle_indexed,expression,,economic,capex,city,True,False,False
+capex_taxi_IRR_per_vehicle_indexed,expression,,economic,capex,city,True,False,False
+car_purchases_vehicles_year,expression,,transport,fleet_stock_private,city,True,False,False
+car_retirements_vehicles_year,expression,,transport,fleet_stock_private,city,True,False,False
+cng_kg_year_r12,expression,,environment,energy_use,region 12,True,False,False
+commute_share_of_trips,expression,,transport,telework,city,True,False,False
+concentration_NO2_excess_ugm3,expression,,environment,air_quality,city,True,False,False
+concentration_NO2_ugm3,expression,,environment,air_quality,city,True,False,False
+concentration_NO2_ugm3_r12_proxy,expression,,environment,air_quality,region 12,True,False,False
+concentration_PM25_excess_ugm3,expression,,environment,air_quality,city,True,False,False
+concentration_PM25_ugm3,expression,,environment,air_quality,city,True,False,False
+congestion_factor_r12_vs_city,expression,,transport,congestion,region 12,True,False,False
+congestion_index,expression,,transport,congestion_capacity,city,True,False,False
+congestion_index_r12,expression,,transport,congestion,region 12,True,False,False
+cost_climate_IRR_year,expression,,impact,external_costs,city,True,False,False
+cost_climate_IRR_year_r12,expression,,impact,external_costs,region 12,True,False,False
+cost_congestion_IRR_year,expression,,economic,external_costs,city,True,False,False
+cost_congestion_IRR_year_r12,expression,,economic,external_costs,region 12,True,False,False
+cost_energy_IRR_year,expression,,economic,opex,city,True,False,False
+cost_energy_IRR_year_r12,expression,,economic,opex,region 12,True,False,False
+cost_energy_PT_IRR_year,expression,,economic,opex,city,True,False,False
+cost_fuel_CNG_IRR_year,expression,,economic,opex,city,True,False,False
+cost_fuel_diesel_IRR_year,expression,,economic,opex,city,True,False,False
+cost_fuel_gasoline_IRR_year,expression,,economic,opex,city,True,False,False
+cost_health_IRR_year,expression,,impact,external_costs,city,True,False,False
+cost_health_IRR_year_r12,expression,,impact,external_costs,region 12,True,False,False
+cost_hospital_day_IRR_indexed,expression,,social,health_impacts,city,True,False,False
+cost_index_0,expression,,economic,prices_inflation_fx,city,True,False,False
+cost_index_100,expression,,economic,prices_inflation_fx,city,True,False,False
+cost_index_20,expression,,economic,prices_inflation_fx,city,True,False,False
+cost_index_50,expression,,economic,prices_inflation_fx,city,True,False,False
+cost_index_70,expression,,economic,prices_inflation_fx,city,True,False,False
+cost_index_80,expression,,economic,prices_inflation_fx,city,True,False,False
+cost_index_bus_fare_growth,expression,,economic,prices_inflation_fx,city,True,False,False
+cost_index_metro_fare_growth,expression,,economic,prices_inflation_fx,city,True,False,False
+cost_index_rhc_fare_growth,expression,,economic,prices_inflation_fx,city,True,False,False
+cost_noise_IRR_year,expression,,impact,external_costs,city,True,False,False
+cost_road_safety_IRR_year,expression,,impact,external_costs,city,True,False,False
+cost_transport_public_IRR_year,expression,,economic,macro,city,True,False,False
+cost_transport_public_IRR_year_r12_alloc,expression,,economic,public_transport_finance,region 12,True,False,False
+deaths_NO2,expression,,social,health_impacts,city,True,False,False
+deaths_PM25,expression,,social,health_impacts,city,True,False,False
+deaths_PM25_adult,expression,,social,health_impacts,city,True,False,False
+deaths_PM25_child,expression,,social,health_impacts,city,True,False,False
+deaths_total,expression,,social,health_impacts,city,True,False,False
+diesel_L_year_r12,expression,,environment,energy_use,region 12,True,False,False
+dly_r12,expression,,transport,congestion,region 12,True,False,False
+dly_tot,expression,,transport,congestion,city,True,False,False
+ecn_usd,expression,,economic,prices_inflation_fx,city,True,False,False
+economic_value_admissions_IRR,expression,,social,health_impacts,city,True,False,False
+economic_value_deaths_IRR,expression,,social,health_impacts,city,True,False,False
+electricity_bus_kWh_year,expression,,environment,energy_use,city,True,False,False
+electricity_car_kWh_year,expression,,environment,energy_use,city,True,False,False
+electricity_cost_PT_IRR_year,expression,,economic,opex,city,True,False,False
+electricity_cost_transport_IRR_year,expression,,economic,opex,city,True,False,False
+electricity_kWh_year_r12,expression,,environment,energy_use,region 12,True,False,False
+electricity_metro_kWh_year,expression,,environment,energy_use,city,True,False,False
+electricity_motorcycle_kWh_year,expression,,environment,energy_use,city,True,False,False
+electricity_price_transport_indexed_IRR_kWh,expression,,economic,prices_inflation_fx,city,True,False,False
+electricity_roadEV_kWh_year,expression,,environment,energy_use,city,True,False,False
+electricity_taxi_kWh_year,expression,,environment,energy_use,city,True,False,False
+electricity_transport_kWh_year,expression,,environment,energy_use,city,True,False,False
+energy_CNG_MJ_year,expression,,environment,energy_use,city,True,False,False
+energy_diesel_MJ_year,expression,,environment,energy_use,city,True,False,False
+energy_electricity_MJ_year,expression,,environment,energy_use,city,True,False,False
+energy_gasoline_MJ_year,expression,,environment,energy_use,city,True,False,False
+energy_metro_kWh_km,expression,,environment,energy_use,city,True,False,False
+expansion_BRT_km_year,expression,,transport,network_supply,city,True,False,False
+expansion_bike_km_year,expression,,transport,network_supply,city,True,False,False
+expansion_metro_km_year,expression,,transport,network_supply,city,True,False,False
+expansion_road_km_year,expression,,transport,network_supply,city,True,False,False
+external_cost_IRR_year,expression,,impact,external_costs,city,True,False,False
+external_cost_IRR_year_r12,expression,,impact,external_costs,region 12,True,False,False
+external_cost_per_trip_IRR,expression,,impact,system_costs,city,True,False,False
+fare_bus_IRR_trip,expression,,economic,aliases,city,True,False,False
+fare_bus_IRR_trip_indexed,expression,,economic,fares_revenue,city,True,False,False
+fare_metro_IRR_trip,expression,,economic,aliases,city,True,False,False
+fare_metro_IRR_trip_indexed,expression,,economic,fares_revenue,city,True,False,False
+fare_revenue_PT_total_IRR_year,expression,,economic,public_transport_finance,city,True,False,False
+fare_revenue_PT_total_IRR_year_r12_alloc,expression,,economic,public_transport_finance,region 12,True,False,False
+fare_revenue_bus_IRR_year,expression,,economic,fares_revenue,city,True,False,False
+fare_revenue_metro_IRR_year,expression,,economic,fares_revenue,city,True,False,False
+fare_revenue_rhc_IRR_year,expression,,economic,fares_revenue,city,True,False,False
+fare_rhc_IRR_trip_indexed,expression,,economic,fares_revenue,city,True,False,False
+farebox_recovery_PT,expression,,economic,public_transport_finance,city,True,False,False
+farebox_recovery_PT_r12_alloc,expression,,economic,public_transport_finance,region 12,True,False,False
+fee_parking_IRR_per_space_hour_indexed,expression,,economic,capex,city,True,False,False
+final_energy_MJ_year,expression,,environment,energy_use,city,True,False,False
+final_energy_MJ_year_r12,expression,,environment,energy_use,region 12,True,False,False
+final_energy_intensity_MJ_pkm,expression,,environment,energy_use,city,True,False,False
+fuel_CNG_car_kg_year,expression,,environment,energy_use,city,True,False,False
+fuel_CNG_kg_year,expression,,environment,energy_use,city,True,False,False
+fuel_CNG_taxi_kg_year,expression,,environment,energy_use,city,True,False,False
+fuel_diesel_bus_litre_year,expression,,environment,energy_use,city,True,False,False
+fuel_gasoline_car_litre_year,expression,,environment,energy_use,city,True,False,False
+fuel_gasoline_litre_year,expression,,environment,energy_use,city,True,False,False
+fuel_gasoline_motorcycle_litre_year,expression,,environment,energy_use,city,True,False,False
+fuel_gasoline_taxi_litre_year,expression,,environment,energy_use,city,True,False,False
+fx_index_effective,expression,,economic,prices_inflation_fx,city,True,False,False
+gasoline_L_year_r12,expression,,environment,energy_use,region 12,True,False,False
+green_space_area_m2,expression,,urban,green_public_space,city,True,False,False
+green_space_area_r12_m2,expression,,urban,green_public_space,region 12,True,False,False
+green_space_mitigation_factor_NO2,expression,,environment,air_quality,city,True,False,False
+green_space_mitigation_factor_PM25,expression,,environment,air_quality,city,True,False,False
+green_space_per_capita_m2,expression,,urban,green_public_space,city,True,False,False
+green_space_per_capita_r12_m2,expression,,urban,green_public_space,region 12,True,False,False
+green_space_share_of_area_r12,expression,,urban,green_public_space,region 12,True,False,False
+green_space_share_of_urban_area,expression,,urban,green_public_space,city,True,False,False
+health_cost_per_capita_IRR,expression,,impact,external_costs,city,True,False,False
+hist_add_BRT_km_year,expression,,transport,network_supply,city,True,False,False
+hist_add_bike_km_year,expression,,transport,network_supply,city,True,False,False
+hist_add_metro_km_year,expression,,transport,network_supply,city,True,False,False
+hist_add_road_km_year,expression,,transport,network_supply,city,True,False,False
+hist_remove_BRT_km_year,expression,,transport,network_supply,city,True,False,False
+hist_remove_bike_km_year,expression,,transport,network_supply,city,True,False,False
+hist_remove_metro_km_year,expression,,transport,network_supply,city,True,False,False
+hist_remove_road_km_year,expression,,transport,network_supply,city,True,False,False
+households_total,expression,,social,demography,city,True,False,False
+inflation_index_effective_growth,expression,,economic,prices_inflation_fx,city,True,False,False
+inflation_rate_effective,expression,,economic,prices_inflation_fx,city,True,False,False
+is_inflation_shock_active,expression,,economic,prices_inflation_fx,city,True,False,False
+k_NO2_concentration_effective_ugm3_per_t,expression,,environment,air_quality,city,True,False,False
+k_PM25_concentration_effective_ugm3_per_t,expression,,environment,air_quality,city,True,False,False
+len_bik_hist_target,expression,,transport,infrastructure,city,True,False,False
+len_brt_hist_target,expression,,transport,infrastructure,city,True,False,False
+len_brt_r12,expression,,transport,infrastructure,region 12,True,False,False
+len_bus_r12,expression,,transport,infrastructure,region 12,True,False,False
+len_hwy_hist_target,expression,,transport,infrastructure,city,True,False,False
+len_hwy_r12,expression,,transport,infrastructure,region 12,True,False,False
+len_met_hist_target,expression,,transport,infrastructure,city,True,False,False
+len_met_r12,expression,,transport,infrastructure,region 12,True,False,False
+metro_trainsets,expression,,transport,fleet_stock_public,city,True,False,False
+migration_rate_per_person_year,expression,,social,demography,city,True,False,False
+migrations_total_year,expression,,social,demography,city,True,False,False
+modal_share_PT,expression,,transport,mode_choice_city,city,True,False,False
+modal_share_PT_r12,expression,,transport,mode_choice_city,region 12,True,False,False
+modal_share_bik,expression,,transport,mode_share,city,True,False,False
+modal_share_bus,expression,,transport,mode_share,city,True,False,False
+modal_share_bus_adj,expression,,transport,mode_share,city,True,False,False
+modal_share_bus_ptf,expression,,transport,traffic_activity_pce,city,True,False,False
+modal_share_bus_r12,expression,,transport,mode_share,region 12,True,False,False
+modal_share_bus_r12_adj,expression,,transport,mode_share,region 12,True,False,False
+modal_share_car,expression,,transport,mode_share,city,True,False,False
+modal_share_car_adj,expression,,transport,mode_share,city,True,False,False
+modal_share_car_ptf,expression,,transport,traffic_activity_pce,city,True,False,False
+modal_share_car_r12,expression,,transport,mode_share,region 12,True,False,False
+modal_share_car_r12_adj,expression,,transport,mode_share,region 12,True,False,False
+modal_share_met_r12,expression,,transport,mode_share,region 12,True,False,False
+modal_share_met_r12_adj,expression,,transport,mode_share,region 12,True,False,False
+modal_share_metro,expression,,transport,mode_share,city,True,False,False
+modal_share_metro_adj,expression,,transport,mode_share,city,True,False,False
+modal_share_mot_ptf,expression,,transport,traffic_activity_pce,city,True,False,False
+modal_share_mot_r12,expression,,transport,mode_share,region 12,True,False,False
+modal_share_mot_r12_adj,expression,,transport,mode_share,region 12,True,False,False
+modal_share_motorcycle,expression,,transport,mode_share,city,True,False,False
+modal_share_motorcycle_adj,expression,,transport,mode_share,city,True,False,False
+modal_share_oth_r12,expression,,transport,mode_share,region 12,True,False,False
+modal_share_oth_r12_adj,expression,,transport,mode_share,region 12,True,False,False
+modal_share_other,expression,,transport,mode_share,city,True,False,False
+modal_share_other_adj,expression,,transport,mode_share,city,True,False,False
+modal_share_tax_ptf,expression,,transport,traffic_activity_pce,city,True,False,False
+modal_share_tax_r12,expression,,transport,mode_share,region 12,True,False,False
+modal_share_tax_r12_adj,expression,,transport,mode_share,region 12,True,False,False
+modal_share_taxi,expression,,transport,mode_share,city,True,False,False
+modal_share_taxi_adj,expression,,transport,mode_share,city,True,False,False
+mortality_adult_rate,expression,,social,health_impacts,city,True,False,False
+mortality_child_rate,expression,,social,health_impacts,city,True,False,False
+motorcycle_ownership_rate,expression,,social,demography,city,True,False,False
+motorcycle_purchases_vehicles_year,expression,,transport,fleet_stock_private,city,True,False,False
+motorcycle_retirements_vehicles_year,expression,,transport,fleet_stock_private,city,True,False,False
+municipal_budget_IRR_year_r12_proxy,expression,,economic,macro,region 12,True,False,False
+noise_exposure_index,expression,,environment,noise_parameters,city,True,False,False
+noise_exposure_index_r12_proxy,expression,,environment,noise_parameters,region 12,True,False,False
+operating_condition_factor_r12_vs_city,expression,,transport,performance,region 12,True,False,False
+opex_BRT_IRR_km_indexed,expression,,economic,opex,city,True,False,False
+opex_bus_IRR_km_indexed,expression,,economic,opex,city,True,False,False
+opex_car_IRR_km_indexed,expression,,economic,opex,city,True,False,False
+opex_metro_IRR_km_indexed,expression,,economic,opex,city,True,False,False
+opex_parking_structure_IRR_per_space_indexed,expression,,economic,capex,city,True,False,False
+opex_taxi_IRR_km_indexed,expression,,economic,opex,city,True,False,False
+parking_r12,expression,,urban,land_use_structure,region 12,True,False,False
+pkm_bus,expression,,transport,traffic_activity_city,city,True,False,False
+pkm_car,expression,,transport,traffic_activity_city,city,True,False,False
+pkm_metro,expression,,transport,traffic_activity_city,city,True,False,False
+pkm_metro_r12,expression,,transport,traffic_activity_region,region 12,True,False,False
+pkm_motorcycle,expression,,transport,traffic_activity_city,city,True,False,False
+pkm_other,expression,,transport,traffic_activity_city,city,True,False,False
+pkm_taxi,expression,,transport,traffic_activity_city,city,True,False,False
+pkm_total,expression,,transport,traffic_activity_city,city,True,False,False
+policy_norm_denom_city,expression,,policy,adjustment,city,True,False,False
+policy_norm_denom_r12,expression,,policy,adjustment,region 12,True,False,False
+pop_r12,expression,,social,demography,region 12,True,False,False
+private_car_ownership_rate,expression,,social,demography,city,True,False,False
+pt_bus_service_index,expression,,transport,service_proxy,city,True,False,False
+pt_cost_to_effective_budget_ratio,expression,,economic,public_transport_finance,city,True,False,False
+pt_cost_to_effective_budget_ratio_r12_alloc,expression,,economic,public_transport_finance,region 12,True,False,False
+respiratory_admissions,expression,,social,health_impacts,city,True,False,False
+revenue_transport_public_IRR_year,expression,,economic,fares_revenue,city,True,False,False
+revenue_transport_public_IRR_year_r12_alloc,expression,,economic,public_transport_finance,region 12,True,False,False
+rhc_affordability_ratio,expression,,economic,fares_revenue,city,True,False,False
+rhc_driver_revenue_IRR_year,expression,,economic,fares_revenue,city,True,False,False
+rhc_expenditure_per_person_IRR_year,expression,,economic,fares_revenue,city,True,False,False
+rhc_trips_per_person_year,expression,,economic,fares_revenue,city,True,False,False
+road_capacity_PCE_km_hour,expression,,transport,congestion_capacity,city,True,False,False
+road_capacity_PCE_km_hour_r12,expression,,transport,region12_performance,region 12,True,False,False
+share_CAPEX_infra_total,expression,,economic,capex,city,True,False,False
+share_car_gasoline,expression,,environment,energy_use,city,True,False,False
+share_motorcycle_gasoline,expression,,environment,energy_use,city,True,False,False
+share_taxi_CNG,expression,,environment,energy_use,city,True,False,False
+share_taxi_gasoline,expression,,environment,energy_use,city,True,False,False
+share_vkm_car_city_tfp,expression,,transport,traffic_regulation,city,True,False,False
+share_vkm_car_r12_city,expression,,transport,traffic_activity_region,region 12,True,False,False
+share_vkm_motorized_r12_city,expression,,transport,traffic_activity_region,region 12,True,False,False
+spd_bus,expression,,transport,service_speed,city,True,False,False
+spd_bus_freeflow_r12,expression,,transport,service_speed,region 12,True,False,False
+spd_bus_r12,expression,,transport,performance,region 12,True,False,False
+spd_car,expression,,transport,service_speed,city,True,False,False
+spd_car_freeflow_r12,expression,,transport,service_speed,region 12,True,False,False
+spd_car_r12,expression,,transport,performance,region 12,True,False,False
+spd_mot,expression,,transport,service_speed,city,True,False,False
+spd_mot_freeflow_r12,expression,,transport,service_speed,region 12,True,False,False
+spd_mot_r12,expression,,transport,performance,region 12,True,False,False
+spd_oth,expression,,transport,service_speed,city,True,False,False
+spd_oth_freeflow_r12,expression,,transport,service_speed,region 12,True,False,False
+spd_oth_r12,expression,,transport,performance,region 12,True,False,False
+spd_tax,expression,,transport,service_speed,city,True,False,False
+spd_tax_freeflow_r12,expression,,transport,service_speed,region 12,True,False,False
+spd_tax_r12,expression,,transport,performance,region 12,True,False,False
+system_cost_per_pkm_IRR,expression,,impact,system_costs,city,True,False,False
+system_cost_transport_IRR_year,expression,,impact,system_costs,city,True,False,False
+telework_trip_multiplier,expression,,transport,telework,city,True,False,False
+time_loss_car_hours_year,expression,,transport,congestion,city,True,False,False
+time_loss_car_hours_year_r12,expression,,transport,region12_performance,region 12,True,False,False
+traffic_condition_factor_r12_vs_city,expression,,transport,performance,region 12,True,False,False
+traffic_plan_fee_IRR_trip,expression,,economic,policy_revenue,region 12,True,False,False
+traffic_plan_fee_behavior_IRR_trip,expression,,economic,behavioral_price_proxy,region 12,True,False,False
+traffic_plan_revenue_IRR_year,expression,,economic,regulatory_revenue,city,True,False,False
+traffic_plan_revenue_IRR_year_r12_alloc,expression,,economic,public_transport_finance,region 12,True,False,False
+traffic_plan_revenue_scale,expression,,economic,regulatory_revenue,city,True,False,False
+transport_budget_IRR_year,expression,,economic,macro,city,True,False,False
+transport_budget_IRR_year_r12_alloc,expression,,economic,public_transport_finance,region 12,True,False,False
+transport_budget_effective_IRR_year,expression,,economic,public_transport_finance,city,True,False,False
+transport_budget_effective_IRR_year_r12_alloc,expression,,economic,public_transport_finance,region 12,True,False,False
+transport_budget_gap_IRR_year,expression,,economic,public_transport_finance,city,True,False,False
+transport_budget_gap_IRR_year_r12_alloc,expression,,economic,public_transport_finance,region 12,True,False,False
+transport_budget_revenue_share_effective,expression,,economic,public_transport_finance,city,True,False,False
+transport_budget_revenue_share_effective_r12_alloc,expression,,economic,public_transport_finance,region 12,True,False,False
+transport_budget_utilization,expression,,economic,public_transport_finance,city,True,False,False
+transport_budget_utilization_r12_alloc,expression,,economic,public_transport_finance,region 12,True,False,False
+travel_time_bus_hours,expression,,transport,travel_time,city,True,False,False
+travel_time_bus_r12_hours,expression,,transport,performance,region 12,True,False,False
+travel_time_car_congested_hours,expression,,transport,travel_time,city,True,False,False
+travel_time_car_hours,expression,,transport,travel_time,city,True,False,False
+travel_time_car_r12_base_hours,expression,,transport,performance,region 12,True,False,False
+travel_time_car_r12_hours,expression,,transport,travel_time,region 12,True,False,False
+travel_time_metro_hours,expression,,transport,travel_time,city,True,False,False
+travel_time_mot_r12_base_hours,expression,,transport,performance,region 12,True,False,False
+travel_time_motorcycle_hours,expression,,transport,travel_time,city,True,False,False
+travel_time_oth_r12_base_hours,expression,,transport,performance,region 12,True,False,False
+travel_time_other_hours,expression,,transport,travel_time,city,True,False,False
+travel_time_tax_r12_base_hours,expression,,transport,performance,region 12,True,False,False
+travel_time_taxi_hours,expression,,transport,travel_time,city,True,False,False
+trip_length_metro_km,expression,,transport,behavior,city,True,False,False
+trips_bus_BRT,expression,,transport,travel_demand,city,True,False,False
+trips_bus_nonBRT,expression,,transport,travel_demand,city,True,False,False
+trips_bus_total,expression,,transport,travel_demand,city,True,False,False
+trips_car,expression,,transport,travel_demand,city,True,False,False
+trips_car_city_tfp,expression,,transport,traffic_regulation,city,True,False,False
+trips_metro,expression,,transport,travel_demand,city,True,False,False
+trips_motorcycle,expression,,transport,travel_demand,city,True,False,False
+trips_other,expression,,transport,travel_demand,city,True,False,False
+trips_per_year,expression,,transport,travel_demand,city,True,False,False
+trips_taxi,expression,,transport,travel_demand,city,True,False,False
+trp_r12_effective,expression,,transport,travel_demand,region 12,True,False,False
+trp_r12_tfp,expression,,transport,traffic_regulation,region 12,True,False,False
+trp_rhc,expression,,transport,travel_demand,city,True,False,False
+trp_tfp,expression,,transport,traffic_regulation,city,True,False,False
+trp_tps_city,expression,,transport,travel_demand_city,city,True,False,False
+trp_tps_city_effective,expression,,transport,travel_demand,city,True,False,False
+v_over_c,expression,,transport,congestion_capacity,city,True,False,False
+v_over_c_r12,expression,,transport,region12_performance,region 12,True,False,False
+v_over_c_r12_eff,expression,,transport,congestion,region 12,True,False,False
+veh_rhc_ful,expression,,transport,fleet_stock_public,city,True,False,False
+veh_tax_cap,expression,,transport,fleet_stock_public,city,True,False,False
+vkm_BRT,expression,,transport,traffic_activity_city,city,True,False,False
+vkm_bus,expression,,transport,traffic_activity_city,city,True,False,False
+vkm_bus_EV,expression,,environment,energy_use,city,True,False,False
+vkm_bus_EV_r12,expression,,transport,electrified_activity,region 12,True,False,False
+vkm_bus_pce,expression,,transport,traffic_activity_pce,city,True,False,False
+vkm_bus_pce_r12,expression,,transport,region12_performance,region 12,True,False,False
+vkm_bus_r12,expression,,transport,traffic_activity_region,region 12,True,False,False
+vkm_bus_tailpipe,expression,,environment,emissions_city,city,True,False,False
+vkm_car,expression,,transport,traffic_activity_city,city,True,False,False
+vkm_car_CNG,expression,,environment,energy_use,city,True,False,False
+vkm_car_EV,expression,,environment,energy_use,city,True,False,False
+vkm_car_EV_r12,expression,,transport,electrified_activity,region 12,True,False,False
+vkm_car_city_tfp,expression,,transport,traffic_regulation,city,True,False,False
+vkm_car_congested_r12,expression,,transport,traffic_activity_region,region 12,True,False,False
+vkm_car_gasoline,expression,,environment,energy_use,city,True,False,False
+vkm_car_pce,expression,,transport,traffic_activity_pce,city,True,False,False
+vkm_car_pce_r12,expression,,transport,region12_performance,region 12,True,False,False
+vkm_car_r12,expression,,transport,traffic_activity_region,region 12,True,False,False
+vkm_car_tailpipe,expression,,environment,emissions_city,city,True,False,False
+vkm_metro,expression,,transport,traffic_activity_city,city,True,False,False
+vkm_metro_r12,expression,,transport,traffic_activity_region,region 12,True,False,False
+vkm_mot_pce,expression,,transport,traffic_activity_pce,city,True,False,False
+vkm_mot_pce_r12,expression,,transport,region12_performance,region 12,True,False,False
+vkm_motorcycle,expression,,transport,traffic_activity_city,city,True,False,False
+vkm_motorcycle_EV,expression,,environment,energy_use,city,True,False,False
+vkm_motorcycle_EV_r12,expression,,transport,electrified_activity,region 12,True,False,False
+vkm_motorcycle_gasoline,expression,,environment,energy_use,city,True,False,False
+vkm_motorcycle_r12,expression,,transport,traffic_activity_region,region 12,True,False,False
+vkm_motorcycle_tailpipe,expression,,environment,emissions_city,city,True,False,False
+vkm_motorized_city,expression,,transport,traffic_activity_city,city,True,False,False
+vkm_motorized_r12,expression,,transport,traffic_activity_region,region 12,True,False,False
+vkm_oth_pce,expression,,transport,traffic_activity_pce,city,True,False,False
+vkm_oth_pce_r12,expression,,transport,region12_performance,region 12,True,False,False
+vkm_oth_r12,expression,,transport,traffic_activity_region,region 12,True,False,False
+vkm_other,expression,,transport,traffic_activity_city,city,True,False,False
+vkm_pce_total,expression,,transport,traffic,city,True,False,False
+vkm_pce_total_hour,expression,,transport,congestion_capacity,city,True,False,False
+vkm_pce_total_hour_r12,expression,,transport,region12_performance,region 12,True,False,False
+vkm_pce_total_r12,expression,,transport,region12_performance,region 12,True,False,False
+vkm_tax_pce,expression,,transport,traffic_activity_pce,city,True,False,False
+vkm_tax_pce_r12,expression,,transport,region12_performance,region 12,True,False,False
+vkm_taxi,expression,,transport,traffic_activity_city,city,True,False,False
+vkm_taxi_CNG,expression,,environment,energy_use,city,True,False,False
+vkm_taxi_EV,expression,,environment,energy_use,city,True,False,False
+vkm_taxi_EV_r12,expression,,transport,electrified_activity,region 12,True,False,False
+vkm_taxi_gasoline,expression,,environment,energy_use,city,True,False,False
+vkm_taxi_r12,expression,,transport,traffic_activity_region,region 12,True,False,False
+vkm_taxi_tailpipe,expression,,environment,emissions_city,city,True,False,False
+vkm_total_r12,expression,,transport,traffic_activity_region,region 12,True,False,False
+vkt_pc_ratio_r12_vs_city,expression,,transport,exposure,region 12,True,False,False
+vkt_pce_per_capita_city,expression,,transport,exposure,city,True,False,False
+vkt_pce_per_capita_r12,expression,,transport,exposure,region 12,True,False,False
+CR_NO2_mortality,input,,social,health_impacts,city,False,False,False
+CR_PM25_mortality_adult,input,,social,health_impacts,city,False,False,False
+CR_PM25_mortality_child,input,,social,health_impacts,city,False,False,False
+CR_PM25_respiratory_admission,input,,social,health_impacts,city,False,False,False
+EF_CO2_CNG_kg_kg,input,,environment,climate_co2,city,False,False,False
+EF_CO2_diesel_kg_litre,input,,environment,climate_co2,city,False,False,False
+EF_CO2_gasoline_kg_litre,input,,environment,climate_co2,city,False,False,False
+EF_CO2_grid_kg_kWh,input,,environment,climate_co2,city,False,False,False
+EF_NOx_bus_g_km,input,,environment,emissions_city,city,False,False,False
+EF_NOx_car_g_km,input,,environment,emissions_city,city,False,False,False
+EF_NOx_motorcycle_g_km,input,,environment,emissions_city,city,False,False,False
+EF_NOx_taxi_g_km,input,,environment,emissions_city,city,False,False,False
+EF_PM25_bus_g_km,input,,environment,emissions_city,city,False,False,False
+EF_PM25_car_g_km,input,,environment,emissions_city,city,False,False,False
+EF_PM25_motorcycle_g_km,input,,environment,emissions_city,city,False,False,False
+EF_PM25_taxi_g_km,input,,environment,emissions_city,city,False,False,False
+EF_SO2_bus_g_km,input,,environment,emissions_city,city,False,False,False
+EF_SO2_car_g_km,input,,environment,emissions_city,city,False,False,False
+EF_SO2_motorcycle_g_km,input,,environment,emissions_city,city,False,False,False
+EF_SO2_taxi_g_km,input,,environment,emissions_city,city,False,False,False
+EF_grid_NOx_g_kWh,input,,environment,emissions_city,city,False,False,False
+EF_grid_PM25_g_kWh,input,,environment,emissions_city,city,False,False,False
+EF_grid_SO2_g_kWh,input,,environment,emissions_city,city,False,False,False
+GDP_city_obs,input,GDP_city_IRR_year_truth,economic,macro,city,False,False,False
+LHV_CNG_MJ_kg,input,,environment,energy_use,city,False,False,False
+LHV_diesel_MJ_litre,input,,environment,energy_use,city,False,False,False
+LHV_electricity_MJ_kWh,input,,environment,energy_use,city,False,False,False
+LHV_gasoline_MJ_litre,input,,environment,energy_use,city,False,False,False
+NO2_background_ugm3,input,,environment,air_quality,city,False,False,False
+NO2_threshold_ugm3,input,,environment,air_quality,city,False,False,False
+PM25_background_ugm3,input,,environment,air_quality,city,False,False,False
+PM25_threshold_ugm3,input,,environment,air_quality,city,False,False,False
+VOT_IRR_per_hour_base,input,,economic,external_costs,city,False,False,False
+VSL_IRR,input,,social,health_impacts,city,False,False,False
+YEAR_GRG,input,,time,calendar,city,False,False,False
+acc_fatl_obs,input,acc_fatl_truth,social,safety,city,False,False,False
+acc_serious_injuries,input,,social,safety,city,False,False,False
+alpha_congestion_speed,input,,transport,congestion_capacity,city,False,False,False
+alpha_delay_congestion,input,,transport,congestion,city,False,False,False
+alpha_delay_congestion_r12,input,,transport,congestion,region 12,False,False,False
+alpha_green_NO2,input,,environment,air_quality,city,False,False,False
+alpha_green_PM25,input,,environment,air_quality,city,False,False,False
+are_r12,input,,urban,land_use_structure,region 12,False,False,False
+beta_noise_EV,input,,environment,noise_parameters,city,False,False,False
+beta_noise_congestion,input,,environment,noise_parameters,city,False,False,False
+beta_noise_green,input,,environment,noise_parameters,city,False,False,False
+bike_percent_of_other,input,bike_percent_of_other_histcal,transport,mode_choice_city,city,False,False,False
+brt_purchases_vehicles_year,input,brt_purchases_vehicles_year_truth,transport,fleet_stock_private,city,False,False,False
+brt_retirements_vehicles_year,input,brt_retirements_vehicles_year_truth,transport,fleet_stock_private,city,False,False,False
+brt_share_of_bus,input,brt_share_of_bus_histcal,transport,travel_demand,city,False,False,False
+bus_fare_rate,input,bus_fare_rate_truth,economic,prices_inflation_fx,city,False,False,False
+bus_fare_rate_base,input,,policy_ref,baseline,city,False,False,False
+bus_purchases_vehicles_year,input,bus_purchases_vehicles_year_truth,transport,fleet_stock_private,city,False,False,False
+bus_retirements_vehicles_year,input,bus_retirements_vehicles_year_truth,transport,fleet_stock_private,city,False,False,False
+capacity_PCE_per_km_hour,input,,transport,congestion_capacity,city,False,False,False
+capex_bike_infrastructure_IRR_per_km_base,input,,economic,capex,city,False,False,False
+capex_brt_bus_EV_IRR_per_vehicle_base,input,,economic,capex,city,False,False,False
+capex_brt_bus_IRR_per_vehicle_base,input,,economic,capex,city,False,False,False
+capex_brt_infrastructure_IRR_per_km_base,input,,economic,capex,city,False,False,False
+capex_bus_EV_IRR_per_vehicle_base,input,,economic,capex,city,False,False,False
+capex_bus_IRR_per_vehicle_base,input,,economic,capex,city,False,False,False
+capex_car_EV_IRR_per_vehicle_base,input,,economic,capex,city,False,False,False
+capex_car_IRR_per_vehicle_base,input,,economic,capex,city,False,False,False
+capex_metro_infrastructure_IRR_per_km_base,input,,economic,capex,city,False,False,False
+capex_metro_train_IRR_per_trainset_base,input,,economic,capex,city,False,False,False
+capex_parking_structure_IRR_per_space_base,input,,economic,capex,city,False,False,False
+capex_road_upgrade_IRR_per_km_base,input,,economic,capex,city,False,False,False
+capex_taxi_EV_IRR_per_vehicle_base,input,,economic,capex,city,False,False,False
+capex_taxi_IRR_per_vehicle_base,input,,economic,capex,city,False,False,False
+car_energy_closure_factor,input,car_energy_closure_factor_histcal,environment,energy_use,city,False,False,False
+cars_per_trainset,input,,transport,metro,city,False,False,False
+coef_k_commute,input,,policy_ref,coeff,city,False,False,False
+coef_k_fare,input,,policy_ref,coeff,city,False,False,False
+coef_k_fee,input,,policy_ref,coeff,city,False,False,False
+coef_k_fuel,input,,policy_ref,coeff,city,False,False,False
+coef_k_park,input,,policy_ref,coeff,region 12,False,False,False
+coef_k_speed,input,,policy_ref,coeff,city,False,False,False
+commute_management_multiplier,input,,policy,demand_management,city,False,False,False
+commute_management_multiplier_base,input,,policy_ref,baseline,city,False,False,False
+con_dst_r12,input,,transport,region12_performance,region 12,False,False,False
+congestion_multiplier_r12,input,,transport,congestion,region 12,False,False,False
+cost_hospital_day_IRR_base,input,,social,health_impacts,city,False,False,False
+cost_of_carbon_IRR_t,input,,environment,climate_co2,city,False,False,False
+cost_per_fatality_IRR,input,,social,safety,city,False,False,False
+cost_per_serious_injury_IRR,input,,social,safety,city,False,False,False
+days_per_year,input,,time,time_indexing,city,False,False,False
+discount_rate_transport,input,,economic,capex,city,False,False,False
+ecn_usd_base,input,,economic,prices_inflation_fx,city,False,False,False
+ecn_usd_obs,input,ecn_usd_truth,economic,prices_inflation_fx,city,False,False,False
+electricity_price_transport_IRR_kWh,input,,economic,prices_inflation_fx,city,False,False,False
+energy_bus_EV_kWh_km,input,,environment,energy_use,city,False,False,False
+energy_car_EV_kWh_km,input,,environment,energy_use,city,False,False,False
+energy_metro_kWh_per_train_km_source,input,ENG_MET,environment,energy_use,city,False,False,False
+energy_motorcycle_EV_kWh_km,input,,environment,energy_use,city,False,False,False
+energy_taxi_EV_kWh_km,input,,environment,energy_use,city,False,False,False
+fare_bus_behavior_IRR_trip,input,fare_bus_behavior_IRR_trip,economic,behavioral_price_proxy,city,False,False,False
+fare_bus_observed_IRR_trip,input,FAR_BUS_PET_SUB,economic,fares_revenue,city,False,False,False
+fare_bus_projection_base_IRR_trip,input,,economic,fares_revenue,city,False,False,False
+fare_metro_behavior_IRR_trip,input,fare_metro_behavior_IRR_trip,economic,behavioral_price_proxy,city,False,False,False
+fare_metro_observed_IRR_trip,input,FAR_MET_PET_SUB,economic,fares_revenue,city,False,False,False
+fare_metro_projection_base_IRR_trip,input,,economic,fares_revenue,city,False,False,False
+fare_rhc_IRR_trip_base,input,,economic,fares_revenue,city,False,False,False
+fc_bus_diesel_litre_km,input,,environment,energy_use,city,False,False,False
+fc_car_CNG_kg_km,input,,environment,energy_use,city,False,False,False
+fc_car_gasoline_litre_km,input,,environment,energy_use,city,False,False,False
+fc_motorcycle_gasoline_litre_km,input,,environment,energy_use,city,False,False,False
+fc_taxi_CNG_kg_km,input,,environment,energy_use,city,False,False,False
+fc_taxi_gasoline_litre_km,input,,environment,energy_use,city,False,False,False
+fee_parking_IRR_per_space_hour_base,input,,economic,capex,city,False,False,False
+fuel_price_CNG_IRR_kg,input,fuel_price_CNG_IRR_kg_truth,economic,prices_inflation_fx,city,False,False,False
+fuel_price_diesel_IRR_litre,input,fuel_price_diesel_IRR_litre_truth,economic,prices_inflation_fx,city,False,False,False
+fuel_price_gasoline_IRR_litre,input,fuel_price_gasoline_IRR_litre_truth,economic,prices_inflation_fx,city,False,False,False
+fuel_price_multiplier,input,,policy,pricing,city,False,False,False
+fuel_price_multiplier_base,input,,policy_ref,baseline,city,False,False,False
+green_mitigation_floor,input,,environment,air_quality,city,False,False,False
+green_parks_area_m2,input,,urban,green_public_space,city,False,False,False
+green_parks_area_r12,input,,urban,green_public_space,region 12,False,False,False
+green_space_share_cap,input,,environment,air_quality,city,False,False,False
+green_streets_area_m2,input,,urban,green_public_space,city,False,False,False
+green_streets_area_r12,input,,urban,green_public_space,region 12,False,False,False
+household_income_per_capita_IRR_year,input,household_income_per_capita_IRR_year_truth,economic,macro,city,False,False,False
+household_size,input,household_size_truth,social,demography,city,False,False,False
+import_share_0,input,,economic,prices_inflation_fx,city,False,False,False
+import_share_100,input,,economic,prices_inflation_fx,city,False,False,False
+import_share_20,input,,economic,prices_inflation_fx,city,False,False,False
+import_share_50,input,,economic,prices_inflation_fx,city,False,False,False
+import_share_70,input,,economic,prices_inflation_fx,city,False,False,False
+import_share_80,input,,economic,prices_inflation_fx,city,False,False,False
+inflation_rate,input,inflation_rate_truth,economic,prices_inflation_fx,city,False,False,False
+inflation_shock_factor,input,,economic,prices_inflation_fx,city,False,False,False
+inflation_shock_start_year,input,,economic,prices_inflation_fx,city,False,False,False
+job_r12,input,job_r12_truth,economic,macro,region 12,False,False,False
+k_NO2_concentration_ugm3_per_t,input,,environment,air_quality,city,False,False,False
+k_PM25_concentration_ugm3_per_t,input,,environment,air_quality,city,False,False,False
+len_bik_obs_city,input,LEN_BIK,transport,infrastructure,city,False,False,False
+len_brt_obs_city,input,len_brt,transport,infrastructure,city,False,False,False
+len_brt_r12_obs,input,len_brt_r12,transport,network_supply,region 12,False,False,False
+len_bus,input,len_bus,transport,network_supply,city,False,False,False
+len_bus_r12_obs,input,len_bus_r12,transport,network_supply,region 12,False,False,False
+len_hwy_obs_city,input,len_hwy,transport,infrastructure,city,False,False,False
+len_hwy_r12_obs,input,len_hwy_r12,transport,network_supply,region 12,False,False,False
+len_met_obs_city,input,len_met,transport,infrastructure,city,False,False,False
+len_met_r12_obs,input,len_met_r12,transport,network_supply,region 12,False,False,False
+lifetime_bus_years,input,,economic,capex,city,False,False,False
+lifetime_car_years,input,,economic,capex,city,False,False,False
+lifetime_infrastructure_years,input,,economic,capex,city,False,False,False
+lifetime_metro_train_years,input,,economic,capex,city,False,False,False
+metro_car_purchases_vehicles_year,input,metro_car_purchases_vehicles_year_truth,transport,fleet_stock_private,city,False,False,False
+metro_car_retirements_vehicles_year,input,metro_car_retirements_vehicles_year_truth,transport,fleet_stock_private,city,False,False,False
+metro_fare_rate,input,metro_fare_rate_truth,economic,prices_inflation_fx,city,False,False,False
+metro_fare_rate_base,input,,policy_ref,baseline,city,False,False,False
+municipal_budget_IRR_year,input,municipal_budget_IRR_year_truth,economic,budget,city,False,False,False
+noise_base_cost_IRR_year,input,,impact,external_costs,city,False,False,False
+occ_bus,input,,transport,vehicle_occupancy,city,False,False,False
+occ_car,input,,transport,vehicle_occupancy,city,False,False,False
+occ_met,input,,transport,vehicle_occupancy,city,False,False,False
+occ_mot,input,,transport,vehicle_occupancy,city,False,False,False
+occ_oth,input,,transport,vehicle_occupancy,city,False,False,False
+occ_tax,input,,transport,vehicle_occupancy,city,False,False,False
+online_taxi_active,input,online_taxi_active_truth,transport,ride_hailing,city,False,False,False
+opex_BRT_EV_IRR_km_base,input,,economic,opex,city,False,False,False
+opex_BRT_IRR_km_base,input,,economic,opex,city,False,False,False
+opex_bus_EV_IRR_km_base,input,,economic,opex,city,False,False,False
+opex_bus_IRR_km_base,input,,economic,opex,city,False,False,False
+opex_car_EV_IRR_km_base,input,,economic,opex,city,False,False,False
+opex_car_IRR_km_base,input,,economic,opex,city,False,False,False
+opex_metro_IRR_km_base,input,,economic,opex,city,False,False,False
+opex_parking_structure_IRR_per_space_base,input,,economic,capex,city,False,False,False
+opex_taxi_EV_IRR_km_base,input,,economic,opex,city,False,False,False
+opex_taxi_IRR_km_base,input,,economic,opex,city,False,False,False
+parking_supply_multiplier_r12,input,,policy,parking,region 12,False,False,False
+parking_supply_multiplier_r12_base,input,,policy_ref,baseline,region 12,False,False,False
+parking_tot,input,,urban,land_use_structure,city,False,False,False
+pce_bus,input,,transport,traffic_activity_pce,city,False,False,False
+pce_car,input,,transport,traffic_activity_pce,city,False,False,False
+pce_mot,input,,transport,traffic_activity_pce,city,False,False,False
+pce_oth,input,,transport,traffic_activity_pce,city,False,False,False
+pce_tax,input,,transport,traffic_activity_pce,city,False,False,False
+pop_r12_obs,input,pop_r12_truth,social,demography,region 12,False,False,False
+population_0_14,input,population_0_14_truth,social,demography,city,False,False,False
+population_15_64,input,population_15_64_truth,social,demography,city,False,False,False
+population_65_plus,input,population_65_plus_truth,social,demography,city,False,False,False
+public_investment_rate_transport,input,,economic,macro,city,False,False,False
+r12_speed_factor,input,,transport,service_speed,region 12,False,False,False
+r12_voc_multiplier,input,,transport,congestion,region 12,False,False,False
+region12_municipal_budget_share_of_tehran,input,,economic,macro,region 12,False,False,False
+region12_traffic_plan_revenue_attribution_share,input,,economic,public_transport_finance,region 12,False,False,False
+respiratory_admission_rate_base,input,,social,health_impacts,city,False,False,False
+rhc_fare_rate,input,rhc_fare_rate_truth,economic,prices_inflation_fx,city,False,False,False
+rhc_platform_commission_share,input,,economic,fares_revenue,city,False,False,False
+share_CAPEX_bike_infra,input,,economic,capex,city,False,False,False
+share_CAPEX_brt_infra,input,,economic,capex,city,False,False,False
+share_CAPEX_metro_infra,input,,economic,capex,city,False,False,False
+share_CAPEX_road,input,,economic,capex,city,False,False,False
+share_brt_bus_EV,input,,environment,energy_use,city,False,False,False
+share_brt_bus_diesel,input,,environment,energy_use,city,False,False,False
+share_bus_EV,input,,environment,energy_use,city,False,False,False
+share_bus_diesel,input,,environment,energy_use,city,False,False,False
+share_car_CNG,input,share_car_CNG_histcal,environment,energy_use,city,False,False,False
+share_car_EV,input,share_car_EV_histcal,environment,energy_use,city,False,False,False
+share_motorcycle_EV,input,,environment,energy_use,city,False,False,False
+share_rhc_of_taxi,input,share_rhc_of_taxi_city_truth,transport,ride_hailing,city,False,False,False
+share_taxi_CNG_nonEV,input,,environment,energy_use,city,False,False,False
+share_taxi_EV,input,,environment,energy_use,city,False,False,False
+share_trips_city_tfp,input,,transport,traffic_regulation,city,False,False,False
+spd_bus_freeflow,input,,transport,service_speed,city,False,False,False
+spd_bus_freeflow_base,input,,policy_ref,baseline,city,False,False,False
+spd_bus_history_calibration_factor,input,,transport,calibration,city,False,False,False
+spd_car_city_calibration_factor,input,,transport,calibration,city,False,False,False
+spd_car_freeflow,input,,transport,service_speed,city,False,False,False
+spd_car_history_calibration_factor,input,,transport,calibration,city,False,False,False
+spd_met,input,spd_met_histcal,transport,service_speed,city,False,False,False
+spd_met_base,input,,policy_ref,baseline,city,False,False,False
+spd_mot_freeflow,input,,transport,service_speed,city,False,False,False
+spd_mot_history_calibration_factor,input,spd_mot_history_calibration_factor_histcal,transport,calibration,city,False,False,False
+spd_oth_freeflow,input,,transport,service_speed,city,False,False,False
+spd_tax_freeflow,input,,transport,service_speed,city,False,False,False
+taxi_purchases_vehicles_year,input,taxi_purchases_vehicles_year_truth,transport,fleet_stock_private,city,False,False,False
+taxi_retirements_vehicles_year,input,taxi_retirements_vehicles_year_truth,transport,fleet_stock_private,city,False,False,False
+telework_rate_effective,input,,policy,telework,city,False,False,False
+traffic_plan_fee_IRR_trip_base,input,,economic,policy_revenue,region 12,False,False,False
+traffic_plan_fee_behavior_base_IRR_trip,input,traffic_plan_fee_behavior_base_IRR_trip,economic,behavioral_price_proxy,region 12,False,False,False
+traffic_plan_fee_multiplier,input,,policy,pricing,city,False,False,False
+traffic_plan_fee_multiplier_base,input,,policy_ref,baseline,city,False,False,False
+traffic_plan_revenue_IRR_year_obs,input,,economic,policy_revenue,region 12,False,False,False
+traffic_plan_revenue_collection_factor,input,,economic,public_transport_finance,city,False,False,False
+traffic_plan_revenue_earmark_share_transport,input,,economic,public_transport_finance,city,False,False,False
+transport_budget_share,input,,economic,macro,city,False,False,False
+trip_length_km,input,,transport,travel_demand,city,False,False,False
+trip_length_r12_km,input,,transport,travel_demand_region,region 12,False,False,False
+trips_car_city_tfp_obs,input,trips_car_city_tfp_truth,transport,traffic_regulation,city,False,False,False
+trips_per_person_per_day,input,,transport,travel_demand,city,False,False,False
+trp_r12,input,trp_r12_truth,transport,travel_demand_region,region 12,False,False,False
+trp_r12_tfp_obs,input,trp_r12_tfp_truth,transport,traffic_regulation,region 12,False,False,False
+trp_tfp_obs,input,trp_tfp_truth,transport,traffic_regulation,city,False,False,False
+trp_tps_city_obs,input,trp_tps_city_truth,transport,travel_demand_city,city,False,False,False
+urban_area_km2,input,,urban,land_use_structure,city,False,False,False
+modal_share_bus_ml,ml,,transport,mode_choice_city,city,False,False,False
+modal_share_bus_r12_ml,ml,,transport,mode_choice_r12,region 12,False,False,False
+modal_share_car_ml,ml,,transport,mode_choice_city,city,False,False,False
+modal_share_car_r12_ml,ml,,transport,mode_choice_r12,region 12,False,False,False
+modal_share_met_r12_ml,ml,,transport,mode_choice_region,region 12,False,False,False
+modal_share_metro_ml,ml,,transport,mode_choice_city,city,False,False,False
+modal_share_mot_r12_ml,ml,,transport,mode_choice_region,region 12,False,False,False
+modal_share_motorcycle_ml,ml,,transport,mode_choice_city,city,False,False,False
+modal_share_oth_r12_ml,ml,,transport,modal_share,region 12,False,False,False
+modal_share_other_ml,ml,,transport,mode_choice_city,city,False,False,False
+modal_share_tax_r12_ml,ml,,transport,modal_share,region 12,False,False,False
+modal_share_taxi_ml,ml,,transport,mode_choice_city,city,False,False,False
+brts_total,stock,,transport,fleet_stock_public,city,False,True,True
+buses_total,stock,,transport,fleet_stock_public,city,False,True,True
+cost_index_bus_fare,stock,,economic,prices_inflation_fx,city,False,True,False
+cost_index_metro_fare,stock,,economic,prices_inflation_fx,city,False,True,False
+cost_index_rhc_fare,stock,,economic,prices_inflation_fx,city,False,True,False
+inflation_index_effective,stock,,economic,prices_inflation_fx,city,False,True,False
+len_bik,stock,,transport,infrastructure,city,False,True,True
+len_brt,stock,,transport,infrastructure,city,False,True,True
+len_hwy,stock,,transport,infrastructure,city,False,True,True
+len_met,stock,,transport,infrastructure,city,False,True,True
+metro_cars_total,stock,,transport,fleet_stock_public,city,False,True,True
+motorcycles_total,stock,,transport,fleet_stock_private,city,False,True,True
+population_city,stock,,social,demography,city,False,True,True
+private_cars_total,stock,,transport,fleet_stock_private,city,False,True,True
+taxis_total,stock,,transport,fleet_stock_public,city,False,True,True
+transport_financial_balance_IRR,stock,,economic,macro,city,False,True,True

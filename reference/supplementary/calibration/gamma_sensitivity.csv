@@ -1,0 +1,6 @@
+gamma,max_raw_stability_penalty,selected_vector_changes,interpretation
+0.0,0.0,False,All admissible completed trials had zero stability violations.
+0.005,0.0,False,All admissible completed trials had zero stability violations.
+0.01,0.0,False,All admissible completed trials had zero stability violations.
+0.02,0.0,False,All admissible completed trials had zero stability violations.
+0.05,0.0,False,All admissible completed trials had zero stability violations.
