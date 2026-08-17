@@ -1,0 +1,25 @@
+kpi,Geo,delta_mode
+Congestion index,Region 12,percent
+Congestion index,Tehran,percent
+Public transport trips,Region 12,percent
+Public transport trips,Tehran,percent
+Non-public transport trips,Region 12,percent
+Non-public transport trips,Tehran,percent
+Budget use,Region 12,percent
+Budget use,Tehran,percent
+Final energy,Region 12,percent
+Final energy,Tehran,percent
+Electricity use,Region 12,percent
+Electricity use,Tehran,percent
+Implementation CAPEX,Region 12,raw_normalized
+Implementation CAPEX,Tehran,raw_normalized
+PT subsidy need,Region 12,percent
+PT subsidy need,Tehran,percent
+Net fiscal pressure,Region 12,raw_normalized
+Net fiscal pressure,Tehran,raw_normalized
+Farebox recovery,Region 12,percent
+Farebox recovery,Tehran,percent
+Avoided external cost,Region 12,raw_normalized
+Avoided external cost,Tehran,raw_normalized
+Net annual value,Region 12,raw_normalized
+Net annual value,Tehran,raw_normalized

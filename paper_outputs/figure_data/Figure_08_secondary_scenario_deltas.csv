@@ -1,0 +1,2017 @@
+Scenario,year,Geo,delta_display,annot,annot_mode,kpi
+SC0,2024,Region 12,0.0,0.0,pct,Congestion index
+SC0,2025,Region 12,0.0,0.0,pct,Congestion index
+SC0,2026,Region 12,0.0,0.0,pct,Congestion index
+SC0,2027,Region 12,0.0,0.0,pct,Congestion index
+SC0,2028,Region 12,0.0,0.0,pct,Congestion index
+SC0,2029,Region 12,0.0,0.0,pct,Congestion index
+SC0,2030,Region 12,0.0,0.0,pct,Congestion index
+SC1,2024,Region 12,0.0,0.0,pct,Congestion index
+SC1,2025,Region 12,0.0,0.0,pct,Congestion index
+SC1,2026,Region 12,-1.8993643912297238,-1.8993643912297238,pct,Congestion index
+SC1,2027,Region 12,-1.9842014743358944,-1.9842014743358944,pct,Congestion index
+SC1,2028,Region 12,-4.070939895203261,-4.070939895203261,pct,Congestion index
+SC1,2029,Region 12,-3.4951866249039907,-3.4951866249039907,pct,Congestion index
+SC1,2030,Region 12,-4.189897502860344,-4.189897502860344,pct,Congestion index
+SC10,2024,Region 12,-0.3676002338327802,-0.3676002338327802,pct,Congestion index
+SC10,2025,Region 12,-1.7749381271348414,-1.7749381271348414,pct,Congestion index
+SC10,2026,Region 12,-6.626826538338334,-6.626826538338334,pct,Congestion index
+SC10,2027,Region 12,-7.6722693075468875,-7.6722693075468875,pct,Congestion index
+SC10,2028,Region 12,-7.664541515151931,-7.664541515151931,pct,Congestion index
+SC10,2029,Region 12,-7.746034646837109,-7.746034646837109,pct,Congestion index
+SC10,2030,Region 12,-7.72565409694115,-7.72565409694115,pct,Congestion index
+SC11,2024,Region 12,-0.18908986562562619,-0.18908986562562619,pct,Congestion index
+SC11,2025,Region 12,-0.5539389493485846,-0.5539389493485846,pct,Congestion index
+SC11,2026,Region 12,-6.29372467667938,-6.29372467667938,pct,Congestion index
+SC11,2027,Region 12,-8.340003759862851,-8.340003759862851,pct,Congestion index
+SC11,2028,Region 12,-8.952606333919759,-8.952606333919759,pct,Congestion index
+SC11,2029,Region 12,-9.76083691274258,-9.76083691274258,pct,Congestion index
+SC11,2030,Region 12,-10.277193693417672,-10.277193693417672,pct,Congestion index
+SC2,2024,Region 12,0.0,0.0,pct,Congestion index
+SC2,2025,Region 12,0.0,0.0,pct,Congestion index
+SC2,2026,Region 12,0.18609174150566146,0.18609174150566146,pct,Congestion index
+SC2,2027,Region 12,-0.747221525611213,-0.747221525611213,pct,Congestion index
+SC2,2028,Region 12,-0.6650881852168153,-0.6650881852168153,pct,Congestion index
+SC2,2029,Region 12,-1.1612714377929603,-1.1612714377929603,pct,Congestion index
+SC2,2030,Region 12,-1.228428038296406,-1.228428038296406,pct,Congestion index
+SC3,2024,Region 12,0.0,0.0,pct,Congestion index
+SC3,2025,Region 12,0.0,0.0,pct,Congestion index
+SC3,2026,Region 12,0.048746298915338326,0.048746298915338326,pct,Congestion index
+SC3,2027,Region 12,-0.12975809560139348,-0.12975809560139348,pct,Congestion index
+SC3,2028,Region 12,-0.07356060066553272,-0.07356060066553272,pct,Congestion index
+SC3,2029,Region 12,-0.2752076734817899,-0.2752076734817899,pct,Congestion index
+SC3,2030,Region 12,-0.21289991127490504,-0.21289991127490504,pct,Congestion index
+SC4,2024,Region 12,-0.16683691694129615,-0.16683691694129615,pct,Congestion index
+SC4,2025,Region 12,-1.2204474363342201,-1.2204474363342201,pct,Congestion index
+SC4,2026,Region 12,-1.2747167726713788,-1.2747167726713788,pct,Congestion index
+SC4,2027,Region 12,-1.2207918016605142,-1.2207918016605142,pct,Congestion index
+SC4,2028,Region 12,-1.1738137591595164,-1.1738137591595164,pct,Congestion index
+SC4,2029,Region 12,-1.0346723616101041,-1.0346723616101041,pct,Congestion index
+SC4,2030,Region 12,-1.0393131795109452,-1.0393131795109452,pct,Congestion index
+SC5,2024,Region 12,-0.18649300231051066,-0.18649300231051066,pct,Congestion index
+SC5,2025,Region 12,-0.42446070447523937,-0.42446070447523937,pct,Congestion index
+SC5,2026,Region 12,-5.072488827480646,-5.072488827480646,pct,Congestion index
+SC5,2027,Region 12,-6.095896687107509,-6.095896687107509,pct,Congestion index
+SC5,2028,Region 12,-6.1484762016718495,-6.1484762016718495,pct,Congestion index
+SC5,2029,Region 12,-6.353446760543992,-6.353446760543992,pct,Congestion index
+SC5,2030,Region 12,-6.3439105633906365,-6.3439105633906365,pct,Congestion index
+SC6,2024,Region 12,-0.005391324034956407,-0.005391324034956407,pct,Congestion index
+SC6,2025,Region 12,0.8371493339758467,0.8371493339758467,pct,Congestion index
+SC6,2026,Region 12,-3.8061841359132336,-3.8061841359132336,pct,Congestion index
+SC6,2027,Region 12,-4.715507444744975,-4.715507444744975,pct,Congestion index
+SC6,2028,Region 12,-4.689826547864292,-4.689826547864292,pct,Congestion index
+SC6,2029,Region 12,-4.779102567137356,-4.779102567137356,pct,Congestion index
+SC6,2030,Region 12,-4.767807441127121,-4.767807441127121,pct,Congestion index
+SC7,2024,Region 12,0.0003918316873178637,0.0003918316873178637,pct,Congestion index
+SC7,2025,Region 12,0.0009670724112264017,0.0009670724112264017,pct,Congestion index
+SC7,2026,Region 12,0.0019789940388304232,0.0019789940388304232,pct,Congestion index
+SC7,2027,Region 12,0.0033208967611133094,0.0033208967611133094,pct,Congestion index
+SC7,2028,Region 12,0.005576963665406889,0.005576963665406889,pct,Congestion index
+SC7,2029,Region 12,0.008490043755490069,0.008490043755490069,pct,Congestion index
+SC7,2030,Region 12,0.01209909620324551,0.01209909620324551,pct,Congestion index
+SC8,2024,Region 12,-0.17227732888280878,-0.17227732888280878,pct,Congestion index
+SC8,2025,Region 12,-0.4342726103506141,-0.4342726103506141,pct,Congestion index
+SC8,2026,Region 12,-7.061012332411377,-7.061012332411377,pct,Congestion index
+SC8,2027,Region 12,-8.424487610370916,-8.424487610370916,pct,Congestion index
+SC8,2028,Region 12,-9.199651500984618,-9.199651500984618,pct,Congestion index
+SC8,2029,Region 12,-9.489077087201615,-9.489077087201615,pct,Congestion index
+SC8,2030,Region 12,-10.11593809060364,-10.11593809060364,pct,Congestion index
+SC9,2024,Region 12,-0.2737966542753397,-0.2737966542753397,pct,Congestion index
+SC9,2025,Region 12,-1.0790405229927085,-1.0790405229927085,pct,Congestion index
+SC9,2026,Region 12,-5.64044096475171,-5.64044096475171,pct,Congestion index
+SC9,2027,Region 12,-7.636092079046916,-7.636092079046916,pct,Congestion index
+SC9,2028,Region 12,-7.571464709682314,-7.571464709682314,pct,Congestion index
+SC9,2029,Region 12,-8.206270068352405,-8.206270068352405,pct,Congestion index
+SC9,2030,Region 12,-8.27093167615844,-8.27093167615844,pct,Congestion index
+SC0,2024,Tehran,0.0,0.0,pct,Congestion index
+SC0,2025,Tehran,0.0,0.0,pct,Congestion index
+SC0,2026,Tehran,0.0,0.0,pct,Congestion index
+SC0,2027,Tehran,0.0,0.0,pct,Congestion index
+SC0,2028,Tehran,0.0,0.0,pct,Congestion index
+SC0,2029,Tehran,0.0,0.0,pct,Congestion index
+SC0,2030,Tehran,0.0,0.0,pct,Congestion index
+SC1,2024,Tehran,0.0,0.0,pct,Congestion index
+SC1,2025,Tehran,0.0,0.0,pct,Congestion index
+SC1,2026,Tehran,-1.8993643912297284,-1.8993643912297284,pct,Congestion index
+SC1,2027,Tehran,-1.9842014743358842,-1.9842014743358842,pct,Congestion index
+SC1,2028,Tehran,-4.0709398952032645,-4.0709398952032645,pct,Congestion index
+SC1,2029,Tehran,-3.4951866249039956,-3.4951866249039956,pct,Congestion index
+SC1,2030,Tehran,-4.189897502860359,-4.189897502860359,pct,Congestion index
+SC10,2024,Tehran,-0.36760023383278206,-0.36760023383278206,pct,Congestion index
+SC10,2025,Tehran,-1.774938127134814,-1.774938127134814,pct,Congestion index
+SC10,2026,Tehran,-6.626826538338322,-6.626826538338322,pct,Congestion index
+SC10,2027,Tehran,-7.672269307546914,-7.672269307546914,pct,Congestion index
+SC10,2028,Tehran,-7.664541515151931,-7.664541515151931,pct,Congestion index
+SC10,2029,Tehran,-7.7460346468370895,-7.7460346468370895,pct,Congestion index
+SC10,2030,Tehran,-7.725654096941141,-7.725654096941141,pct,Congestion index
+SC11,2024,Tehran,-0.18908986562561372,-0.18908986562561372,pct,Congestion index
+SC11,2025,Tehran,-0.5539389493485695,-0.5539389493485695,pct,Congestion index
+SC11,2026,Tehran,-6.29372467667938,-6.29372467667938,pct,Congestion index
+SC11,2027,Tehran,-8.340003759862835,-8.340003759862835,pct,Congestion index
+SC11,2028,Tehran,-8.952606333919757,-8.952606333919757,pct,Congestion index
+SC11,2029,Tehran,-9.76083691274256,-9.76083691274256,pct,Congestion index
+SC11,2030,Tehran,-10.277193693417688,-10.277193693417688,pct,Congestion index
+SC2,2024,Tehran,0.0,0.0,pct,Congestion index
+SC2,2025,Tehran,0.0,0.0,pct,Congestion index
+SC2,2026,Tehran,0.1860917415056623,0.1860917415056623,pct,Congestion index
+SC2,2027,Tehran,-0.7472215256112053,-0.7472215256112053,pct,Congestion index
+SC2,2028,Tehran,-0.6650881852168037,-0.6650881852168037,pct,Congestion index
+SC2,2029,Tehran,-1.1612714377929654,-1.1612714377929654,pct,Congestion index
+SC2,2030,Tehran,-1.2284280382963986,-1.2284280382963986,pct,Congestion index
+SC3,2024,Tehran,0.0,0.0,pct,Congestion index
+SC3,2025,Tehran,0.0,0.0,pct,Congestion index
+SC3,2026,Tehran,0.04874629891530525,0.04874629891530525,pct,Congestion index
+SC3,2027,Tehran,-0.1297580956013885,-0.1297580956013885,pct,Congestion index
+SC3,2028,Tehran,-0.07356060066552632,-0.07356060066552632,pct,Congestion index
+SC3,2029,Tehran,-0.2752076734817599,-0.2752076734817599,pct,Congestion index
+SC3,2030,Tehran,-0.21289991127489838,-0.21289991127489838,pct,Congestion index
+SC4,2024,Tehran,-0.1668369169413142,-0.1668369169413142,pct,Congestion index
+SC4,2025,Tehran,-1.2204474363342008,-1.2204474363342008,pct,Congestion index
+SC4,2026,Tehran,-1.274716772671384,-1.274716772671384,pct,Congestion index
+SC4,2027,Tehran,-1.2207918016605184,-1.2207918016605184,pct,Congestion index
+SC4,2028,Tehran,-1.1738137591595077,-1.1738137591595077,pct,Congestion index
+SC4,2029,Tehran,-1.0346723616101003,-1.0346723616101003,pct,Congestion index
+SC4,2030,Tehran,-1.0393131795109356,-1.0393131795109356,pct,Congestion index
+SC5,2024,Tehran,-0.1864930023105008,-0.1864930023105008,pct,Congestion index
+SC5,2025,Tehran,-0.4244607044752295,-0.4244607044752295,pct,Congestion index
+SC5,2026,Tehran,-5.072488827480644,-5.072488827480644,pct,Congestion index
+SC5,2027,Tehran,-6.095896687107505,-6.095896687107505,pct,Congestion index
+SC5,2028,Tehran,-6.14847620167185,-6.14847620167185,pct,Congestion index
+SC5,2029,Tehran,-6.353446760543982,-6.353446760543982,pct,Congestion index
+SC5,2030,Tehran,-6.343910563390638,-6.343910563390638,pct,Congestion index
+SC6,2024,Tehran,-0.0053913240349742686,-0.0053913240349742686,pct,Congestion index
+SC6,2025,Tehran,0.8371493339758744,0.8371493339758744,pct,Congestion index
+SC6,2026,Tehran,-3.8061841359132194,-3.8061841359132194,pct,Congestion index
+SC6,2027,Tehran,-4.715507444744987,-4.715507444744987,pct,Congestion index
+SC6,2028,Tehran,-4.689826547864284,-4.689826547864284,pct,Congestion index
+SC6,2029,Tehran,-4.779102567137341,-4.779102567137341,pct,Congestion index
+SC6,2030,Tehran,-4.767807441127133,-4.767807441127133,pct,Congestion index
+SC7,2024,Tehran,0.0003918316873130881,0.0003918316873130881,pct,Congestion index
+SC7,2025,Tehran,0.0009670724112090263,0.0009670724112090263,pct,Congestion index
+SC7,2026,Tehran,0.0019789940388276702,0.0019789940388276702,pct,Congestion index
+SC7,2027,Tehran,0.0033208967611414414,0.0033208967611414414,pct,Congestion index
+SC7,2028,Tehran,0.005576963665402477,0.005576963665402477,pct,Congestion index
+SC7,2029,Tehran,0.008490043755502021,0.008490043755502021,pct,Congestion index
+SC7,2030,Tehran,0.012099096203228289,0.012099096203228289,pct,Congestion index
+SC8,2024,Tehran,-0.17227732888280073,-0.17227732888280073,pct,Congestion index
+SC8,2025,Tehran,-0.4342726103505795,-0.4342726103505795,pct,Congestion index
+SC8,2026,Tehran,-7.061012332411383,-7.061012332411383,pct,Congestion index
+SC8,2027,Tehran,-8.424487610370925,-8.424487610370925,pct,Congestion index
+SC8,2028,Tehran,-9.199651500984622,-9.199651500984622,pct,Congestion index
+SC8,2029,Tehran,-9.489077087201604,-9.489077087201604,pct,Congestion index
+SC8,2030,Tehran,-10.115938090603638,-10.115938090603638,pct,Congestion index
+SC9,2024,Tehran,-0.2737966542753474,-0.2737966542753474,pct,Congestion index
+SC9,2025,Tehran,-1.079040522992676,-1.079040522992676,pct,Congestion index
+SC9,2026,Tehran,-5.640440964751696,-5.640440964751696,pct,Congestion index
+SC9,2027,Tehran,-7.636092079046911,-7.636092079046911,pct,Congestion index
+SC9,2028,Tehran,-7.571464709682325,-7.571464709682325,pct,Congestion index
+SC9,2029,Tehran,-8.206270068352396,-8.206270068352396,pct,Congestion index
+SC9,2030,Tehran,-8.270931676158444,-8.270931676158444,pct,Congestion index
+SC0,2024,Region 12,0.0,0.0,pct,Public transport trips
+SC0,2025,Region 12,0.0,0.0,pct,Public transport trips
+SC0,2026,Region 12,0.0,0.0,pct,Public transport trips
+SC0,2027,Region 12,0.0,0.0,pct,Public transport trips
+SC0,2028,Region 12,0.0,0.0,pct,Public transport trips
+SC0,2029,Region 12,0.0,0.0,pct,Public transport trips
+SC0,2030,Region 12,0.0,0.0,pct,Public transport trips
+SC1,2024,Region 12,0.0,0.0,pct,Public transport trips
+SC1,2025,Region 12,0.0,0.0,pct,Public transport trips
+SC1,2026,Region 12,0.5653907971409782,0.5653907971409782,pct,Public transport trips
+SC1,2027,Region 12,0.5673133911077771,0.5673133911077771,pct,Public transport trips
+SC1,2028,Region 12,0.9451079480064876,0.9451079480064876,pct,Public transport trips
+SC1,2029,Region 12,0.9508189857474494,0.9508189857474494,pct,Public transport trips
+SC1,2030,Region 12,1.2356973284091393,1.2356973284091393,pct,Public transport trips
+SC10,2024,Region 12,13.610963449296316,13.610963449296316,pct,Public transport trips
+SC10,2025,Region 12,12.620226797099077,12.620226797099077,pct,Public transport trips
+SC10,2026,Region 12,13.216738029514202,13.216738029514202,pct,Public transport trips
+SC10,2027,Region 12,13.89663956788339,13.89663956788339,pct,Public transport trips
+SC10,2028,Region 12,13.801574906610373,13.801574906610373,pct,Public transport trips
+SC10,2029,Region 12,13.530986511217025,13.530986511217025,pct,Public transport trips
+SC10,2030,Region 12,13.590202969673273,13.590202969673273,pct,Public transport trips
+SC11,2024,Region 12,7.454702940689158,7.454702940689158,pct,Public transport trips
+SC11,2025,Region 12,6.100675697941068,6.100675697941068,pct,Public transport trips
+SC11,2026,Region 12,8.120757594339976,8.120757594339976,pct,Public transport trips
+SC11,2027,Region 12,8.719092683136944,8.719092683136944,pct,Public transport trips
+SC11,2028,Region 12,10.656807516934828,10.656807516934828,pct,Public transport trips
+SC11,2029,Region 12,10.920317452824293,10.920317452824293,pct,Public transport trips
+SC11,2030,Region 12,11.814886704571702,11.814886704571702,pct,Public transport trips
+SC2,2024,Region 12,0.0,0.0,pct,Public transport trips
+SC2,2025,Region 12,0.0,0.0,pct,Public transport trips
+SC2,2026,Region 12,1.1898762225498964,1.1898762225498964,pct,Public transport trips
+SC2,2027,Region 12,1.198626974928004,1.198626974928004,pct,Public transport trips
+SC2,2028,Region 12,2.0048499362471786,2.0048499362471786,pct,Public transport trips
+SC2,2029,Region 12,2.4063796848717645,2.4063796848717645,pct,Public transport trips
+SC2,2030,Region 12,3.1140530627674208,3.1140530627674208,pct,Public transport trips
+SC3,2024,Region 12,0.0,0.0,pct,Public transport trips
+SC3,2025,Region 12,0.0,0.0,pct,Public transport trips
+SC3,2026,Region 12,0.5896126299799335,0.5896126299799335,pct,Public transport trips
+SC3,2027,Region 12,0.5872686276620761,0.5872686276620761,pct,Public transport trips
+SC3,2028,Region 12,1.255923288479204,1.255923288479204,pct,Public transport trips
+SC3,2029,Region 12,1.2647250253698314,1.2647250253698314,pct,Public transport trips
+SC3,2030,Region 12,2.018793984327848,2.018793984327848,pct,Public transport trips
+SC4,2024,Region 12,6.743690672453422,6.743690672453422,pct,Public transport trips
+SC4,2025,Region 12,6.7645178164097,6.7645178164097,pct,Public transport trips
+SC4,2026,Region 12,6.782173512252126,6.782173512252126,pct,Public transport trips
+SC4,2027,Region 12,6.8211549305969035,6.8211549305969035,pct,Public transport trips
+SC4,2028,Region 12,5.948965071375525,5.948965071375525,pct,Public transport trips
+SC4,2029,Region 12,5.957749688475901,5.957749688475901,pct,Public transport trips
+SC4,2030,Region 12,5.952926961770868,5.952926961770868,pct,Public transport trips
+SC5,2024,Region 12,6.699656918460209,6.699656918460209,pct,Public transport trips
+SC5,2025,Region 12,5.291224689776693,5.291224689776693,pct,Public transport trips
+SC5,2026,Region 12,5.631222155476289,5.631222155476289,pct,Public transport trips
+SC5,2027,Region 12,6.174334710872637,6.174334710872637,pct,Public transport trips
+SC5,2028,Region 12,6.797485109408175,6.797485109408175,pct,Public transport trips
+SC5,2029,Region 12,6.787517702646927,6.787517702646927,pct,Public transport trips
+SC5,2030,Region 12,6.755008617321283,6.755008617321283,pct,Public transport trips
+SC6,2024,Region 12,1.4004311234354516,1.4004311234354516,pct,Public transport trips
+SC6,2025,Region 12,1.4975278511011592,1.4975278511011592,pct,Public transport trips
+SC6,2026,Region 12,1.6088442524189044,1.6088442524189044,pct,Public transport trips
+SC6,2027,Region 12,1.6783939919183584,1.6783939919183584,pct,Public transport trips
+SC6,2028,Region 12,1.76618647478576,1.76618647478576,pct,Public transport trips
+SC6,2029,Region 12,1.8128296886837652,1.8128296886837652,pct,Public transport trips
+SC6,2030,Region 12,1.874958218123398,1.874958218123398,pct,Public transport trips
+SC7,2024,Region 12,0.0,0.0,pct,Public transport trips
+SC7,2025,Region 12,0.0,0.0,pct,Public transport trips
+SC7,2026,Region 12,0.0,0.0,pct,Public transport trips
+SC7,2027,Region 12,0.0,0.0,pct,Public transport trips
+SC7,2028,Region 12,0.0,0.0,pct,Public transport trips
+SC7,2029,Region 12,0.0,0.0,pct,Public transport trips
+SC7,2030,Region 12,0.0,0.0,pct,Public transport trips
+SC8,2024,Region 12,8.192276507774823,8.192276507774823,pct,Public transport trips
+SC8,2025,Region 12,8.581001735597903,8.581001735597903,pct,Public transport trips
+SC8,2026,Region 12,9.319223557100228,9.319223557100228,pct,Public transport trips
+SC8,2027,Region 12,9.402815895710493,9.402815895710493,pct,Public transport trips
+SC8,2028,Region 12,9.221551633496329,9.221551633496329,pct,Public transport trips
+SC8,2029,Region 12,9.25873597889783,9.25873597889783,pct,Public transport trips
+SC8,2030,Region 12,9.812454149017368,9.812454149017368,pct,Public transport trips
+SC9,2024,Region 12,10.092922631811225,10.092922631811225,pct,Public transport trips
+SC9,2025,Region 12,8.948945215467399,8.948945215467399,pct,Public transport trips
+SC9,2026,Region 12,10.26770562886152,10.26770562886152,pct,Public transport trips
+SC9,2027,Region 12,10.573043083285343,10.573043083285343,pct,Public transport trips
+SC9,2028,Region 12,11.526490455911006,11.526490455911006,pct,Public transport trips
+SC9,2029,Region 12,11.928282420715295,11.928282420715295,pct,Public transport trips
+SC9,2030,Region 12,12.844222351422188,12.844222351422188,pct,Public transport trips
+SC0,2024,Tehran,0.0,0.0,pct,Public transport trips
+SC0,2025,Tehran,0.0,0.0,pct,Public transport trips
+SC0,2026,Tehran,0.0,0.0,pct,Public transport trips
+SC0,2027,Tehran,0.0,0.0,pct,Public transport trips
+SC0,2028,Tehran,0.0,0.0,pct,Public transport trips
+SC0,2029,Tehran,0.0,0.0,pct,Public transport trips
+SC0,2030,Tehran,0.0,0.0,pct,Public transport trips
+SC1,2024,Tehran,0.0,0.0,pct,Public transport trips
+SC1,2025,Tehran,0.0,0.0,pct,Public transport trips
+SC1,2026,Tehran,-0.7338740674082849,-0.7338740674082849,pct,Public transport trips
+SC1,2027,Tehran,2.9493443722330097,2.9493443722330097,pct,Public transport trips
+SC1,2028,Tehran,-0.8933591381069509,-0.8933591381069509,pct,Public transport trips
+SC1,2029,Tehran,-0.8894340232239155,-0.8894340232239155,pct,Public transport trips
+SC1,2030,Tehran,-1.0246393584573381,-1.0246393584573381,pct,Public transport trips
+SC10,2024,Tehran,19.409201522023185,19.409201522023185,pct,Public transport trips
+SC10,2025,Tehran,42.64706015115702,42.64706015115702,pct,Public transport trips
+SC10,2026,Tehran,49.458265354232076,49.458265354232076,pct,Public transport trips
+SC10,2027,Tehran,51.35136370437793,51.35136370437793,pct,Public transport trips
+SC10,2028,Tehran,51.37373740720979,51.37373740720979,pct,Public transport trips
+SC10,2029,Tehran,51.441710986873076,51.441710986873076,pct,Public transport trips
+SC10,2030,Tehran,51.72291727852139,51.72291727852139,pct,Public transport trips
+SC11,2024,Tehran,10.403881620381581,10.403881620381581,pct,Public transport trips
+SC11,2025,Tehran,32.57366251890577,32.57366251890577,pct,Public transport trips
+SC11,2026,Tehran,40.74552265003046,40.74552265003046,pct,Public transport trips
+SC11,2027,Tehran,43.40769922329501,43.40769922329501,pct,Public transport trips
+SC11,2028,Tehran,45.83615902273503,45.83615902273503,pct,Public transport trips
+SC11,2029,Tehran,46.64521808571719,46.64521808571719,pct,Public transport trips
+SC11,2030,Tehran,47.78345089038339,47.78345089038339,pct,Public transport trips
+SC2,2024,Tehran,0.0,0.0,pct,Public transport trips
+SC2,2025,Tehran,0.0,0.0,pct,Public transport trips
+SC2,2026,Tehran,2.609159553438773,2.609159553438773,pct,Public transport trips
+SC2,2027,Tehran,3.112707172342286,3.112707172342286,pct,Public transport trips
+SC2,2028,Tehran,4.389231749906272,4.389231749906272,pct,Public transport trips
+SC2,2029,Tehran,5.278926058901156,5.278926058901156,pct,Public transport trips
+SC2,2030,Tehran,5.550720574410431,5.550720574410431,pct,Public transport trips
+SC3,2024,Tehran,0.0,0.0,pct,Public transport trips
+SC3,2025,Tehran,0.0,0.0,pct,Public transport trips
+SC3,2026,Tehran,0.35797577602595443,0.35797577602595443,pct,Public transport trips
+SC3,2027,Tehran,0.35987286302293636,0.35987286302293636,pct,Public transport trips
+SC3,2028,Tehran,0.7684861653263133,0.7684861653263133,pct,Public transport trips
+SC3,2029,Tehran,0.7682864541055283,0.7682864541055283,pct,Public transport trips
+SC3,2030,Tehran,1.2348170506283696,1.2348170506283696,pct,Public transport trips
+SC4,2024,Tehran,9.394389272108521,9.394389272108521,pct,Public transport trips
+SC4,2025,Tehran,9.339615194182068,9.339615194182068,pct,Public transport trips
+SC4,2026,Tehran,9.378931928849157,9.378931928849157,pct,Public transport trips
+SC4,2027,Tehran,9.416141742288401,9.416141742288401,pct,Public transport trips
+SC4,2028,Tehran,8.127307084714491,8.127307084714491,pct,Public transport trips
+SC4,2029,Tehran,8.123348296403812,8.123348296403812,pct,Public transport trips
+SC4,2030,Tehran,8.10160487623167,8.10160487623167,pct,Public transport trips
+SC5,2024,Tehran,9.291706577456829,9.291706577456829,pct,Public transport trips
+SC5,2025,Tehran,30.96398986864398,30.96398986864398,pct,Public transport trips
+SC5,2026,Tehran,37.11309140823364,37.11309140823364,pct,Public transport trips
+SC5,2027,Tehran,38.809106960870906,38.809106960870906,pct,Public transport trips
+SC5,2028,Tehran,40.274006635616175,40.274006635616175,pct,Public transport trips
+SC5,2029,Tehran,40.33709432430905,40.33709432430905,pct,Public transport trips
+SC5,2030,Tehran,40.51131847313159,40.51131847313159,pct,Public transport trips
+SC6,2024,Tehran,1.9687698967202567,1.9687698967202567,pct,Public transport trips
+SC6,2025,Tehran,21.63203307863058,21.63203307863058,pct,Public transport trips
+SC6,2026,Tehran,26.29951935246193,26.29951935246193,pct,Public transport trips
+SC6,2027,Tehran,27.102163265483277,27.102163265483277,pct,Public transport trips
+SC6,2028,Tehran,27.806411064138615,27.806411064138615,pct,Public transport trips
+SC6,2029,Tehran,27.853826362108226,27.853826362108226,pct,Public transport trips
+SC6,2030,Tehran,27.933998212767573,27.933998212767573,pct,Public transport trips
+SC7,2024,Tehran,0.0003918316873083143,0.0003918316873083143,pct,Public transport trips
+SC7,2025,Tehran,0.0009670724112084396,0.0009670724112084396,pct,Public transport trips
+SC7,2026,Tehran,0.0019789940387976617,0.0019789940387976617,pct,Public transport trips
+SC7,2027,Tehran,0.0033208967611400367,0.0033208967611400367,pct,Public transport trips
+SC7,2028,Tehran,0.005576963665374189,0.005576963665374189,pct,Public transport trips
+SC7,2029,Tehran,0.008490043755477612,0.008490043755477612,pct,Public transport trips
+SC7,2030,Tehran,0.012099096203273216,0.012099096203273216,pct,Public transport trips
+SC8,2024,Tehran,11.533545621135676,11.533545621135676,pct,Public transport trips
+SC8,2025,Tehran,32.69608258443361,32.69608258443361,pct,Public transport trips
+SC8,2026,Tehran,36.75683242318091,36.75683242318091,pct,Public transport trips
+SC8,2027,Tehran,37.65389821798673,37.65389821798673,pct,Public transport trips
+SC8,2028,Tehran,36.68364125769584,36.68364125769584,pct,Public transport trips
+SC8,2029,Tehran,36.70269313524193,36.70269313524193,pct,Public transport trips
+SC8,2030,Tehran,36.65345075432309,36.65345075432309,pct,Public transport trips
+SC9,2024,Tehran,14.19510346294148,14.19510346294148,pct,Public transport trips
+SC9,2025,Tehran,36.64714412549563,36.64714412549563,pct,Public transport trips
+SC9,2026,Tehran,46.16145391458032,46.16145391458032,pct,Public transport trips
+SC9,2027,Tehran,48.38775497767624,48.38775497767624,pct,Public transport trips
+SC9,2028,Tehran,50.25737542558182,50.25737542558182,pct,Public transport trips
+SC9,2029,Tehran,51.50214185337637,51.50214185337637,pct,Public transport trips
+SC9,2030,Tehran,52.442515059354136,52.442515059354136,pct,Public transport trips
+SC0,2024,Region 12,0.0,0.0,pct,Non-public transport trips
+SC0,2025,Region 12,0.0,0.0,pct,Non-public transport trips
+SC0,2026,Region 12,0.0,0.0,pct,Non-public transport trips
+SC0,2027,Region 12,0.0,0.0,pct,Non-public transport trips
+SC0,2028,Region 12,0.0,0.0,pct,Non-public transport trips
+SC0,2029,Region 12,0.0,0.0,pct,Non-public transport trips
+SC0,2030,Region 12,0.0,0.0,pct,Non-public transport trips
+SC1,2024,Region 12,0.0,0.0,pct,Non-public transport trips
+SC1,2025,Region 12,0.0,0.0,pct,Non-public transport trips
+SC1,2026,Region 12,-3.3707755559815844,-3.3707755559815844,pct,Non-public transport trips
+SC1,2027,Region 12,-3.3545082572833245,-3.3545082572833245,pct,Non-public transport trips
+SC1,2028,Region 12,-5.060500145894127,-5.060500145894127,pct,Non-public transport trips
+SC1,2029,Region 12,-5.063598422584416,-5.063598422584416,pct,Non-public transport trips
+SC1,2030,Region 12,-6.36142665143452,-6.36142665143452,pct,Non-public transport trips
+SC10,2024,Region 12,-7.401064711789738,-7.401064711789738,pct,Non-public transport trips
+SC10,2025,Region 12,-6.7890825679439475,-6.7890825679439475,pct,Non-public transport trips
+SC10,2026,Region 12,-7.062152651697809,-7.062152651697809,pct,Non-public transport trips
+SC10,2027,Region 12,-7.331833000359296,-7.331833000359296,pct,Non-public transport trips
+SC10,2028,Region 12,-7.208458547505479,-7.208458547505479,pct,Non-public transport trips
+SC10,2029,Region 12,-7.067527649656539,-7.067527649656539,pct,Non-public transport trips
+SC10,2030,Region 12,-7.118325862098381,-7.118325862098381,pct,Non-public transport trips
+SC11,2024,Region 12,-4.053551321090535,-4.053551321090535,pct,Non-public transport trips
+SC11,2025,Region 12,-3.281873749138277,-3.281873749138277,pct,Non-public transport trips
+SC11,2026,Region 12,-6.3338311977812545,-6.3338311977812545,pct,Non-public transport trips
+SC11,2027,Region 12,-6.586048760856617,-6.586048760856617,pct,Non-public transport trips
+SC11,2028,Region 12,-8.534440545164141,-8.534440545164141,pct,Non-public transport trips
+SC11,2029,Region 12,-8.672445875050348,-8.672445875050348,pct,Non-public transport trips
+SC11,2030,Region 12,-9.90266686337751,-9.90266686337751,pct,Non-public transport trips
+SC2,2024,Region 12,0.0,0.0,pct,Non-public transport trips
+SC2,2025,Region 12,0.0,0.0,pct,Non-public transport trips
+SC2,2026,Region 12,-0.6357913353134396,-0.6357913353134396,pct,Non-public transport trips
+SC2,2027,Region 12,-0.6323926562942858,-0.6323926562942858,pct,Non-public transport trips
+SC2,2028,Region 12,-1.0471180106036382,-1.0471180106036382,pct,Non-public transport trips
+SC2,2029,Region 12,-1.2569042873780312,-1.2569042873780312,pct,Non-public transport trips
+SC2,2030,Region 12,-1.63109002140067,-1.63109002140067,pct,Non-public transport trips
+SC3,2024,Region 12,0.0,0.0,pct,Non-public transport trips
+SC3,2025,Region 12,0.0,0.0,pct,Non-public transport trips
+SC3,2026,Region 12,-0.31505008187260497,-0.31505008187260497,pct,Non-public transport trips
+SC3,2027,Region 12,-0.3098414896159413,-0.3098414896159413,pct,Non-public transport trips
+SC3,2028,Region 12,-0.6559592673378825,-0.6559592673378825,pct,Non-public transport trips
+SC3,2029,Region 12,-0.6605933040140024,-0.6605933040140024,pct,Non-public transport trips
+SC3,2030,Region 12,-1.0574112440378558,-1.0574112440378558,pct,Non-public transport trips
+SC4,2024,Region 12,-3.666933002138136,-3.666933002138136,pct,Non-public transport trips
+SC4,2025,Region 12,-3.638989276998554,-3.638989276998554,pct,Non-public transport trips
+SC4,2026,Region 12,-3.6239459802311345,-3.6239459802311345,pct,Non-public transport trips
+SC4,2027,Region 12,-3.5988246350071575,-3.5988246350071575,pct,Non-public transport trips
+SC4,2028,Region 12,-3.1070996178145895,-3.1070996178145895,pct,Non-public transport trips
+SC4,2029,Region 12,-3.11186184526385,-3.11186184526385,pct,Non-public transport trips
+SC4,2030,Region 12,-3.118045701136066,-3.118045701136066,pct,Non-public transport trips
+SC5,2024,Region 12,-3.6429893140942498,-3.6429893140942498,pct,Non-public transport trips
+SC5,2025,Region 12,-2.846427554906917,-2.846427554906917,pct,Non-public transport trips
+SC5,2026,Region 12,-3.0089535245980734,-3.0089535245980734,pct,Non-public transport trips
+SC5,2027,Region 12,-3.2575638712729913,-3.2575638712729913,pct,Non-public transport trips
+SC5,2028,Region 12,-3.5502752381531564,-3.5502752381531564,pct,Non-public transport trips
+SC5,2029,Region 12,-3.545267671076549,-3.545267671076549,pct,Non-public transport trips
+SC5,2030,Region 12,-3.5381629433111677,-3.5381629433111677,pct,Non-public transport trips
+SC6,2024,Region 12,-0.7614950556263905,-0.7614950556263905,pct,Non-public transport trips
+SC6,2025,Region 12,-0.8055988527288999,-0.8055988527288999,pct,Non-public transport trips
+SC6,2026,Region 12,-0.8596602034493457,-0.8596602034493457,pct,Non-public transport trips
+SC6,2027,Region 12,-0.8855165594127838,-0.8855165594127838,pct,Non-public transport trips
+SC6,2028,Region 12,-0.9224658835536365,-0.9224658835536365,pct,Non-public transport trips
+SC6,2029,Region 12,-0.9468802543162383,-0.9468802543162383,pct,Non-public transport trips
+SC6,2030,Region 12,-0.9820724240987965,-0.9820724240987965,pct,Non-public transport trips
+SC7,2024,Region 12,0.0,0.0,pct,Non-public transport trips
+SC7,2025,Region 12,0.0,0.0,pct,Non-public transport trips
+SC7,2026,Region 12,0.0,0.0,pct,Non-public transport trips
+SC7,2027,Region 12,0.0,0.0,pct,Non-public transport trips
+SC7,2028,Region 12,0.0,0.0,pct,Non-public transport trips
+SC7,2029,Region 12,0.0,0.0,pct,Non-public transport trips
+SC7,2030,Region 12,0.0,0.0,pct,Non-public transport trips
+SC8,2024,Region 12,-4.454612547949424,-4.454612547949424,pct,Non-public transport trips
+SC8,2025,Region 12,-4.6161713442452275,-4.6161713442452275,pct,Non-public transport trips
+SC8,2026,Region 12,-8.04824613156638,-8.04824613156638,pct,Non-public transport trips
+SC8,2027,Region 12,-8.016097738794924,-8.016097738794924,pct,Non-public transport trips
+SC8,2028,Region 12,-9.383224301022432,-9.383224301022432,pct,Non-public transport trips
+SC8,2029,Region 12,-9.403003610185966,-9.403003610185966,pct,Non-public transport trips
+SC8,2030,Region 12,-10.853791484049834,-10.853791484049834,pct,Non-public transport trips
+SC9,2024,Region 12,-5.488103307850984,-5.488103307850984,pct,Non-public transport trips
+SC9,2025,Region 12,-4.81410745944602,-4.81410745944602,pct,Non-public transport trips
+SC9,2026,Region 12,-5.486384338691649,-5.486384338691649,pct,Non-public transport trips
+SC9,2027,Region 12,-5.5783116352393876,-5.5783116352393876,pct,Non-public transport trips
+SC9,2028,Region 12,-6.020199086834401,-6.020199086834401,pct,Non-public transport trips
+SC9,2029,Region 12,-6.2304005514624325,-6.2304005514624325,pct,Non-public transport trips
+SC9,2030,Region 12,-6.727593424961814,-6.727593424961814,pct,Non-public transport trips
+SC0,2024,Tehran,0.0,0.0,pct,Non-public transport trips
+SC0,2025,Tehran,0.0,0.0,pct,Non-public transport trips
+SC0,2026,Tehran,0.0,0.0,pct,Non-public transport trips
+SC0,2027,Tehran,0.0,0.0,pct,Non-public transport trips
+SC0,2028,Tehran,0.0,0.0,pct,Non-public transport trips
+SC0,2029,Tehran,0.0,0.0,pct,Non-public transport trips
+SC0,2030,Tehran,0.0,0.0,pct,Non-public transport trips
+SC1,2024,Tehran,0.0,0.0,pct,Non-public transport trips
+SC1,2025,Tehran,0.0,0.0,pct,Non-public transport trips
+SC1,2026,Tehran,-2.1717390291063525,-2.1717390291063525,pct,Non-public transport trips
+SC1,2027,Tehran,-2.659922689747512,-2.659922689747512,pct,Non-public transport trips
+SC1,2028,Tehran,-3.271884629394686,-3.271884629394686,pct,Non-public transport trips
+SC1,2029,Tehran,-3.2677364924204406,-3.2677364924204406,pct,Non-public transport trips
+SC1,2030,Tehran,-4.1001434148855,-4.1001434148855,pct,Non-public transport trips
+SC10,2024,Tehran,-2.649375122813051,-2.649375122813051,pct,Non-public transport trips
+SC10,2025,Tehran,-6.176890610466488,-6.176890610466488,pct,Non-public transport trips
+SC10,2026,Tehran,-6.809045759203237,-6.809045759203237,pct,Non-public transport trips
+SC10,2027,Tehran,-6.881175862652425,-6.881175862652425,pct,Non-public transport trips
+SC10,2028,Tehran,-6.900703963805394,-6.900703963805394,pct,Non-public transport trips
+SC10,2029,Tehran,-6.918201062325144,-6.918201062325144,pct,Non-public transport trips
+SC10,2030,Tehran,-7.044023811492081,-7.044023811492081,pct,Non-public transport trips
+SC11,2024,Tehran,-1.4200451793923754,-1.4200451793923754,pct,Non-public transport trips
+SC11,2025,Tehran,-4.718768165839894,-4.718768165839894,pct,Non-public transport trips
+SC11,2026,Tehran,-7.088734444148072,-7.088734444148072,pct,Non-public transport trips
+SC11,2027,Tehran,-7.288806133221352,-7.288806133221352,pct,Non-public transport trips
+SC11,2028,Tehran,-8.366682250788767,-8.366682250788767,pct,Non-public transport trips
+SC11,2029,Tehran,-8.480770523088884,-8.480770523088884,pct,Non-public transport trips
+SC11,2030,Tehran,-9.271225834315388,-9.271225834315388,pct,Non-public transport trips
+SC2,2024,Tehran,0.0,0.0,pct,Non-public transport trips
+SC2,2025,Tehran,0.0,0.0,pct,Non-public transport trips
+SC2,2026,Tehran,-0.3605560917411471,-0.3605560917411471,pct,Non-public transport trips
+SC2,2027,Tehran,-0.4183665556962175,-0.4183665556962175,pct,Non-public transport trips
+SC2,2028,Tehran,-0.592210109246466,-0.592210109246466,pct,Non-public transport trips
+SC2,2029,Tehran,-0.7135494311398654,-0.7135494311398654,pct,Non-public transport trips
+SC2,2030,Tehran,-0.7598934518884469,-0.7598934518884469,pct,Non-public transport trips
+SC3,2024,Tehran,0.0,0.0,pct,Non-public transport trips
+SC3,2025,Tehran,0.0,0.0,pct,Non-public transport trips
+SC3,2026,Tehran,-0.04948493469379837,-0.04948493469379837,pct,Non-public transport trips
+SC3,2027,Tehran,-0.04830313099103196,-0.04830313099103196,pct,Non-public transport trips
+SC3,2028,Tehran,-0.10370674777924012,-0.10370674777924012,pct,Non-public transport trips
+SC3,2029,Tehran,-0.10359662236624685,-0.10359662236624685,pct,Non-public transport trips
+SC3,2030,Tehran,-0.16918574291836383,-0.16918574291836383,pct,Non-public transport trips
+SC4,2024,Tehran,-1.2824687222763027,-1.2824687222763027,pct,Non-public transport trips
+SC4,2025,Tehran,-1.3522673468890496,-1.3522673468890496,pct,Non-public transport trips
+SC4,2026,Tehran,-1.291547586632392,-1.291547586632392,pct,Non-public transport trips
+SC4,2027,Tehran,-1.2633279763672696,-1.2633279763672696,pct,Non-public transport trips
+SC4,2028,Tehran,-1.0936726395176022,-1.0936726395176022,pct,Non-public transport trips
+SC4,2029,Tehran,-1.0961183540290567,-1.0961183540290567,pct,Non-public transport trips
+SC4,2030,Tehran,-1.1087616635989428,-1.1087616635989428,pct,Non-public transport trips
+SC5,2024,Tehran,-1.2684253698845798,-1.2684253698845798,pct,Non-public transport trips
+SC5,2025,Tehran,-4.487775285548078,-4.487775285548078,pct,Non-public transport trips
+SC5,2026,Tehran,-5.114402864005766,-5.114402864005766,pct,Non-public transport trips
+SC5,2027,Tehran,-5.207467777123627,-5.207467777123627,pct,Non-public transport trips
+SC5,2028,Tehran,-5.421794872096094,-5.421794872096094,pct,Non-public transport trips
+SC5,2029,Tehran,-5.44123129106892,-5.44123129106892,pct,Non-public transport trips
+SC5,2030,Tehran,-5.5390347726769695,-5.5390347726769695,pct,Non-public transport trips
+SC6,2024,Tehran,-0.2688006757352022,-0.2688006757352022,pct,Non-public transport trips
+SC6,2025,Tehran,-3.133758070998042,-3.133758070998042,pct,Non-public transport trips
+SC6,2026,Tehran,-3.6181556141982054,-3.6181556141982054,pct,Non-public transport trips
+SC6,2027,Tehran,-3.6248355914014354,-3.6248355914014354,pct,Non-public transport trips
+SC6,2028,Tehran,-3.7233507120736835,-3.7233507120736835,pct,Non-public transport trips
+SC6,2029,Tehran,-3.728589677148894,-3.728589677148894,pct,Non-public transport trips
+SC6,2030,Tehran,-3.780172292730922,-3.780172292730922,pct,Non-public transport trips
+SC7,2024,Tehran,0.0003918316873176846,0.0003918316873176846,pct,Non-public transport trips
+SC7,2025,Tehran,0.000967072411155733,0.000967072411155733,pct,Non-public transport trips
+SC7,2026,Tehran,0.0019789940387765284,0.0019789940387765284,pct,Non-public transport trips
+SC7,2027,Tehran,0.0033208967611469834,0.0033208967611469834,pct,Non-public transport trips
+SC7,2028,Tehran,0.005576963665391946,0.005576963665391946,pct,Non-public transport trips
+SC7,2029,Tehran,0.008490043755486421,0.008490043755486421,pct,Non-public transport trips
+SC7,2030,Tehran,0.012099096203264834,0.012099096203264834,pct,Non-public transport trips
+SC8,2024,Tehran,-1.574533136750679,-1.574533136750679,pct,Non-public transport trips
+SC8,2025,Tehran,-4.73697765045128,-4.73697765045128,pct,Non-public transport trips
+SC8,2026,Tehran,-7.334060867431365,-7.334060867431365,pct,Non-public transport trips
+SC8,2027,Tehran,-7.30753596542151,-7.30753596542151,pct,Non-public transport trips
+SC8,2028,Tehran,-8.319355933102349,-8.319355933102349,pct,Non-public transport trips
+SC8,2029,Tehran,-8.322684926403094,-8.322684926403094,pct,Non-public transport trips
+SC8,2030,Tehran,-9.230559792980165,-9.230559792980165,pct,Non-public transport trips
+SC9,2024,Tehran,-1.9378090179474905,-1.9378090179474905,pct,Non-public transport trips
+SC9,2025,Tehran,-5.309955511646085,-5.309955511646085,pct,Non-public transport trips
+SC9,2026,Tehran,-6.360254383550661,-6.360254383550661,pct,Non-public transport trips
+SC9,2027,Tehran,-6.49069557941941,-6.49069557941941,pct,Non-public transport trips
+SC9,2028,Tehran,-6.762160471022413,-6.762160471022413,pct,Non-public transport trips
+SC9,2029,Tehran,-6.942407007967166,-6.942407007967166,pct,Non-public transport trips
+SC9,2030,Tehran,-7.163347121793831,-7.163347121793831,pct,Non-public transport trips
+SC0,2024,Region 12,0.0,0.0,pct,Budget use
+SC0,2025,Region 12,0.0,0.0,pct,Budget use
+SC0,2026,Region 12,0.0,0.0,pct,Budget use
+SC0,2027,Region 12,0.0,0.0,pct,Budget use
+SC0,2028,Region 12,0.0,0.0,pct,Budget use
+SC0,2029,Region 12,0.0,0.0,pct,Budget use
+SC0,2030,Region 12,0.0,0.0,pct,Budget use
+SC1,2024,Region 12,0.0,0.0,pct,Budget use
+SC1,2025,Region 12,0.0,0.0,pct,Budget use
+SC1,2026,Region 12,1.0224627317412895,1.0224627317412895,pct,Budget use
+SC1,2027,Region 12,0.08925460877213955,0.08925460877213955,pct,Budget use
+SC1,2028,Region 12,1.4402196419662243,1.4402196419662243,pct,Budget use
+SC1,2029,Region 12,1.4157722588184785,1.4157722588184785,pct,Budget use
+SC1,2030,Region 12,1.7561293239236049,1.7561293239236049,pct,Budget use
+SC10,2024,Region 12,17.9099839082515,17.9099839082515,pct,Budget use
+SC10,2025,Region 12,20.768122899125398,20.768122899125398,pct,Budget use
+SC10,2026,Region 12,22.834122197604884,22.834122197604884,pct,Budget use
+SC10,2027,Region 12,25.54820752135582,25.54820752135582,pct,Budget use
+SC10,2028,Region 12,27.513282715741955,27.513282715741955,pct,Budget use
+SC10,2029,Region 12,28.577142418756797,28.577142418756797,pct,Budget use
+SC10,2030,Region 12,30.024789338052706,30.024789338052706,pct,Budget use
+SC11,2024,Region 12,10.607640569253403,10.607640569253403,pct,Budget use
+SC11,2025,Region 12,11.30791642505943,11.30791642505943,pct,Budget use
+SC11,2026,Region 12,10.566032020739316,10.566032020739316,pct,Budget use
+SC11,2027,Region 12,12.515462306685723,12.515462306685723,pct,Budget use
+SC11,2028,Region 12,15.143553688461125,15.143553688461125,pct,Budget use
+SC11,2029,Region 12,16.743623516649937,16.743623516649937,pct,Budget use
+SC11,2030,Region 12,20.015073578382925,20.015073578382925,pct,Budget use
+SC2,2024,Region 12,0.0,0.0,pct,Budget use
+SC2,2025,Region 12,0.0,0.0,pct,Budget use
+SC2,2026,Region 12,-3.6457666217676654,-3.6457666217676654,pct,Budget use
+SC2,2027,Region 12,-3.2869325128385314,-3.2869325128385314,pct,Budget use
+SC2,2028,Region 12,-3.764591770366479,-3.764591770366479,pct,Budget use
+SC2,2029,Region 12,-2.936463393920756,-2.936463393920756,pct,Budget use
+SC2,2030,Region 12,-0.5561116946213784,-0.5561116946213784,pct,Budget use
+SC3,2024,Region 12,0.0,0.0,pct,Budget use
+SC3,2025,Region 12,0.0,0.0,pct,Budget use
+SC3,2026,Region 12,0.5512377147975608,0.5512377147975608,pct,Budget use
+SC3,2027,Region 12,0.5436389712649293,0.5436389712649293,pct,Budget use
+SC3,2028,Region 12,1.169173817938187,1.169173817938187,pct,Budget use
+SC3,2029,Region 12,1.1809676853030464,1.1809676853030464,pct,Budget use
+SC3,2030,Region 12,1.8912547196400609,1.8912547196400609,pct,Budget use
+SC4,2024,Region 12,9.337301905867722,9.337301905867722,pct,Budget use
+SC4,2025,Region 12,11.354785186513688,11.354785186513688,pct,Budget use
+SC4,2026,Region 12,12.797745685051732,12.797745685051732,pct,Budget use
+SC4,2027,Region 12,13.977129239546576,13.977129239546576,pct,Budget use
+SC4,2028,Region 12,13.85248669195988,13.85248669195988,pct,Budget use
+SC4,2029,Region 12,14.367565408331858,14.367565408331858,pct,Budget use
+SC4,2030,Region 12,14.690518409849732,14.690518409849732,pct,Budget use
+SC5,2024,Region 12,5.108837821734544,5.108837821734544,pct,Budget use
+SC5,2025,Region 12,4.861089963322194,4.861089963322194,pct,Budget use
+SC5,2026,Region 12,4.477234954404914,4.477234954404914,pct,Budget use
+SC5,2027,Region 12,4.997905528911999,4.997905528911999,pct,Budget use
+SC5,2028,Region 12,5.8332929990830555,5.8332929990830555,pct,Budget use
+SC5,2029,Region 12,5.69490282573319,5.69490282573319,pct,Budget use
+SC5,2030,Region 12,5.507362904465009,5.507362904465009,pct,Budget use
+SC6,2024,Region 12,3.585329408356309,3.585329408356309,pct,Budget use
+SC6,2025,Region 12,3.8084489680450395,3.8084489680450395,pct,Budget use
+SC6,2026,Region 12,2.8165863906253303,2.8165863906253303,pct,Budget use
+SC6,2027,Region 12,2.66936694248428,2.66936694248428,pct,Budget use
+SC6,2028,Region 12,2.8615803909959334,2.8615803909959334,pct,Budget use
+SC6,2029,Region 12,2.7363567616222646,2.7363567616222646,pct,Budget use
+SC6,2030,Region 12,2.5905294852217797,2.5905294852217797,pct,Budget use
+SC7,2024,Region 12,5.69456090735385,5.69456090735385,pct,Budget use
+SC7,2025,Region 12,6.83716397837187,6.83716397837187,pct,Budget use
+SC7,2026,Region 12,8.662958463479448,8.662958463479448,pct,Budget use
+SC7,2027,Region 12,10.671177962753873,10.671177962753873,pct,Budget use
+SC7,2028,Region 12,13.406538682051675,13.406538682051675,pct,Budget use
+SC7,2029,Region 12,16.072287752424828,16.072287752424828,pct,Budget use
+SC7,2030,Region 12,19.587078413838736,19.587078413838736,pct,Budget use
+SC8,2024,Region 12,13.226317249290991,13.226317249290991,pct,Budget use
+SC8,2025,Region 12,16.011599445614525,16.011599445614525,pct,Budget use
+SC8,2026,Region 12,17.455588736065998,17.455588736065998,pct,Budget use
+SC8,2027,Region 12,18.409975751399873,18.409975751399873,pct,Budget use
+SC8,2028,Region 12,19.109987970618,19.109987970618,pct,Budget use
+SC8,2029,Region 12,19.399989551408243,19.399989551408243,pct,Budget use
+SC8,2030,Region 12,20.00148810500598,20.00148810500598,pct,Budget use
+SC9,2024,Region 12,9.983400414648802,9.983400414648802,pct,Budget use
+SC9,2025,Region 12,11.223214281389264,11.223214281389264,pct,Budget use
+SC9,2026,Region 12,7.3637945273698255,7.3637945273698255,pct,Budget use
+SC9,2027,Region 12,8.926660754228903,8.926660754228903,pct,Budget use
+SC9,2028,Region 12,9.02175755496203,9.02175755496203,pct,Budget use
+SC9,2029,Region 12,10.195347971106104,10.195347971106104,pct,Budget use
+SC9,2030,Region 12,13.09638580784052,13.09638580784052,pct,Budget use
+SC0,2024,Tehran,0.0,0.0,pct,Budget use
+SC0,2025,Tehran,0.0,0.0,pct,Budget use
+SC0,2026,Tehran,0.0,0.0,pct,Budget use
+SC0,2027,Tehran,0.0,0.0,pct,Budget use
+SC0,2028,Tehran,0.0,0.0,pct,Budget use
+SC0,2029,Tehran,0.0,0.0,pct,Budget use
+SC0,2030,Tehran,0.0,0.0,pct,Budget use
+SC1,2024,Tehran,0.0,0.0,pct,Budget use
+SC1,2025,Tehran,0.0,0.0,pct,Budget use
+SC1,2026,Tehran,-0.8104588138801435,-0.8104588138801435,pct,Budget use
+SC1,2027,Tehran,7.0621139616357835,7.0621139616357835,pct,Budget use
+SC1,2028,Tehran,-1.048764066863438,-1.048764066863438,pct,Budget use
+SC1,2029,Tehran,-1.0315603441229373,-1.0315603441229373,pct,Budget use
+SC1,2030,Tehran,-1.2035899975376612,-1.2035899975376612,pct,Budget use
+SC10,2024,Tehran,21.377690339188494,21.377690339188494,pct,Budget use
+SC10,2025,Tehran,58.830466680753254,58.830466680753254,pct,Budget use
+SC10,2026,Tehran,75.46044240689088,75.46044240689088,pct,Budget use
+SC10,2027,Tehran,79.76907838581778,79.76907838581778,pct,Budget use
+SC10,2028,Tehran,82.10102906494114,82.10102906494114,pct,Budget use
+SC10,2029,Tehran,83.56954022130357,83.56954022130357,pct,Budget use
+SC10,2030,Tehran,86.05220705362508,86.05220705362508,pct,Budget use
+SC11,2024,Tehran,12.744995516866384,12.744995516866384,pct,Budget use
+SC11,2025,Tehran,47.291541640907916,47.291541640907916,pct,Budget use
+SC11,2026,Tehran,64.10503521499274,64.10503521499274,pct,Budget use
+SC11,2027,Tehran,70.57718444377834,70.57718444377834,pct,Budget use
+SC11,2028,Tehran,73.23688585521265,73.23688585521265,pct,Budget use
+SC11,2029,Tehran,75.28542587773906,75.28542587773906,pct,Budget use
+SC11,2030,Tehran,78.77949809060247,78.77949809060247,pct,Budget use
+SC2,2024,Tehran,0.0,0.0,pct,Budget use
+SC2,2025,Tehran,0.0,0.0,pct,Budget use
+SC2,2026,Tehran,2.3783621106590824,2.3783621106590824,pct,Budget use
+SC2,2027,Tehran,4.028741176559868,4.028741176559868,pct,Budget use
+SC2,2028,Tehran,4.055949508637645,4.055949508637645,pct,Budget use
+SC2,2029,Tehran,4.914997927788915,4.914997927788915,pct,Budget use
+SC2,2030,Tehran,5.277472501098764,5.277472501098764,pct,Budget use
+SC3,2024,Tehran,0.0,0.0,pct,Budget use
+SC3,2025,Tehran,0.0,0.0,pct,Budget use
+SC3,2026,Tehran,0.3482768403559398,0.3482768403559398,pct,Budget use
+SC3,2027,Tehran,0.345776069757709,0.345776069757709,pct,Budget use
+SC3,2028,Tehran,0.742984483958017,0.742984483958017,pct,Budget use
+SC3,2029,Tehran,0.7379182725679888,0.7379182725679888,pct,Budget use
+SC3,2030,Tehran,1.1908455396786797,1.1908455396786797,pct,Budget use
+SC4,2024,Tehran,10.626112452514189,10.626112452514189,pct,Budget use
+SC4,2025,Tehran,11.55921341909361,11.55921341909361,pct,Budget use
+SC4,2026,Tehran,12.429026754520823,12.429026754520823,pct,Budget use
+SC4,2027,Tehran,13.084899191897822,13.084899191897822,pct,Budget use
+SC4,2028,Tehran,12.272685068055468,12.272685068055468,pct,Budget use
+SC4,2029,Tehran,12.57750800610621,12.57750800610621,pct,Budget use
+SC4,2030,Tehran,12.792766705227196,12.792766705227196,pct,Budget use
+SC5,2024,Tehran,7.345884607372506,7.345884607372506,pct,Budget use
+SC5,2025,Tehran,38.92236018114107,38.92236018114107,pct,Budget use
+SC5,2026,Tehran,51.48281350149737,51.48281350149737,pct,Budget use
+SC5,2027,Tehran,53.47745692829828,53.47745692829828,pct,Budget use
+SC5,2028,Tehran,55.12890656275169,55.12890656275169,pct,Budget use
+SC5,2029,Tehran,54.78738684623493,54.78738684623493,pct,Budget use
+SC5,2030,Tehran,54.95299825203897,54.95299825203897,pct,Budget use
+SC6,2024,Tehran,4.581435732476247,4.581435732476247,pct,Budget use
+SC6,2025,Tehran,39.206967222308315,39.206967222308315,pct,Budget use
+SC6,2026,Tehran,50.1945599899162,50.1945599899162,pct,Budget use
+SC6,2027,Tehran,50.945955693735854,50.945955693735854,pct,Budget use
+SC6,2028,Tehran,51.51373896957529,51.51373896957529,pct,Budget use
+SC6,2029,Tehran,51.18441288139628,51.18441288139628,pct,Budget use
+SC6,2030,Tehran,51.26661183070122,51.26661183070122,pct,Budget use
+SC7,2024,Tehran,4.649150800481214,4.649150800481214,pct,Budget use
+SC7,2025,Tehran,5.691970958075734,5.691970958075734,pct,Budget use
+SC7,2026,Tehran,7.017419542873357,7.017419542873357,pct,Budget use
+SC7,2027,Tehran,8.700687706040355,8.700687706040355,pct,Budget use
+SC7,2028,Tehran,11.12986453656056,11.12986453656056,pct,Budget use
+SC7,2029,Tehran,13.451147669060745,13.451147669060745,pct,Budget use
+SC7,2030,Tehran,16.414561224485603,16.414561224485603,pct,Budget use
+SC8,2024,Tehran,15.682222790824657,15.682222790824657,pct,Budget use
+SC8,2025,Tehran,54.900583500949864,54.900583500949864,pct,Budget use
+SC8,2026,Tehran,66.87040285200354,66.87040285200354,pct,Budget use
+SC8,2027,Tehran,68.60473184237719,68.60473184237719,pct,Budget use
+SC8,2028,Tehran,67.77149642264915,67.77149642264915,pct,Budget use
+SC8,2029,Tehran,67.82035962478083,67.82035962478083,pct,Budget use
+SC8,2030,Tehran,68.05724754035377,68.05724754035377,pct,Budget use
+SC9,2024,Tehran,12.933561337733208,12.933561337733208,pct,Budget use
+SC9,2025,Tehran,46.693712604497875,46.693712604497875,pct,Budget use
+SC9,2026,Tehran,63.64571161140932,63.64571161140932,pct,Budget use
+SC9,2027,Tehran,68.68974814230322,68.68974814230322,pct,Budget use
+SC9,2028,Tehran,69.20469199668847,69.20469199668847,pct,Budget use
+SC9,2029,Tehran,70.48393766982085,70.48393766982085,pct,Budget use
+SC9,2030,Tehran,71.69223074617715,71.69223074617715,pct,Budget use
+SC0,2024,Region 12,0.0,0.0,pct,Final energy
+SC0,2025,Region 12,0.0,0.0,pct,Final energy
+SC0,2026,Region 12,0.0,0.0,pct,Final energy
+SC0,2027,Region 12,0.0,0.0,pct,Final energy
+SC0,2028,Region 12,0.0,0.0,pct,Final energy
+SC0,2029,Region 12,0.0,0.0,pct,Final energy
+SC0,2030,Region 12,0.0,0.0,pct,Final energy
+SC1,2024,Region 12,0.0,0.0,pct,Final energy
+SC1,2025,Region 12,0.0,0.0,pct,Final energy
+SC1,2026,Region 12,0.030214443319061826,0.030214443319061826,pct,Final energy
+SC1,2027,Region 12,-0.3160422995981622,-0.3160422995981622,pct,Final energy
+SC1,2028,Region 12,-0.3987518043889676,-0.3987518043889676,pct,Final energy
+SC1,2029,Region 12,-0.6523114951707383,-0.6523114951707383,pct,Final energy
+SC1,2030,Region 12,-0.7113083908604777,-0.7113083908604777,pct,Final energy
+SC10,2024,Region 12,-0.630108970410407,-0.630108970410407,pct,Final energy
+SC10,2025,Region 12,-4.476758463195138,-4.476758463195138,pct,Final energy
+SC10,2026,Region 12,-4.769371294450426,-4.769371294450426,pct,Final energy
+SC10,2027,Region 12,-5.052553866091474,-5.052553866091474,pct,Final energy
+SC10,2028,Region 12,-5.499672411765131,-5.499672411765131,pct,Final energy
+SC10,2029,Region 12,-5.782087190992091,-5.782087190992091,pct,Final energy
+SC10,2030,Region 12,-6.176590376958848,-6.176590376958848,pct,Final energy
+SC11,2024,Region 12,-0.4848514320955571,-0.4848514320955571,pct,Final energy
+SC11,2025,Region 12,-2.7009196522996364,-2.7009196522996364,pct,Final energy
+SC11,2026,Region 12,-2.5806777979682236,-2.5806777979682236,pct,Final energy
+SC11,2027,Region 12,-4.0519160063212185,-4.0519160063212185,pct,Final energy
+SC11,2028,Region 12,-4.769582876741204,-4.769582876741204,pct,Final energy
+SC11,2029,Region 12,-6.33835045806625,-6.33835045806625,pct,Final energy
+SC11,2030,Region 12,-7.15213583788135,-7.15213583788135,pct,Final energy
+SC2,2024,Region 12,0.0,0.0,pct,Final energy
+SC2,2025,Region 12,0.0,0.0,pct,Final energy
+SC2,2026,Region 12,0.15327438707077376,0.15327438707077376,pct,Final energy
+SC2,2027,Region 12,-0.9355011598886966,-0.9355011598886966,pct,Final energy
+SC2,2028,Region 12,-1.1485417676226266,-1.1485417676226266,pct,Final energy
+SC2,2029,Region 12,-1.899169991680508,-1.899169991680508,pct,Final energy
+SC2,2030,Region 12,-2.468843459603288,-2.468843459603288,pct,Final energy
+SC3,2024,Region 12,0.0,0.0,pct,Final energy
+SC3,2025,Region 12,0.0,0.0,pct,Final energy
+SC3,2026,Region 12,0.16232757968213735,0.16232757968213735,pct,Final energy
+SC3,2027,Region 12,-0.6250137302715516,-0.6250137302715516,pct,Final energy
+SC3,2028,Region 12,-0.6653877656395295,-0.6653877656395295,pct,Final energy
+SC3,2029,Region 12,-1.6160797153774127,-1.6160797153774127,pct,Final energy
+SC3,2030,Region 12,-1.689580563214111,-1.689580563214111,pct,Final energy
+SC4,2024,Region 12,-0.20042877764270536,-0.20042877764270536,pct,Final energy
+SC4,2025,Region 12,-1.8778970307174614,-1.8778970307174614,pct,Final energy
+SC4,2026,Region 12,-2.3178079778644434,-2.3178079778644434,pct,Final energy
+SC4,2027,Region 12,-2.4325454088113636,-2.4325454088113636,pct,Final energy
+SC4,2028,Region 12,-2.43226191705625,-2.43226191705625,pct,Final energy
+SC4,2029,Region 12,-2.217489507832337,-2.217489507832337,pct,Final energy
+SC4,2030,Region 12,-2.1519943747953687,-2.1519943747953687,pct,Final energy
+SC5,2024,Region 12,-0.15840890559933918,-0.15840890559933918,pct,Final energy
+SC5,2025,Region 12,-2.113757597875902,-2.113757597875902,pct,Final energy
+SC5,2026,Region 12,-1.9175922227332596,-1.9175922227332596,pct,Final energy
+SC5,2027,Region 12,-1.8116582321113388,-1.8116582321113388,pct,Final energy
+SC5,2028,Region 12,-1.8770138688080233,-1.8770138688080233,pct,Final energy
+SC5,2029,Region 12,-1.9797526803139363,-1.9797526803139363,pct,Final energy
+SC5,2030,Region 12,-2.060888683100583,-2.060888683100583,pct,Final energy
+SC6,2024,Region 12,-0.0987694272040251,-0.0987694272040251,pct,Final energy
+SC6,2025,Region 12,-0.4489426483762848,-0.4489426483762848,pct,Final energy
+SC6,2026,Region 12,-0.5673212078390263,-0.5673212078390263,pct,Final energy
+SC6,2027,Region 12,-0.6336858919326869,-0.6336858919326869,pct,Final energy
+SC6,2028,Region 12,-0.6855470702116314,-0.6855470702116314,pct,Final energy
+SC6,2029,Region 12,-0.7016148896888237,-0.7016148896888237,pct,Final energy
+SC6,2030,Region 12,-0.7132828253270698,-0.7132828253270698,pct,Final energy
+SC7,2024,Region 12,-0.5475864406705003,-0.5475864406705003,pct,Final energy
+SC7,2025,Region 12,-0.7906058708056637,-0.7906058708056637,pct,Final energy
+SC7,2026,Region 12,-1.4896419852129827,-1.4896419852129827,pct,Final energy
+SC7,2027,Region 12,-2.0001414038052334,-2.0001414038052334,pct,Final energy
+SC7,2028,Region 12,-3.362992043813131,-3.362992043813131,pct,Final energy
+SC7,2029,Region 12,-4.287478274034809,-4.287478274034809,pct,Final energy
+SC7,2030,Region 12,-5.250660426728949,-5.250660426728949,pct,Final energy
+SC8,2024,Region 12,-0.304844575058639,-0.304844575058639,pct,Final energy
+SC8,2025,Region 12,-2.426157350712264,-2.426157350712264,pct,Final energy
+SC8,2026,Region 12,-2.7402069463896304,-2.7402069463896304,pct,Final energy
+SC8,2027,Region 12,-3.586390116014683,-3.586390116014683,pct,Final energy
+SC8,2028,Region 12,-3.7526114750522046,-3.7526114750522046,pct,Final energy
+SC8,2029,Region 12,-4.159395355574456,-4.159395355574456,pct,Final energy
+SC8,2030,Region 12,-4.205226376156618,-4.205226376156618,pct,Final energy
+SC9,2024,Region 12,-0.2593491253468687,-0.2593491253468687,pct,Final energy
+SC9,2025,Region 12,-3.1302725489623526,-3.1302725489623526,pct,Final energy
+SC9,2026,Region 12,-2.78613067391642,-2.78613067391642,pct,Final energy
+SC9,2027,Region 12,-4.026368892055886,-4.026368892055886,pct,Final energy
+SC9,2028,Region 12,-4.279893856296977,-4.279893856296977,pct,Final energy
+SC9,2029,Region 12,-5.248511415858975,-5.248511415858975,pct,Final energy
+SC9,2030,Region 12,-5.86888324523691,-5.86888324523691,pct,Final energy
+SC0,2024,Tehran,0.0,0.0,pct,Final energy
+SC0,2025,Tehran,0.0,0.0,pct,Final energy
+SC0,2026,Tehran,0.0,0.0,pct,Final energy
+SC0,2027,Tehran,0.0,0.0,pct,Final energy
+SC0,2028,Tehran,0.0,0.0,pct,Final energy
+SC0,2029,Tehran,0.0,0.0,pct,Final energy
+SC0,2030,Tehran,0.0,0.0,pct,Final energy
+SC1,2024,Tehran,0.0,0.0,pct,Final energy
+SC1,2025,Tehran,0.0,0.0,pct,Final energy
+SC1,2026,Tehran,-1.9346970515424537,-1.9346970515424537,pct,Final energy
+SC1,2027,Tehran,-2.339125152549585,-2.339125152549585,pct,Final energy
+SC1,2028,Tehran,-4.2248014556125595,-4.2248014556125595,pct,Final energy
+SC1,2029,Tehran,-3.605151634540339,-3.605151634540339,pct,Final energy
+SC1,2030,Tehran,-4.314275280877884,-4.314275280877884,pct,Final energy
+SC10,2024,Tehran,0.002472771689738646,0.002472771689738646,pct,Final energy
+SC10,2025,Tehran,-1.8011149023971318,-1.8011149023971318,pct,Final energy
+SC10,2026,Tehran,-7.446475640769528,-7.446475640769528,pct,Final energy
+SC10,2027,Tehran,-8.635559639814101,-8.635559639814101,pct,Final energy
+SC10,2028,Tehran,-8.88319722248133,-8.88319722248133,pct,Final energy
+SC10,2029,Tehran,-9.105647687223726,-9.105647687223726,pct,Final energy
+SC10,2030,Tehran,-9.23584162223676,-9.23584162223676,pct,Final energy
+SC11,2024,Tehran,-0.06258401974811044,-0.06258401974811044,pct,Final energy
+SC11,2025,Tehran,-0.776937077249546,-0.776937077249546,pct,Final energy
+SC11,2026,Tehran,-7.351795181476856,-7.351795181476856,pct,Final energy
+SC11,2027,Tehran,-9.648503660997092,-9.648503660997092,pct,Final energy
+SC11,2028,Tehran,-10.501627031497595,-10.501627031497595,pct,Final energy
+SC11,2029,Tehran,-11.535188970828356,-11.535188970828356,pct,Final energy
+SC11,2030,Tehran,-12.278168783393042,-12.278168783393042,pct,Final energy
+SC2,2024,Tehran,0.0,0.0,pct,Final energy
+SC2,2025,Tehran,0.0,0.0,pct,Final energy
+SC2,2026,Tehran,0.1328687438167025,0.1328687438167025,pct,Final energy
+SC2,2027,Tehran,-0.9054103103805157,-0.9054103103805157,pct,Final energy
+SC2,2028,Tehran,-0.8684052885658893,-0.8684052885658893,pct,Final energy
+SC2,2029,Tehran,-1.44917251537246,-1.44917251537246,pct,Final energy
+SC2,2030,Tehran,-1.6340704830122885,-1.6340704830122885,pct,Final energy
+SC3,2024,Tehran,0.0,0.0,pct,Final energy
+SC3,2025,Tehran,0.0,0.0,pct,Final energy
+SC3,2026,Tehran,0.030446661636492012,0.030446661636492012,pct,Final energy
+SC3,2027,Tehran,-0.16177287851464475,-0.16177287851464475,pct,Final energy
+SC3,2028,Tehran,-0.12609968770551144,-0.12609968770551144,pct,Final energy
+SC3,2029,Tehran,-0.34306566242707076,-0.34306566242707076,pct,Final energy
+SC3,2030,Tehran,-0.30338406232933224,-0.30338406232933224,pct,Final energy
+SC4,2024,Tehran,0.06041130079158343,0.06041130079158343,pct,Final energy
+SC4,2025,Tehran,-1.0746130737257462,-1.0746130737257462,pct,Final energy
+SC4,2026,Tehran,-1.1330317659394842,-1.1330317659394842,pct,Final energy
+SC4,2027,Tehran,-1.0831276575513562,-1.0831276575513562,pct,Final energy
+SC4,2028,Tehran,-1.0673046141913434,-1.0673046141913434,pct,Final energy
+SC4,2029,Tehran,-0.916234419882688,-0.916234419882688,pct,Final energy
+SC4,2030,Tehran,-0.9167993229434065,-0.9167993229434065,pct,Final energy
+SC5,2024,Tehran,0.067455540427455,0.067455540427455,pct,Final energy
+SC5,2025,Tehran,-0.46397296847905173,-0.46397296847905173,pct,Final energy
+SC5,2026,Tehran,-5.778711950370162,-5.778711950370162,pct,Final energy
+SC5,2027,Tehran,-6.862150823447871,-6.862150823447871,pct,Final energy
+SC5,2028,Tehran,-6.908031262976996,-6.908031262976996,pct,Final energy
+SC5,2029,Tehran,-7.1138366299594304,-7.1138366299594304,pct,Final energy
+SC5,2030,Tehran,-7.101020428853734,-7.101020428853734,pct,Final energy
+SC6,2024,Tehran,0.002052943245504723,0.002052943245504723,pct,Final energy
+SC6,2025,Tehran,0.39182508585019415,0.39182508585019415,pct,Final energy
+SC6,2026,Tehran,-4.9511392571069495,-4.9511392571069495,pct,Final energy
+SC6,2027,Tehran,-5.915496518424536,-5.915496518424536,pct,Final energy
+SC6,2028,Tehran,-5.88244919568307,-5.88244919568307,pct,Final energy
+SC6,2029,Tehran,-5.979702208608867,-5.979702208608867,pct,Final energy
+SC6,2030,Tehran,-5.980908375741508,-5.980908375741508,pct,Final energy
+SC7,2024,Tehran,-0.26245370450729655,-0.26245370450729655,pct,Final energy
+SC7,2025,Tehran,-0.3821977704523743,-0.3821977704523743,pct,Final energy
+SC7,2026,Tehran,-0.7426625687945102,-0.7426625687945102,pct,Final energy
+SC7,2027,Tehran,-0.9758464148589358,-0.9758464148589358,pct,Final energy
+SC7,2028,Tehran,-1.6807549819067575,-1.6807549819067575,pct,Final energy
+SC7,2029,Tehran,-2.1622728056677936,-2.1622728056677936,pct,Final energy
+SC7,2030,Tehran,-2.6500307195946804,-2.6500307195946804,pct,Final energy
+SC8,2024,Tehran,0.062492178237908376,0.062492178237908376,pct,Final energy
+SC8,2025,Tehran,-0.7102559183936126,-0.7102559183936126,pct,Final energy
+SC8,2026,Tehran,-8.066501483294614,-8.066501483294614,pct,Final energy
+SC8,2027,Tehran,-9.529701404632936,-9.529701404632936,pct,Final energy
+SC8,2028,Tehran,-10.349891966604547,-10.349891966604547,pct,Final energy
+SC8,2029,Tehran,-10.66107044097389,-10.66107044097389,pct,Final energy
+SC8,2030,Tehran,-11.307457946754448,-11.307457946754448,pct,Final energy
+SC9,2024,Tehran,0.09906725942691291,0.09906725942691291,pct,Final energy
+SC9,2025,Tehran,-1.0254404396521604,-1.0254404396521604,pct,Final energy
+SC9,2026,Tehran,-6.317217965308878,-6.317217965308878,pct,Final energy
+SC9,2027,Tehran,-8.504006780455633,-8.504006780455633,pct,Final energy
+SC9,2028,Tehran,-8.496272979790934,-8.496272979790934,pct,Final energy
+SC9,2029,Tehran,-9.205375849055567,-9.205375849055567,pct,Final energy
+SC9,2030,Tehran,-9.389698423097448,-9.389698423097448,pct,Final energy
+SC0,2024,Region 12,0.0,0.0,pct,Electricity use
+SC0,2025,Region 12,0.0,0.0,pct,Electricity use
+SC0,2026,Region 12,0.0,0.0,pct,Electricity use
+SC0,2027,Region 12,0.0,0.0,pct,Electricity use
+SC0,2028,Region 12,0.0,0.0,pct,Electricity use
+SC0,2029,Region 12,0.0,0.0,pct,Electricity use
+SC0,2030,Region 12,0.0,0.0,pct,Electricity use
+SC1,2024,Region 12,0.0,0.0,pct,Electricity use
+SC1,2025,Region 12,0.0,0.0,pct,Electricity use
+SC1,2026,Region 12,0.5793459917552753,0.5793459917552753,pct,Electricity use
+SC1,2027,Region 12,0.5666697993136771,0.5666697993136771,pct,Electricity use
+SC1,2028,Region 12,0.9413857664248565,0.9413857664248565,pct,Electricity use
+SC1,2029,Region 12,0.9175736368810478,0.9175736368810478,pct,Electricity use
+SC1,2030,Region 12,1.1894288173506145,1.1894288173506145,pct,Electricity use
+SC10,2024,Region 12,15.619212146671474,15.619212146671474,pct,Electricity use
+SC10,2025,Region 12,14.49223897462324,14.49223897462324,pct,Electricity use
+SC10,2026,Region 12,15.227158536338239,15.227158536338239,pct,Electricity use
+SC10,2027,Region 12,16.110531304401682,16.110531304401682,pct,Electricity use
+SC10,2028,Region 12,16.936233499433573,16.936233499433573,pct,Electricity use
+SC10,2029,Region 12,17.494696423359755,17.494696423359755,pct,Electricity use
+SC10,2030,Region 12,18.3806089568588,18.3806089568588,pct,Electricity use
+SC11,2024,Region 12,8.463381285766545,8.463381285766545,pct,Electricity use
+SC11,2025,Region 12,7.0312098361998006,7.0312098361998006,pct,Electricity use
+SC11,2026,Region 12,9.086691208272784,9.086691208272784,pct,Electricity use
+SC11,2027,Region 12,9.901227324475823,9.901227324475823,pct,Electricity use
+SC11,2028,Region 12,12.655446527658965,12.655446527658965,pct,Electricity use
+SC11,2029,Region 12,13.654554535091648,13.654554535091648,pct,Electricity use
+SC11,2030,Region 12,15.202597667639933,15.202597667639933,pct,Electricity use
+SC2,2024,Region 12,0.0,0.0,pct,Electricity use
+SC2,2025,Region 12,0.0,0.0,pct,Electricity use
+SC2,2026,Region 12,1.1682778045564655,1.1682778045564655,pct,Electricity use
+SC2,2027,Region 12,1.1152216886556878,1.1152216886556878,pct,Electricity use
+SC2,2028,Region 12,1.8854533660787443,1.8854533660787443,pct,Electricity use
+SC2,2029,Region 12,2.20773107531996,2.20773107531996,pct,Electricity use
+SC2,2030,Region 12,2.3512816891326067,2.3512816891326067,pct,Electricity use
+SC3,2024,Region 12,0.0,0.0,pct,Electricity use
+SC3,2025,Region 12,0.0,0.0,pct,Electricity use
+SC3,2026,Region 12,0.5789100881565231,0.5789100881565231,pct,Electricity use
+SC3,2027,Region 12,0.5454347360960901,0.5454347360960901,pct,Electricity use
+SC3,2028,Region 12,1.1772536249804773,1.1772536249804773,pct,Electricity use
+SC3,2029,Region 12,1.1154803540260116,1.1154803540260116,pct,Electricity use
+SC3,2030,Region 12,1.8049578626038052,1.8049578626038052,pct,Electricity use
+SC4,2024,Region 12,6.46450409506986,6.46450409506986,pct,Electricity use
+SC4,2025,Region 12,6.38294609612593,6.38294609612593,pct,Electricity use
+SC4,2026,Region 12,6.294792752335539,6.294792752335539,pct,Electricity use
+SC4,2027,Region 12,6.27391208690769,6.27391208690769,pct,Electricity use
+SC4,2028,Region 12,5.304580300636104,5.304580300636104,pct,Electricity use
+SC4,2029,Region 12,5.281994505977012,5.281994505977012,pct,Electricity use
+SC4,2030,Region 12,5.243596592166556,5.243596592166556,pct,Electricity use
+SC5,2024,Region 12,7.921124562912962,7.921124562912962,pct,Electricity use
+SC5,2025,Region 12,6.1948098065291655,6.1948098065291655,pct,Electricity use
+SC5,2026,Region 12,6.158504493931779,6.158504493931779,pct,Electricity use
+SC5,2027,Region 12,6.514211933930585,6.514211933930585,pct,Electricity use
+SC5,2028,Region 12,6.9418450578504505,6.9418450578504505,pct,Electricity use
+SC5,2029,Region 12,6.900774439617042,6.900774439617042,pct,Electricity use
+SC5,2030,Region 12,6.807285265631312,6.807285265631312,pct,Electricity use
+SC6,2024,Region 12,-0.7614950556263557,-0.7614950556263557,pct,Electricity use
+SC6,2025,Region 12,-0.8030554392763088,-0.8030554392763088,pct,Electricity use
+SC6,2026,Region 12,-0.8569209439374226,-0.8569209439374226,pct,Electricity use
+SC6,2027,Region 12,-0.9090896216639329,-0.9090896216639329,pct,Electricity use
+SC6,2028,Region 12,-0.9323587060038422,-0.9323587060038422,pct,Electricity use
+SC6,2029,Region 12,-0.9469440945321129,-0.9469440945321129,pct,Electricity use
+SC6,2030,Region 12,-0.9734021079293707,-0.9734021079293707,pct,Electricity use
+SC7,2024,Region 12,1.9836912129689404,1.9836912129689404,pct,Electricity use
+SC7,2025,Region 12,2.923015734829358,2.923015734829358,pct,Electricity use
+SC7,2026,Region 12,5.141021302381047,5.141021302381047,pct,Electricity use
+SC7,2027,Region 12,6.898557122068177,6.898557122068177,pct,Electricity use
+SC7,2028,Region 12,11.290752226734186,11.290752226734186,pct,Electricity use
+SC7,2029,Region 12,14.290367098949,14.290367098949,pct,Electricity use
+SC7,2030,Region 12,17.417870881173855,17.417870881173855,pct,Electricity use
+SC8,2024,Region 12,5.593983568276221,5.593983568276221,pct,Electricity use
+SC8,2025,Region 12,5.713489141170346,5.713489141170346,pct,Electricity use
+SC8,2026,Region 12,6.17950988435486,6.17950988435486,pct,Electricity use
+SC8,2027,Region 12,6.057502313577491,6.057502313577491,pct,Electricity use
+SC8,2028,Region 12,5.673416830333789,5.673416830333789,pct,Electricity use
+SC8,2029,Region 12,5.590634955067922,5.590634955067922,pct,Electricity use
+SC8,2030,Region 12,6.044887130970551,6.044887130970551,pct,Electricity use
+SC9,2024,Region 12,11.170626280795634,11.170626280795634,pct,Electricity use
+SC9,2025,Region 12,9.648623744695293,9.648623744695293,pct,Electricity use
+SC9,2026,Region 12,10.626086201078303,10.626086201078303,pct,Electricity use
+SC9,2027,Region 12,10.701405455149565,10.701405455149565,pct,Electricity use
+SC9,2028,Region 12,11.36896545506358,11.36896545506358,pct,Electricity use
+SC9,2029,Region 12,11.633486521779094,11.633486521779094,pct,Electricity use
+SC9,2030,Region 12,11.85287037437436,11.85287037437436,pct,Electricity use
+SC0,2024,Tehran,0.0,0.0,pct,Electricity use
+SC0,2025,Tehran,0.0,0.0,pct,Electricity use
+SC0,2026,Tehran,0.0,0.0,pct,Electricity use
+SC0,2027,Tehran,0.0,0.0,pct,Electricity use
+SC0,2028,Tehran,0.0,0.0,pct,Electricity use
+SC0,2029,Tehran,0.0,0.0,pct,Electricity use
+SC0,2030,Tehran,0.0,0.0,pct,Electricity use
+SC1,2024,Tehran,0.0,0.0,pct,Electricity use
+SC1,2025,Tehran,0.0,0.0,pct,Electricity use
+SC1,2026,Tehran,-0.8582033334453436,-0.8582033334453436,pct,Electricity use
+SC1,2027,Tehran,-1.1223988880727558,-1.1223988880727558,pct,Electricity use
+SC1,2028,Tehran,-1.4878723697813243,-1.4878723697813243,pct,Electricity use
+SC1,2029,Tehran,-1.4281621187035347,-1.4281621187035347,pct,Electricity use
+SC1,2030,Tehran,-1.7374545133374755,-1.7374545133374755,pct,Electricity use
+SC10,2024,Tehran,22.84156348016451,22.84156348016451,pct,Electricity use
+SC10,2025,Tehran,34.03400587435379,34.03400587435379,pct,Electricity use
+SC10,2026,Tehran,33.60870891565237,33.60870891565237,pct,Electricity use
+SC10,2027,Tehran,33.93220184355065,33.93220184355065,pct,Electricity use
+SC10,2028,Tehran,35.06424061112184,35.06424061112184,pct,Electricity use
+SC10,2029,Tehran,36.00685309173886,36.00685309173886,pct,Electricity use
+SC10,2030,Tehran,37.037899972235856,37.037899972235856,pct,Electricity use
+SC11,2024,Tehran,12.744641964094358,12.744641964094358,pct,Electricity use
+SC11,2025,Tehran,23.992510678919086,23.992510678919086,pct,Electricity use
+SC11,2026,Tehran,25.259580516071463,25.259580516071463,pct,Electricity use
+SC11,2027,Tehran,24.878411766147774,24.878411766147774,pct,Electricity use
+SC11,2028,Tehran,29.167036645245215,29.167036645245215,pct,Electricity use
+SC11,2029,Tehran,30.56000710283276,30.56000710283276,pct,Electricity use
+SC11,2030,Tehran,31.961144377649102,31.961144377649102,pct,Electricity use
+SC2,2024,Tehran,0.0,0.0,pct,Electricity use
+SC2,2025,Tehran,0.0,0.0,pct,Electricity use
+SC2,2026,Tehran,2.297051189832837,2.297051189832837,pct,Electricity use
+SC2,2027,Tehran,1.5869035237422089,1.5869035237422089,pct,Electricity use
+SC2,2028,Tehran,3.3950920969137295,3.3950920969137295,pct,Electricity use
+SC2,2029,Tehran,3.839866290760216,3.839866290760216,pct,Electricity use
+SC2,2030,Tehran,3.8147123767966877,3.8147123767966877,pct,Electricity use
+SC3,2024,Tehran,0.0,0.0,pct,Electricity use
+SC3,2025,Tehran,0.0,0.0,pct,Electricity use
+SC3,2026,Tehran,0.3151528559720157,0.3151528559720157,pct,Electricity use
+SC3,2027,Tehran,0.2729929142057285,0.2729929142057285,pct,Electricity use
+SC3,2028,Tehran,0.5944156869757409,0.5944156869757409,pct,Electricity use
+SC3,2029,Tehran,0.5232204925224037,0.5232204925224037,pct,Electricity use
+SC3,2030,Tehran,0.8658541935578535,0.8658541935578535,pct,Electricity use
+SC4,2024,Tehran,9.099744672363382,9.099744672363382,pct,Electricity use
+SC4,2025,Tehran,8.359926546232774,8.359926546232774,pct,Electricity use
+SC4,2026,Tehran,7.8412618055353,7.8412618055353,pct,Electricity use
+SC4,2027,Tehran,7.551425081825613,7.551425081825613,pct,Electricity use
+SC4,2028,Tehran,6.161080295795836,6.161080295795836,pct,Electricity use
+SC4,2029,Tehran,5.989552653572773,5.989552653572773,pct,Electricity use
+SC4,2030,Tehran,5.8178979598222496,5.8178979598222496,pct,Electricity use
+SC5,2024,Tehran,10.580667541482548,10.580667541482548,pct,Electricity use
+SC5,2025,Tehran,21.17744278976644,21.17744278976644,pct,Electricity use
+SC5,2026,Tehran,19.83279413303356,19.83279413303356,pct,Electricity use
+SC5,2027,Tehran,19.333285966817414,19.333285966817414,pct,Electricity use
+SC5,2028,Tehran,19.00048333632364,19.00048333632364,pct,Electricity use
+SC5,2029,Tehran,18.343157437040635,18.343157437040635,pct,Electricity use
+SC5,2030,Tehran,17.86916468672531,17.86916468672531,pct,Electricity use
+SC6,2024,Tehran,-0.26880067573518873,-0.26880067573518873,pct,Electricity use
+SC6,2025,Tehran,4.6876953822618255,4.6876953822618255,pct,Electricity use
+SC6,2026,Tehran,3.673586040796163,3.673586040796163,pct,Electricity use
+SC6,2027,Tehran,3.08621462021638,3.08621462021638,pct,Electricity use
+SC6,2028,Tehran,2.7045960848657553,2.7045960848657553,pct,Electricity use
+SC6,2029,Tehran,2.4309841447763096,2.4309841447763096,pct,Electricity use
+SC6,2030,Tehran,2.28073625226379,2.28073625226379,pct,Electricity use
+SC7,2024,Tehran,4.625601658278362,4.625601658278362,pct,Electricity use
+SC7,2025,Tehran,6.28987523423756,6.28987523423756,pct,Electricity use
+SC7,2026,Tehran,10.946303271547327,10.946303271547327,pct,Electricity use
+SC7,2027,Tehran,14.413022099170544,14.413022099170544,pct,Electricity use
+SC7,2028,Tehran,23.95388759371892,23.95388759371892,pct,Electricity use
+SC7,2029,Tehran,29.701860664206396,29.701860664206396,pct,Electricity use
+SC7,2030,Tehran,34.74339680545467,34.74339680545467,pct,Electricity use
+SC8,2024,Tehran,8.776963575281476,8.776963575281476,pct,Electricity use
+SC8,2025,Tehran,13.14168880005126,13.14168880005126,pct,Electricity use
+SC8,2026,Tehran,10.65176921661797,10.65176921661797,pct,Electricity use
+SC8,2027,Tehran,9.643437911198955,9.643437911198955,pct,Electricity use
+SC8,2028,Tehran,7.579455055470041,7.579455055470041,pct,Electricity use
+SC8,2029,Tehran,6.994636091647531,6.994636091647531,pct,Electricity use
+SC8,2030,Tehran,6.441706604239338,6.441706604239338,pct,Electricity use
+SC9,2024,Tehran,15.346697796694924,15.346697796694924,pct,Electricity use
+SC9,2025,Tehran,25.86307476001925,25.86307476001925,pct,Electricity use
+SC9,2026,Tehran,26.805147212155354,26.805147212155354,pct,Electricity use
+SC9,2027,Tehran,24.82666484707084,24.82666484707084,pct,Electricity use
+SC9,2028,Tehran,25.934204221373165,25.934204221373165,pct,Electricity use
+SC9,2029,Tehran,25.757793111213328,25.757793111213328,pct,Electricity use
+SC9,2030,Tehran,25.631227655983768,25.631227655983768,pct,Electricity use
+SC0,2024,Region 12,0.0,0.0,raw,Implementation CAPEX
+SC0,2025,Region 12,0.0,0.0,raw,Implementation CAPEX
+SC0,2026,Region 12,0.0,0.0,raw,Implementation CAPEX
+SC0,2027,Region 12,0.0,0.0,raw,Implementation CAPEX
+SC0,2028,Region 12,0.0,0.0,raw,Implementation CAPEX
+SC0,2029,Region 12,0.0,0.0,raw,Implementation CAPEX
+SC0,2030,Region 12,0.0,0.0,raw,Implementation CAPEX
+SC1,2024,Region 12,0.0,0.0,raw,Implementation CAPEX
+SC1,2025,Region 12,0.0,0.0,raw,Implementation CAPEX
+SC1,2026,Region 12,0.0,0.0,raw,Implementation CAPEX
+SC1,2027,Region 12,0.0,0.0,raw,Implementation CAPEX
+SC1,2028,Region 12,0.0,0.0,raw,Implementation CAPEX
+SC1,2029,Region 12,0.0,0.0,raw,Implementation CAPEX
+SC1,2030,Region 12,0.0,0.0,raw,Implementation CAPEX
+SC10,2024,Region 12,14.212679778512447,500212903219.7185,raw,Implementation CAPEX
+SC10,2025,Region 12,13.879205989611082,488476348629.4842,raw,Implementation CAPEX
+SC10,2026,Region 12,26.36484576553133,927906365923.685,raw,Implementation CAPEX
+SC10,2027,Region 12,35.73436034893849,1257664874844.099,raw,Implementation CAPEX
+SC10,2028,Region 12,57.59022756881643,2026878490067.341,raw,Implementation CAPEX
+SC10,2029,Region 12,73.21621091061435,2576832377361.76,raw,Implementation CAPEX
+SC10,2030,Region 12,94.09068173495737,3311505909513.4,raw,Implementation CAPEX
+SC11,2024,Region 12,14.523522928738467,511152976242.0909,raw,Implementation CAPEX
+SC11,2025,Region 12,13.978035171241688,491954625255.4737,raw,Implementation CAPEX
+SC11,2026,Region 12,27.663420753671662,973609496859.5016,raw,Implementation CAPEX
+SC11,2027,Region 12,36.91069965911911,1299065941404.857,raw,Implementation CAPEX
+SC11,2028,Region 12,60.44393856771424,2127314374499.694,raw,Implementation CAPEX
+SC11,2029,Region 12,77.29802836947167,2720491264589.686,raw,Implementation CAPEX
+SC11,2030,Region 12,100.0,3519483383956.6934,raw,Implementation CAPEX
+SC2,2024,Region 12,0.0,0.0,raw,Implementation CAPEX
+SC2,2025,Region 12,0.0,0.0,raw,Implementation CAPEX
+SC2,2026,Region 12,1.5104558585854697,53160242964.916016,raw,Implementation CAPEX
+SC2,2027,Region 12,1.87750490497313,66078473163.50121,raw,Implementation CAPEX
+SC2,2028,Region 12,3.8899376468667124,136905709127.74995,raw,Implementation CAPEX
+SC2,2029,Region 12,5.803311746031179,204246592620.7744,raw,Implementation CAPEX
+SC2,2030,Region 12,8.418085759013767,296273129535.71423,raw,Implementation CAPEX
+SC3,2024,Region 12,0.0,0.0,raw,Implementation CAPEX
+SC3,2025,Region 12,0.0,0.0,raw,Implementation CAPEX
+SC3,2026,Region 12,0.23880952696472107,8404861620.828938,raw,Implementation CAPEX
+SC3,2027,Region 12,0.29684154997450124,10447289028.032076,raw,Implementation CAPEX
+SC3,2028,Region 12,0.6909113304672132,24316509473.667686,raw,Implementation CAPEX
+SC3,2029,Region 12,0.8589627485837423,30231051210.78252,raw,Implementation CAPEX
+SC3,2030,Region 12,1.4927511841034853,52537129888.33896,raw,Implementation CAPEX
+SC4,2024,Region 12,0.0,0.0,raw,Implementation CAPEX
+SC4,2025,Region 12,0.0,0.0,raw,Implementation CAPEX
+SC4,2026,Region 12,0.0,0.0,raw,Implementation CAPEX
+SC4,2027,Region 12,0.0,0.0,raw,Implementation CAPEX
+SC4,2028,Region 12,0.0,0.0,raw,Implementation CAPEX
+SC4,2029,Region 12,0.0,0.0,raw,Implementation CAPEX
+SC4,2030,Region 12,0.0,0.0,raw,Implementation CAPEX
+SC5,2024,Region 12,14.04397923398828,494275515586.546,raw,Implementation CAPEX
+SC5,2025,Region 12,13.248147914572947,466266364535.4001,raw,Implementation CAPEX
+SC5,2026,Region 12,24.36835104094798,857640065830.4021,raw,Implementation CAPEX
+SC5,2027,Region 12,32.67011292193559,1149819195807.4116,raw,Implementation CAPEX
+SC5,2028,Region 12,50.70679087047858,1784617079224.163,raw,Implementation CAPEX
+SC5,2029,Region 12,63.21004724706142,2224667109851.502,raw,Implementation CAPEX
+SC5,2030,Region 12,78.33250754302792,2756899587213.491,raw,Implementation CAPEX
+SC6,2024,Region 12,0.0,0.0,raw,Implementation CAPEX
+SC6,2025,Region 12,0.45075125812480304,15864115632.678188,raw,Implementation CAPEX
+SC6,2026,Region 12,0.6936193372721634,24411817323.204327,raw,Implementation CAPEX
+SC6,2027,Region 12,1.0544071620813527,37109684868.70253,raw,Implementation CAPEX
+SC6,2028,Region 12,2.4678744844414946,86856432416.82532,raw,Implementation CAPEX
+SC6,2029,Region 12,3.550335445700554,124953466086.1558,raw,Implementation CAPEX
+SC6,2030,Region 12,5.95199515877633,209479480627.03973,raw,Implementation CAPEX
+SC7,2024,Region 12,1.0742279341251089,37807273647.35446,raw,Implementation CAPEX
+SC7,2025,Region 12,1.610981191368277,56698215348.87409,raw,Implementation CAPEX
+SC7,2026,Region 12,3.3198986874766976,116843282669.93872,raw,Implementation CAPEX
+SC7,2027,Region 12,5.67337381494276,199673448726.6604,raw,Implementation CAPEX
+SC7,2028,Region 12,9.673871785456157,340470310074.4042,raw,Implementation CAPEX
+SC7,2029,Region 12,15.996287661430165,562986686293.9493,raw,Implementation CAPEX
+SC7,2030,Region 12,27.02517314923319,951146478472.7878,raw,Implementation CAPEX
+SC8,2024,Region 12,0.0,0.0,raw,Implementation CAPEX
+SC8,2025,Region 12,0.28751673616678214,10119103755.4845,raw,Implementation CAPEX
+SC8,2026,Region 12,0.5484522498150691,19302685801.178013,raw,Implementation CAPEX
+SC8,2027,Region 12,0.8060410922378823,28368482309.175312,raw,Implementation CAPEX
+SC8,2028,Region 12,1.9161400689671308,67438231340.6345,raw,Implementation CAPEX
+SC8,2029,Region 12,2.6981003181358525,94959192379.27402,raw,Implementation CAPEX
+SC8,2030,Region 12,4.6025281001246805,161985211725.8258,raw,Implementation CAPEX
+SC9,2024,Region 12,13.057198687877275,459545938230.0521,raw,Implementation CAPEX
+SC9,2025,Region 12,12.500273792693717,439945059082.94855,raw,Implementation CAPEX
+SC9,2026,Region 12,21.6664383271823,762546696820.4055,raw,Implementation CAPEX
+SC9,2027,Region 12,28.2115841403648,992902016171.1008,raw,Implementation CAPEX
+SC9,2028,Region 12,43.09721073100475,1516799170626.5132,raw,Implementation CAPEX
+SC9,2029,Region 12,54.63531453594342,1922880816865.005,raw,Implementation CAPEX
+SC9,2030,Region 12,69.92951534075435,2461157672899.296,raw,Implementation CAPEX
+SC0,2024,Tehran,0.0,0.0,raw,Implementation CAPEX
+SC0,2025,Tehran,0.0,0.0,raw,Implementation CAPEX
+SC0,2026,Tehran,0.0,0.0,raw,Implementation CAPEX
+SC0,2027,Tehran,0.0,0.0,raw,Implementation CAPEX
+SC0,2028,Tehran,0.0,0.0,raw,Implementation CAPEX
+SC0,2029,Tehran,0.0,0.0,raw,Implementation CAPEX
+SC0,2030,Tehran,0.0,0.0,raw,Implementation CAPEX
+SC1,2024,Tehran,0.0,0.0,raw,Implementation CAPEX
+SC1,2025,Tehran,0.0,0.0,raw,Implementation CAPEX
+SC1,2026,Tehran,0.0,0.0,raw,Implementation CAPEX
+SC1,2027,Tehran,0.0,0.0,raw,Implementation CAPEX
+SC1,2028,Tehran,0.0,0.0,raw,Implementation CAPEX
+SC1,2029,Tehran,0.0,0.0,raw,Implementation CAPEX
+SC1,2030,Tehran,0.0,0.0,raw,Implementation CAPEX
+SC10,2024,Tehran,10.738355754927829,5940636121905.778,raw,Implementation CAPEX
+SC10,2025,Tehran,13.841275797039232,7657222842092.745,raw,Implementation CAPEX
+SC10,2026,Tehran,26.703449925682715,14772790437233.85,raw,Implementation CAPEX
+SC10,2027,Tehran,36.10047964904607,19971382799720.707,raw,Implementation CAPEX
+SC10,2028,Tehran,59.60566989768594,32974843052865.945,raw,Implementation CAPEX
+SC10,2029,Tehran,76.7087461655274,42436547897746.21,raw,Implementation CAPEX
+SC10,2030,Tehran,100.0,55321654985956.5,raw,Implementation CAPEX
+SC11,2024,Tehran,10.738355754927829,5940636121905.778,raw,Implementation CAPEX
+SC11,2025,Tehran,13.764112898145317,7614535049389.491,raw,Implementation CAPEX
+SC11,2026,Tehran,26.727420348177507,14786051271665.094,raw,Implementation CAPEX
+SC11,2027,Tehran,36.08871907426416,19964876655115.496,raw,Implementation CAPEX
+SC11,2028,Tehran,59.54862869770091,32943286917010.38,raw,Implementation CAPEX
+SC11,2029,Tehran,76.62327366906752,42389263098146.78,raw,Implementation CAPEX
+SC11,2030,Tehran,99.74842033232369,55182476950189.8,raw,Implementation CAPEX
+SC2,2024,Tehran,0.0,0.0,raw,Implementation CAPEX
+SC2,2025,Tehran,0.0,0.0,raw,Implementation CAPEX
+SC2,2026,Tehran,0.21044874007952763,116423725909.08862,raw,Implementation CAPEX
+SC2,2027,Tehran,0.26158893654446413,144715328956.56113,raw,Implementation CAPEX
+SC2,2028,Tehran,0.5419770939467674,299830698016.144,raw,Implementation CAPEX
+SC2,2029,Tehran,0.8085636123022643,447310771939.8455,raw,Implementation CAPEX
+SC2,2030,Tehran,1.1728747528742272,648853724202.4698,raw,Implementation CAPEX
+SC3,2024,Tehran,0.0,0.0,raw,Implementation CAPEX
+SC3,2025,Tehran,0.0,0.0,raw,Implementation CAPEX
+SC3,2026,Tehran,0.03367179841272447,18627796145.45421,raw,Implementation CAPEX
+SC3,2027,Tehran,0.04185422984711432,23154452633.049816,raw,Implementation CAPEX
+SC3,2028,Tehran,0.10405960203777934,57567494019.09964,raw,Implementation CAPEX
+SC3,2029,Tehran,0.12937017796836225,71569723510.37527,raw,Implementation CAPEX
+SC3,2030,Tehran,0.24127709201984104,133478480407.36523,raw,Implementation CAPEX
+SC4,2024,Tehran,0.0,0.0,raw,Implementation CAPEX
+SC4,2025,Tehran,0.0,0.0,raw,Implementation CAPEX
+SC4,2026,Tehran,0.0,0.0,raw,Implementation CAPEX
+SC4,2027,Tehran,0.0,0.0,raw,Implementation CAPEX
+SC4,2028,Tehran,0.0,0.0,raw,Implementation CAPEX
+SC4,2029,Tehran,0.0,0.0,raw,Implementation CAPEX
+SC4,2030,Tehran,0.0,0.0,raw,Implementation CAPEX
+SC5,2024,Tehran,10.242086891607364,5666091973536.902,raw,Implementation CAPEX
+SC5,2025,Tehran,12.785294248354761,7073036373014.161,raw,Implementation CAPEX
+SC5,2026,Tehran,23.624307826120912,13069358068386.93,raw,Implementation CAPEX
+SC5,2027,Tehran,31.502252542747804,17427567464503.648,raw,Implementation CAPEX
+SC5,2028,Tehran,49.91964853585159,27616375733205.902,raw,Implementation CAPEX
+SC5,2029,Tehran,62.44983405188859,34548281733488.18,raw,Implementation CAPEX
+SC5,2030,Tehran,78.17441625924404,43247380850224.47,raw,Implementation CAPEX
+SC6,2024,Tehran,0.0,0.0,raw,Implementation CAPEX
+SC6,2025,Tehran,0.3858144944695756,213438963516.27084,raw,Implementation CAPEX
+SC6,2026,Tehran,0.623031940006797,344671580302.8717,raw,Implementation CAPEX
+SC6,2027,Tehran,0.9822118199114876,543375834242.71765,raw,Implementation CAPEX
+SC6,2028,Tehran,2.22873585881827,1232973562363.738,raw,Implementation CAPEX
+SC6,2029,Tehran,3.2815920337265303,1815431022944.8245,raw,Implementation CAPEX
+SC6,2030,Tehran,5.491976196257386,3038252123204.368,raw,Implementation CAPEX
+SC7,2024,Tehran,0.9925377266409322,549088296737.75256,raw,Implementation CAPEX
+SC7,2025,Tehran,1.6016292877907223,886047828745.6158,raw,Implementation CAPEX
+SC7,2026,Tehran,2.873236245891119,1589521842883.3335,raw,Implementation CAPEX
+SC7,2027,Tehran,4.8287335399991145,2671335309189.474,raw,Implementation CAPEX
+SC7,2028,Tehran,8.446798982413847,4672908990408.273,raw,Implementation CAPEX
+SC7,2029,Tehran,13.977017564146438,7732317434163.633,raw,Implementation CAPEX
+SC7,2030,Tehran,23.482660778511256,12990996577410.523,raw,Implementation CAPEX
+SC8,2024,Tehran,0.0,0.0,raw,Implementation CAPEX
+SC8,2025,Tehran,0.25077942140522497,138735326285.5765,raw,Implementation CAPEX
+SC8,2026,Tehran,0.4184394803695089,231487645655.0489,raw,Implementation CAPEX
+SC8,2027,Tehran,0.6551793748813142,362456073310.9872,raw,Implementation CAPEX
+SC8,2028,Tehran,1.4903021490469934,824459813144.0729,raw,Implementation CAPEX
+SC8,2029,Tehran,2.184782893109599,1208658054318.2913,raw,Implementation CAPEX
+SC8,2030,Tehran,3.666295364375248,2028255272245.7915,raw,Implementation CAPEX
+SC9,2024,Tehran,9.637884077604076,5331836977358.5625,raw,Implementation CAPEX
+SC9,2025,Tehran,12.146806491025258,6719814378776.763,raw,Implementation CAPEX
+SC9,2026,Tehran,20.028883270670573,11080309700540.334,raw,Implementation CAPEX
+SC9,2027,Tehran,26.27637306476842,14536524449713.99,raw,Implementation CAPEX
+SC9,2028,Tehran,39.705777337269396,21965893148016.28,raw,Implementation CAPEX
+SC9,2029,Tehran,49.950500345543546,27633443464920.61,raw,Implementation CAPEX
+SC9,2030,Tehran,63.131520624698,34925402027383.4,raw,Implementation CAPEX
+SC0,2024,Region 12,0.0,0.0,pct,PT subsidy need
+SC0,2025,Region 12,0.0,0.0,pct,PT subsidy need
+SC0,2026,Region 12,0.0,0.0,pct,PT subsidy need
+SC0,2027,Region 12,0.0,0.0,pct,PT subsidy need
+SC0,2028,Region 12,0.0,0.0,pct,PT subsidy need
+SC0,2029,Region 12,0.0,0.0,pct,PT subsidy need
+SC0,2030,Region 12,0.0,0.0,pct,PT subsidy need
+SC1,2024,Region 12,0.0,0.0,pct,PT subsidy need
+SC1,2025,Region 12,0.0,0.0,pct,PT subsidy need
+SC1,2026,Region 12,1.022462731741298,1.022462731741298,pct,PT subsidy need
+SC1,2027,Region 12,0.08925460877215013,0.08925460877215013,pct,PT subsidy need
+SC1,2028,Region 12,1.4402196419662336,1.4402196419662336,pct,PT subsidy need
+SC1,2029,Region 12,1.415772258818498,1.415772258818498,pct,PT subsidy need
+SC1,2030,Region 12,1.7561293239236189,1.7561293239236189,pct,PT subsidy need
+SC10,2024,Region 12,17.9099839082515,17.9099839082515,pct,PT subsidy need
+SC10,2025,Region 12,20.768122899125395,20.768122899125395,pct,PT subsidy need
+SC10,2026,Region 12,22.834122197604863,22.834122197604863,pct,PT subsidy need
+SC10,2027,Region 12,25.54820752135583,25.54820752135583,pct,PT subsidy need
+SC10,2028,Region 12,27.513282715741987,27.513282715741987,pct,PT subsidy need
+SC10,2029,Region 12,28.57714241875683,28.57714241875683,pct,PT subsidy need
+SC10,2030,Region 12,30.02478933805272,30.02478933805272,pct,PT subsidy need
+SC11,2024,Region 12,10.6076405692534,10.6076405692534,pct,PT subsidy need
+SC11,2025,Region 12,11.307916425059448,11.307916425059448,pct,PT subsidy need
+SC11,2026,Region 12,14.174247668874193,14.174247668874193,pct,PT subsidy need
+SC11,2027,Region 12,15.687493756833733,15.687493756833733,pct,PT subsidy need
+SC11,2028,Region 12,19.605972727718157,19.605972727718157,pct,PT subsidy need
+SC11,2029,Region 12,20.884061773667426,20.884061773667426,pct,PT subsidy need
+SC11,2030,Region 12,23.24296792942046,23.24296792942046,pct,PT subsidy need
+SC2,2024,Region 12,0.0,0.0,pct,PT subsidy need
+SC2,2025,Region 12,0.0,0.0,pct,PT subsidy need
+SC2,2026,Region 12,1.1918138829151002,1.1918138829151002,pct,PT subsidy need
+SC2,2027,Region 12,0.9077305059872984,0.9077305059872984,pct,PT subsidy need
+SC2,2028,Region 12,1.973298744132754,1.973298744132754,pct,PT subsidy need
+SC2,2029,Region 12,2.3596332113424383,2.3596332113424383,pct,PT subsidy need
+SC2,2030,Region 12,3.5586838086604557,3.5586838086604557,pct,PT subsidy need
+SC3,2024,Region 12,0.0,0.0,pct,PT subsidy need
+SC3,2025,Region 12,0.0,0.0,pct,PT subsidy need
+SC3,2026,Region 12,0.5512377147975498,0.5512377147975498,pct,PT subsidy need
+SC3,2027,Region 12,0.5436389712649617,0.5436389712649617,pct,PT subsidy need
+SC3,2028,Region 12,1.1691738179382005,1.1691738179382005,pct,PT subsidy need
+SC3,2029,Region 12,1.1809676853030766,1.1809676853030766,pct,PT subsidy need
+SC3,2030,Region 12,1.8912547196400797,1.8912547196400797,pct,PT subsidy need
+SC4,2024,Region 12,9.337301905867724,9.337301905867724,pct,PT subsidy need
+SC4,2025,Region 12,11.354785186513697,11.354785186513697,pct,PT subsidy need
+SC4,2026,Region 12,12.797745685051737,12.797745685051737,pct,PT subsidy need
+SC4,2027,Region 12,13.977129239546592,13.977129239546592,pct,PT subsidy need
+SC4,2028,Region 12,13.852486691959895,13.852486691959895,pct,PT subsidy need
+SC4,2029,Region 12,14.367565408331892,14.367565408331892,pct,PT subsidy need
+SC4,2030,Region 12,14.690518409849743,14.690518409849743,pct,PT subsidy need
+SC5,2024,Region 12,5.108837821734548,5.108837821734548,pct,PT subsidy need
+SC5,2025,Region 12,4.861089963322188,4.861089963322188,pct,PT subsidy need
+SC5,2026,Region 12,4.4772349544049295,4.4772349544049295,pct,PT subsidy need
+SC5,2027,Region 12,4.9979055289120025,4.9979055289120025,pct,PT subsidy need
+SC5,2028,Region 12,5.83329299908308,5.83329299908308,pct,PT subsidy need
+SC5,2029,Region 12,5.694902825733207,5.694902825733207,pct,PT subsidy need
+SC5,2030,Region 12,5.507362904464997,5.507362904464997,pct,PT subsidy need
+SC6,2024,Region 12,3.585329408356313,3.585329408356313,pct,PT subsidy need
+SC6,2025,Region 12,3.808448968045048,3.808448968045048,pct,PT subsidy need
+SC6,2026,Region 12,2.816586390625325,2.816586390625325,pct,PT subsidy need
+SC6,2027,Region 12,2.6693669424842916,2.6693669424842916,pct,PT subsidy need
+SC6,2028,Region 12,2.8615803909959396,2.8615803909959396,pct,PT subsidy need
+SC6,2029,Region 12,2.7363567616222806,2.7363567616222806,pct,PT subsidy need
+SC6,2030,Region 12,2.5905294852217726,2.5905294852217726,pct,PT subsidy need
+SC7,2024,Region 12,5.6945609073538535,5.6945609073538535,pct,PT subsidy need
+SC7,2025,Region 12,6.837163978371851,6.837163978371851,pct,PT subsidy need
+SC7,2026,Region 12,8.66295846347943,8.66295846347943,pct,PT subsidy need
+SC7,2027,Region 12,10.671177962753882,10.671177962753882,pct,PT subsidy need
+SC7,2028,Region 12,13.406538682051739,13.406538682051739,pct,PT subsidy need
+SC7,2029,Region 12,16.072287752424845,16.072287752424845,pct,PT subsidy need
+SC7,2030,Region 12,19.587078413838732,19.587078413838732,pct,PT subsidy need
+SC8,2024,Region 12,13.226317249290986,13.226317249290986,pct,PT subsidy need
+SC8,2025,Region 12,16.01159944561452,16.01159944561452,pct,PT subsidy need
+SC8,2026,Region 12,17.455588736065987,17.455588736065987,pct,PT subsidy need
+SC8,2027,Region 12,18.409975751399884,18.409975751399884,pct,PT subsidy need
+SC8,2028,Region 12,19.109987970618004,19.109987970618004,pct,PT subsidy need
+SC8,2029,Region 12,19.399989551408233,19.399989551408233,pct,PT subsidy need
+SC8,2030,Region 12,20.001488105005986,20.001488105005986,pct,PT subsidy need
+SC9,2024,Region 12,9.983400414648795,9.983400414648795,pct,PT subsidy need
+SC9,2025,Region 12,11.223214281389252,11.223214281389252,pct,PT subsidy need
+SC9,2026,Region 12,12.75412332875806,12.75412332875806,pct,PT subsidy need
+SC9,2027,Region 12,13.65105475290546,13.65105475290546,pct,PT subsidy need
+SC9,2028,Region 12,15.522014789346866,15.522014789346866,pct,PT subsidy need
+SC9,2029,Region 12,16.207958151116998,16.207958151116998,pct,PT subsidy need
+SC9,2030,Region 12,17.77609521673298,17.77609521673298,pct,PT subsidy need
+SC0,2024,Tehran,0.0,0.0,pct,PT subsidy need
+SC0,2025,Tehran,0.0,0.0,pct,PT subsidy need
+SC0,2026,Tehran,0.0,0.0,pct,PT subsidy need
+SC0,2027,Tehran,0.0,0.0,pct,PT subsidy need
+SC0,2028,Tehran,0.0,0.0,pct,PT subsidy need
+SC0,2029,Tehran,0.0,0.0,pct,PT subsidy need
+SC0,2030,Tehran,0.0,0.0,pct,PT subsidy need
+SC1,2024,Tehran,0.0,0.0,pct,PT subsidy need
+SC1,2025,Tehran,0.0,0.0,pct,PT subsidy need
+SC1,2026,Tehran,-0.8104588138801492,-0.8104588138801492,pct,PT subsidy need
+SC1,2027,Tehran,7.062113961635793,7.062113961635793,pct,PT subsidy need
+SC1,2028,Tehran,-1.0487640668634648,-1.0487640668634648,pct,PT subsidy need
+SC1,2029,Tehran,-1.0315603441229177,-1.0315603441229177,pct,PT subsidy need
+SC1,2030,Tehran,-1.2035899975376534,-1.2035899975376534,pct,PT subsidy need
+SC10,2024,Tehran,21.377690339188504,21.377690339188504,pct,PT subsidy need
+SC10,2025,Tehran,58.83046668075327,58.83046668075327,pct,PT subsidy need
+SC10,2026,Tehran,75.46044240689086,75.46044240689086,pct,PT subsidy need
+SC10,2027,Tehran,79.76907838581776,79.76907838581776,pct,PT subsidy need
+SC10,2028,Tehran,82.10102906494109,82.10102906494109,pct,PT subsidy need
+SC10,2029,Tehran,83.56954022130358,83.56954022130358,pct,PT subsidy need
+SC10,2030,Tehran,86.05220705362508,86.05220705362508,pct,PT subsidy need
+SC11,2024,Tehran,12.744995516866386,12.744995516866386,pct,PT subsidy need
+SC11,2025,Tehran,47.29154164090792,47.29154164090792,pct,PT subsidy need
+SC11,2026,Tehran,64.24310483688389,64.24310483688389,pct,PT subsidy need
+SC11,2027,Tehran,70.69341041086633,70.69341041086633,pct,PT subsidy need
+SC11,2028,Tehran,73.38860222696547,73.38860222696547,pct,PT subsidy need
+SC11,2029,Tehran,75.41639078129825,75.41639078129825,pct,PT subsidy need
+SC11,2030,Tehran,78.87362588001531,78.87362588001531,pct,PT subsidy need
+SC2,2024,Tehran,0.0,0.0,pct,PT subsidy need
+SC2,2025,Tehran,0.0,0.0,pct,PT subsidy need
+SC2,2026,Tehran,2.510878944048379,2.510878944048379,pct,PT subsidy need
+SC2,2027,Tehran,4.13779030866364,4.13779030866364,pct,PT subsidy need
+SC2,2028,Tehran,4.196148742330426,4.196148742330426,pct,PT subsidy need
+SC2,2029,Tehran,5.0355940488492905,5.0355940488492905,pct,PT subsidy need
+SC2,2030,Tehran,5.362747601408919,5.362747601408919,pct,PT subsidy need
+SC3,2024,Tehran,0.0,0.0,pct,PT subsidy need
+SC3,2025,Tehran,0.0,0.0,pct,PT subsidy need
+SC3,2026,Tehran,0.3482768403559183,0.3482768403559183,pct,PT subsidy need
+SC3,2027,Tehran,0.3457760697577229,0.3457760697577229,pct,PT subsidy need
+SC3,2028,Tehran,0.7429844839580203,0.7429844839580203,pct,PT subsidy need
+SC3,2029,Tehran,0.7379182725680064,0.7379182725680064,pct,PT subsidy need
+SC3,2030,Tehran,1.1908455396786983,1.1908455396786983,pct,PT subsidy need
+SC4,2024,Tehran,10.62611245251418,10.62611245251418,pct,PT subsidy need
+SC4,2025,Tehran,11.559213419093627,11.559213419093627,pct,PT subsidy need
+SC4,2026,Tehran,12.429026754520809,12.429026754520809,pct,PT subsidy need
+SC4,2027,Tehran,13.084899191897817,13.084899191897817,pct,PT subsidy need
+SC4,2028,Tehran,12.272685068055438,12.272685068055438,pct,PT subsidy need
+SC4,2029,Tehran,12.577508006106205,12.577508006106205,pct,PT subsidy need
+SC4,2030,Tehran,12.792766705227216,12.792766705227216,pct,PT subsidy need
+SC5,2024,Tehran,7.345884607372481,7.345884607372481,pct,PT subsidy need
+SC5,2025,Tehran,38.922360181141066,38.922360181141066,pct,PT subsidy need
+SC5,2026,Tehran,51.48281350149736,51.48281350149736,pct,PT subsidy need
+SC5,2027,Tehran,53.477456928298274,53.477456928298274,pct,PT subsidy need
+SC5,2028,Tehran,55.128906562751666,55.128906562751666,pct,PT subsidy need
+SC5,2029,Tehran,54.787386846234945,54.787386846234945,pct,PT subsidy need
+SC5,2030,Tehran,54.95299825203897,54.95299825203897,pct,PT subsidy need
+SC6,2024,Tehran,4.581435732476242,4.581435732476242,pct,PT subsidy need
+SC6,2025,Tehran,39.206967222308315,39.206967222308315,pct,PT subsidy need
+SC6,2026,Tehran,50.194559989916186,50.194559989916186,pct,PT subsidy need
+SC6,2027,Tehran,50.945955693735854,50.945955693735854,pct,PT subsidy need
+SC6,2028,Tehran,51.51373896957525,51.51373896957525,pct,PT subsidy need
+SC6,2029,Tehran,51.1844128813963,51.1844128813963,pct,PT subsidy need
+SC6,2030,Tehran,51.26661183070122,51.26661183070122,pct,PT subsidy need
+SC7,2024,Tehran,4.649150800481212,4.649150800481212,pct,PT subsidy need
+SC7,2025,Tehran,5.691970958075798,5.691970958075798,pct,PT subsidy need
+SC7,2026,Tehran,7.017419542873368,7.017419542873368,pct,PT subsidy need
+SC7,2027,Tehran,8.700687706040338,8.700687706040338,pct,PT subsidy need
+SC7,2028,Tehran,11.129864536560559,11.129864536560559,pct,PT subsidy need
+SC7,2029,Tehran,13.451147669060742,13.451147669060742,pct,PT subsidy need
+SC7,2030,Tehran,16.414561224485603,16.414561224485603,pct,PT subsidy need
+SC8,2024,Tehran,15.682222790824627,15.682222790824627,pct,PT subsidy need
+SC8,2025,Tehran,54.90058350094992,54.90058350094992,pct,PT subsidy need
+SC8,2026,Tehran,66.87040285200352,66.87040285200352,pct,PT subsidy need
+SC8,2027,Tehran,68.60473184237719,68.60473184237719,pct,PT subsidy need
+SC8,2028,Tehran,67.77149642264912,67.77149642264912,pct,PT subsidy need
+SC8,2029,Tehran,67.82035962478079,67.82035962478079,pct,PT subsidy need
+SC8,2030,Tehran,68.0572475403538,68.0572475403538,pct,PT subsidy need
+SC9,2024,Tehran,12.933561337733202,12.933561337733202,pct,PT subsidy need
+SC9,2025,Tehran,46.69371260449791,46.69371260449791,pct,PT subsidy need
+SC9,2026,Tehran,63.857531873556496,63.857531873556496,pct,PT subsidy need
+SC9,2027,Tehran,68.86657879911667,68.86657879911667,pct,PT subsidy need
+SC9,2028,Tehran,69.43266904429773,69.43266904429773,pct,PT subsidy need
+SC9,2029,Tehran,70.6799029940563,70.6799029940563,pct,PT subsidy need
+SC9,2030,Tehran,71.83130201994085,71.83130201994085,pct,PT subsidy need
+SC0,2024,Region 12,0.0,0.0,raw,Net fiscal pressure
+SC0,2025,Region 12,0.0,0.0,raw,Net fiscal pressure
+SC0,2026,Region 12,0.0,0.0,raw,Net fiscal pressure
+SC0,2027,Region 12,0.0,0.0,raw,Net fiscal pressure
+SC0,2028,Region 12,0.0,0.0,raw,Net fiscal pressure
+SC0,2029,Region 12,0.0,0.0,raw,Net fiscal pressure
+SC0,2030,Region 12,0.0,0.0,raw,Net fiscal pressure
+SC1,2024,Region 12,-0.06951821609512249,-0.000581546917506,raw,Net fiscal pressure
+SC1,2025,Region 12,-0.7308275717232529,-0.0061136569008403,raw,Net fiscal pressure
+SC1,2026,Region 12,0.20736454329282114,0.001734685061351,raw,Net fiscal pressure
+SC1,2027,Region 12,-1.6947434089769189,-0.0141771878050721,raw,Net fiscal pressure
+SC1,2028,Region 12,-0.03064733699657626,-0.0002563768945932,raw,Net fiscal pressure
+SC1,2029,Region 12,-0.9285021514190382,-0.0077672816476848,raw,Net fiscal pressure
+SC1,2030,Region 12,-1.0847675936285015,-0.0090745028529194,raw,Net fiscal pressure
+SC10,2024,Region 12,21.86783862071743,0.1829329757972477,raw,Net fiscal pressure
+SC10,2025,Region 12,26.998133850344512,0.2258498908775053,raw,Net fiscal pressure
+SC10,2026,Region 12,37.86015829942927,0.3167149502972801,raw,Net fiscal pressure
+SC10,2027,Region 12,49.72461364106346,0.4159657340396877,raw,Net fiscal pressure
+SC10,2028,Region 12,65.48264897086365,0.5477878288336147,raw,Net fiscal pressure
+SC10,2029,Region 12,80.08603859503945,0.6699508631879211,raw,Net fiscal pressure
+SC10,2030,Region 12,100.0,0.8365388960934547,raw,Net fiscal pressure
+SC11,2024,Region 12,15.731230105307995,0.1315978586648647,raw,Net fiscal pressure
+SC11,2025,Region 12,16.884799161796003,0.1412479125156852,raw,Net fiscal pressure
+SC11,2026,Region 12,22.226468471378745,0.1859330539910315,raw,Net fiscal pressure
+SC11,2027,Region 12,29.904791141292247,0.2501652096924194,raw,Net fiscal pressure
+SC11,2028,Region 12,44.27212765038579,0.3703535679236224,raw,Net fiscal pressure
+SC11,2029,Region 12,56.1742971915684,0.4699198456146028,raw,Net fiscal pressure
+SC11,2030,Region 12,75.71889882937957,0.6334180404014116,raw,Net fiscal pressure
+SC2,2024,Region 12,-0.06951821609512249,-0.000581546917506,raw,Net fiscal pressure
+SC2,2025,Region 12,-0.7308275717232529,-0.0061136569008403,raw,Net fiscal pressure
+SC2,2026,Region 12,-4.822371964708855,-0.0403410171990957,raw,Net fiscal pressure
+SC2,2027,Region 12,-4.808739945878751,-0.0402269800592591,raw,Net fiscal pressure
+SC2,2028,Region 12,-4.86045171551247,-0.0406595691261034,raw,Net fiscal pressure
+SC2,2029,Region 12,-3.7401219189608947,-0.0312875746134248,raw,Net fiscal pressure
+SC2,2030,Region 12,0.8238249192991496,0.0068916158856479,raw,Net fiscal pressure
+SC3,2024,Region 12,-0.06951821609512249,-0.000581546917506,raw,Net fiscal pressure
+SC3,2025,Region 12,-0.7308275717232529,-0.0061136569008403,raw,Net fiscal pressure
+SC3,2026,Region 12,-0.33525940699525875,-0.0028045753423276,raw,Net fiscal pressure
+SC3,2027,Region 12,-0.8748534362582476,-0.0073184892781104,raw,Net fiscal pressure
+SC3,2028,Region 12,-0.39394731876623196,-0.0032955225515968,raw,Net fiscal pressure
+SC3,2029,Region 12,-1.3122899085635586,-0.0109778155146434,raw,Net fiscal pressure
+SC3,2030,Region 12,-0.4103759358662128,-0.0034329543237284,raw,Net fiscal pressure
+SC4,2024,Region 12,7.959971776251386,0.0665882600264039,raw,Net fiscal pressure
+SC4,2025,Region 12,11.454397396901786,0.0958204895381996,raw,Net fiscal pressure
+SC4,2026,Region 12,15.766098687964814,0.1318895479213055,raw,Net fiscal pressure
+SC4,2027,Region 12,20.761164695248315,0.1736752179577743,raw,Net fiscal pressure
+SC4,2028,Region 12,24.4021713432429,0.2041336547775975,raw,Net fiscal pressure
+SC4,2029,Region 12,30.29480628194927,0.253427838044669,raw,Net fiscal pressure
+SC4,2030,Region 12,37.27458901782362,0.3118164354930738,raw,Net fiscal pressure
+SC5,2024,Region 12,10.782082043441484,0.090196310102096,raw,Net fiscal pressure
+SC5,2025,Region 12,9.680295619128716,0.0809794381108424,raw,Net fiscal pressure
+SC5,2026,Region 12,12.93624012086154,0.1082166803030537,raw,Net fiscal pressure
+SC5,2027,Region 12,15.616677531757578,0.1306395818306394,raw,Net fiscal pressure
+SC5,2028,Region 12,21.110811119225218,0.1766001462931409,raw,Net fiscal pressure
+SC5,2029,Region 12,22.79987309174692,0.1907298066724083,raw,Net fiscal pressure
+SC5,2030,Region 12,24.400176777270328,0.2041169694574287,raw,Net fiscal pressure
+SC6,2024,Region 12,3.013638663042682,0.0252102596040628,raw,Net fiscal pressure
+SC6,2025,Region 12,3.5328915388628084,0.029554011879382,raw,Net fiscal pressure
+SC6,2026,Region 12,2.810329779799888,0.0235095017165236,raw,Net fiscal pressure
+SC6,2027,Region 12,2.779705494968848,0.0232533176622615,raw,Net fiscal pressure
+SC6,2028,Region 12,3.3752922732403747,0.0282356327224927,raw,Net fiscal pressure
+SC6,2029,Region 12,3.0084192721519543,0.0251665973691227,raw,Net fiscal pressure
+SC6,2030,Region 12,2.4809255448480974,0.0207539071657728,raw,Net fiscal pressure
+SC7,2024,Region 12,5.321443454158521,0.0445159443276551,raw,Net fiscal pressure
+SC7,2025,Region 12,7.238032385715753,0.0605489562183533,raw,Net fiscal pressure
+SC7,2026,Region 12,11.415043405781434,0.0954912780953127,raw,Net fiscal pressure
+SC7,2027,Region 12,17.043554557328942,0.1425759631489652,raw,Net fiscal pressure
+SC7,2028,Region 12,25.907952405005613,0.2167300990492516,raw,Net fiscal pressure
+SC7,2029,Region 12,37.79868714284252,0.3162007201625534,raw,Net fiscal pressure
+SC7,2030,Region 12,56.750525397237006,0.4747402186852821,raw,Net fiscal pressure
+SC8,2024,Region 12,11.304279381907344,0.0945646939527277,raw,Net fiscal pressure
+SC8,2025,Region 12,16.564524346123637,0.1385686891081942,raw,Net fiscal pressure
+SC8,2026,Region 12,22.104274215609276,0.184910851512728,raw,Net fiscal pressure
+SC8,2027,Region 12,28.160113495029986,0.2355703025699878,raw,Net fiscal pressure
+SC8,2028,Region 12,35.22338311333326,0.2946573002630464,raw,Net fiscal pressure
+SC8,2029,Region 12,42.99914436935187,0.359704567637007,raw,Net fiscal pressure
+SC8,2030,Region 12,53.86900363489584,0.4506351683439006,raw,Net fiscal pressure
+SC9,2024,Region 12,14.520113065095213,0.121466393546269,raw,Net fiscal pressure
+SC9,2025,Region 12,16.214481473227757,0.1356404443234172,raw,Net fiscal pressure
+SC9,2026,Region 12,16.154595313693733,0.1351394733055385,raw,Net fiscal pressure
+SC9,2027,Region 12,22.1821773353623,0.1855625414107323,raw,Net fiscal pressure
+SC9,2028,Region 12,29.425658767180007,0.2461570810191945,raw,Net fiscal pressure
+SC9,2029,Region 12,37.74270885666864,0.3157324400253424,raw,Net fiscal pressure
+SC9,2030,Region 12,52.14112299484795,0.4361807747118315,raw,Net fiscal pressure
+SC0,2024,Tehran,0.0,0.0,raw,Net fiscal pressure
+SC0,2025,Tehran,0.0,0.0,raw,Net fiscal pressure
+SC0,2026,Tehran,0.0,0.0,raw,Net fiscal pressure
+SC0,2027,Tehran,0.0,0.0,raw,Net fiscal pressure
+SC0,2028,Tehran,0.0,0.0,raw,Net fiscal pressure
+SC0,2029,Tehran,0.0,0.0,raw,Net fiscal pressure
+SC0,2030,Tehran,0.0,0.0,raw,Net fiscal pressure
+SC1,2024,Tehran,0.0,0.0,raw,Net fiscal pressure
+SC1,2025,Tehran,0.0,0.0,raw,Net fiscal pressure
+SC1,2026,Tehran,-0.5309715821834458,-0.0017686672620048,raw,Net fiscal pressure
+SC1,2027,Tehran,5.188513333313628,0.017282946920381,raw,Net fiscal pressure
+SC1,2028,Tehran,-0.8857610164309735,-0.0029504714833878,raw,Net fiscal pressure
+SC1,2029,Tehran,-0.9879105201392091,-0.0032907316575686,raw,Net fiscal pressure
+SC1,2030,Tehran,-1.3082015270179586,-0.0043576215574979,raw,Net fiscal pressure
+SC10,2024,Tehran,13.457596009761932,0.0448272756705254,raw,Net fiscal pressure
+SC10,2025,Tehran,39.77084198024735,0.1324767436772677,raw,Net fiscal pressure
+SC10,2026,Tehran,53.59530513397858,0.1785260544412259,raw,Net fiscal pressure
+SC10,2027,Tehran,63.11879314926735,0.2102488095526603,raw,Net fiscal pressure
+SC10,2028,Tehran,75.32268987665259,0.2509000107372022,raw,Net fiscal pressure
+SC10,2029,Tehran,86.21406182443693,0.2871791896023874,raw,Net fiscal pressure
+SC10,2030,Tehran,100.0,0.3331001735971892,raw,Net fiscal pressure
+SC11,2024,Tehran,9.070291802768383,0.0302131577407931,raw,Net fiscal pressure
+SC11,2025,Tehran,32.48168105411444,0.1081965359785405,raw,Net fiscal pressure
+SC11,2026,Tehran,45.95875666019506,0.1530886982182195,raw,Net fiscal pressure
+SC11,2027,Tehran,56.206606639706735,0.1872243042899524,raw,Net fiscal pressure
+SC11,2028,Tehran,67.63650762786779,0.2252973243235037,raw,Net fiscal pressure
+SC11,2029,Tehran,78.11635352131484,0.2602057091872937,raw,Net fiscal pressure
+SC11,2030,Tehran,91.97472404981345,0.3063679654754643,raw,Net fiscal pressure
+SC2,2024,Tehran,0.0,0.0,raw,Net fiscal pressure
+SC2,2025,Tehran,0.0,0.0,raw,Net fiscal pressure
+SC2,2026,Tehran,1.2875120897558396,0.0042887050060615,raw,Net fiscal pressure
+SC2,2027,Tehran,2.755135265750862,0.0091773603530535,raw,Net fiscal pressure
+SC2,2028,Tehran,3.1895766863943935,0.0106244854793952,raw,Net fiscal pressure
+SC2,2029,Tehran,4.537368666489322,0.0151139829048204,raw,Net fiscal pressure
+SC2,2030,Tehran,5.656971173481342,0.0188433807992093,raw,Net fiscal pressure
+SC3,2024,Tehran,0.0,0.0,raw,Net fiscal pressure
+SC3,2025,Tehran,0.0,0.0,raw,Net fiscal pressure
+SC3,2026,Tehran,0.23341569456980343,0.0007775080838151,raw,Net fiscal pressure
+SC3,2027,Tehran,0.2592725494755154,0.0008636373123928,raw,Net fiscal pressure
+SC3,2028,Tehran,0.6379505024114859,0.0021250142309968,raw,Net fiscal pressure
+SC3,2029,Tehran,0.7171175719167372,0.0023887198769506,raw,Net fiscal pressure
+SC3,2030,Tehran,1.3099562754988672,0.004363466627734,raw,Net fiscal pressure
+SC4,2024,Tehran,5.400398001601251,0.0179887351182729,raw,Net fiscal pressure
+SC4,2025,Tehran,7.286989038987407,0.0242729731388752,raw,Net fiscal pressure
+SC4,2026,Tehran,8.142869061109725,0.0271239109783483,raw,Net fiscal pressure
+SC4,2027,Tehran,9.61343505514619,0.032022368857345,raw,Net fiscal pressure
+SC4,2028,Tehran,10.365215918132185,0.0345265522170218,raw,Net fiscal pressure
+SC4,2029,Tehran,12.045298704199734,0.0401229108939893,raw,Net fiscal pressure
+SC4,2030,Tehran,13.904666018163322,0.0463164666446114,raw,Net fiscal pressure
+SC5,2024,Tehran,6.2065219963260185,0.0206739355441097,raw,Net fiscal pressure
+SC5,2025,Tehran,27.015913273125374,0.0899900540116467,raw,Net fiscal pressure
+SC5,2026,Tehran,37.406986890965655,0.1246027382712844,raw,Net fiscal pressure
+SC5,2027,Tehran,43.22762410346584,0.1439912909305851,raw,Net fiscal pressure
+SC5,2028,Tehran,51.57057546687432,0.1717816764052278,raw,Net fiscal pressure
+SC5,2029,Tehran,57.500912585660735,0.1915356396428039,raw,Net fiscal pressure
+SC5,2030,Tehran,64.7859859127842,0.2158022315421347,raw,Net fiscal pressure
+SC6,2024,Tehran,2.328375168688848,0.0077558217288964,raw,Net fiscal pressure
+SC6,2025,Tehran,24.791087639989158,0.0825791559654352,raw,Net fiscal pressure
+SC6,2026,Tehran,32.98193386887297,0.109862878972926,raw,Net fiscal pressure
+SC6,2027,Tehran,37.5526166424575,0.1250878312263129,raw,Net fiscal pressure
+SC6,2028,Tehran,43.73095008470989,0.1456678706478688,raw,Net fiscal pressure
+SC6,2029,Tehran,49.28298708534826,0.1641617155351754,raw,Net fiscal pressure
+SC6,2030,Tehran,56.07775965794853,0.1867951147700411,raw,Net fiscal pressure
+SC7,2024,Tehran,2.6024615574392334,0.0086688039656302,raw,Net fiscal pressure
+SC7,2025,Tehran,3.8988023693349665,0.0129869174604661,raw,Net fiscal pressure
+SC7,2026,Tehran,5.044790389966041,0.0168042055465912,raw,Net fiscal pressure
+SC7,2027,Tehran,6.9959784877713265,0.0233036164875883,raw,Net fiscal pressure
+SC7,2028,Tehran,10.247752228516113,0.034135280462997,raw,Net fiscal pressure
+SC7,2029,Tehran,14.008152039249474,0.0466611787604982,raw,Net fiscal pressure
+SC7,2030,Tehran,19.36021933434987,0.064488924211516,raw,Net fiscal pressure
+SC8,2024,Tehran,7.970012080965431,0.0265481240774128,raw,Net fiscal pressure
+SC8,2025,Tehran,34.6582428941451,0.1154466672461328,raw,Net fiscal pressure
+SC8,2026,Tehran,43.875248957224365,0.1461485304427133,raw,Net fiscal pressure
+SC8,2027,Tehran,50.4855846813098,0.1681675702149989,raw,Net fiscal pressure
+SC8,2028,Tehran,57.387752242269094,0.1911587023425232,raw,Net fiscal pressure
+SC8,2029,Tehran,65.12662019486594,0.2169368849270805,raw,Net fiscal pressure
+SC8,2030,Tehran,74.20968106977907,0.2471925764693545,raw,Net fiscal pressure
+SC9,2024,Tehran,8.900389103968715,0.0296472115561451,raw,Net fiscal pressure
+SC9,2025,Tehran,31.79121281705768,0.105896585082271,raw,Net fiscal pressure
+SC9,2026,Tehran,44.50830882383705,0.1482572539573743,raw,Net fiscal pressure
+SC9,2027,Tehran,53.50991930392106,0.1782416340930769,raw,Net fiscal pressure
+SC9,2028,Tehran,62.13790166443911,0.2069814583138974,raw,Net fiscal pressure
+SC9,2029,Tehran,71.28680577809016,0.2374564737987094,raw,Net fiscal pressure
+SC9,2030,Tehran,81.84877633995201,0.2726384160755553,raw,Net fiscal pressure
+SC0,2024,Region 12,0.0,0.0,pct,Farebox recovery
+SC0,2025,Region 12,0.0,0.0,pct,Farebox recovery
+SC0,2026,Region 12,0.0,0.0,pct,Farebox recovery
+SC0,2027,Region 12,0.0,0.0,pct,Farebox recovery
+SC0,2028,Region 12,0.0,0.0,pct,Farebox recovery
+SC0,2029,Region 12,0.0,0.0,pct,Farebox recovery
+SC0,2030,Region 12,0.0,0.0,pct,Farebox recovery
+SC1,2024,Region 12,0.0,0.0,pct,Farebox recovery
+SC1,2025,Region 12,0.0,0.0,pct,Farebox recovery
+SC1,2026,Region 12,-1.8506223828857786,-1.8506223828857786,pct,Farebox recovery
+SC1,2027,Region 12,-1.1856356813410893,-1.1856356813410893,pct,Farebox recovery
+SC1,2028,Region 12,-2.7439147094198835,-2.7439147094198835,pct,Farebox recovery
+SC1,2029,Region 12,-2.762694771101197,-2.762694771101197,pct,Farebox recovery
+SC1,2030,Region 12,-3.4619702134859334,-3.4619702134859334,pct,Farebox recovery
+SC10,2024,Region 12,-7.10823068149493,-7.10823068149493,pct,Farebox recovery
+SC10,2025,Region 12,-13.72242135154958,-13.72242135154958,pct,Farebox recovery
+SC10,2026,Region 12,-18.855686623288893,-18.855686623288893,pct,Farebox recovery
+SC10,2027,Region 12,-24.188701616063284,-24.188701616063284,pct,Farebox recovery
+SC10,2028,Region 12,-28.86620692471114,-28.86620692471114,pct,Farebox recovery
+SC10,2029,Region 12,-33.105947398948196,-33.105947398948196,pct,Farebox recovery
+SC10,2030,Region 12,-37.18764222338874,-37.18764222338874,pct,Farebox recovery
+SC11,2024,Region 12,-2.7432808422892263,-2.7432808422892263,pct,Farebox recovery
+SC11,2025,Region 12,-4.91482438465228,-4.91482438465228,pct,Farebox recovery
+SC11,2026,Region 12,-7.254865390034092,-7.254865390034092,pct,Farebox recovery
+SC11,2027,Region 12,-8.927987880486555,-8.927987880486555,pct,Farebox recovery
+SC11,2028,Region 12,-11.70906617925917,-11.70906617925917,pct,Farebox recovery
+SC11,2029,Region 12,-13.583330283549813,-13.583330283549813,pct,Farebox recovery
+SC11,2030,Region 12,-16.07813269611392,-16.07813269611392,pct,Farebox recovery
+SC2,2024,Region 12,0.0,0.0,pct,Farebox recovery
+SC2,2025,Region 12,0.0,0.0,pct,Farebox recovery
+SC2,2026,Region 12,-0.0014351702955846697,-0.0014351702955846697,pct,Farebox recovery
+SC2,2027,Region 12,0.22656760294227407,0.22656760294227407,pct,Farebox recovery
+SC2,2028,Region 12,0.02543319741038226,0.02543319741038226,pct,Farebox recovery
+SC2,2029,Region 12,0.04032642656258081,0.04032642656258081,pct,Farebox recovery
+SC2,2030,Region 12,-0.1293039219696305,-0.1293039219696305,pct,Farebox recovery
+SC3,2024,Region 12,0.0,0.0,pct,Farebox recovery
+SC3,2025,Region 12,0.0,0.0,pct,Farebox recovery
+SC3,2026,Region 12,0.02860141820606757,0.02860141820606757,pct,Farebox recovery
+SC3,2027,Region 12,0.03320996635586674,0.03320996635586674,pct,Farebox recovery
+SC3,2028,Region 12,0.06681593812085342,0.06681593812085342,pct,Farebox recovery
+SC3,2029,Region 12,0.06933964013297444,0.06933964013297444,pct,Farebox recovery
+SC3,2030,Region 12,0.10555762219448284,0.10555762219448284,pct,Farebox recovery
+SC4,2024,Region 12,-5.90958663932243,-5.90958663932243,pct,Farebox recovery
+SC4,2025,Region 12,-11.620854502273769,-11.620854502273769,pct,Farebox recovery
+SC4,2026,Region 12,-16.938199511662646,-16.938199511662646,pct,Farebox recovery
+SC4,2027,Region 12,-22.013445003549933,-22.013445003549933,pct,Farebox recovery
+SC4,2028,Region 12,-26.23610259121598,-26.23610259121598,pct,Farebox recovery
+SC4,2029,Region 12,-30.197971473771297,-30.197971473771297,pct,Farebox recovery
+SC4,2030,Region 12,-33.95229344591279,-33.95229344591279,pct,Farebox recovery
+SC5,2024,Region 12,0.7432664148030942,0.7432664148030942,pct,Farebox recovery
+SC5,2025,Region 12,0.01481483682279796,0.01481483682279796,pct,Farebox recovery
+SC5,2026,Region 12,0.6110773127359235,0.6110773127359235,pct,Farebox recovery
+SC5,2027,Region 12,0.6755245862285384,0.6755245862285384,pct,Farebox recovery
+SC5,2028,Region 12,0.5673716339227826,0.5673716339227826,pct,Farebox recovery
+SC5,2029,Region 12,0.6589682970623032,0.6589682970623032,pct,Farebox recovery
+SC5,2030,Region 12,0.7865087333108294,0.7865087333108294,pct,Farebox recovery
+SC6,2024,Region 12,-0.909987002723276,-0.909987002723276,pct,Farebox recovery
+SC6,2025,Region 12,-0.9581785870225149,-0.9581785870225149,pct,Farebox recovery
+SC6,2026,Region 12,-0.08465993292595525,-0.08465993292595525,pct,Farebox recovery
+SC6,2027,Region 12,0.15775447413789193,0.15775447413789193,pct,Farebox recovery
+SC6,2028,Region 12,0.17340932218509666,0.17340932218509666,pct,Farebox recovery
+SC6,2029,Region 12,0.39311593625067226,0.39311593625067226,pct,Farebox recovery
+SC6,2030,Region 12,0.666264453114752,0.666264453114752,pct,Farebox recovery
+SC7,2024,Region 12,-3.8859933145467505,-3.8859933145467505,pct,Farebox recovery
+SC7,2025,Region 12,-4.7614361959800755,-4.7614361959800755,pct,Farebox recovery
+SC7,2026,Region 12,-6.096981320171664,-6.096981320171664,pct,Farebox recovery
+SC7,2027,Region 12,-7.550928686782226,-7.550928686782226,pct,Farebox recovery
+SC7,2028,Region 12,-9.460189607464493,-9.460189607464493,pct,Farebox recovery
+SC7,2029,Region 12,-11.296797449303547,-11.296797449303547,pct,Farebox recovery
+SC7,2030,Region 12,-13.617769254672908,-13.617769254672908,pct,Farebox recovery
+SC8,2024,Region 12,-6.811803483816066,-6.811803483816066,pct,Farebox recovery
+SC8,2025,Region 12,-12.639116923059285,-12.639116923059285,pct,Farebox recovery
+SC8,2026,Region 12,-18.72463344870431,-18.72463344870431,pct,Farebox recovery
+SC8,2027,Region 12,-23.527419950469586,-23.527419950469586,pct,Farebox recovery
+SC8,2028,Region 12,-28.311036884462332,-28.311036884462332,pct,Farebox recovery
+SC8,2029,Region 12,-32.02832563895063,-32.02832563895063,pct,Farebox recovery
+SC8,2030,Region 12,-35.96033206221433,-35.96033206221433,pct,Farebox recovery
+SC9,2024,Region 12,-2.5614480082959687,-2.5614480082959687,pct,Farebox recovery
+SC9,2025,Region 12,-6.524629136871618,-6.524629136871618,pct,Farebox recovery
+SC9,2026,Region 12,-9.154667300559279,-9.154667300559279,pct,Farebox recovery
+SC9,2027,Region 12,-12.093565941016516,-12.093565941016516,pct,Farebox recovery
+SC9,2028,Region 12,-14.887715338580746,-14.887715338580746,pct,Farebox recovery
+SC9,2029,Region 12,-17.351483198566928,-17.351483198566928,pct,Farebox recovery
+SC9,2030,Region 12,-19.83325239350274,-19.83325239350274,pct,Farebox recovery
+SC0,2024,Tehran,0.0,0.0,pct,Farebox recovery
+SC0,2025,Tehran,0.0,0.0,pct,Farebox recovery
+SC0,2026,Tehran,0.0,0.0,pct,Farebox recovery
+SC0,2027,Tehran,0.0,0.0,pct,Farebox recovery
+SC0,2028,Tehran,0.0,0.0,pct,Farebox recovery
+SC0,2029,Tehran,0.0,0.0,pct,Farebox recovery
+SC0,2030,Tehran,0.0,0.0,pct,Farebox recovery
+SC1,2024,Tehran,0.0,0.0,pct,Farebox recovery
+SC1,2025,Tehran,0.0,0.0,pct,Farebox recovery
+SC1,2026,Tehran,0.05396494348627746,0.05396494348627746,pct,Farebox recovery
+SC1,2027,Tehran,-1.8222701729392066,-1.8222701729392066,pct,Farebox recovery
+SC1,2028,Tehran,0.1132831006018162,0.1132831006018162,pct,Farebox recovery
+SC1,2029,Tehran,0.10093699142343285,0.10093699142343285,pct,Farebox recovery
+SC1,2030,Tehran,0.1255320885859788,0.1255320885859788,pct,Farebox recovery
+SC10,2024,Tehran,-6.660824332929891,-6.660824332929891,pct,Farebox recovery
+SC10,2025,Tehran,-16.371376809435752,-16.371376809435752,pct,Farebox recovery
+SC10,2026,Tehran,-23.30648063576061,-23.30648063576061,pct,Farebox recovery
+SC10,2027,Tehran,-28.211824006966108,-28.211824006966108,pct,Farebox recovery
+SC10,2028,Tehran,-32.47329833520513,-32.47329833520513,pct,Farebox recovery
+SC10,2029,Tehran,-36.31074196141915,-36.31074196141915,pct,Farebox recovery
+SC10,2030,Tehran,-40.105646428303196,-40.105646428303196,pct,Farebox recovery
+SC11,2024,Tehran,-2.5923721756270743,-2.5923721756270743,pct,Farebox recovery
+SC11,2025,Tehran,-8.193645610333745,-8.193645610333745,pct,Farebox recovery
+SC11,2026,Tehran,-11.645394401327529,-11.645394401327529,pct,Farebox recovery
+SC11,2027,Tehran,-13.775536271184727,-13.775536271184727,pct,Farebox recovery
+SC11,2028,Tehran,-15.120928429672256,-15.120928429672256,pct,Farebox recovery
+SC11,2029,Tehran,-16.753550956268594,-16.753550956268594,pct,Farebox recovery
+SC11,2030,Tehran,-18.71196304830471,-18.71196304830471,pct,Farebox recovery
+SC2,2024,Tehran,0.0,0.0,pct,Farebox recovery
+SC2,2025,Tehran,0.0,0.0,pct,Farebox recovery
+SC2,2026,Tehran,0.08200483337290009,0.08200483337290009,pct,Farebox recovery
+SC2,2027,Tehran,-0.43235627405183985,-0.43235627405183985,pct,Farebox recovery
+SC2,2028,Tehran,0.16175028789640344,0.16175028789640344,pct,Farebox recovery
+SC2,2029,Tehran,0.20386318594267952,0.20386318594267952,pct,Farebox recovery
+SC2,2030,Tehran,0.17180221023296524,0.17180221023296524,pct,Farebox recovery
+SC3,2024,Tehran,0.0,0.0,pct,Farebox recovery
+SC3,2025,Tehran,0.0,0.0,pct,Farebox recovery
+SC3,2026,Tehran,0.008268178354407359,0.008268178354407359,pct,Farebox recovery
+SC3,2027,Tehran,0.012146856671747298,0.012146856671747298,pct,Farebox recovery
+SC3,2028,Tehran,0.02210013128463152,0.02210013128463152,pct,Farebox recovery
+SC3,2029,Tehran,0.02653424158976034,0.02653424158976034,pct,Farebox recovery
+SC3,2030,Tehran,0.038522115749503774,0.038522115749503774,pct,Farebox recovery
+SC4,2024,Tehran,-5.892508390361228,-5.892508390361228,pct,Farebox recovery
+SC4,2025,Tehran,-11.614889327799364,-11.614889327799364,pct,Farebox recovery
+SC4,2026,Tehran,-16.84128598353114,-16.84128598353114,pct,Farebox recovery
+SC4,2027,Tehran,-21.889804451486167,-21.889804451486167,pct,Farebox recovery
+SC4,2028,Tehran,-26.13194867165239,-26.13194867165239,pct,Farebox recovery
+SC4,2029,Tehran,-30.065616669526797,-30.065616669526797,pct,Farebox recovery
+SC4,2030,Tehran,-33.759270689292535,-33.759270689292535,pct,Farebox recovery
+SC5,2024,Tehran,1.1216615223512258,1.1216615223512258,pct,Farebox recovery
+SC5,2025,Tehran,-2.843909424754169,-2.843909424754169,pct,Farebox recovery
+SC5,2026,Tehran,-4.6180337578102595,-4.6180337578102595,pct,Farebox recovery
+SC5,2027,Tehran,-4.311110009942403,-4.311110009942403,pct,Farebox recovery
+SC5,2028,Tehran,-3.971592858679359,-3.971592858679359,pct,Farebox recovery
+SC5,2029,Tehran,-3.5285060968053052,-3.5285060968053052,pct,Farebox recovery
+SC5,2030,Tehran,-3.195616228157731,-3.195616228157731,pct,Farebox recovery
+SC6,2024,Tehran,-1.3937770586556228,-1.3937770586556228,pct,Farebox recovery
+SC6,2025,Tehran,-6.710151027833378,-6.710151027833378,pct,Farebox recovery
+SC6,2026,Tehran,-8.14532629276205,-8.14532629276205,pct,Farebox recovery
+SC6,2027,Tehran,-7.574352923003369,-7.574352923003369,pct,Farebox recovery
+SC6,2028,Tehran,-6.977325582495491,-6.977325582495491,pct,Farebox recovery
+SC6,2029,Tehran,-6.373518811878295,-6.373518811878295,pct,Farebox recovery
+SC6,2030,Tehran,-5.874402056096321,-5.874402056096321,pct,Farebox recovery
+SC7,2024,Tehran,-3.748465774089818,-3.748465774089818,pct,Farebox recovery
+SC7,2025,Tehran,-4.614679748673496,-4.614679748673496,pct,Farebox recovery
+SC7,2026,Tehran,-5.661568288178639,-5.661568288178639,pct,Farebox recovery
+SC7,2027,Tehran,-6.994144269414762,-6.994144269414762,pct,Farebox recovery
+SC7,2028,Tehran,-8.852158464988545,-8.852158464988545,pct,Farebox recovery
+SC7,2029,Tehran,-10.579865144417779,-10.579865144417779,pct,Farebox recovery
+SC7,2030,Tehran,-12.694088707470364,-12.694088707470364,pct,Farebox recovery
+SC8,2024,Tehran,-7.238669532782048,-7.238669532782048,pct,Farebox recovery
+SC8,2025,Tehran,-17.83010962866963,-17.83010962866963,pct,Farebox recovery
+SC8,2026,Tehran,-24.055882683463633,-24.055882683463633,pct,Farebox recovery
+SC8,2027,Tehran,-28.357245200512526,-28.357245200512526,pct,Farebox recovery
+SC8,2028,Tehran,-31.90795686745612,-31.90795686745612,pct,Farebox recovery
+SC8,2029,Tehran,-35.23466007715765,-35.23466007715765,pct,Farebox recovery
+SC8,2030,Tehran,-38.44413638952835,-38.44413638952835,pct,Farebox recovery
+SC9,2024,Tehran,-2.189264597663326,-2.189264597663326,pct,Farebox recovery
+SC9,2025,Tehran,-9.263131888305862,-9.263131888305862,pct,Farebox recovery
+SC9,2026,Tehran,-13.836739013262104,-13.836739013262104,pct,Farebox recovery
+SC9,2027,Tehran,-16.953318134836763,-16.953318134836763,pct,Farebox recovery
+SC9,2028,Tehran,-18.70304834267216,-18.70304834267216,pct,Farebox recovery
+SC9,2029,Tehran,-20.75861761066153,-20.75861761066153,pct,Farebox recovery
+SC9,2030,Tehran,-22.83071898852956,-22.83071898852956,pct,Farebox recovery
+SC0,2024,Region 12,0.0,0.0,raw,Avoided external cost
+SC0,2025,Region 12,0.0,0.0,raw,Avoided external cost
+SC0,2026,Region 12,0.0,0.0,raw,Avoided external cost
+SC0,2027,Region 12,0.0,0.0,raw,Avoided external cost
+SC0,2028,Region 12,0.0,0.0,raw,Avoided external cost
+SC0,2029,Region 12,0.0,0.0,raw,Avoided external cost
+SC0,2030,Region 12,0.0,0.0,raw,Avoided external cost
+SC1,2024,Region 12,0.0,0.0,raw,Avoided external cost
+SC1,2025,Region 12,0.0,0.0,raw,Avoided external cost
+SC1,2026,Region 12,-0.6231811806346867,-1934021447529.5625,raw,Avoided external cost
+SC1,2027,Region 12,3.155516136886908,9793036241160.877,raw,Avoided external cost
+SC1,2028,Region 12,6.973030922089089,21640562611136.875,raw,Avoided external cost
+SC1,2029,Region 12,18.96765568546978,58865469698063.5,raw,Avoided external cost
+SC1,2030,Region 12,30.473137375646502,94572338012504.23,raw,Avoided external cost
+SC10,2024,Region 12,2.28280041170386,7084592882230.625,raw,Avoided external cost
+SC10,2025,Region 12,8.514206194187462,26423547276374.625,raw,Avoided external cost
+SC10,2026,Region 12,9.871672928090273,30636398786110.688,raw,Avoided external cost
+SC10,2027,Region 12,21.280800998018627,66044236940626.375,raw,Avoided external cost
+SC10,2028,Region 12,37.64894355866172,116842206700021.88,raw,Avoided external cost
+SC10,2029,Region 12,55.994475226088305,173776935818446.25,raw,Avoided external cost
+SC10,2030,Region 12,81.17640626432191,251928196208807.5,raw,Avoided external cost
+SC11,2024,Region 12,1.2661927553364398,3929585843772.063,raw,Avoided external cost
+SC11,2025,Region 12,4.709469480340745,14615677213147.75,raw,Avoided external cost
+SC11,2026,Region 12,3.2987698673147374,10237619286502.312,raw,Avoided external cost
+SC11,2027,Region 12,16.495613256901215,51193570698826.375,raw,Avoided external cost
+SC11,2028,Region 12,35.76540322005437,110996703778313.5,raw,Avoided external cost
+SC11,2029,Region 12,63.41753000126245,196814132042427.38,raw,Avoided external cost
+SC11,2030,Region 12,100.0,310346574580418.75,raw,Avoided external cost
+SC2,2024,Region 12,0.0,0.0,raw,Avoided external cost
+SC2,2025,Region 12,0.0,0.0,raw,Avoided external cost
+SC2,2026,Region 12,-0.19380821825341407,-601477166604.8125,raw,Avoided external cost
+SC2,2027,Region 12,2.373906220861497,7367336640195.125,raw,Avoided external cost
+SC2,2028,Region 12,6.31239679490188,19590307226902.125,raw,Avoided external cost
+SC2,2029,Region 12,14.739502581638831,45743541372308.5,raw,Avoided external cost
+SC2,2030,Region 12,27.720671905684714,86030155709969.0,raw,Avoided external cost
+SC3,2024,Region 12,0.0,0.0,raw,Avoided external cost
+SC3,2025,Region 12,0.0,0.0,raw,Avoided external cost
+SC3,2026,Region 12,-0.18034056732980305,-559680773286.9375,raw,Avoided external cost
+SC3,2027,Region 12,1.9812970703898216,6148887590217.0,raw,Avoided external cost
+SC3,2028,Region 12,3.82490725118409,11870468634927.877,raw,Avoided external cost
+SC3,2029,Region 12,10.97550458914833,34062102535338.5,raw,Avoided external cost
+SC3,2030,Region 12,18.32242029840081,56863003776314.25,raw,Avoided external cost
+SC4,2024,Region 12,1.1055908416862388,3431163306048.0625,raw,Avoided external cost
+SC4,2025,Region 12,3.9475588362735974,12251113627921.75,raw,Avoided external cost
+SC4,2026,Region 12,6.6543639568340724,20651590600148.56,raw,Avoided external cost
+SC4,2027,Region 12,10.03012570374404,31128151547679.75,raw,Avoided external cost
+SC4,2028,Region 12,13.573246663294029,42124106078884.0,raw,Avoided external cost
+SC4,2029,Region 12,17.661368670661755,54811452693418.0,raw,Avoided external cost
+SC4,2030,Region 12,23.470121570617295,72838718344270.75,raw,Avoided external cost
+SC5,2024,Region 12,1.1103288720196265,3445867620890.3125,raw,Avoided external cost
+SC5,2025,Region 12,3.923426995699051,12176221287315.438,raw,Avoided external cost
+SC5,2026,Region 12,2.671561561657377,8291099794410.8125,raw,Avoided external cost
+SC5,2027,Region 12,10.302190786073139,31972496211317.5,raw,Avoided external cost
+SC5,2028,Region 12,22.587656032295126,70100016774235.25,raw,Avoided external cost
+SC5,2029,Region 12,35.493377117565075,110152480087273.38,raw,Avoided external cost
+SC5,2030,Region 12,52.88071242526321,164113479625526.25,raw,Avoided external cost
+SC6,2024,Region 12,0.21304957718237377,661192064943.5625,raw,Avoided external cost
+SC6,2025,Region 12,1.207366449728544,3747020419365.75,raw,Avoided external cost
+SC6,2026,Region 12,-0.7850158871215284,-2436269915593.75,raw,Avoided external cost
+SC6,2027,Region 12,5.480434374702622,17008340354017.377,raw,Avoided external cost
+SC6,2028,Region 12,16.184730361392006,50228756281657.125,raw,Avoided external cost
+SC6,2029,Region 12,25.39157658926856,78801888176758.5,raw,Avoided external cost
+SC6,2030,Region 12,37.42310707809723,116141330918437.0,raw,Avoided external cost
+SC7,2024,Region 12,0.08287991684633095,257214982947.6875,raw,Avoided external cost
+SC7,2025,Region 12,0.11979839466780859,371790214253.875,raw,Avoided external cost
+SC7,2026,Region 12,0.20553354442547586,637866314738.1875,raw,Avoided external cost
+SC7,2027,Region 12,0.2540760385119621,788516282351.5,raw,Avoided external cost
+SC7,2028,Region 12,0.39220725124060996,1217201769481.25,raw,Avoided external cost
+SC7,2029,Region 12,0.4396271603521299,1364367833078.0,raw,Avoided external cost
+SC7,2030,Region 12,0.42115609204083915,1307043505285.5,raw,Avoided external cost
+SC8,2024,Region 12,1.3247237180643059,4111234681666.9375,raw,Avoided external cost
+SC8,2025,Region 12,4.944942354516536,15346459212218.377,raw,Avoided external cost
+SC8,2026,Region 12,4.724689209052625,14662911119865.5,raw,Avoided external cost
+SC8,2027,Region 12,18.590596307506264,57695278834419.5,raw,Avoided external cost
+SC8,2028,Region 12,37.3242771237809,115834615540556.88,raw,Avoided external cost
+SC8,2029,Region 12,60.81259692631158,188729811474205.0,raw,Avoided external cost
+SC8,2030,Region 12,91.13266449249548,282827102576325.25,raw,Avoided external cost
+SC9,2024,Region 12,1.665639340812392,5169254639075.125,raw,Avoided external cost
+SC9,2025,Region 12,6.031206053465729,18717641392817.75,raw,Avoided external cost
+SC9,2026,Region 12,5.701615533023555,17694768502483.688,raw,Avoided external cost
+SC9,2027,Region 12,17.956197603521392,55726444187419.88,raw,Avoided external cost
+SC9,2028,Region 12,35.91454913113415,111459573004476.38,raw,Avoided external cost
+SC9,2029,Region 12,59.892424713743864,185874088532260.25,raw,Avoided external cost
+SC9,2030,Region 12,93.12450145168314,289008700350391.0,raw,Avoided external cost
+SC0,2024,Tehran,0.0,0.0,raw,Avoided external cost
+SC0,2025,Tehran,0.0,0.0,raw,Avoided external cost
+SC0,2026,Tehran,0.0,0.0,raw,Avoided external cost
+SC0,2027,Tehran,0.0,0.0,raw,Avoided external cost
+SC0,2028,Tehran,0.0,0.0,raw,Avoided external cost
+SC0,2029,Tehran,0.0,0.0,raw,Avoided external cost
+SC0,2030,Tehran,0.0,0.0,raw,Avoided external cost
+SC1,2024,Tehran,0.0,0.0,raw,Avoided external cost
+SC1,2025,Tehran,0.0,0.0,raw,Avoided external cost
+SC1,2026,Tehran,3.5634344910011966,220527790820876.0,raw,Avoided external cost
+SC1,2027,Tehran,7.885513681844275,488005298297576.0,raw,Avoided external cost
+SC1,2028,Tehran,16.220556700069256,1003830305842384.0,raw,Avoided external cost
+SC1,2029,Tehran,25.267994023224276,1563742764035248.0,raw,Avoided external cost
+SC1,2030,Tehran,35.63159987358638,2205108028049552.0,raw,Avoided external cost
+SC10,2024,Tehran,-0.13629442221853003,-8434758070890.0,raw,Avoided external cost
+SC10,2025,Tehran,4.202306030234555,260065189227176.0,raw,Avoided external cost
+SC10,2026,Tehran,17.087189764606308,1057463023283188.0,raw,Avoided external cost
+SC10,2027,Tehran,30.084242231792306,1861802565657164.0,raw,Avoided external cost
+SC10,2028,Tehran,43.08159955562941,2666160974482580.0,raw,Avoided external cost
+SC10,2029,Tehran,57.99482209127639,3589085200566024.0,raw,Avoided external cost
+SC10,2030,Tehran,79.13996821435167,4897680145381816.0,raw,Avoided external cost
+SC11,2024,Tehran,-0.01844188424531994,-1141300057982.0,raw,Avoided external cost
+SC11,2025,Tehran,2.231139596954636,138076983755956.0,raw,Avoided external cost
+SC11,2026,Tehran,15.420015308576282,954287757783078.0,raw,Avoided external cost
+SC11,2027,Tehran,31.468658866295396,1947478994606152.0,raw,Avoided external cost
+SC11,2028,Tehran,48.07337276181389,2975083369497456.0,raw,Avoided external cost
+SC11,2029,Tehran,69.32895037123191,4290512510867648.0,raw,Avoided external cost
+SC11,2030,Tehran,100.0,6188630417586704.0,raw,Avoided external cost
+SC2,2024,Tehran,0.0,0.0,raw,Avoided external cost
+SC2,2025,Tehran,0.0,0.0,raw,Avoided external cost
+SC2,2026,Tehran,-0.2558397972065065,-15832979510214.0,raw,Avoided external cost
+SC2,2027,Tehran,1.8645332988807675,115389074880568.0,raw,Avoided external cost
+SC2,2028,Tehran,4.30709413812911,266550137946352.0,raw,Avoided external cost
+SC2,2029,Tehran,8.000510766220808,495122042840640.0,raw,Avoided external cost
+SC2,2030,Tehran,14.639123910246582,905961275177728.0,raw,Avoided external cost
+SC3,2024,Tehran,0.0,0.0,raw,Avoided external cost
+SC3,2025,Tehran,0.0,0.0,raw,Avoided external cost
+SC3,2026,Tehran,-0.04550130965668622,-2815907889814.0,raw,Avoided external cost
+SC3,2027,Tehran,0.32930744463094247,20379620685808.0,raw,Avoided external cost
+SC3,2028,Tehran,0.7313043141543512,45257721230880.0,raw,Avoided external cost
+SC3,2029,Tehran,1.6885392118648677,104497451278348.0,raw,Avoided external cost
+SC3,2030,Tehran,3.0850252062679613,190920808305316.0,raw,Avoided external cost
+SC4,2024,Tehran,-0.13157157305401365,-8142478390918.0,raw,Avoided external cost
+SC4,2025,Tehran,1.7398430469521164,107672456021946.0,raw,Avoided external cost
+SC4,2026,Tehran,3.2713510119447946,202451823791246.0,raw,Avoided external cost
+SC4,2027,Tehran,4.242526459246159,262554282931072.0,raw,Avoided external cost
+SC4,2028,Tehran,5.651477992043656,349749086058832.0,raw,Avoided external cost
+SC4,2029,Tehran,7.0221509686204415,434574970812904.0,raw,Avoided external cost
+SC4,2030,Tehran,9.107891833203256,563653764390512.0,raw,Avoided external cost
+SC5,2024,Tehran,-0.12250814993477158,-7581576630886.0,raw,Avoided external cost
+SC5,2025,Tehran,0.9294409770745715,57519667020752.0,raw,Avoided external cost
+SC5,2026,Tehran,11.522363570740144,713076496763754.0,raw,Avoided external cost
+SC5,2027,Tehran,22.909598564190432,1417790385290496.0,raw,Avoided external cost
+SC5,2028,Tehran,32.895890470825094,2035805083813488.0,raw,Avoided external cost
+SC5,2029,Tehran,45.68331231378205,2827171361611848.0,raw,Avoided external cost
+SC5,2030,Tehran,63.40801050566686,3924087425340272.0,raw,Avoided external cost
+SC6,2024,Tehran,-0.03807496262028944,-2356318718204.0,raw,Avoided external cost
+SC6,2025,Tehran,1.0957237528428634,67810293461156.0,raw,Avoided external cost
+SC6,2026,Tehran,10.890578750453415,673977669201794.0,raw,Avoided external cost
+SC6,2027,Tehran,21.658414215291558,1340359210094456.0,raw,Avoided external cost
+SC6,2028,Tehran,31.423430136434945,1944679955672520.0,raw,Avoided external cost
+SC6,2029,Tehran,42.083451946561034,2604389307935360.0,raw,Avoided external cost
+SC6,2030,Tehran,57.528494958958376,3560225937809932.0,raw,Avoided external cost
+SC7,2024,Tehran,0.24506351557988348,15166075267584.0,raw,Avoided external cost
+SC7,2025,Tehran,0.3528717258594324,21837926961600.0,raw,Avoided external cost
+SC7,2026,Tehran,0.6026674189661846,37296859207026.0,raw,Avoided external cost
+SC7,2027,Tehran,0.7600733696258246,47038131748640.0,raw,Avoided external cost
+SC7,2028,Tehran,1.1851446518578992,73344222417280.0,raw,Avoided external cost
+SC7,2029,Tehran,1.3436562325522488,83153918315528.0,raw,Avoided external cost
+SC7,2030,Tehran,1.3291724680469263,82257571659740.0,raw,Avoided external cost
+SC8,2024,Tehran,-0.17308144810801238,-10711371144812.0,raw,Avoided external cost
+SC8,2025,Tehran,2.274693288738562,140772360773678.0,raw,Avoided external cost
+SC8,2026,Tehran,17.04903346963905,1055101671206620.0,raw,Avoided external cost
+SC8,2027,Tehran,32.79412489871533,2029507188663272.0,raw,Avoided external cost
+SC8,2028,Tehran,49.120256063239225,3039871107926100.0,raw,Avoided external cost
+SC8,2029,Tehran,69.0323486746035,4272156928051024.0,raw,Avoided external cost
+SC8,2030,Tehran,98.01845525617313,6065999936832144.0,raw,Avoided external cost
+SC9,2024,Tehran,-0.19109830940303216,-11826368103210.0,raw,Avoided external cost
+SC9,2025,Tehran,2.292794663293529,141892587945388.0,raw,Avoided external cost
+SC9,2026,Tehran,13.686401911194649,847000831749360.0,raw,Avoided external cost
+SC9,2027,Tehran,27.992295570254928,1732339718241572.0,raw,Avoided external cost
+SC9,2028,Tehran,41.49984616239976,2568272102857960.0,raw,Avoided external cost
+SC9,2029,Tehran,58.70304627466493,3632914577803912.0,raw,Avoided external cost
+SC9,2030,Tehran,84.12865815816019,5206411728683440.0,raw,Avoided external cost
+SC0,2024,Region 12,0.0,0.0,raw,Net annual value
+SC0,2025,Region 12,0.0,0.0,raw,Net annual value
+SC0,2026,Region 12,0.0,0.0,raw,Net annual value
+SC0,2027,Region 12,0.0,0.0,raw,Net annual value
+SC0,2028,Region 12,0.0,0.0,raw,Net annual value
+SC0,2029,Region 12,0.0,0.0,raw,Net annual value
+SC0,2030,Region 12,0.0,0.0,raw,Net annual value
+SC1,2024,Region 12,0.0018038132838311984,5320445499.720703,raw,Net annual value
+SC1,2025,Region 12,0.022240659308742954,65600035652.634766,raw,Net annual value
+SC1,2026,Region 12,-0.6687028996578044,-1972375613942.6956,raw,Net annual value
+SC1,2027,Region 12,3.3920756805177574,10005111920891.932,raw,Net annual value
+SC1,2028,Region 12,7.337094052270568,21641158417748.707,raw,Net annual value
+SC1,2029,Region 12,20.021788038560125,59055354021934.16,raw,Net annual value
+SC1,2030,Region 12,32.14584077325814,94815907727190.6,raw,Net annual value
+SC10,2024,Region 12,1.7624312031798823,5198386799552.611,raw,Net annual value
+SC10,2025,Region 12,8.093631450748743,23872606668620.05,raw,Net annual value
+SC10,2026,Region 12,8.970438756553671,26458797559943.26,raw,Net annual value
+SC10,2027,Region 12,20.221223290325113,59643599156422.25,raw,Net annual value
+SC10,2028,Region 12,36.28762108884289,107032314291223.2,raw,Net annual value
+SC10,2029,Region 12,54.1838674421052,159818267374944.84,raw,Net annual value
+SC10,2030,Region 12,78.55190105122075,231693109363742.53,raw,Net annual value
+SC11,2024,Region 12,0.8853819594806497,2611482299236.434,raw,Net annual value
+SC11,2025,Region 12,4.425592233139301,13053525268643.238,raw,Net annual value
+SC11,2026,Region 12,2.6049444030363027,7683425358039.498,raw,Net annual value
+SC11,2027,Region 12,16.034407622461107,47294358368631.41,raw,Net annual value
+SC11,2028,Region 12,35.30652894916646,104138529604004.28,raw,Net annual value
+SC11,2029,Region 12,63.35895469573967,186880686820300.5,raw,Net annual value
+SC11,2030,Region 12,100.0,294955445079125.6,raw,Net annual value
+SC2,2024,Region 12,0.0018038132838311984,5320445499.720703,raw,Net annual value
+SC2,2025,Region 12,0.022240659308742954,65600035652.634766,raw,Net annual value
+SC2,2026,Region 12,-0.0385584508770701,-113730250400.07812,raw,Net annual value
+SC2,2027,Region 12,2.7146912350574657,8007129614887.761,raw,Net annual value
+SC2,2028,Region 12,6.894777057192959,20336520356256.934,raw,Net annual value
+SC2,2029,Region 12,15.765380217068145,46500847387669.766,raw,Net annual value
+SC2,2030,Region 12,29.197093486755833,86118417044029.06,raw,Net annual value
+SC3,2024,Region 12,0.0018038132838311984,5320445499.720703,raw,Net annual value
+SC3,2025,Region 12,0.022240659308742954,65600035652.634766,raw,Net annual value
+SC3,2026,Region 12,-0.18566188169095396,-547619829483.8329,raw,Net annual value
+SC3,2027,Region 12,2.131214066973413,6286131936830.364,raw,Net annual value
+SC3,2028,Region 12,4.0491890059275715,11943303454528.691,raw,Net annual value
+SC3,2029,Region 12,11.681930065614758,34456488818866.2,raw,Net annual value
+SC3,2030,Region 12,19.37255495448309,57140405689193.8,raw,Net annual value
+SC4,2024,Region 12,0.9274611636151833,2735597203077.2017,raw,Net annual value
+SC4,2025,Region 12,3.787292445262396,11170825288371.8,raw,Net annual value
+SC4,2026,Region 12,6.423405893781242,18946185443241.25,raw,Net annual value
+SC4,2027,Region 12,9.670489387701688,28523635014825.12,raw,Net annual value
+SC4,2028,Region 12,13.090473090717488,38611063167688.94,raw,Net annual value
+SC4,2029,Region 12,16.8548201445848,49714209774746.23,raw,Net annual value
+SC4,2030,Region 12,22.22878685275688,65565017197239.21,raw,Net annual value
+SC5,2024,Region 12,0.8514837467431013,2511497674982.5293,raw,Net annual value
+SC5,2025,Region 12,3.8194246995695633,11265601122077.46,raw,Net annual value
+SC5,2026,Region 12,2.3258864065070615,6860328602347.783,raw,Net annual value
+SC5,2027,Region 12,10.148977194096878,29934960853827.4,raw,Net annual value
+SC5,2028,Region 12,22.680075693906772,66896118207245.31,raw,Net annual value
+SC5,2029,Region 12,35.97901966662212,106122077592791.42,raw,Net annual value
+SC5,2030,Region 12,53.939812520678544,159098414095213.3,raw,Net annual value
+SC6,2024,Region 12,0.15101844760057276,445437134271.85547,raw,Net annual value
+SC6,2025,Region 12,1.1748959253443967,3465419505816.0767,raw,Net annual value
+SC6,2026,Region 12,-0.906318506533995,-2673235784781.829,raw,Net annual value
+SC6,2027,Region 12,5.680990900659514,16756391995944.896,raw,Net annual value
+SC6,2028,Region 12,16.91068613319347,49878989550094.78,raw,Net annual value
+SC6,2029,Region 12,26.612529203442065,78495103958824.83,raw,Net annual value
+SC6,2030,Region 12,39.30939788354806,115945209485343.56,raw,Net annual value
+SC7,2024,Region 12,-0.06006893079638505,-177176582184.74948,raw,Net annual value
+SC7,2025,Region 12,-0.11289158428818119,-332979874894.0811,raw,Net annual value
+SC7,2026,Region 12,-0.23637079416818674,-697188527975.8391,raw,Net annual value
+SC7,2027,Region 12,-0.5278118068135498,-1556809663967.0803,raw,Net annual value
+SC7,2028,Region 12,-1.0400563254740833,-3067702763875.6816,raw,Net annual value
+SC7,2029,Region 12,-2.0204289049531763,-5959365069111.945,raw,Net annual value
+SC7,2030,Region 12,-3.8750277735241583,-11429605416337.912,raw,Net annual value
+SC8,2024,Region 12,1.0769120894130464,3176410846439.1626,raw,Net annual value
+SC8,2025,Region 12,4.692489105137516,13840752125347.838,raw,Net annual value
+SC8,2026,Region 12,4.177705011286431,12322368410132.828,raw,Net annual value
+SC8,2027,Region 12,18.40566904288241,54288523045224.65,raw,Net annual value
+SC8,2028,Region 12,37.603938814014384,110914865096158.2,raw,Net annual value
+SC8,2029,Region 12,61.64491605351581,181825036514300.9,raw,Net annual value
+SC8,2030,Region 12,92.47779024738473,272768277823513.84,raw,Net annual value
+SC9,2024,Region 12,1.324063065219461,3905396107146.374,raw,Net annual value
+SC9,2025,Region 12,5.827574228603121,17188747503292.758,raw,Net annual value
+SC9,2026,Region 12,5.343145031960135,15759897210241.203,raw,Net annual value
+SC9,2027,Region 12,17.89064379283133,52769428026666.62,raw,Net annual value
+SC9,2028,Region 12,36.21871633478926,106829075967223.62,raw,Net annual value
+SC9,2029,Region 12,60.737091457219194,179147358435756.47,raw,Net annual value
+SC9,2030,Region 12,94.42479434652546,278511072429843.25,raw,Net annual value
+SC0,2024,Tehran,0.0,0.0,raw,Net annual value
+SC0,2025,Tehran,0.0,0.0,raw,Net annual value
+SC0,2026,Tehran,0.0,0.0,raw,Net annual value
+SC0,2027,Tehran,0.0,0.0,raw,Net annual value
+SC0,2028,Tehran,0.0,0.0,raw,Net annual value
+SC0,2029,Tehran,0.0,0.0,raw,Net annual value
+SC0,2030,Tehran,0.0,0.0,raw,Net annual value
+SC1,2024,Tehran,0.0,0.0,raw,Net annual value
+SC1,2025,Tehran,0.0,0.0,raw,Net annual value
+SC1,2026,Tehran,4.099865937590934,230773328390018.9,raw,Net annual value
+SC1,2027,Tehran,8.527728627776202,480008943949795.6,raw,Net annual value
+SC1,2028,Tehran,18.59378479900662,1046607296617079.6,raw,Net annual value
+SC1,2029,Tehran,28.719720137090622,1616576128916227.8,raw,Net annual value
+SC1,2030,Tehran,40.77027204266944,2294877813536965.0,raw,Net annual value
+SC10,2024,Tehran,-0.7817916499484254,-44005502597515.375,raw,Net annual value
+SC10,2025,Tehran,2.532060317995048,142524657187048.94,raw,Net annual value
+SC10,2026,Tehran,15.713722102283162,884494275212934.2,raw,Net annual value
+SC10,2027,Tehran,28.68288905958406,1614502980556314.5,raw,Net annual value
+SC10,2028,Tehran,40.781219577207075,2295494028559937.0,raw,Net annual value
+SC10,2029,Tehran,54.33627982042027,3058481505826478.0,raw,Net annual value
+SC10,2030,Tehran,73.26535563252703,4123961669081203.0,raw,Net annual value
+SC11,2024,Tehran,-0.4358826449438774,-24534970238624.387,raw,Net annual value
+SC11,2025,Tehran,0.7332415928216328,41272716099803.95,raw,Net annual value
+SC11,2026,Tehran,14.419389704052726,811638869663213.6,raw,Net annual value
+SC11,2027,Tehran,30.961232236599184,1742746402701824.5,raw,Net annual value
+SC11,2028,Tehran,47.3675682905036,2666226544608468.0,raw,Net annual value
+SC11,2029,Tehran,68.45507928836317,3853200746817792.0,raw,Net annual value
+SC11,2030,Tehran,98.56423293991844,5547985334642327.0,raw,Net annual value
+SC2,2024,Tehran,0.0,0.0,raw,Net annual value
+SC2,2025,Tehran,0.0,0.0,raw,Net annual value
+SC2,2026,Tehran,-0.38911207436320067,-21902347511954.15,raw,Net annual value
+SC2,2027,Tehran,1.9184675316164028,107986735278336.5,raw,Net annual value
+SC2,2028,Tehran,4.509931141512973,253855086039301.03,raw,Net annual value
+SC2,2029,Tehran,8.484604012147624,477581544801716.4,raw,Net annual value
+SC2,2030,Tehran,15.668129169053618,881927939358882.4,raw,Net annual value
+SC3,2024,Tehran,0.0,0.0,raw,Net annual value
+SC3,2025,Tehran,0.0,0.0,raw,Net annual value
+SC3,2026,Tehran,-0.06862783605605513,-3862924882896.6416,raw,Net annual value
+SC3,2027,Tehran,0.3578130508512121,20140587507805.51,raw,Net annual value
+SC3,2028,Tehran,0.7557993178978631,42542445738770.52,raw,Net annual value
+SC3,2029,Tehran,1.839241663494592,103527268173955.5,raw,Net annual value
+SC3,2030,Tehran,3.2718261774229034,184164611324130.4,raw,Net annual value
+SC4,2024,Tehran,-0.3983182108568067,-22420542690182.5,raw,Net annual value
+SC4,2025,Tehran,1.55704428723968,87642937131769.53,raw,Net annual value
+SC4,2026,Tehran,3.105220126091417,174786686879538.1,raw,Net annual value
+SC4,2027,Tehran,3.939510828538702,221747257098021.38,raw,Net annual value
+SC4,2028,Tehran,5.261183324929563,296141582589767.9,raw,Net annual value
+SC4,2029,Tehran,6.305311960289231,354913514188795.75,raw,Net annual value
+SC4,2030,Tehran,7.973807341161265,448829812504018.8,raw,Net annual value
+SC5,2024,Tehran,-0.42689117930793247,-24028858457532.65,raw,Net annual value
+SC5,2025,Tehran,-0.41423837409362596,-23316657127727.258,raw,Net annual value
+SC5,2026,Tehran,10.622583942410579,597924197963628.2,raw,Net annual value
+SC5,2027,Tehran,22.370508683105697,1259191599228631.2,raw,Net annual value
+SC5,2028,Tehran,31.95460124415978,1798661175448991.5,raw,Net annual value
+SC5,2029,Tehran,44.44964365911171,2501982349937751.5,raw,Net annual value
+SC5,2030,Tehran,61.61462819824134,3468165311565457.0,raw,Net annual value
+SC6,2024,Tehran,-0.13533026992197722,-7617472692330.359,raw,Net annual value
+SC6,2025,Tehran,-0.07017146652749258,-3949812782920.8047,raw,Net annual value
+SC6,2026,Tehran,10.284678228218333,578904154983400.6,raw,Net annual value
+SC6,2027,Tehran,21.539330478988916,1212406225372729.8,raw,Net annual value
+SC6,2028,Tehran,31.23903854222695,1758383569080763.5,raw,Net annual value
+SC6,2029,Tehran,41.66845628997198,2345434824769211.5,raw,Net annual value
+SC6,2030,Tehran,56.74327016704383,3193966222192437.0,raw,Net annual value
+SC7,2024,Tehran,0.14838683779460846,8352401021983.936,raw,Net annual value
+SC7,2025,Tehran,0.1583987120072936,8915949579584.133,raw,Net annual value
+SC7,2026,Tehran,0.26081780685154093,14680917451140.48,raw,Net annual value
+SC7,2027,Tehran,0.12821764767495908,7217117282053.273,raw,Net annual value
+SC7,2028,Tehran,-0.08252569942884999,-4645208068949.836,raw,Net annual value
+SC7,2029,Tehran,-0.9297142475850468,-52331772461051.26,raw,Net annual value
+SC7,2030,Tehran,-2.700922732385263,-152029587836489.28,raw,Net annual value
+SC8,2024,Tehran,-0.547012785014086,-30790265582140.047,raw,Net annual value
+SC8,2025,Tehran,0.7404986838568617,41681203371856.86,raw,Net annual value
+SC8,2026,Tehran,16.54240409534643,931139142295699.2,raw,Net annual value
+SC8,2027,Tehran,33.07781094762601,1861884423646511.2,raw,Net annual value
+SC8,2028,Tehran,49.96010492351953,2812155293714272.0,raw,Net annual value
+SC8,2029,Tehran,70.27193792294707,3955468118653721.5,raw,Net annual value
+SC8,2030,Tehran,100.0,5628801817008203.0,raw,Net annual value
+SC9,2024,Tehran,-0.6296823788053519,-35443573179576.125,raw,Net annual value
+SC9,2025,Tehran,0.8479715950224472,47730640548336.95,raw,Net annual value
+SC9,2026,Tehran,12.536733557247498,705667886263824.2,raw,Net annual value
+SC9,2027,Tehran,27.26714824671726,1534813735957541.5,raw,Net annual value
+SC9,2028,Tehran,40.51206936505239,2280344096527692.5,raw,Net annual value
+SC9,2029,Tehran,57.36974859248565,3229229451186870.0,raw,Net annual value
+SC9,2030,Tehran,82.2877499468729,4631814364184749.0,raw,Net annual value

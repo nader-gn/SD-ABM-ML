@@ -1,0 +1,577 @@
+scenario,kpi,auc,geo,kpi_display,delta_mode
+SC0,Avoided external cost,0.0,Region12,Avoided ext. cost,raw_normalized
+SC0,Budget use,0.0,Region12,Budget use,percent
+SC0,CO₂ emissions,0.0,Region12,Emissions: CO₂,percent
+SC0,Congestion index,0.0,Region12,Congestion index,percent
+SC0,Electricity use,0.0,Region12,Electricity use,percent
+SC0,Energy cost,0.0,Region12,Energy cost,percent
+SC0,Farebox recovery,0.0,Region12,Farebox recovery,percent
+SC0,Final energy,0.0,Region12,Final energy,percent
+SC0,Health indicator,0.0,Region12,Health indicator,percent
+SC0,Implementation CAPEX,0.0,Region12,CAPEX,raw_normalized
+SC0,Modal share: public transport,0.0,Region12,Modal share: public transport,percent
+SC0,NOₓ emissions,0.0,Region12,Emissions: NOₓ,percent
+SC0,Net annual value,0.0,Region12,Net annual value,raw_normalized
+SC0,Net fiscal pressure,0.0,Region12,Net fiscal pressure,raw_normalized
+SC0,Net recurrent public burden,0.0,Region12,Net recurrent burden,percent
+SC0,Noise exposure index,0.0,Region12,Noise exposure,percent
+SC0,Non-public transport trips,0.0,Region12,Non-PT trips,percent
+SC0,PCE-weighted VKT,0.0,Region12,PCE-weighted VKT,percent
+SC0,PM₂.₅ emissions,0.0,Region12,Emissions: PM₂.₅,percent
+SC0,PT OPEX,0.0,Region12,PT OPEX,percent
+SC0,PT affordability ratio,0.0,Region12,PT affordability,percent
+SC0,PT subsidy need,0.0,Region12,PT subsidy,percent
+SC0,Public transport trips,0.0,Region12,PT trips,percent
+SC0,Time loss (car),0.0,Region12,Time loss (car),percent
+SC1,Avoided external cost,43.70959025163434,Region12,Avoided ext. cost,raw_normalized
+SC1,Budget use,4.845773903259934,Region12,Budget use,percent
+SC1,CO₂ emissions,-1.2039746067348567,Region12,Emissions: CO₂,percent
+SC1,Congestion index,-13.544641137103042,Region12,Congestion index,percent
+SC1,Electricity use,3.5996896030501633,Region12,Electricity use,percent
+SC1,Energy cost,-0.02112265504122207,Region12,Energy cost,percent
+SC1,Farebox recovery,-10.273852651490916,Region12,Farebox recovery,percent
+SC1,Final energy,-1.6925453512690452,Region12,Final energy,percent
+SC1,Health indicator,-5.448517390300285,Region12,Health indicator,percent
+SC1,Implementation CAPEX,0.0,Region12,CAPEX,raw_normalized
+SC1,Modal share: public transport,3.646479786207308,Region12,Modal share: public transport,percent
+SC1,NOₓ emissions,-1.6129536820467112,Region12,Emissions: NOₓ,percent
+SC1,Net annual value,46.17831782427038,Region12,Net annual value,raw_normalized
+SC1,Net fiscal pressure,-3.754498830684777,Region12,Net fiscal pressure,raw_normalized
+SC1,Net recurrent public burden,5.742333386775931,Region12,Net recurrent burden,percent
+SC1,Noise exposure index,-5.789050096973044,Region12,Noise exposure,percent
+SC1,Non-public transport trips,-20.030095707460713,Region12,Non-PT trips,percent
+SC1,PCE-weighted VKT,-13.254949431110045,Region12,PCE-weighted VKT,percent
+SC1,PM₂.₅ emissions,-0.8109712245995626,Region12,Emissions: PM₂.₅,percent
+SC1,PT OPEX,3.945708398101486,Region12,PT OPEX,percent
+SC1,PT affordability ratio,-8.921964360497059,Region12,PT affordability,percent
+SC1,PT subsidy need,4.845773903259989,Region12,PT subsidy,percent
+SC1,Public transport trips,3.6464797862072618,Region12,PT trips,percent
+SC1,Time loss (car),-24.95784333677817,Region12,Time loss (car),percent
+SC10,Avoided external cost,175.03970224305925,Region12,Avoided ext. cost,raw_normalized
+SC10,Budget use,149.20826437573697,Region12,Budget use,percent
+SC10,CO₂ emissions,-15.619531254322606,Region12,Emissions: CO₂,percent
+SC10,Congestion index,-35.53123730039607,Region12,Congestion index,percent
+SC10,Electricity use,97.26076928992163,Region12,Electricity use,percent
+SC10,Energy cost,18.511960128352435,Region12,Energy cost,percent
+SC10,Farebox recovery,-140.88690036700294,Region12,Farebox recovery,percent
+SC10,Final energy,-28.98379290017889,Region12,Final energy,percent
+SC10,Health indicator,-33.750756475562625,Region12,Health indicator,percent
+SC10,Implementation CAPEX,260.9365313402466,Region12,CAPEX,raw_normalized
+SC10,Modal share: public transport,80.66674902180894,Region12,Modal share: public transport,percent
+SC10,NOₓ emissions,-67.68328976415171,Region12,Emissions: NOₓ,percent
+SC10,Net annual value,167.91394815577593,Region12,Net annual value,raw_normalized
+SC10,Net fiscal pressure,321.08551266709907,Region12,Net fiscal pressure,raw_normalized
+SC10,Net recurrent public burden,201.3640421857489,Region12,Net recurrent burden,percent
+SC10,Noise exposure index,-13.920142564397548,Region12,Noise exposure,percent
+SC10,Non-public transport trips,-42.718749704107125,Region12,Non-PT trips,percent
+SC10,PCE-weighted VKT,-30.21128313318637,Region12,PCE-weighted VKT,percent
+SC10,PM₂.₅ emissions,-119.30754774378623,Region12,Emissions: PM₂.₅,percent
+SC10,PT OPEX,145.02624011086394,Region12,PT OPEX,percent
+SC10,PT affordability ratio,-70.36807534462224,Region12,PT affordability,percent
+SC10,PT subsidy need,149.208264375737,Region12,PT subsidy,percent
+SC10,Public transport trips,80.66674902180887,Region12,PT trips,percent
+SC10,Time loss (car),-83.99176806592097,Region12,Time loss (car),percent
+SC11,Avoided external cost,174.31988220354174,Region12,Avoided ext. cost,raw_normalized
+SC11,Budget use,81.5879450314137,Region12,Budget use,percent
+SC11,CO₂ emissions,-14.776425514860357,Region12,Emissions: CO₂,percent
+SC11,Congestion index,-39.1342524120748,Region12,Congestion index,percent
+SC11,Electricity use,64.16211890840226,Region12,Electricity use,percent
+SC11,Energy cost,9.463866870476554,Region12,Energy cost,percent
+SC11,Farebox recovery,-55.80078088718348,Region12,Farebox recovery,percent
+SC11,Final energy,-24.259940426384986,Region12,Final energy,percent
+SC11,Health indicator,-30.92585924181288,Region12,Health indicator,percent
+SC11,Implementation CAPEX,273.5558839855876,Region12,CAPEX,raw_normalized
+SC11,Modal share: public transport,54.152445767807585,Region12,Modal share: public transport,percent
+SC11,NOₓ emissions,-52.798320645753016,Region12,Emissions: NOₓ,percent
+SC11,Net annual value,172.17311888328317,Region12,Net annual value,raw_normalized
+SC11,Net fiscal pressure,215.18754808376497,Region12,Net fiscal pressure,raw_normalized
+SC11,Net recurrent public burden,118.14387646002564,Region12,Net recurrent burden,percent
+SC11,Noise exposure index,-11.452835543590275,Region12,Noise exposure,percent
+SC11,Non-public transport trips,-40.38674922022466,Region12,Non-PT trips,percent
+SC11,PCE-weighted VKT,-26.264612488027346,Region12,PCE-weighted VKT,percent
+SC11,PM₂.₅ emissions,-89.07701579995575,Region12,Emissions: PM₂.₅,percent
+SC11,PT OPEX,126.6279250080878,Region12,PT OPEX,percent
+SC11,PT affordability ratio,10.353632768335512,Region12,PT affordability,percent
+SC11,PT subsidy need,98.58499660148988,Region12,PT subsidy,percent
+SC11,Public transport trips,54.152445767807535,Region12,PT trips,percent
+SC11,Time loss (car),-89.19578933054669,Region12,Time loss (car),percent
+SC2,Avoided external cost,37.09233333199115,Region12,Avoided ext. cost,raw_normalized
+SC2,Budget use,-13.911810146204118,Region12,Budget use,percent
+SC2,CO₂ emissions,-3.7610176310236536,Region12,Emissions: CO₂,percent
+SC2,Congestion index,-3.0017034262635303,Region12,Congestion index,percent
+SC2,Electricity use,7.552324779177161,Region12,Electricity use,percent
+SC2,Energy cost,-0.6099673504610387,Region12,Energy cost,percent
+SC2,Farebox recovery,0.2262400956348372,Region12,Farebox recovery,percent
+SC2,Final energy,-5.064360261922701,Region12,Final energy,percent
+SC2,Health indicator,-2.009859388255488,Region12,Health indicator,percent
+SC2,Implementation CAPEX,17.290253035963374,Region12,CAPEX,raw_normalized
+SC2,Modal share: public transport,8.356759349980585,Region12,Modal share: public transport,percent
+SC2,NOₓ emissions,-3.4171752470397125,Region12,Emissions: NOₓ,percent
+SC2,Net annual value,39.95797936777007,Region12,Net annual value,raw_normalized
+SC2,Net fiscal pressure,-18.58535976518221,Region12,Net fiscal pressure,raw_normalized
+SC2,Net recurrent public burden,-9.043509749729074,Region12,Net recurrent burden,percent
+SC2,Noise exposure index,-1.7216567154366706,Region12,Noise exposure,percent
+SC2,Non-public transport trips,-4.38775130028973,Region12,Non-PT trips,percent
+SC2,PCE-weighted VKT,-3.778428103286134,Region12,PCE-weighted VKT,percent
+SC2,PM₂.₅ emissions,2.849044242240988,Region12,Emissions: PM₂.₅,percent
+SC2,PT OPEX,9.937195916565031,Region12,PT OPEX,percent
+SC2,PT affordability ratio,7.1499346531380965,Region12,PT affordability,percent
+SC2,PT subsidy need,8.211818248707818,Region12,PT subsidy,percent
+SC2,Public transport trips,8.356759349980553,Region12,PT trips,percent
+SC2,Time loss (car),-19.11564168372825,Region12,Time loss (car),percent
+SC3,Avoided external cost,25.762578492592844,Region12,Avoided ext. cost,raw_normalized
+SC3,Budget use,4.390645549123754,Region12,Budget use,percent
+SC3,CO₂ emissions,-2.893423509555346,Region12,Emissions: CO₂,percent
+SC3,Congestion index,-0.5362300264708303,Region12,Congestion index,percent
+SC3,Electricity use,4.319557734561005,Region12,Electricity use,percent
+SC3,Energy cost,-1.234218033293732,Region12,Energy cost,percent
+SC3,Farebox recovery,0.25074577391300357,Region12,Farebox recovery,percent
+SC3,Final energy,-3.588943913213412,Region12,Final energy,percent
+SC3,Health indicator,-0.8780191951676479,Region12,Health indicator,percent
+SC3,Implementation CAPEX,2.8319007480419205,Region12,CAPEX,raw_normalized
+SC3,Modal share: public transport,4.70692656365506,Region12,Modal share: public transport,percent
+SC3,NOₓ emissions,-2.6707299622905616,Region12,Emissions: NOₓ,percent
+SC3,Net annual value,27.386091300016993,Region12,Net annual value,raw_normalized
+SC3,Net fiscal pressure,-3.8871247182872173,Region12,Net fiscal pressure,raw_normalized
+SC3,Net recurrent public burden,5.140274850820786,Region12,Net recurrent burden,percent
+SC3,Noise exposure index,-1.1638783982483467,Region12,Noise exposure,percent
+SC3,Non-public transport trips,-2.470149764859359,Region12,Non-PT trips,percent
+SC3,PCE-weighted VKT,-2.415407341550491,Region12,PCE-weighted VKT,percent
+SC3,PM₂.₅ emissions,1.411468992119106,Region12,Emissions: PM₂.₅,percent
+SC3,PT OPEX,4.528779033684012,Region12,PT OPEX,percent
+SC3,PT affordability ratio,3.945910848747099,Region12,PT affordability,percent
+SC3,PT subsidy need,4.390645549123828,Region12,PT subsidy,percent
+SC3,Public transport trips,4.706926563654969,Region12,PT trips,percent
+SC3,Time loss (car),-13.065232998189401,Region12,Time loss (car),percent
+SC4,Avoided external cost,64.15452003695927,Region12,Avoided ext. cost,raw_normalized
+SC4,Budget use,78.36362236926246,Region12,Budget use,percent
+SC4,CO₂ emissions,-7.614637266276223,Region12,Emissions: CO₂,percent
+SC4,Congestion index,-6.527517179661854,Region12,Congestion index,percent
+SC4,Electricity use,35.39227608560048,Region12,Electricity use,percent
+SC4,Energy cost,4.011118454338792,Region12,Energy cost,percent
+SC4,Farebox recovery,-126.93751312509123,Region12,Farebox recovery,percent
+SC4,Final energy,-12.454213418500892,Region12,Final energy,percent
+SC4,Health indicator,-5.2001817171001,Region12,Health indicator,percent
+SC4,Implementation CAPEX,0.0,Region12,CAPEX,raw_normalized
+SC4,Modal share: public transport,38.622869836222364,Region12,Modal share: public transport,percent
+SC4,NOₓ emissions,-12.306099359669116,Region12,Emissions: NOₓ,percent
+SC4,Net annual value,61.40460497023364,Region12,Net annual value,raw_normalized
+SC4,Net fiscal pressure,125.2959188023446,Region12,Net fiscal pressure,raw_normalized
+SC4,Net recurrent public burden,106.34155713475982,Region12,Net recurrent burden,percent
+SC4,Noise exposure index,-8.194663740704868,Region12,Noise exposure,percent
+SC4,Non-public transport trips,-20.473210706952386,Region12,Non-PT trips,percent
+SC4,PCE-weighted VKT,-16.876397172666458,Region12,PCE-weighted VKT,percent
+SC4,PM₂.₅ emissions,-9.66403717640656,Region12,Emissions: PM₂.₅,percent
+SC4,PT OPEX,42.86232097070647,Region12,PT OPEX,percent
+SC4,PT affordability ratio,-98.95500704762316,Region12,PT affordability,percent
+SC4,PT subsidy need,78.36362236926254,Region12,PT subsidy,percent
+SC4,Public transport trips,38.6228698362223,Region12,PT trips,percent
+SC4,Time loss (car),-29.01104187762804,Region12,Time loss (car),percent
+SC5,Avoided external cost,101.97373314193118,Region12,Avoided ext. cost,raw_normalized
+SC5,Budget use,31.17252663455513,Region12,Budget use,percent
+SC5,CO₂ emissions,-5.60859930903764,Region12,Emissions: CO₂,percent
+SC5,Congestion index,-27.359970964129808,Region12,Congestion index,percent
+SC5,Electricity use,40.074350646131165,Region12,Electricity use,percent
+SC5,Energy cost,7.257722035590495,Region12,Energy cost,percent
+SC5,Farebox recovery,3.2926442408293077,Region12,Farebox recovery,percent
+SC5,Final energy,-10.80942339619242,Region12,Final energy,percent
+SC5,Health indicator,-13.623023532007272,Region12,Health indicator,percent
+SC5,Implementation CAPEX,230.39169338350462,Region12,CAPEX,raw_normalized
+SC5,Modal share: public transport,37.40911713607149,Region12,Modal share: public transport,percent
+SC5,NOₓ emissions,-12.553251666983888,Region12,Emissions: NOₓ,percent
+SC5,Net annual value,102.34903179441322,Region12,Net annual value,raw_normalized
+SC5,Net fiscal pressure,99.73502689307587,Region12,Net fiscal pressure,raw_normalized
+SC5,Net recurrent public burden,43.11607581852525,Region12,Net recurrent burden,percent
+SC5,Noise exposure index,-4.30978281311193,Region12,Noise exposure,percent
+SC5,Non-public transport trips,-19.799063988710394,Region12,Non-PT trips,percent
+SC5,PCE-weighted VKT,-12.054894301814393,Region12,PCE-weighted VKT,percent
+SC5,PM₂.₅ emissions,-14.91580219986945,Region12,Emissions: PM₂.₅,percent
+SC5,PT OPEX,63.20085973983827,Region12,PT OPEX,percent
+SC5,PT affordability ratio,32.61538521881246,Region12,PT affordability,percent
+SC5,PT subsidy need,31.172526634555176,Region12,PT subsidy,percent
+SC5,Public transport trips,37.409117136071465,Region12,PT trips,percent
+SC5,Time loss (car),-53.162748995514704,Region12,Time loss (car),percent
+SC6,Avoided external cost,66.29717021561001,Region12,Avoided ext. cost,raw_normalized
+SC6,Budget use,17.980268900561892,Region12,Budget use,percent
+SC6,CO₂ emissions,-3.5453804806507465,Region12,Emissions: CO₂,percent
+SC6,Congestion index,-19.540070744265044,Region12,Congestion index,percent
+SC6,Electricity use,-5.315817387191483,Region12,Electricity use,percent
+SC6,Energy cost,-4.688102921920607,Region12,Energy cost,percent
+SC6,Farebox recovery,-0.44042006217907115,Region12,Farebox recovery,percent
+SC6,Final energy,-3.4431378343140002,Region12,Final energy,percent
+SC6,Health indicator,-24.702232039519643,Region12,Health indicator,percent
+SC6,Implementation CAPEX,11.192985267008531,Region12,CAPEX,raw_normalized
+SC6,Modal share: public transport,10.001476929687403,Region12,Modal share: public transport,percent
+SC6,NOₓ emissions,-52.078085348457705,Region12,Emissions: NOₓ,percent
+SC6,Net annual value,69.20299182167977,Region12,Net annual value,raw_normalized
+SC6,Net fiscal pressure,18.253920462969262,Region12,Net fiscal pressure,raw_normalized
+SC6,Net recurrent public burden,25.913337741691343,Region12,Net recurrent burden,percent
+SC6,Noise exposure index,-0.3442406811225206,Region12,Noise exposure,percent
+SC6,Non-public transport trips,-5.291905493323498,Region12,Non-PT trips,percent
+SC6,PCE-weighted VKT,-3.2196673466966157,Region12,PCE-weighted VKT,percent
+SC6,PM₂.₅ emissions,-127.35598224037354,Region12,Emissions: PM₂.₅,percent
+SC6,PT OPEX,69.78789122773975,Region12,PT OPEX,percent
+SC6,PT affordability ratio,15.74764620216789,Region12,PT affordability,percent
+SC6,PT subsidy need,17.980268900561928,Region12,PT subsidy,percent
+SC6,Public transport trips,10.001476929687371,Region12,PT trips,percent
+SC6,Time loss (car),-34.43520770548129,Region12,Time loss (car),percent
+SC7,Avoided external cost,1.6632603936415715,Region12,Avoided ext. cost,raw_normalized
+SC7,Budget use,68.29094649967799,Region12,Budget use,percent
+SC7,CO₂ emissions,-6.573949549832018,Region12,Emissions: CO₂,percent
+SC7,Congestion index,0.02657943457734878,Region12,Congestion index,percent
+SC7,Electricity use,50.24449453203317,Region12,Electricity use,percent
+SC7,Energy cost,17.35814608846681,Region12,Energy cost,percent
+SC7,Farebox recovery,-47.91821454431184,Region12,Farebox recovery,percent
+SC7,Final energy,-14.829983011371546,Region12,Final energy,percent
+SC7,Health indicator,-5.807485220053836,Region12,Health indicator,percent
+SC7,Implementation CAPEX,50.32411368235321,Region12,CAPEX,raw_normalized
+SC7,Modal share: public transport,0.0,Region12,Modal share: public transport,percent
+SC7,NOₓ emissions,-16.15048068938885,Region12,Emissions: NOₓ,percent
+SC7,Net annual value,-5.905107767857449,Region12,Net annual value,raw_normalized
+SC7,Net fiscal pressure,130.43925432237202,Region12,Net fiscal pressure,raw_normalized
+SC7,Net recurrent public burden,88.07728448246306,Region12,Net recurrent burden,percent
+SC7,Noise exposure index,-2.2463773493887533,Region12,Noise exposure,percent
+SC7,Non-public transport trips,0.0,Region12,Non-PT trips,percent
+SC7,PCE-weighted VKT,0.0,Region12,PCE-weighted VKT,percent
+SC7,PM₂.₅ emissions,-7.33454336710731,Region12,Emissions: PM₂.₅,percent
+SC7,PT OPEX,72.0796947722456,Region12,PT OPEX,percent
+SC7,PT affordability ratio,0.0,Region12,PT affordability,percent
+SC7,PT subsidy need,68.29094649967804,Region12,PT subsidy,percent
+SC7,Public transport trips,0.0,Region12,PT trips,percent
+SC7,Time loss (car),0.04128596698366132,Region12,Time loss (car),percent
+SC8,Avoided external cost,172.6257960264478,Region12,Avoided ext. cost,raw_normalized
+SC8,Budget use,107.00104413225513,Region12,Budget use,percent
+SC8,CO₂ emissions,-13.430942073758144,Region12,Emissions: CO₂,percent
+SC8,Congestion index,-39.75260885106237,Region12,Congestion index,percent
+SC8,Electricity use,35.033988474127796,Region12,Electricity use,percent
+SC8,Energy cost,-1.1910685086361439,Region12,Energy cost,percent
+SC8,Farebox recovery,-136.61660061866132,Region12,Farebox recovery,percent
+SC8,Final energy,-18.919796719350863,Region12,Final energy,percent
+SC8,Health indicator,-29.795964012458402,Region12,Health indicator,percent
+SC8,Implementation CAPEX,8.557514515385058,Region12,CAPEX,raw_normalized
+SC8,Modal share: public transport,54.7856941291989,Region12,Modal share: public transport,percent
+SC8,NOₓ emissions,-48.67791844248821,Region12,Emissions: NOₓ,percent
+SC8,Net annual value,173.30206919523545,Region12,Net annual value,raw_normalized
+SC8,Net fiscal pressure,177.6380810478496,Region12,Net fiscal pressure,raw_normalized
+SC8,Net recurrent public burden,145.70874738618346,Region12,Net recurrent burden,percent
+SC8,Noise exposure index,-14.547767428549438,Region12,Noise exposure,percent
+SC8,Non-public transport trips,-47.12094514181456,Region12,Non-PT trips,percent
+SC8,PCE-weighted VKT,-33.9964101294523,Region12,PCE-weighted VKT,percent
+SC8,PM₂.₅ emissions,-91.3443828199679,Region12,Emissions: PM₂.₅,percent
+SC8,PT OPEX,121.955775520744,Region12,PT OPEX,percent
+SC8,PT affordability ratio,-92.7223985664649,Region12,PT affordability,percent
+SC8,PT subsidy need,107.00104413225512,Region12,PT subsidy,percent
+SC8,Public transport trips,54.78569412919887,Region12,PT trips,percent
+SC8,Time loss (car),-88.92121339357608,Region12,Time loss (car),percent
+SC9,Avoided external cost,172.89106343113644,Region12,Avoided ext. cost,raw_normalized
+SC9,Budget use,58.27066820030079,Region12,Budget use,percent
+SC9,CO₂ emissions,-13.57468393968658,Region12,Emissions: CO₂,percent
+SC9,Congestion index,-34.40567251004295,Region12,Congestion index,percent
+SC9,Electricity use,65.49031570535084,Region12,Electricity use,percent
+SC9,Energy cost,8.372525443835233,Region12,Energy cost,percent
+SC9,Farebox recovery,-71.20941111649444,Region12,Farebox recovery,percent
+SC9,Final energy,-22.5352935723825,Region12,Final energy,percent
+SC9,Health indicator,-23.28147362985737,Region12,Health indicator,percent
+SC9,Implementation CAPEX,201.6041785415048,Region12,CAPEX,raw_normalized
+SC9,Modal share: public transport,64.71303929585724,Region12,Modal share: public transport,percent
+SC9,NOₓ emissions,-36.727233942860934,Region12,Emissions: NOₓ,percent
+SC9,Net annual value,173.8915995512755,Region12,Net annual value,raw_normalized
+SC9,Net fiscal pressure,155.05023977610404,Region12,Net fiscal pressure,raw_normalized
+SC9,Net recurrent public burden,93.31524327665684,Region12,Net recurrent burden,percent
+SC9,Noise exposure index,-10.083729427329423,Region12,Noise exposure,percent
+SC9,Non-public transport trips,-34.23725143808029,Region12,Non-PT trips,percent
+SC9,PCE-weighted VKT,-24.33813130123047,Region12,PCE-weighted VKT,percent
+SC9,PM₂.₅ emissions,-51.940496590649964,Region12,Emissions: PM₂.₅,percent
+SC9,PT OPEX,97.94151784282514,Region12,PT OPEX,percent
+SC9,PT affordability ratio,-23.720546864471686,Region12,PT affordability,percent
+SC9,PT subsidy need,83.23811311920753,Region12,PT subsidy,percent
+SC9,Public transport trips,64.71303929585727,Region12,PT trips,percent
+SC9,Time loss (car),-87.10845680848995,Region12,Time loss (car),percent
+SC0,Avoided external cost,0.0,Tehran,Avoided ext. cost,raw_normalized
+SC0,Budget use,0.0,Tehran,Budget use,percent
+SC0,CO₂ emissions,0.0,Tehran,Emissions: CO₂,percent
+SC0,Congestion index,0.0,Tehran,Congestion index,percent
+SC0,Electricity use,0.0,Tehran,Electricity use,percent
+SC0,Energy cost,0.0,Tehran,Energy cost,percent
+SC0,Farebox recovery,0.0,Tehran,Farebox recovery,percent
+SC0,Final energy,0.0,Tehran,Final energy,percent
+SC0,Health indicator,0.0,Tehran,Health indicator,percent
+SC0,Implementation CAPEX,0.0,Tehran,CAPEX,raw_normalized
+SC0,Modal share: public transport,0.0,Tehran,Modal share: public transport,percent
+SC0,NOₓ emissions,0.0,Tehran,Emissions: NOₓ,percent
+SC0,Net annual value,0.0,Tehran,Net annual value,raw_normalized
+SC0,Net fiscal pressure,0.0,Tehran,Net fiscal pressure,raw_normalized
+SC0,Net recurrent public burden,0.0,Tehran,Net recurrent burden,percent
+SC0,Noise exposure index,0.0,Tehran,Noise exposure,percent
+SC0,Non-public transport trips,0.0,Tehran,Non-PT trips,percent
+SC0,PCE-weighted VKT,0.0,Tehran,PCE-weighted VKT,percent
+SC0,PM₂.₅ emissions,0.0,Tehran,Emissions: PM₂.₅,percent
+SC0,PT OPEX,0.0,Tehran,PT OPEX,percent
+SC0,PT affordability ratio,0.0,Tehran,PT affordability,percent
+SC0,PT subsidy need,0.0,Tehran,PT subsidy,percent
+SC0,Public transport trips,0.0,Tehran,PT trips,percent
+SC0,Time loss (car),0.0,Tehran,Time loss (car),percent
+SC1,Avoided external cost,70.75329883293219,Tehran,Avoided ext. cost,raw_normalized
+SC1,Budget use,3.5695357380004347,Tehran,Budget use,percent
+SC1,CO₂ emissions,-14.119062047081812,Tehran,Emissions: CO₂,percent
+SC1,Congestion index,-13.544641137103053,Tehran,Congestion index,percent
+SC1,Electricity use,-5.765363966671696,Tehran,Electricity use,percent
+SC1,Energy cost,-13.736328595720767,Tehran,Energy cost,percent
+SC1,Farebox recovery,-1.4913190931346907,Tehran,Farebox recovery,percent
+SC1,Final energy,-14.26091293468388,Tehran,Final energy,percent
+SC1,Health indicator,-6.944655120589244,Tehran,Health indicator,percent
+SC1,Implementation CAPEX,0.0,Tehran,CAPEX,raw_normalized
+SC1,Modal share: public transport,11.85612214937638,Tehran,Modal share: public transport,percent
+SC1,NOₓ emissions,-14.154292705016312,Tehran,Emissions: NOₓ,percent
+SC1,Net annual value,80.3262355227991,Tehran,Net annual value,raw_normalized
+SC1,Net fiscal pressure,2.1297694510510206,Tehran,Net fiscal pressure,raw_normalized
+SC1,Net recurrent public burden,3.706866145540973,Tehran,Net recurrent burden,percent
+SC1,Noise exposure index,-2.8601231068824884,Tehran,Noise exposure,percent
+SC1,Non-public transport trips,-13.421354548111742,Tehran,Non-PT trips,percent
+SC1,PCE-weighted VKT,-13.544641137103092,Tehran,PCE-weighted VKT,percent
+SC1,PM₂.₅ emissions,-13.03175181739837,Tehran,Emissions: PM₂.₅,percent
+SC1,PT OPEX,5.483007972863098,Tehran,PT OPEX,percent
+SC1,PT affordability ratio,1.6443206630836984,Tehran,PT affordability,percent
+SC1,PT subsidy need,3.569535738000434,Tehran,PT subsidy,percent
+SC1,Public transport trips,-0.07964253573481062,Tehran,PT trips,percent
+SC1,Time loss (car),-31.73914060657739,Tehran,Time loss (car),percent
+SC10,Avoided external cost,191.95199656960554,Tehran,Avoided ext. cost,raw_normalized
+SC10,Budget use,433.44550545611344,Tehran,Budget use,percent
+SC10,CO₂ emissions,-34.96649696396845,Tehran,Emissions: CO₂,percent
+SC10,Congestion index,-35.53123730039603,Tehran,Congestion index,percent
+SC10,Electricity use,202.5857420626177,Tehran,Electricity use,percent
+SC10,Energy cost,-17.952276515226686,Tehran,Energy cost,percent
+SC10,Farebox recovery,-160.0569571294033,Tehran,Farebox recovery,percent
+SC10,Final energy,-40.488679517959326,Tehran,Final energy,percent
+SC10,Health indicator,-24.859675612232635,Tehran,Health indicator,percent
+SC10,Implementation CAPEX,268.32879931244526,Tehran,CAPEX,raw_normalized
+SC10,Modal share: public transport,276.94862651088306,Tehran,Modal share: public transport,percent
+SC10,NOₓ emissions,-48.57511182836465,Tehran,Emissions: NOₓ,percent
+SC10,Net annual value,178.28795286877892,Tehran,Net annual value,raw_normalized
+SC10,Net fiscal pressure,374.75048996946373,Tehran,Net fiscal pressure,raw_normalized
+SC10,Net recurrent public burden,445.6499715053218,Tehran,Net recurrent burden,percent
+SC10,Noise exposure index,-8.305709270478012,Tehran,Noise exposure,percent
+SC10,Non-public transport trips,-38.532716725605255,Tehran,Non-PT trips,percent
+SC10,PCE-weighted VKT,-35.53123730039613,Tehran,PCE-weighted VKT,percent
+SC10,PM₂.₅ emissions,-58.19442120192959,Tehran,Emissions: PM₂.₅,percent
+SC10,PT OPEX,451.30991168064577,Tehran,PT OPEX,percent
+SC10,PT affordability ratio,119.68767025321118,Tehran,PT affordability,percent
+SC10,PT subsidy need,433.4455054561134,Tehran,PT subsidy,percent
+SC10,Public transport trips,281.8381970041222,Tehran,PT trips,percent
+SC10,Time loss (car),-88.2929314038283,Tehran,Time loss (car),percent
+SC11,Avoided external cost,216.51291596274945,Tehran,Avoided ext. cost,raw_normalized
+SC11,Budget use,376.25831983636516,Tehran,Budget use,percent
+SC11,CO₂ emissions,-41.443271363122186,Tehran,Emissions: CO₂,percent
+SC11,Congestion index,-39.13425241207475,Tehran,Congestion index,percent
+SC11,Electricity use,156.21043988008805,Tehran,Electricity use,percent
+SC11,Energy cost,-27.70859240264706,Tehran,Energy cost,percent
+SC11,Farebox recovery,-76.14122328075274,Tehran,Farebox recovery,percent
+SC11,Final energy,-45.984428323620016,Tehran,Final energy,percent
+SC11,Health indicator,-25.961884750633985,Tehran,Health indicator,percent
+SC11,Implementation CAPEX,267.9955427309812,Tehran,CAPEX,raw_normalized
+SC11,Modal share: public transport,245.34464280356858,Tehran,Modal share: public transport,percent
+SC11,NOₓ emissions,-51.45325979595484,Tehran,Emissions: NOₓ,percent
+SC11,Net annual value,211.0006862598276,Tehran,Net annual value,raw_normalized
+SC11,Net fiscal pressure,330.9224134294898,Tehran,Net fiscal pressure,raw_normalized
+SC11,Net recurrent public burden,385.7838404632706,Tehran,Net recurrent burden,percent
+SC11,Noise exposure index,-9.084563798973976,Tehran,Noise exposure,percent
+SC11,Non-public transport trips,-41.28939702394085,Tehran,Non-PT trips,percent
+SC11,PCE-weighted VKT,-39.0520713611557,Tehran,PCE-weighted VKT,percent
+SC11,PM₂.₅ emissions,-54.77713341166633,Tehran,Emissions: PM₂.₅,percent
+SC11,PT OPEX,418.842488874544,Tehran,PT OPEX,percent
+SC11,PT affordability ratio,231.81668674668066,Tehran,PT affordability,percent
+SC11,PT subsidy need,376.8423605953627,Tehran,PT subsidy,percent
+SC11,Public transport trips,238.30192775606596,Tehran,PT trips,percent
+SC11,Time loss (car),-97.01182053541203,Tehran,Time loss (car),percent
+SC2,Avoided external cost,21.23586036114747,Tehran,Avoided ext. cost,raw_normalized
+SC2,Budget use,18.016786974194893,Tehran,Budget use,percent
+SC2,CO₂ emissions,-3.58542265917103,Tehran,Emissions: CO₂,percent
+SC2,Congestion index,-3.001703426263511,Tehran,Congestion index,percent
+SC2,Electricity use,13.026269289647336,Tehran,Electricity use,percent
+SC2,Energy cost,-2.5999013833387297,Tehran,Energy cost,percent
+SC2,Farebox recovery,0.10116313827662582,Tehran,Farebox recovery,percent
+SC2,Final energy,-3.907154612008307,Tehran,Final energy,percent
+SC2,Health indicator,-1.4904226744068587,Tehran,Health indicator,percent
+SC2,Implementation CAPEX,2.409015759310137,Tehran,CAPEX,raw_normalized
+SC2,Modal share: public transport,17.85877493371268,Tehran,Modal share: public transport,percent
+SC2,NOₓ emissions,-3.510708588208675,Tehran,Emissions: NOₓ,percent
+SC2,Net annual value,22.35795519544061,Tehran,Net annual value,raw_normalized
+SC2,Net fiscal pressure,14.598078295131087,Tehran,Net fiscal pressure,raw_normalized
+SC2,Net recurrent public burden,16.923170721692863,Tehran,Net recurrent burden,percent
+SC2,Noise exposure index,-0.6251439358258746,Tehran,Noise exposure,percent
+SC2,Non-public transport trips,-2.4646289137679194,Tehran,Non-PT trips,percent
+SC2,PCE-weighted VKT,-2.864674067836747,Tehran,PCE-weighted VKT,percent
+SC2,PM₂.₅ emissions,0.4251104145512189,Tehran,Emissions: PM₂.₅,percent
+SC2,PT OPEX,19.762804128600415,Tehran,PT OPEX,percent
+SC2,PT affordability ratio,18.669621662758708,Tehran,PT affordability,percent
+SC2,PT subsidy need,18.561785844596194,Tehran,PT subsidy,percent
+SC2,Public transport trips,18.1653848217937,Tehran,PT trips,percent
+SC2,Time loss (car),-9.27454436348548,Tehran,Time loss (car),percent
+SC3,Avoided external cost,4.246162264127456,Tehran,Avoided ext. cost,raw_normalized
+SC3,Budget use,2.7703784364789943,Tehran,Budget use,percent
+SC3,CO₂ emissions,-0.7116363129964576,Tehran,Emissions: CO₂,percent
+SC3,Congestion index,-0.5362300264708186,Tehran,Congestion index,percent
+SC3,Electricity use,2.1387090464548155,Tehran,Electricity use,percent
+SC3,Energy cost,-0.5909220296216321,Tehran,Energy cost,percent
+SC3,Farebox recovery,0.0883104657752984,Tehran,Farebox recovery,percent
+SC3,Final energy,-0.752183598175401,Tehran,Final energy,percent
+SC3,Health indicator,-0.30425357891339894,Tehran,Health indicator,percent
+SC3,Implementation CAPEX,0.42959435427590087,Tehran,CAPEX,raw_normalized
+SC3,Modal share: public transport,2.8233265025783765,Tehran,Modal share: public transport,percent
+SC3,NOₓ emissions,-0.7017963123359459,Tehran,Emissions: NOₓ,percent
+SC3,Net annual value,4.520139284899065,Tehran,Net annual value,raw_normalized
+SC3,Net fiscal pressure,2.502734456122975,Tehran,Net fiscal pressure,raw_normalized
+SC3,Net recurrent public burden,2.822193684477825,Tehran,Net recurrent burden,percent
+SC3,Noise exposure index,-0.11146277817648939,Tehran,Noise exposure,percent
+SC3,Non-public transport trips,-0.3896843072894992,Tehran,Non-PT trips,percent
+SC3,PCE-weighted VKT,-0.5362300264708795,Tehran,PCE-weighted VKT,percent
+SC3,PM₂.₅ emissions,-0.020452673979313968,Tehran,Emissions: PM₂.₅,percent
+SC3,PT OPEX,2.8720297837949174,Tehran,PT OPEX,percent
+SC3,PT affordability ratio,2.8703980158451587,Tehran,PT affordability,percent
+SC3,PT subsidy need,2.770378436479017,Tehran,PT subsidy,percent
+SC3,Public transport trips,2.872029783794917,Tehran,PT trips,percent
+SC3,Time loss (car),-1.808765017684203,Tehran,Time loss (car),percent
+SC4,Avoided external cost,26.415509608881788,Tehran,Avoided ext. cost,raw_normalized
+SC4,Budget use,73.63277201854463,Tehran,Budget use,percent
+SC4,CO₂ emissions,-4.5893389222751795,Tehran,Emissions: CO₂,percent
+SC4,Congestion index,-6.527517179661836,Tehran,Congestion index,percent
+SC4,Electricity use,43.36206769905511,Tehran,Electricity use,percent
+SC4,Energy cost,-1.061810918229559,Tehran,Energy cost,percent
+SC4,Farebox recovery,-126.36943464382274,Tehran,Farebox recovery,percent
+SC4,Final energy,-5.70250554236653,Tehran,Final energy,percent
+SC4,Health indicator,-2.575514082377289,Tehran,Health indicator,percent
+SC4,Implementation CAPEX,0.0,Tehran,CAPEX,raw_normalized
+SC4,Modal share: public transport,52.243086481994396,Tehran,Modal share: public transport,percent
+SC4,NOₓ emissions,-5.5424555813093885,Tehran,Emissions: NOₓ,percent
+SC4,Net annual value,23.956015092240825,Tehran,Net annual value,raw_normalized
+SC4,Net fiscal pressure,57.10633978745753,Tehran,Net fiscal pressure,raw_normalized
+SC4,Net recurrent public burden,75.96660374350141,Tehran,Net recurrent burden,percent
+SC4,Noise exposure index,-1.3674573442982072,Tehran,Noise exposure,percent
+SC4,Non-public transport trips,-7.292549096372992,Tehran,Non-PT trips,percent
+SC4,PCE-weighted VKT,-6.527517179661844,Tehran,PCE-weighted VKT,percent
+SC4,PM₂.₅ emissions,-3.1481634529018074,Tehran,Emissions: PM₂.₅,percent
+SC4,PT OPEX,56.07174797116329,Tehran,PT OPEX,percent
+SC4,PT affordability ratio,-84.27294033695804,Tehran,PT affordability,percent
+SC4,PT subsidy need,73.6327720185446,Tehran,PT subsidy,percent
+SC4,Public transport trips,53.133341320608025,Tehran,PT trips,percent
+SC4,Time loss (car),-15.086048699679207,Tehran,Time loss (car),percent
+SC5,Avoided external cost,145.58335707447833,Tehran,Avoided ext. cost,raw_normalized
+SC5,Budget use,284.9483654496291,Tehran,Budget use,percent
+SC5,CO₂ emissions,-27.849581709490444,Tehran,Emissions: CO₂,percent
+SC5,Congestion index,-27.35997096412978,Tehran,Congestion index,percent
+SC5,Electricity use,111.91207977708561,Tehran,Electricity use,percent
+SC5,Energy cost,-20.1328667151899,Tehran,Energy cost,percent
+SC5,Farebox recovery,-20.31012950089475,Tehran,Farebox recovery,percent
+SC5,Final energy,-30.643486079446653,Tehran,Final energy,percent
+SC5,Health indicator,-13.786817812332695,Tehran,Health indicator,percent
+SC5,Implementation CAPEX,224.48958878038937,Tehran,CAPEX,raw_normalized
+SC5,Modal share: public transport,208.78926293399792,Tehran,Modal share: public transport,percent
+SC5,NOₓ emissions,-29.150164216157286,Tehran,Emissions: NOₓ,percent
+SC5,Net annual value,139.57696766416083,Tehran,Net annual value,raw_normalized
+SC5,Net fiscal pressure,252.21826627464705,Tehran,Net fiscal pressure,raw_normalized
+SC5,Net recurrent public burden,292.850798261139,Tehran,Net recurrent burden,percent
+SC5,Noise exposure index,-5.742183487262299,Tehran,Noise exposure,percent
+SC5,Non-public transport trips,-29.076402161123262,Tehran,Non-PT trips,percent
+SC5,PCE-weighted VKT,-27.35997096412985,Tehran,PCE-weighted VKT,percent
+SC5,PM₂.₅ emissions,-18.128407364210865,Tehran,Emissions: PM₂.₅,percent
+SC5,PT OPEX,323.1792196713128,Tehran,PT OPEX,percent
+SC5,PT affordability ratio,249.1949718629832,Tehran,PT affordability,percent
+SC5,PT subsidy need,284.948365449629,Tehran,PT subsidy,percent
+SC5,Public transport trips,212.39880172296796,Tehran,PT trips,percent
+SC5,Time loss (car),-70.9298340820013,Tehran,Time loss (car),percent
+SC6,Avoided external cost,135.89680879975288,Tehran,Avoided ext. cost,raw_normalized
+SC6,Budget use,270.96965853852066,Tehran,Budget use,percent
+SC6,CO₂ emissions,-24.873682628608602,Tehran,Emissions: CO₂,percent
+SC6,Congestion index,-19.540070744265012,Tehran,Congestion index,percent
+SC6,Electricity use,17.589044061180736,Tehran,Electricity use,percent
+SC6,Energy cost,-25.28646190646676,Tehran,Energy cost,percent
+SC6,Farebox recovery,-39.41476419534855,Tehran,Farebox recovery,percent
+SC6,Final energy,-25.32638981022123,Tehran,Final energy,percent
+SC6,Health indicator,-19.626995242841197,Tehran,Health indicator,percent
+SC6,Implementation CAPEX,10.247374245061353,Tehran,CAPEX,raw_normalized
+SC6,Modal share: public transport,143.08188416021002,Tehran,Modal share: public transport,percent
+SC6,NOₓ emissions,-36.30509181193698,Tehran,Emissions: NOₓ,percent
+SC6,Net annual value,132.9653020214396,Tehran,Net annual value,raw_normalized
+SC6,Net fiscal pressure,217.54264273469647,Tehran,Net fiscal pressure,raw_normalized
+SC6,Net recurrent public burden,278.5272514374084,Tehran,Net recurrent burden,percent
+SC6,Noise exposure index,-4.09782356353935,Tehran,Noise exposure,percent
+SC6,Non-public transport trips,-19.853176150053322,Tehran,Non-PT trips,percent
+SC6,PCE-weighted VKT,-19.54007074426507,Tehran,PCE-weighted VKT,percent
+SC6,PM₂.₅ emissions,-60.58261965911434,Tehran,Emissions: PM₂.₅,percent
+SC6,PT OPEX,323.0115237940603,Tehran,PT OPEX,percent
+SC6,PT affordability ratio,204.04104978944767,Tehran,PT affordability,percent
+SC6,PT subsidy need,270.9696585385206,Tehran,PT subsidy,percent
+SC6,Public transport trips,145.64533717756655,Tehran,PT trips,percent
+SC6,Time loss (car),-55.80472882877576,Tehran,Time loss (car),percent
+SC7,Avoided external cost,5.031531390674995,Tehran,Avoided ext. cost,raw_normalized
+SC7,Budget use,56.52294642509416,Tehran,Budget use,percent
+SC7,CO₂ emissions,-3.5355510043673504,Tehran,Emissions: CO₂,percent
+SC7,Congestion index,0.026579434577353324,Tehran,Congestion index,percent
+SC7,Electricity use,104.98944809474727,Tehran,Electricity use,percent
+SC7,Energy cost,10.22069907525163,Tehran,Energy cost,percent
+SC7,Farebox recovery,-44.92369315645331,Tehran,Farebox recovery,percent
+SC7,Final energy,-7.39997675373136,Tehran,Final energy,percent
+SC7,Health indicator,-3.4106047221813,Tehran,Health indicator,percent
+SC7,Implementation CAPEX,43.965014872817335,Tehran,CAPEX,raw_normalized
+SC7,Modal share: public transport,0.0,Tehran,Modal share: public transport,percent
+SC7,NOₓ emissions,-7.284763056837659,Tehran,Emissions: NOₓ,percent
+SC7,Net annual value,-1.7410737277754302,Tehran,Net annual value,raw_normalized
+SC7,Net fiscal pressure,51.176815960732476,Tehran,Net fiscal pressure,raw_normalized
+SC7,Net recurrent public burden,57.97324628210728,Tehran,Net recurrent burden,percent
+SC7,Noise exposure index,-2.2388201166784896,Tehran,Noise exposure,percent
+SC7,Non-public transport trips,0.026579434577248873,Tehran,Non-PT trips,percent
+SC7,PCE-weighted VKT,0.02657943457730505,Tehran,PCE-weighted VKT,percent
+SC7,PM₂.₅ emissions,-4.310971986446657,Tehran,Emissions: PM₂.₅,percent
+SC7,PT OPEX,62.53297234836211,Tehran,PT OPEX,percent
+SC7,PT affordability ratio,0.0,Tehran,PT affordability,percent
+SC7,PT subsidy need,56.52294642509421,Tehran,PT subsidy,percent
+SC7,Public transport trips,0.026579434577288705,Tehran,PT trips,percent
+SC7,Time loss (car),0.060840112834728864,Tehran,Time loss (car),percent
+SC8,Avoided external cost,219.1931432989682,Tehran,Avoided ext. cost,raw_normalized
+SC8,Budget use,367.83730940834977,Tehran,Budget use,percent
+SC8,CO₂ emissions,-43.19660059670486,Tehran,Emissions: CO₂,percent
+SC8,Congestion index,-39.752608851062334,Tehran,Congestion index,percent
+SC8,Electricity use,55.620322164746156,Tehran,Electricity use,percent
+SC8,Energy cost,-39.65572091850328,Tehran,Energy cost,percent
+SC8,Farebox recovery,-160.22725741841475,Tehran,Farebox recovery,percent
+SC8,Final energy,-44.939904098157875,Tehran,Final energy,percent
+SC8,Health indicator,-25.99756699423379,Tehran,Health indicator,percent
+SC8,Implementation CAPEX,6.832631001000264,Tehran,CAPEX,raw_normalized
+SC8,Modal share: public transport,217.4198413997458,Tehran,Modal share: public transport,percent
+SC8,NOₓ emissions,-50.807285055646645,Tehran,Emissions: NOₓ,percent
+SC8,Net annual value,220.31925018078888,Tehran,Net annual value,raw_normalized
+SC8,Net fiscal pressure,292.6232955451865,Tehran,Net fiscal pressure,raw_normalized
+SC8,Net recurrent public burden,378.40975078361294,Tehran,Net recurrent burden,percent
+SC8,Noise exposure index,-8.35292202236047,Tehran,Noise exposure,percent
+SC8,Non-public transport trips,-41.423161807675015,Tehran,Non-PT trips,percent
+SC8,PCE-weighted VKT,-39.75260885106236,Tehran,PCE-weighted VKT,percent
+SC8,PM₂.₅ emissions,-59.96077631746704,Tehran,Emissions: PM₂.₅,percent
+SC8,PT OPEX,398.55446906521945,Tehran,PT OPEX,percent
+SC8,PT affordability ratio,75.72730058820994,Tehran,PT affordability,percent
+SC8,PT subsidy need,367.83730940834977,Tehran,PT subsidy,percent
+SC8,Public transport trips,204.58664580626842,Tehran,PT trips,percent
+SC8,Time loss (car),-98.4978157742981,Tehran,Time loss (car),percent
+SC9,Avoided external cost,186.14316450618637,Tehran,Avoided ext. cost,raw_normalized
+SC9,Budget use,361.030698066675,Tehran,Budget use,percent
+SC9,CO₂ emissions,-34.42292302304445,Tehran,Emissions: CO₂,percent
+SC9,Congestion index,-34.4056725100429,Tehran,Congestion index,percent
+SC9,Electricity use,149.67584687817128,Tehran,Electricity use,percent
+SC9,Energy cost,-23.71678770578816,Tehran,Energy cost,percent
+SC9,Farebox recovery,-92.02484678283486,Tehran,Farebox recovery,percent
+SC9,Final energy,-38.19362959609844,Tehran,Final energy,percent
+SC9,Health indicator,-19.524687574659758,Tehran,Health indicator,percent
+SC9,Implementation CAPEX,184.49304286042823,Tehran,CAPEX,raw_normalized
+SC9,Modal share: public transport,261.70990777367933,Tehran,Modal share: public transport,percent
+SC9,NOₓ emissions,-40.0212293261346,Tehran,Emissions: NOₓ,percent
+SC9,Net annual value,179.362705140559,Tehran,Net annual value,raw_normalized
+SC9,Net fiscal pressure,308.6087311093054,Tehran,Net fiscal pressure,raw_normalized
+SC9,Net recurrent public burden,369.89516360362745,Tehran,Net recurrent burden,percent
+SC9,Noise exposure index,-7.2142031689535475,Tehran,Noise exposure,percent
+SC9,Non-public transport trips,-36.41605102347639,Tehran,Non-PT trips,percent
+SC9,PCE-weighted VKT,-34.27774943633028,Tehran,PCE-weighted VKT,percent
+SC9,PM₂.₅ emissions,-33.27607770550284,Tehran,Emissions: PM₂.₅,percent
+SC9,PT OPEX,388.16866946035555,Tehran,PT OPEX,percent
+SC9,PT affordability ratio,190.3834145415489,Tehran,PT affordability,percent
+SC9,PT subsidy need,361.91282699436215,Tehran,PT subsidy,percent
+SC9,Public transport trips,266.2746795578582,Tehran,PT trips,percent
+SC9,Time loss (car),-87.94447123656857,Tehran,Time loss (car),percent

@@ -1,0 +1,11 @@
+paper_item,generator_script,source_data
+Figure 4,src/core/scripts/generate_historical_modal_validation.py,Figure_04_modal_share_series.csv; Figure_04_validation_pooled.csv; Figure_04_validation_per_mode.csv
+Figure 5,src/core/scripts/generate_main_trajectories.py,Figure_05_06_timeseries.csv
+Figure 6,src/core/scripts/generate_secondary_trajectories.py,Figure_05_06_timeseries.csv
+Figure 7,src/core/scripts/generate_main_scenario_deltas.py,Figure_07_main_scenario_deltas.csv; Figure_07_delta_modes.csv
+Figure 8,src/core/scripts/generate_secondary_scenario_deltas.py,Figure_08_secondary_scenario_deltas.csv; Figure_08_delta_modes.csv
+Figure 9,src/core/scripts/generate_cumulative_kpi_fingerprints.py,Figure_09_auc_input.csv
+Figure 10,src/core/scripts/generate_four_domain_outcome_lenses.py,Figure_10_outcome_lens_scores.csv
+Figure 11,src/core/scripts/generate_preference_conditioned_decision.py,Figure_11_equal_weight_scores.csv; Figure_11_rank_acceptability.csv; Figure_11_priority_sweep_winners.csv
+Figure 12,src/core/scripts/generate_implementation_screen.py,Figure_12_implementation_scores.csv
+Figure S8,src/supplementary_analyses/generate_figure_S8.py,Figure_S8_*.csv
