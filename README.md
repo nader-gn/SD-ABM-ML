@@ -257,8 +257,7 @@ Source code in this repository is licensed under the Apache License 2.0. Reposit
 
 Third-party and upstream data remain subject to the terms of their original providers.
 
-See LICENSE and DATA_AND_LICENSE.md for details.
-
+For full licensing and attribution terms, see [`LICENSE`](LICENSE) and [`DATA_AND_LICENSE.md`](DATA_AND_LICENSE.md).
 ---
 
 ## Short project summary
