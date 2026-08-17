@@ -1,0 +1,16 @@
+region12_municipal_budget_share_of_tehran: 0.0079
+region12_municipal_budget_share_basis:
+  method: empirical_proxy_share_of_total_tehran_municipal_budget
+  interpretation: >-
+    This is an explicit district-budget proxy used only because the harmonized
+    source data do not provide a direct Region 12 municipal-budget time series.
+  evidence:
+    - fiscal_year: 1404
+      region12_budget_hamt: 1.80
+      tehran_total_budget_hamt: 231.7
+      implied_share: 0.007768666379 
+    - fiscal_year: 1405
+      region12_budget_hamt: 2.52
+      tehran_total_budget_hamt: 322.9
+      implied_share: 0.007804273769
+  adopted_constant_share: 0.0079

@@ -1,0 +1,20 @@
+name: SC1_DemandSmoothing
+description: Demand-smoothing lever combining flexible work hours, selective telework,
+  and staggered scheduling.
+exogenous_forecast:
+  telework_rate_effective:
+    2024: 0.0
+    2025: 0.0
+    2026: 0.08
+    2027: 0.08
+    2028: 0.12
+    2029: 0.12
+    2030: 0.15
+  commute_management_multiplier:
+    2024: 1.0
+    2025: 1.0
+    2026: 1.12
+    2027: 1.12
+    2028: 1.2
+    2029: 1.2
+    2030: 1.26

@@ -1,0 +1,21 @@
+group,kpi,unit,role_in_results,evidence_tier,interpretation_note
+main,Modal share: public transport,–,primary_mechanism,core_direct_or_formula,Primary evidence layer for scenario interpretation.
+main,Modal share: car,–,primary_mechanism,core_direct_or_formula,Primary evidence layer for scenario interpretation.
+main,PCE-weighted VKT,PCE-km/year,primary_mechanism,core_direct_or_formula,Primary evidence layer for scenario interpretation.
+main,Congestion index,–,supporting_network_state,core_direct,Supporting state/index KPI; not interchangeable with Time loss (car).
+main,Time loss (car),hours/year,primary_mobility_burden,core_direct,Primary mobility-burden KPI for manuscript interpretation.
+main,Final energy,MJ/year,primary_mechanism,core_direct_or_formula,Primary evidence layer for scenario interpretation.
+main,Electricity use,kWh/year,primary_mechanism,core_direct_or_formula,Primary evidence layer for scenario interpretation.
+main,CO₂ emissions,t/year,primary_mechanism,core_direct_or_formula,Primary evidence layer for scenario interpretation.
+main,PM₂.₅ emissions,t/year,primary_mechanism,core_direct_or_formula,Primary evidence layer for scenario interpretation.
+main,NOₓ emissions,t/year,primary_mechanism,core_direct_or_formula,Primary evidence layer for scenario interpretation.
+main,Health indicator,IRR/year,welfare_translation,derived,Downstream monetized welfare translation; interpret after underlying emissions KPIs.
+main,Climate cost,IRR/year,welfare_translation,derived,Downstream monetized welfare translation; interpret after underlying emissions KPIs.
+secondary,Public transport trips,trips/year,primary_mechanism,core_direct_or_formula,Primary evidence layer for scenario interpretation.
+secondary,Non-public transport trips,trips/year,primary_mechanism,core_direct_or_formula,Primary evidence layer for scenario interpretation.
+secondary,Energy: gasoline,MJ/year,supporting_mechanism,formula,Supporting mechanism KPI.
+secondary,Energy: diesel,MJ/year,supporting_mechanism,formula,Supporting mechanism KPI.
+secondary,Energy: CNG,MJ/year,supporting_mechanism,formula,Supporting mechanism KPI.
+secondary,Trips total (effective),trips/year,primary_mechanism,core_direct_or_formula,Primary evidence layer for scenario interpretation.
+secondary,Population,persons,context,direct_input,"Context variable, not a policy-response KPI."
+secondary,Municipal budget,IRR/year,supplementary_fiscal_context,proxy_in_region12,Tehran direct; Region 12 empirical proxy. Avoid heavy inferential weight in main claims.

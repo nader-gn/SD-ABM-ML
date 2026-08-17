@@ -1,0 +1,319 @@
+core_outcome:
+  normalization:
+    method: oriented_cumulative_effect
+    horizon_years:
+    - 2024
+    - 2025
+    - 2026
+    - 2027
+    - 2028
+    - 2029
+    - 2030
+  pillars:
+    Transportation:
+      subfamilies:
+        network_burden:
+        - metric: Time loss (car)
+          direction: lower_better
+          key: time_loss_car
+        mode_shift:
+        - metric: 'Modal share: public transport'
+          direction: higher_better
+          key: modal_share_pt
+        private_load:
+        - metric: PCE-weighted VKT
+          direction: lower_better
+          key: vkm_pce
+    Environmental:
+      subfamilies:
+        climate:
+        - metric: CO₂ emissions
+          direction: lower_better
+          key: co2_emissions
+        local_air_nox:
+        - metric: NOₓ emissions
+          direction: lower_better
+          key: nox_emissions
+        local_air_pm25:
+        - metric: PM₂.₅ emissions
+          direction: lower_better
+          key: pm25_emissions
+    Social:
+      subfamilies:
+        health_burden:
+        - metric: Health indicator
+          direction: lower_better
+          key: health_cost
+        affordability:
+        - metric: PT affordability ratio
+          direction: lower_better
+          key: pt_affordability_ratio
+        liveability:
+        - metric: Noise exposure index
+          direction: lower_better
+          key: noise_exposure_index
+    Economic:
+      subfamilies:
+        pt_service_cost_pressure:
+        - metric: PT OPEX
+          direction: lower_better
+          key: pt_opex
+        public_budget_pressure:
+        - metric: Net recurrent public burden
+          direction: lower_better
+          key: net_recurrent_public_burden
+        energy_cost_pressure:
+        - metric: Energy cost
+          direction: lower_better
+          key: energy_cost
+implementation_screen:
+  normalization:
+    method: oriented_mean_delta_then_maxabs
+  metrics:
+  - metric: Implementation CAPEX
+    direction: lower_better
+    unit: IRR/year
+    key: implementation_capex
+    display: CAPEX
+  - metric: PT subsidy need
+    direction: lower_better
+    unit: IRR/year
+    key: pt_subsidy_need
+    display: PT subsidy
+  - metric: Farebox recovery
+    direction: higher_better
+    unit: ratio
+    key: farebox_recovery
+    display: Farebox recovery
+  - metric: Net fiscal pressure
+    direction: lower_better
+    unit: ratio
+    key: net_fiscal_pressure
+    display: Net fiscal pressure
+  - metric: Budget use
+    direction: lower_better
+    unit: ratio
+    key: budget_use
+    display: Budget use
+  - metric: PT budget pressure
+    direction: lower_better
+    unit: ratio
+    key: pt_budget_pressure
+    display: PT budget pressure
+  - metric: Avoided external cost
+    direction: higher_better
+    unit: IRR/year
+    key: avoided_external_cost
+    display: Avoided ext. cost
+  - metric: Net annual value
+    direction: higher_better
+    unit: IRR/year
+    key: net_annual_value
+    display: Net annual value
+  candidate_scenarios_for_sensitivity:
+  - SC1
+  - SC2
+  - SC3
+  - SC4
+  - SC5
+  - SC6
+  - SC7
+  - SC8
+  - SC9
+  - SC10
+  - SC11
+  assumptions:
+    pricing_admin_setup_share_of_road_capex:
+      SC2: 0.02
+      SC3: 0.008
+    pt_service_upgrade_capex_share_of_existing_pt_capex: 0.35
+    ev_charger_addon_share:
+      light_duty: 0.1
+      bus_depot: 0.05
+    retrofit_unit_cost_share_of_vehicle_capex:
+      motorcycle_cleanup: 0.03
+      cleanfleet_car: 0.01
+      cleanfleet_taxi: 0.01
+      cleanfleet_bus: 0.02
+      cleanfleet_motorcycle: 0.005
+    region12_tfp_revenue_share_proxy_from_observed_2020_2023: 0.45661004704854624
+    region12_budget_allocation_weights:
+      pt_trip_share: 0.5
+      job_share: 0.3
+      population_share: 0.2
+    region12_budget_allocation_clip:
+      min: 0.006
+      central: 0.0079
+      max: 0.012
+    region12_job_share_proxy_from_observed_2020_2023: 0.17520145599722875
+    region12_population_share_proxy_from_observed_2020_2023: 0.025001021670471028
+    region12_budget_structural_share_proxy: 0.0079
+    region12_budget_proxy_formula: budgetary allocation uses observed/proxy Region 12 municipal-budget share; TFP intensity
+      is retained only for revenue attribution
+    traffic_plan_revenue_earmark_share_central: 0.4
+    traffic_plan_revenue_collection_factor_central: 0.9
+    traffic_plan_revenue_earmark_sensitivity:
+      low: 0.04
+      central: 0.4
+      high: 1.0
+    traffic_plan_revenue_collection_factor_sensitivity:
+      low: 0.8
+      central: 0.9
+      high: 1.0
+  region12_allocation_rules:
+    pricing_capex: traffic_plan_trip_share
+    pt_service_capex: pt_service_vkt_share
+    motorcycle_cleanup_capex: motorcycle_vkt_share
+    electrification_capex: weighted_ev_mode_vkt_share
+    cleanfleet_capex: weighted_combustion_mode_vkt_share
+    operating_budget_analogue: blended_pt_service_and_pt_trip_share
+scenario_sets:
+  diagnostic:
+  - SC1
+  - SC2
+  - SC3
+  - SC4
+  - SC5
+  - SC6
+  - SC7
+  exploratory: []
+  candidate:
+  - SC1
+  - SC2
+  - SC3
+  - SC4
+  - SC5
+  - SC6
+  - SC7
+  - SC8
+  - SC9
+  - SC10
+  - SC11
+economic_value_metrics:
+  metrics:
+  - metric: Avoided external cost
+    direction: higher_better
+  - metric: Net annual value
+    direction: higher_better
+shortlist_gate:
+  candidate_scenarios:
+  - SC1
+  - SC2
+  - SC3
+  - SC4
+  - SC5
+  - SC6
+  - SC7
+  - SC8
+  - SC9
+  - SC10
+  - SC11
+  min_mean_net_annual_value: 0.0
+  max_mean_budget_use: 0.85
+  max_mean_pt_budget_pressure: 0.85
+canonical_metric_labels:
+  time_loss_car: Time loss (car)
+  modal_share_pt: 'Modal share: public transport'
+  vkm_pce: PCE-weighted VKT
+  co2_emissions: CO₂ emissions
+  nox_emissions: NOₓ emissions
+  pm25_emissions: PM₂.₅ emissions
+  health_cost: Health indicator
+  pt_affordability_ratio: PT affordability ratio
+  noise_exposure_index: Noise exposure index
+  pt_opex: PT OPEX
+  net_recurrent_public_burden: Net recurrent public burden
+  energy_cost: Energy cost
+  congestion_index: Congestion index
+  public_transport_trips: Public transport trips
+  non_public_transport_trips: Non-public transport trips
+  budget_use: Budget use
+  final_energy: Final energy
+  electricity_use: Electricity use
+  implementation_capex: Implementation CAPEX
+  pt_subsidy_need: PT subsidy need
+  net_fiscal_pressure: Net fiscal pressure
+  farebox_recovery: Farebox recovery
+  pt_budget_pressure: PT budget pressure
+  avoided_external_cost: Avoided external cost
+  net_annual_value: Net annual value
+  pt_travel_expenditure: PT travel expenditure
+  attributable_deaths_equivalent: Attributable deaths equivalent
+  traffic_fatality_equivalent: Traffic fatality equivalent
+  regulatory_revenue_realized: Regulatory revenue realized
+  regulatory_revenue_contribution: Regulatory revenue contribution
+  incremental_regulatory_revenue: Incremental regulatory revenue
+  incremental_fiscal_need: Incremental fiscal need
+  ev_transition_realized: EV transition realized
+figure_display_labels:
+  PCE-weighted VKT: PCE-weighted VKT
+  Health indicator: Health indicator
+  CO₂ emissions: 'Emissions: CO₂'
+  NOₓ emissions: 'Emissions: NOₓ'
+  PM₂.₅ emissions: 'Emissions: PM₂.₅'
+  Public transport trips: PT trips
+  Non-public transport trips: Non-PT trips
+  Budget use: Budget use
+  Implementation CAPEX: CAPEX
+  PT subsidy need: PT subsidy
+  Net fiscal pressure: Net fiscal pressure
+  Farebox recovery: Farebox recovery
+  Avoided external cost: Avoided ext. cost
+  Net annual value: Net annual value
+  PT OPEX: PT OPEX
+  Net recurrent public burden: Net recurrent burden
+  PT affordability ratio: PT affordability
+  Noise exposure index: Noise exposure
+figure_metric_sets:
+  decision12:
+  - Time loss (car)
+  - 'Modal share: public transport'
+  - PCE-weighted VKT
+  - CO₂ emissions
+  - NOₓ emissions
+  - PM₂.₅ emissions
+  - Health indicator
+  - PT affordability ratio
+  - Noise exposure index
+  - PT OPEX
+  - Net recurrent public burden
+  - Energy cost
+  secondary12:
+  - Congestion index
+  - Public transport trips
+  - Non-public transport trips
+  - Budget use
+  - Final energy
+  - Electricity use
+  - Implementation CAPEX
+  - PT subsidy need
+  - Net fiscal pressure
+  - Farebox recovery
+  - Avoided external cost
+  - Net annual value
+unit_map_24:
+  Time loss (car): hours/year
+  'Modal share: public transport': –
+  PCE-weighted VKT: PCE-km/year
+  CO₂ emissions: t/year
+  NOₓ emissions: t/year
+  PM₂.₅ emissions: t/year
+  Health indicator: IRR/year
+  PT affordability ratio: ratio
+  Noise exposure index: index
+  PT OPEX: IRR/year
+  Net recurrent public burden: IRR/year
+  Energy cost: IRR/year
+  Congestion index: –
+  Public transport trips: trips/year
+  Non-public transport trips: trips/year
+  Budget use: ratio
+  Final energy: MJ/year
+  Electricity use: kWh/year
+  Implementation CAPEX: IRR
+  PT subsidy need: IRR/year
+  Net fiscal pressure: ratio
+  Farebox recovery: ratio
+  PT budget pressure: ratio
+  Avoided external cost: IRR/year
+  Net annual value: IRR/year

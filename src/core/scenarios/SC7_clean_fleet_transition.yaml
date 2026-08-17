@@ -1,0 +1,19 @@
+name: SC7_CleanFleetTransition
+description: Taxi- and bus-led electric-vehicle uptake plus fleet renewal.
+exogenous_forecast:
+  share_taxi_EV:
+    2024: 0.04
+    2025: 0.06
+    2026: 0.12
+    2027: 0.16
+    2028: 0.28
+    2029: 0.36
+    2030: 0.44
+  share_bus_EV:
+    2024: 0.1
+    2025: 0.12
+    2026: 0.16
+    2027: 0.2
+    2028: 0.26
+    2029: 0.32
+    2030: 0.4

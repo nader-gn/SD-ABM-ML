@@ -1,0 +1,12 @@
+name: SC3_ParkingCurbManagement
+description: Parking and curb-management lever using staged parking restraint in Region
+  12 with Tehran-scale spillover.
+exogenous_forecast:
+  parking_supply_multiplier_r12:
+    2024: 1.0
+    2025: 1.0
+    2026: 0.94
+    2027: 0.94
+    2028: 0.88
+    2029: 0.88
+    2030: 0.82
