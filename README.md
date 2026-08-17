@@ -16,22 +16,7 @@ The framework combines three modeling roles inside one annual shared state:
 - **Agent-Based Modeling (ABM)** represents policy mediation at a meso level: exposure to policies, access friction, compliance/convenience effects, mode competition, and feasibility before outcomes are aggregated.
 - **Machine Learning (ML)** supplies nonlinear modal priors from temporally admissible lagged information. These priors are inputs to the hybrid model; they are not the final modal-share predictions on their own.
 
-The central idea is not to run SD, ABM, and ML as three independent models and pass files between them. They operate on a **shared simulation state**, with explicit update order and annual state commitment.
-
-```mermaid
-flowchart LR
-    D[Historical and exogenous drivers] --> S[Working annual state]
-    P[Scenario policy schedule] --> S
-    S --> M[ML: lagged modal priors]
-    M --> A[ABM: policy mediation and mode competition]
-    A --> SD[SD: system consequences and feedbacks]
-    SD --> F[Feasibility and constraints]
-    F --> C[Commit annual state]
-    C -->|lags, stocks, memory| S
-    F --> O[Transport, environment, social and economic outputs]
-```
-
-At the end of each simulated year, the resolved state is committed and becomes the endogenous memory used in the next annual step. This makes delayed effects, staged policies, and feedback responses part of the same trajectory.
+The central idea is not to run SD, ABM, and ML as three independent models and pass files between them. They operate on a **shared simulation state**, with explicit update order and annual state commitment. At the end of each simulated year, the resolved state is committed and becomes the endogenous memory used in the next annual step. This makes delayed effects, staged policies, and feedback responses part of the same trajectory.
 
 ---
 
